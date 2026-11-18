@@ -556,5 +556,32 @@
     "required": []
    }
   }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassSetVolumeRelative",
+   "description": "Increases or decreases the volume of a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "volume_step": {
+      "type": "string",
+      "description": "up, down, or a percentage change from -100 to 100"
+     },
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": [
+     "volume_step"
+    ]
+   }
+  }
  }
 ]

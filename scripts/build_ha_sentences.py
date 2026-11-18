@@ -171,6 +171,10 @@ def build() -> dict:
     add("HassMediaPlayerMute", ["سكّت (<media>|الصوت)", "(گطع|اگطع) صوت <dc_media_player>", "<media> سكّتها"])
     add("HassMediaPlayerUnmute", ["ردّ صوت <dc_media_player>", "ردّ الصوت", "خلّي <media> يتكلم"])
     add("HassCancelAllTimers", ["<v_cancel> (المنبّهات|التايمرات) <all>", "<v_cancel> <all> (المنبّهات|التايمرات)"])
+    add("HassSetVolumeRelative", ["<v_increase> (الصوت|صوت <dc_media_player>) [" + alt(LEX["a_little"]["ar"] + LEX["very"]["ar"]) + "]"],
+        {"volume_step": "up"})
+    add("HassSetVolumeRelative", ["<v_decrease> (الصوت|صوت <dc_media_player>) [" + alt(LEX["a_little"]["ar"] + LEX["very"]["ar"]) + "]"],
+        {"volume_step": "down"})
     add("HassFanSetSpeed", [f"<v_set> <d_fan> [<loc>] (ف|على) {num('percentage')} <pct_unit>",
                             f"<d_fan> [<loc>] {num('percentage')} <pct_unit>"], response="hsn_set")
     # ---- timers
@@ -203,8 +207,10 @@ def build() -> dict:
     add("HassNevermind", G.NEVERMIND_Q)
 
     lists = {
+        # every room also without its article ("ظو صالو", "ظو كوزينة")
         "hsn_area": {"values": [{"in": v, "out": a["ar"][0]} for a in LEX["areas"]
-                                for v in dict.fromkeys(a["ar"] + [strip_tashkeel(x) for x in a["ar"]])]},
+                                for v in dict.fromkeys(a["ar"] + [strip_tashkeel(x) for x in a["ar"]]
+                                                       + [strip_al(strip_tashkeel(x)) for x in a["ar"] if x.startswith("ال")])]},
         "hsn_color": {"values": [{"in": v, "out": c["en"]} for c in LEX["colors"] for v in c["ar"]]},
         "hsn_number": {"values": number_values(0, 100)},
         "hsn_digits": {"range": {"from": 0, "to": 100}},

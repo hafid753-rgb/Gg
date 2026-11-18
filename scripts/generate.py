@@ -338,11 +338,15 @@ def utt_media(rng, dev=None) -> Utt:
 def utt_volume_relative(rng, up) -> Utt:
     vs, _ = verb("increase" if up else "decrease", rng)
     amt = pick(LEX["a_little"]["ar"] + LEX["very"]["ar"] + [""], rng)
-    core = pick([f"{vs} الصوت {amt}", f"الصوت {pick(['عالي', 'ياسر'], rng)}" if not up else f"{vs} الصوت {amt}",
-                 f"ما نسمع شي، {verb('increase', rng)[0]} الصوت" if up else f"{vs} الصوت {amt}"], rng)
+    implicit = rng.random() < 0.2
+    if implicit:  # indirect: needs the LLM
+        core = f"ما نسمع شي، {verb('increase', rng)[0]} الصوت" if up else f"الصوت {pick(['عالي ياسر', 'ياسر'], rng)}"
+    else:
+        core = f"{vs} الصوت {amt}"
     step = (25 if amt in LEX["very"]["ar"] else 10) * (1 if up else -1)
-    return Utt(wrap(core.strip(), rng), "HassSetVolume", {"volume_step": step}, kind="relative",
-               fast_path=False, template="media.volume_rel", meta={"step": step})
+    # HA's official intent HassSetVolumeRelative: volume_step = "up" | "down" | -100..100
+    return Utt(wrap(core.strip(), rng), "HassSetVolumeRelative", {"volume_step": "up" if up else "down"},
+               kind="relative", fast_path=not implicit, template="media.volume_rel", meta={"step": step})
 
 
 def utt_fan_speed(area, rng) -> Utt:
@@ -961,8 +965,14 @@ def sft_media(home, rng):
         cur = e["attrs"]["volume_level"]
         new = max(0, min(100, cur + u.meta["step"]))
         e["attrs"]["volume_level"] = new
+        if rng.random() < 0.5:  # official relative intent
+            args = {"volume_step": "up" if up else "down"}
+            if len(mps) > 1:
+                args["name"] = e["name"]
+            return conv(home, u.text, [("HassSetVolumeRelative", args, tool_result([e]))],
+                        f"ايوه، {'زدت' if up else 'نگّصت'} صوت {strip_al(e['item']['ar'][0])}."), u
         return conv(home, u.text, [("HassSetVolume", {"name": e["name"], "volume_level": new}, tool_result([e]))],
-                    f"{'زدت' if up else 'نگّصت'} الصوت من {cur} ل {new}."), u
+                    f"ايوه، {'زدت' if up else 'نگّصت'} الصوت من {cur} ل {new}."), u
     u = utt_media(rng, dev)
     if u.intent == "HassMediaPause" and e["state"] != "playing":
         return conv(home, u.text, [], f"{e['name']} ما يخدم شي ظرك، ما فم شي نحبّس."), u

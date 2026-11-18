@@ -49,4 +49,5 @@ Sample 100 NLU rows. For each, judge whether a real person would say it, and whe
 | 2026-11-18 | repo owner | – | 1 | "off" state: مطفي / مطفية preferred, طافي understood. AC: الكليم, الكليماتيزور, المكيّف confirmed. Bedroom: بيت الرگاد, البيت (removed بيت النعاس, الشومبر). حگل confirmed very natural before or after a command (now in ~14% of commands). |
 | 2026-11-18 | repo owner | – | 2 | Switch on: only اگدي is natural (اشعل/شعّل/حلّ kept as understood-only variants). Acknowledgement: ايوه (replaces اهيه/زين/تمّ). Close curtains/windows: اگفل (سكّر/سدّ understood-only). Wake word: keep يا دار. |
 | 2026-11-18 | repo owner | – | 3 | Water heater: الشوفو only (removed سخّان الما). Fan: المروحة, الفانتيلو, الفانتيلاتير, الفنتيلاتور confirmed. Kitchen: الكوزينة, المطبخ; living room: الصالون. Curtains: الريدو, الستارة, الريدوات confirmed. |
+| 2026-11-18 | repo owner | – | 4 | Real commands "طفي ظو صالو" and "زيد الصوت": added the spoken form صالو / الصالو, made rooms match without the article, and mapped relative volume to HA's HassSetVolumeRelative (fast path, no LLM). |
 | | | | | |

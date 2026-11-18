@@ -258,7 +258,7 @@ devices:
 
 # ------------------------------------------------------------- rooms / areas
 areas:
-  - {id: salon,    ar: [الصالون, صالون], lat: [salon], conf: high}   # confirmed
+  - {id: salon,    ar: [الصالون, صالون, الصالو, صالو], lat: [salon, salu], conf: high}   # confirmed; صالو = spoken form (owner: "طفي ظو صالو")
   - {id: bedroom,  ar: [بيت الرگاد, البيت], lat: [beyt er-gad, el-beyt], conf: high}   # confirmed: بيت الرگاد, البيت (not بيت النعاس / الشومبر)
   - {id: kitchen,  ar: [الكوزينة, الكوزينه, المطبخ], lat: [cuisine, kouzina], conf: high}   # confirmed
   - {id: bathroom, ar: [بيت الما, الدوش, التواليت], lat: [beyt el ma, douche], conf: high}
