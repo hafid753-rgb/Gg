@@ -36,12 +36,12 @@ def alt(words) -> str:
 def verb_rule(key: str) -> str:
     v = LEX["verbs"][key]
     want = alt(LEX["want"]["ar"])
-    return alt(v["imp_m"] + v["imp_f"] + v["imp_pl"] + v["req"])[:-1] + f"|{want} {alt(v['req'])})"
+    return alt(v["imp_m"] + v["imp_f"] + v["imp_pl"] + v["req"] + v.get("accept", []))[:-1] + f"|{want} {alt(v['req'])})"
 
 
 def verb_obj_rule(key: str, g: str) -> str:
     v = LEX["verbs"][key]
-    forms = [w + obj_suffix(g) for w in v["imp_m"] + v["imp_f"] if " " not in w] + v["imp_pl"]
+    forms = [w + obj_suffix(g) for w in v["imp_m"] + v["imp_f"] + v.get("accept", []) if " " not in w] + v["imp_pl"]
     return alt(forms)
 
 
@@ -162,7 +162,7 @@ def build() -> dict:
     add("HassMediaPause", ["(حبّس|وگّف) <media> " + alt(LEX["a_little"]["ar"]),
                            "حبّس (<media>|الموسيقى|الغنا|المديح)", "اعدل pause"])
     add("HassMediaUnpause", ["كمّل (<media>|الموسيقى|المديح)", "ردّ <media> يخدم", "خلّيه يكمّل",
-                             "(شعّل|حلّ) الموسيقى من جديد"])
+                             "(اگدي|شعّل|حلّ) الموسيقى من جديد"])
     add("HassMediaNext", ["الّي بعدو", "دوّر للّي بعدو", "الأغنية الجاية", "جيب الّي بعدها", "next"])
     add("HassMediaPrevious", ["ردّ للّي گبل", "الأغنية الّي فاتت", "رجّع الّي گبلها", "ردّ اللّي فات"])
     add("HassSetVolume", [f"<v_set> الصوت (ف|على) {num('volume_level')}",
@@ -197,7 +197,7 @@ def build() -> dict:
     add("HassShoppingListAddItem", ["<v_add> {hsn_item:item} (ل|ف) <list_word>",
                                     f"[ما ننساو] {{hsn_item:item}} {add_obj} ف <list_word>"], response="hsn_item")
     add("HassGetState", ["[<is_it>] <d_vacuum> (گادي|گادية|كادي|شاعل|شاعلة|يخدم)"], {"domain": "vacuum", "state": "on"})
-    add("HassVacuumStart", ["<v_clean> (الدار|{hsn_area:area})", "خلّي الروبو (ينظّف|يشطّب)", "(حلّ|شعّل) الروبو"])
+    add("HassVacuumStart", ["<v_clean> (الدار|{hsn_area:area})", "خلّي الروبو (ينظّف|يشطّب)", "(اگدي|حلّ|شعّل) الروبو"])
     add("HassVacuumReturnToBase", ["<v_return> الروبو (لبلاصتو|لامكانو|للشارجور)", "<v_return> المكنسة للشارجور",
                                    "خلّي الروبو يرجع لبلاصتو"])
     add("HassNevermind", G.NEVERMIND_Q)
@@ -214,8 +214,8 @@ def build() -> dict:
     }
     responses = {"intents": {}}
     resp = {
-        "hsn_on": "اهيه، گدّيتو.", "hsn_off": "اهيه، طفّيتو.", "hsn_lock": "اهيه، گفلت الباب.",
-        "hsn_unlock": "اهيه، فتحت الباب.", "hsn_set": "اهيه، عدلتو.", "hsn_timer": "اهيه، المنبّه بدا.",
+        "hsn_on": "ايوه، گدّيتو.", "hsn_off": "ايوه، طفّيتو.", "hsn_lock": "ايوه، گفلت الباب.",
+        "hsn_unlock": "ايوه، فتحت الباب.", "hsn_set": "ايوه، عدلتو.", "hsn_timer": "ايوه، المنبّه بدا.",
         "hsn_item": "زدت {{ slots.item }} ل ليستة الشرا.",
     }
     for intent, body in intents.items():

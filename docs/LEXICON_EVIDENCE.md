@@ -1,6 +1,6 @@
 # Lexicon evidence
 
-Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **192/370 lexicon forms (52%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
+Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **183/348 lexicon forms (53%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
 
 | Section | Entry | Form | Hits | Attested look-alikes (same consonants) |
 |---|---|---|---|---|
@@ -255,14 +255,9 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | verb | clean.imp_pl | نظّفو | 0 | ينظف |
 | verb | clean.req | تنظّف | 0 |  |
 | verb | close.imp_f | اگفلي | 0 | اكفل، كفل، يكفل |
-| verb | close.imp_f | سكّري | 0 | اسكير، سكور، سكوار |
 | verb | close.imp_m | اگفل | 6 |  |
-| verb | close.imp_m | سكّر | 3 |  |
-| verb | close.imp_m | سدّ | 0 | سيدي، سيديا، سيد |
 | verb | close.imp_pl | اگفلو | 1 |  |
-| verb | close.imp_pl | سدّو | 1 |  |
 | verb | close.req | تگفل لي | 0 |  |
-| verb | close.req | تسكّر لي | 0 |  |
 | verb | decrease.imp_f | نگّصي | 0 | نكص، انكص، ينكص |
 | verb | decrease.imp_f | هبّطي | 0 |  |
 | verb | decrease.imp_m | اطيّح | 5 |  |
@@ -350,27 +345,10 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | verb | turn_off.req | اتطفّي لي | 0 |  |
 | verb | turn_off.req | تسكّر لي | 0 |  |
 | verb | turn_on.imp_f | اگدي | 3 |  |
-| verb | turn_on.imp_f | اشعلي | 0 | شاعل، شعل، يشعل |
-| verb | turn_on.imp_f | شعّلي | 0 | شاعل، شعل، يشعل |
-| verb | turn_on.imp_m | حلّ | 14 |  |
 | verb | turn_on.imp_m | اگدي | 3 |  |
-| verb | turn_on.imp_m | اشعل | 1 |  |
-| verb | turn_on.imp_m | شعّل | 1 |  |
 | verb | turn_on.imp_pl | اگدو | 0 | يكد، كد، ايكد |
-| verb | turn_on.imp_pl | اشعلو | 0 | شاعل، شعل، يشعل |
-| verb | turn_on.imp_pl | شعّلو | 0 | شاعل، شعل، يشعل |
 | verb | turn_on.req | تگدي لي | 0 |  |
-| verb | turn_on.req | تشعل لي | 0 |  |
-| verb | turn_on.req | اتشعّل لي | 0 |  |
-| verb | turn_on_device.imp_f | دوّري | 6 |  |
 | verb | turn_on_device.imp_f | اگدي | 3 |  |
-| verb | turn_on_device.imp_f | شعّلي | 0 | شاعل، شعل، يشعل |
-| verb | turn_on_device.imp_m | دوّر | 142 |  |
-| verb | turn_on_device.imp_m | حلّ | 14 |  |
 | verb | turn_on_device.imp_m | اگدي | 3 |  |
-| verb | turn_on_device.imp_m | شعّل | 1 |  |
 | verb | turn_on_device.imp_pl | اگدو | 0 | يكد، كد، ايكد |
-| verb | turn_on_device.imp_pl | شعّلو | 0 | شاعل، شعل، يشعل |
 | verb | turn_on_device.req | تگدي لي | 0 |  |
-| verb | turn_on_device.req | اتشعّل لي | 0 |  |
-| verb | turn_on_device.req | ادوّر لي | 0 |  |

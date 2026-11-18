@@ -135,51 +135,51 @@ def templated():
 
 # --------------------------------------------------------------- responses
 RESP = {  # service: (starting, confirmed) variants; <vars> must match the template's vars
-    "light.turn_on": [("اهيه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("زين، نگدي <device_name> ظرك.", "<device_name> گادي ظرك."),
+    "light.turn_on": [("ايوه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("ايوه، نگدي <device_name> ظرك.", "<device_name> گادي ظرك."),
                       ("ايوه، هاني نگدي <device_name>.", "گدّيت <device_name>.")],
-    "light.turn_off": [("اهيه، لاهي نطفّي <device_name>.", "طفّيت <device_name>."), ("زين، نطفّي <device_name> ظرك.", "<device_name> مطفي ظرك.")],
-    "light.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "switch.turn_on": [("اهيه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("زين، نشعّل <device_name>.", "شعّلت <device_name>.")],
-    "switch.turn_off": [("اهيه، لاهي نطفّي <device_name>.", "طفّيت <device_name>.")],
-    "switch.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "fan.turn_on": [("اهيه، نگدي <device_name>.", "گدّيت <device_name>.")],
-    "fan.turn_off": [("اهيه، نطفّي <device_name>.", "طفّيت <device_name>.")],
-    "fan.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "fan.increase_speed": [("اهيه، نزيد <device_name>.", "زدت سرعة <device_name>.")],
-    "fan.decrease_speed": [("اهيه، ننگّص <device_name>.", "نگّصت سرعة <device_name>.")],
-    "media_player.turn_on": [("اهيه، نگدي <device_name>.", "گدّيت <device_name>.")],
-    "media_player.turn_off": [("اهيه، نطفّي <device_name>.", "طفّيت <device_name>.")],
-    "media_player.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "media_player.media_play": [("اهيه، نكمّل <device_name>.", "<device_name> رجع يخدم.")],
-    "media_player.media_pause": [("اهيه، نحبّس <device_name>.", "حبّست <device_name>.")],
-    "media_player.media_stop": [("اهيه، نوگّف <device_name>.", "وگّفت <device_name>.")],
-    "media_player.media_next_track": [("اهيه، الّي بعدو ف <device_name>.", "هاك الّي بعدو ف <device_name>.")],
-    "media_player.media_previous_track": [("اهيه، نردّ للّي گبل ف <device_name>.", "رجّعت للّي گبل ف <device_name>.")],
-    "media_player.volume_up": [("اهيه، نزيد صوت <device_name>.", "زدت صوت <device_name>.")],
-    "media_player.volume_down": [("اهيه، ننگّص صوت <device_name>.", "نگّصت صوت <device_name>.")],
-    "media_player.volume_mute": [("اهيه، نسكّت <device_name>.", "سكّتت <device_name>.")],
-    "blinds.open_cover": [("اهيه، نفتح <device_name>.", "فتحت <device_name>.")],
-    "blinds.close_cover": [("اهيه، نگفل <device_name>.", "گفلت <device_name>.")],
-    "blinds.stop_cover": [("اهيه، نوگّف <device_name>.", "وگّفت <device_name>.")],
-    "blinds.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "garage_door.open_cover": [("اهيه، نفتح <device_name>.", "فتحت <device_name>.")],
-    "garage_door.close_cover": [("اهيه، نگفل <device_name>.", "گفلت <device_name>.")],
-    "garage_door.stop_cover": [("اهيه، نوگّف <device_name>.", "وگّفت <device_name>.")],
-    "garage_door.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
-    "lock.lock": [("اهيه، نگفل <device_name>.", "گفلت <device_name>."), ("زين، لاهي نگفل <device_name>.", "<device_name> مگفول ظرك.")],
-    "lock.unlock": [("اهيه، نفتح <device_name>.", "فتحت <device_name>.")],
-    "climate.set_temperature": [("اهيه، ندير <device_name> على <temp_c> درجة.", "<device_name> ظرك على <temp_c> درجة.")],
-    "vacuum.start": [("اهيه، <device_name> لاهي يبدا ينظّف.", "<device_name> بدا ينظّف.")],
-    "vacuum.stop": [("اهيه، نوگّف <device_name>.", "وگّفت <device_name>.")],
-    "vacuum.pause": [("اهيه، نحبّس <device_name>.", "حبّست <device_name>.")],
-    "vacuum.return_to_base": [("اهيه، نردّ <device_name> لبلاصتو.", "<device_name> راجع لبلاصتو.")],
-    "timer.start": [("اهيه، ندير <device_name> ل <duration>.", "<device_name> بدا: <duration>.")],
-    "timer.cancel": [("اهيه، نلغي <device_name>.", "الغيت <device_name>.")],
-    "todo.add_item": [("اهيه، نزيد <todo> ل <device_name>.", "زدت <todo> ل <device_name>.")],
+    "light.turn_off": [("ايوه، لاهي نطفّي <device_name>.", "طفّيت <device_name>."), ("ايوه، نطفّي <device_name> ظرك.", "<device_name> مطفي ظرك.")],
+    "light.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "switch.turn_on": [("ايوه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("ايوه، نگدي <device_name>.", "گدّيت <device_name>.")],
+    "switch.turn_off": [("ايوه، لاهي نطفّي <device_name>.", "طفّيت <device_name>.")],
+    "switch.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "fan.turn_on": [("ايوه، نگدي <device_name>.", "گدّيت <device_name>.")],
+    "fan.turn_off": [("ايوه، نطفّي <device_name>.", "طفّيت <device_name>.")],
+    "fan.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "fan.increase_speed": [("ايوه، نزيد <device_name>.", "زدت سرعة <device_name>.")],
+    "fan.decrease_speed": [("ايوه، ننگّص <device_name>.", "نگّصت سرعة <device_name>.")],
+    "media_player.turn_on": [("ايوه، نگدي <device_name>.", "گدّيت <device_name>.")],
+    "media_player.turn_off": [("ايوه، نطفّي <device_name>.", "طفّيت <device_name>.")],
+    "media_player.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "media_player.media_play": [("ايوه، نكمّل <device_name>.", "<device_name> رجع يخدم.")],
+    "media_player.media_pause": [("ايوه، نحبّس <device_name>.", "حبّست <device_name>.")],
+    "media_player.media_stop": [("ايوه، نوگّف <device_name>.", "وگّفت <device_name>.")],
+    "media_player.media_next_track": [("ايوه، الّي بعدو ف <device_name>.", "هاك الّي بعدو ف <device_name>.")],
+    "media_player.media_previous_track": [("ايوه، نردّ للّي گبل ف <device_name>.", "رجّعت للّي گبل ف <device_name>.")],
+    "media_player.volume_up": [("ايوه، نزيد صوت <device_name>.", "زدت صوت <device_name>.")],
+    "media_player.volume_down": [("ايوه، ننگّص صوت <device_name>.", "نگّصت صوت <device_name>.")],
+    "media_player.volume_mute": [("ايوه، نسكّت <device_name>.", "سكّتت <device_name>.")],
+    "blinds.open_cover": [("ايوه، نفتح <device_name>.", "فتحت <device_name>.")],
+    "blinds.close_cover": [("ايوه، نگفل <device_name>.", "گفلت <device_name>.")],
+    "blinds.stop_cover": [("ايوه، نوگّف <device_name>.", "وگّفت <device_name>.")],
+    "blinds.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "garage_door.open_cover": [("ايوه، نفتح <device_name>.", "فتحت <device_name>.")],
+    "garage_door.close_cover": [("ايوه، نگفل <device_name>.", "گفلت <device_name>.")],
+    "garage_door.stop_cover": [("ايوه، نوگّف <device_name>.", "وگّفت <device_name>.")],
+    "garage_door.toggle": [("ايوه، نبدّل <device_name>.", "بدّلت <device_name>.")],
+    "lock.lock": [("ايوه، نگفل <device_name>.", "گفلت <device_name>."), ("ايوه، لاهي نگفل <device_name>.", "<device_name> مگفول ظرك.")],
+    "lock.unlock": [("ايوه، نفتح <device_name>.", "فتحت <device_name>.")],
+    "climate.set_temperature": [("ايوه، ندير <device_name> على <temp_c> درجة.", "<device_name> ظرك على <temp_c> درجة.")],
+    "vacuum.start": [("ايوه، <device_name> لاهي يبدا ينظّف.", "<device_name> بدا ينظّف.")],
+    "vacuum.stop": [("ايوه، نوگّف <device_name>.", "وگّفت <device_name>.")],
+    "vacuum.pause": [("ايوه، نحبّس <device_name>.", "حبّست <device_name>.")],
+    "vacuum.return_to_base": [("ايوه، نردّ <device_name> لبلاصتو.", "<device_name> راجع لبلاصتو.")],
+    "timer.start": [("ايوه، ندير <device_name> ل <duration>.", "<device_name> بدا: <duration>.")],
+    "timer.cancel": [("ايوه، نلغي <device_name>.", "الغيت <device_name>.")],
+    "todo.add_item": [("ايوه، نزيد <todo> ل <device_name>.", "زدت <todo> ل <device_name>.")],
 }
 VAR_RESP = {  # extra variants that carry template vars
-    ("light.turn_on", "brightness"): [("اهيه، ندير <device_name> ف <brightness>%.", "<device_name> ظرك ف <brightness>%.")],
-    ("light.turn_on", "color"): [("اهيه، نردّ <device_name> <color>.", "<device_name> ظرك <color>.")],
+    ("light.turn_on", "brightness"): [("ايوه، ندير <device_name> ف <brightness>%.", "<device_name> ظرك ف <brightness>%.")],
+    ("light.turn_on", "color"): [("ايوه، نردّ <device_name> <color>.", "<device_name> ظرك <color>.")],
 }
 
 
@@ -202,7 +202,7 @@ def status():
     S = []
     for dt in ("light", "fan", "switch", "media_player"):
         S += [{"device_type": dt, "state": "on", "phrase": p, "assistant_response": r} for p, r in [
-            ("ياك <device_name> گادي؟", "اهيه، <device_name> گادي ظرك."), ("<device_name> گادي ولّا طافي؟", "<device_name> گادي."), ("<device_name> گادي ولّا مطفي؟", "<device_name> گادي."),
+            ("ياك <device_name> گادي؟", "ايوه، <device_name> گادي ظرك."), ("<device_name> گادي ولّا طافي؟", "<device_name> گادي."), ("<device_name> گادي ولّا مطفي؟", "<device_name> گادي."),
             ("شوف لي <device_name>", "<device_name> گادي ظرك."), ("<device_name> كيف حالو؟", "<device_name> گادي.")]]
         S += [{"device_type": dt, "state": "off", "phrase": p, "assistant_response": r} for p, r in [
             ("ياك <device_name> گادي؟", "لا، <device_name> مطفي."), ("<device_name> گادي ولّا طافي؟", "<device_name> مطفي."),
@@ -211,11 +211,11 @@ def status():
            "assistant_response": "<device_name> گادي، لونو <color> وف <brightness>%."}]
     for dt in ("blinds", "garage_door"):
         S += [{"device_type": dt, "state": "open", "phrase": p, "assistant_response": r} for p, r in [
-            ("<device_name> مفتوح؟", "اهيه، <device_name> مفتوح."), ("شوف لي <device_name>", "<device_name> مفتوح ظرك.")]]
+            ("<device_name> مفتوح؟", "ايوه، <device_name> مفتوح."), ("شوف لي <device_name>", "<device_name> مفتوح ظرك.")]]
         S += [{"device_type": dt, "state": "closed", "phrase": p, "assistant_response": r} for p, r in [
-            ("<device_name> مفتوح؟", "لا، <device_name> مگفول."), ("ياك <device_name> مگفول؟", "اهيه، <device_name> مگفول.")]]
+            ("<device_name> مفتوح؟", "لا، <device_name> مگفول."), ("ياك <device_name> مگفول؟", "ايوه، <device_name> مگفول.")]]
     S += [{"device_type": "lock", "state": "locked", "phrase": p, "assistant_response": r} for p, r in [
-        ("ياك <device_name> مگفول؟", "اهيه، <device_name> مگفول."), ("<device_name> مگفول ولّا مفتوح؟", "<device_name> مگفول.")]]
+        ("ياك <device_name> مگفول؟", "ايوه، <device_name> مگفول."), ("<device_name> مگفول ولّا مفتوح؟", "<device_name> مگفول.")]]
     S += [{"device_type": "lock", "state": "unlocked", "phrase": p, "assistant_response": r} for p, r in [
         ("ياك <device_name> مگفول؟", "لا، <device_name> مفتوح. تبغي نگفلو؟"), ("<device_name> مگفول ولّا مفتوح؟", "<device_name> مفتوح.")]]
     S += [{"device_type": "media_player", "state": "playing;<media>;<volume>", "phrase": "شنه يخدم ف <device_name>؟",

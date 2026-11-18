@@ -1,18 +1,12 @@
 device_type,service,phrase,multiplier
 light,turn_on,اگدي <device_name>,2
 light,turn_on,حگل اگدي <device_name>,2
-light,turn_on,اشعل <device_name>,2
-light,turn_on,حگل اشعل <device_name>,2
-light,turn_on,شعّل <device_name>,2
-light,turn_on,حگل شعّل <device_name>,2
-light,turn_on,حلّ <device_name>,2
-light,turn_on,حگل حلّ <device_name>,2
 light,turn_on,تگدي لي <device_name>,2
 light,turn_on,حگل تگدي لي <device_name>,2
 light,turn_on,اگدي <device_name> حگل,2
 light,turn_on,اگدي <device_name> الله يخليك,2
-light,turn_on,اشعل <device_name> حگل,2
-light,turn_on,اشعل <device_name> الله يخليك,2
+light,turn_on,تگدي لي <device_name> حگل,2
+light,turn_on,تگدي لي <device_name> الله يخليك,2
 light,turn_on,نبغيك تگدي لي <device_name>,2
 light,turn_off,طفّي <device_name>,2
 light,turn_off,حگل طفّي <device_name>,2
@@ -31,18 +25,12 @@ light,toggle,ردّ <device_name> للحالة الاخرى,1
 light,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 switch,turn_on,اگدي <device_name>,1
 switch,turn_on,حگل اگدي <device_name>,1
-switch,turn_on,شعّل <device_name>,1
-switch,turn_on,حگل شعّل <device_name>,1
-switch,turn_on,حلّ <device_name>,1
-switch,turn_on,حگل حلّ <device_name>,1
-switch,turn_on,دوّر <device_name>,1
-switch,turn_on,حگل دوّر <device_name>,1
 switch,turn_on,تگدي لي <device_name>,1
 switch,turn_on,حگل تگدي لي <device_name>,1
 switch,turn_on,اگدي <device_name> حگل,1
 switch,turn_on,اگدي <device_name> الله يخليك,1
-switch,turn_on,شعّل <device_name> حگل,1
-switch,turn_on,شعّل <device_name> الله يخليك,1
+switch,turn_on,تگدي لي <device_name> حگل,1
+switch,turn_on,تگدي لي <device_name> الله يخليك,1
 switch,turn_on,نبغيك تگدي لي <device_name>,1
 switch,turn_off,طفّي <device_name>,1
 switch,turn_off,حگل طفّي <device_name>,1
@@ -61,18 +49,12 @@ switch,toggle,ردّ <device_name> للحالة الاخرى,1
 switch,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 fan,turn_on,اگدي <device_name>,1
 fan,turn_on,حگل اگدي <device_name>,1
-fan,turn_on,شعّل <device_name>,1
-fan,turn_on,حگل شعّل <device_name>,1
-fan,turn_on,حلّ <device_name>,1
-fan,turn_on,حگل حلّ <device_name>,1
-fan,turn_on,دوّر <device_name>,1
-fan,turn_on,حگل دوّر <device_name>,1
 fan,turn_on,تگدي لي <device_name>,1
 fan,turn_on,حگل تگدي لي <device_name>,1
 fan,turn_on,اگدي <device_name> حگل,1
 fan,turn_on,اگدي <device_name> الله يخليك,1
-fan,turn_on,شعّل <device_name> حگل,1
-fan,turn_on,شعّل <device_name> الله يخليك,1
+fan,turn_on,تگدي لي <device_name> حگل,1
+fan,turn_on,تگدي لي <device_name> الله يخليك,1
 fan,turn_on,نبغيك تگدي لي <device_name>,1
 fan,turn_off,طفّي <device_name>,1
 fan,turn_off,حگل طفّي <device_name>,1
@@ -91,18 +73,12 @@ fan,toggle,ردّ <device_name> للحالة الاخرى,1
 fan,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 media_player,turn_on,اگدي <device_name>,1
 media_player,turn_on,حگل اگدي <device_name>,1
-media_player,turn_on,شعّل <device_name>,1
-media_player,turn_on,حگل شعّل <device_name>,1
-media_player,turn_on,حلّ <device_name>,1
-media_player,turn_on,حگل حلّ <device_name>,1
-media_player,turn_on,دوّر <device_name>,1
-media_player,turn_on,حگل دوّر <device_name>,1
 media_player,turn_on,تگدي لي <device_name>,1
 media_player,turn_on,حگل تگدي لي <device_name>,1
 media_player,turn_on,اگدي <device_name> حگل,1
 media_player,turn_on,اگدي <device_name> الله يخليك,1
-media_player,turn_on,شعّل <device_name> حگل,1
-media_player,turn_on,شعّل <device_name> الله يخليك,1
+media_player,turn_on,تگدي لي <device_name> حگل,1
+media_player,turn_on,تگدي لي <device_name> الله يخليك,1
 media_player,turn_on,نبغيك تگدي لي <device_name>,1
 media_player,turn_off,طفّي <device_name>,1
 media_player,turn_off,حگل طفّي <device_name>,1
@@ -147,10 +123,6 @@ blinds,open_cover,حگل تفتح لي <device_name>,1
 blinds,open_cover,نبغيك تفتح لي <device_name>,1
 blinds,close_cover,اگفل <device_name>,1
 blinds,close_cover,حگل اگفل <device_name>,1
-blinds,close_cover,سكّر <device_name>,1
-blinds,close_cover,حگل سكّر <device_name>,1
-blinds,close_cover,سدّ <device_name>,1
-blinds,close_cover,حگل سدّ <device_name>,1
 blinds,close_cover,اگفلي <device_name>,1
 blinds,close_cover,حگل اگفلي <device_name>,1
 blinds,close_cover,تگفل لي <device_name>,1
@@ -172,10 +144,6 @@ garage_door,open_cover,حگل تفتح لي <device_name>,1
 garage_door,open_cover,نبغيك تفتح لي <device_name>,1
 garage_door,close_cover,اگفل <device_name>,1
 garage_door,close_cover,حگل اگفل <device_name>,1
-garage_door,close_cover,سكّر <device_name>,1
-garage_door,close_cover,حگل سكّر <device_name>,1
-garage_door,close_cover,سدّ <device_name>,1
-garage_door,close_cover,حگل سدّ <device_name>,1
 garage_door,close_cover,اگفلي <device_name>,1
 garage_door,close_cover,حگل اگفلي <device_name>,1
 garage_door,close_cover,تگفل لي <device_name>,1

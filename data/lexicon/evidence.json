@@ -2,8 +2,8 @@
  "corpus": "data/external/hassaniya_text_all.jsonl",
  "sentences": 16271,
  "tokens": 143526,
- "forms": 370,
- "attested": 192,
+ "forms": 348,
+ "attested": 183,
  "items": [
   {
    "section": "verb",
@@ -14,53 +14,10 @@
   },
   {
    "section": "verb",
-   "key": "turn_on.imp_m",
-   "form": "اشعل",
-   "hits": 1,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.imp_m",
-   "form": "شعّل",
-   "hits": 1,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.imp_m",
-   "form": "حلّ",
-   "hits": 14,
-   "suggest": []
-  },
-  {
-   "section": "verb",
    "key": "turn_on.imp_f",
    "form": "اگدي",
    "hits": 3,
    "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.imp_f",
-   "form": "اشعلي",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.imp_f",
-   "form": "شعّلي",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
   },
   {
    "section": "verb",
@@ -75,28 +32,6 @@
   },
   {
    "section": "verb",
-   "key": "turn_on.imp_pl",
-   "form": "اشعلو",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.imp_pl",
-   "form": "شعّلو",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
-  },
-  {
-   "section": "verb",
    "key": "turn_on.req",
    "form": "تگدي لي",
    "hits": 0,
@@ -104,20 +39,6 @@
   },
   {
    "section": "verb",
-   "key": "turn_on.req",
-   "form": "تشعل لي",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on.req",
-   "form": "اتشعّل لي",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "verb",
    "key": "turn_on_device.imp_m",
    "form": "اگدي",
    "hits": 3,
@@ -125,48 +46,9 @@
   },
   {
    "section": "verb",
-   "key": "turn_on_device.imp_m",
-   "form": "شعّل",
-   "hits": 1,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.imp_m",
-   "form": "حلّ",
-   "hits": 14,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.imp_m",
-   "form": "دوّر",
-   "hits": 142,
-   "suggest": []
-  },
-  {
-   "section": "verb",
    "key": "turn_on_device.imp_f",
    "form": "اگدي",
    "hits": 3,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.imp_f",
-   "form": "شعّلي",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.imp_f",
-   "form": "دوّري",
-   "hits": 6,
    "suggest": []
   },
   {
@@ -182,33 +64,8 @@
   },
   {
    "section": "verb",
-   "key": "turn_on_device.imp_pl",
-   "form": "شعّلو",
-   "hits": 0,
-   "suggest": [
-    "شاعل",
-    "شعل",
-    "يشعل"
-   ]
-  },
-  {
-   "section": "verb",
    "key": "turn_on_device.req",
    "form": "تگدي لي",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.req",
-   "form": "اتشعّل لي",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "turn_on_device.req",
-   "form": "ادوّر لي",
    "hits": 0,
    "suggest": []
   },
@@ -382,24 +239,6 @@
   },
   {
    "section": "verb",
-   "key": "close.imp_m",
-   "form": "سكّر",
-   "hits": 3,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "close.imp_m",
-   "form": "سدّ",
-   "hits": 0,
-   "suggest": [
-    "سيدي",
-    "سيديا",
-    "سيد"
-   ]
-  },
-  {
-   "section": "verb",
    "key": "close.imp_f",
    "form": "اگفلي",
    "hits": 0,
@@ -411,17 +250,6 @@
   },
   {
    "section": "verb",
-   "key": "close.imp_f",
-   "form": "سكّري",
-   "hits": 0,
-   "suggest": [
-    "اسكير",
-    "سكور",
-    "سكوار"
-   ]
-  },
-  {
-   "section": "verb",
    "key": "close.imp_pl",
    "form": "اگفلو",
    "hits": 1,
@@ -429,22 +257,8 @@
   },
   {
    "section": "verb",
-   "key": "close.imp_pl",
-   "form": "سدّو",
-   "hits": 1,
-   "suggest": []
-  },
-  {
-   "section": "verb",
    "key": "close.req",
    "form": "تگفل لي",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "verb",
-   "key": "close.req",
-   "form": "تسكّر لي",
    "hits": 0,
    "suggest": []
   },

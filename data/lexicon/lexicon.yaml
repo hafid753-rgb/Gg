@@ -20,19 +20,21 @@ verbs:
   turn_on:
     en: turn on / light
     conf: high
-    imp_m: [اگدي, اشعل, شعّل, حلّ]     # corpus: "حگل اگدي الظو", "اگدي الراديو"
-    imp_f: [اگدي, اشعلي, شعّلي]
-    imp_pl: [اگدو, اشعلو, شعّلو]
-    req: [تگدي لي, تشعل لي, اتشعّل لي]
-    lat: [egdi, ach3el, cha33el, tegdi li]
+    imp_m: [اگدي]     # native speaker: only اگدي is natural; corpus: "حگل اگدي الظو"
+    imp_f: [اگدي]
+    imp_pl: [اگدو]
+    req: [تگدي لي]
+    accept: [اشعل, شعّل, حلّ, اشعلي, شعّلي]   # understood (HA matches them, ~10% of generated commands) but never produced
+    lat: [egdi, tegdi li]
   turn_on_device:   # for appliances: "open/start" the AC, the TV, the pump
     en: switch on (appliance)
     conf: high
-    imp_m: [اگدي, شعّل, حلّ, دوّر]     # corpus: "حگل اگدي تلفزة"
-    imp_f: [اگدي, شعّلي, دوّري]
-    imp_pl: [اگدو, شعّلو]
-    req: [تگدي لي, اتشعّل لي, ادوّر لي]
-    lat: [egdi, cha33el, dawwer]
+    imp_m: [اگدي]     # native speaker: only اگدي; corpus: "حگل اگدي تلفزة"
+    imp_f: [اگدي]
+    imp_pl: [اگدو]
+    req: [تگدي لي]
+    accept: [شعّل, حلّ, دوّر, اشعل]
+    lat: [egdi]
   turn_off:
     en: turn off / extinguish
     conf: high
@@ -52,11 +54,12 @@ verbs:
   close:
     en: close / lock
     conf: high   # corpus: "اگفل الباب حگل", "الباب ... مگفول"
-    imp_m: [اگفل, سكّر, سدّ]
-    imp_f: [اگفلي, سكّري]
-    imp_pl: [اگفلو, سدّو]
-    req: [تگفل لي, تسكّر لي]
-    lat: [egfel, sakker, sedd]
+    imp_m: [اگفل]     # native speaker: اگفل for doors, curtains and windows
+    imp_f: [اگفلي]
+    imp_pl: [اگفلو]
+    req: [تگفل لي]
+    accept: [سكّر, سدّ, سكّري, سدّو]
+    lat: [egfel]
   increase:
     en: increase / raise
     conf: high
