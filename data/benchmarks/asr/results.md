@@ -10,6 +10,8 @@ Scored with `scripts/hsn_score.py`, a reimplementation of MauriAI's documented s
 | zero_shot_qwen3_asr_1.7b (published predictions) | 29.1 | 66.7 | 31.1 | 72.9 | – |
 | zero_shot_cohere_transcribe_arabic (published predictions) | 44.0 | 68.7 | 46.7 | 76.1 | – |
 | zero_shot_qwen3_asr_0.6b (published predictions) | 34.2 | 74.6 | 35.5 | 77.9 | – |
+| ychafiqui/whisper-medium-darija *(Moroccan Darija, no Hassaniya training)* | 41.6 | 73.5 | 42.8 | 77.1 | 2.13 |
+| boumehdi/wav2vec2-large-xlsr-moroccan-darija *(Moroccan Darija)* | 35.4 | 83.1 | 37.2 | 85.7 | 0.14 |
 | hadramibegnoug/mms-hassaniya-asr | 33.6 | 84.2 | 38.1 | 87.4 | 0.26 |
 | tahermedsk/whisper-hassaniya | 47.2 | 91.6 | 48.7 | 94.7 | 0.38 |
 | hadramibegnoug/whisper-hassaniya-asr | 51.0 | 92.0 | 51.9 | 96.3 | 1.49 |
@@ -25,6 +27,7 @@ Scored with `scripts/hsn_score.py`, a reimplementation of MauriAI's documented s
 - Community models may have trained on overlapping broadcast sources; their training data is undocumented.
 
 ## Takeaways
+0. **Moroccan Darija is not a substitute for Hassaniya.** The pure Darija Whisper-medium gets 73.5% WER. Fine-tuning that same model on Hassaniya (DesertMindAI) brings it to 59.0%, and the Hassaniya-only medium model reaches 52.9%. A Darija base is a good *starting point* for training; it is not a model to use as-is.
 1. **The best open model today is `HamidAmeer/hassaniya-whisper-medium`: 52.9% WER, 21.6% CER, RTF 0.9 on 4 CPUs.** Use it as the STT starting point. Convert it to CTranslate2 int8 for `wyoming-faster-whisper`, which is typically 2–4× faster than PyTorch on CPU.
 2. Starting from a related dialect helps. DesertMindAI's model is based on a Moroccan Darija Whisper-medium and reaches 59.0% WER, ahead of every zero-shot model.
 3. The small community models (whisper-small, MMS) are fast but sit at 84–92% WER. Medium is the sensible size for Hassaniya, which matches findings on other Arabic dialects.
