@@ -2,7 +2,7 @@
  "corpus": "data/external/hassaniya_text_all.jsonl",
  "sentences": 16271,
  "tokens": 143526,
- "forms": 348,
+ "forms": 347,
  "attested": 183,
  "items": [
   {
@@ -1548,22 +1548,22 @@
   },
   {
    "section": "device",
-   "key": "fan:الفانتيلاتير",
+   "key": "fan:الفانتيلو",
+   "form": "الفانتيلو",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:الفانتيلو",
    "form": "الفانتيلاتير",
    "hits": 0,
    "suggest": []
   },
   {
    "section": "device",
-   "key": "fan:الفانتيلاتير",
+   "key": "fan:الفانتيلو",
    "form": "الفنتيلاتور",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "device",
-   "key": "fan:الفانتيلاتير",
-   "form": "الفانتيلو",
    "hits": 0,
    "suggest": []
   },
@@ -1702,13 +1702,6 @@
     "لشافو",
     "الشفا"
    ]
-  },
-  {
-   "section": "device",
-   "key": "switch:الشوفو",
-   "form": "سخّان الما",
-   "hits": 0,
-   "suggest": []
   },
   {
    "section": "device",

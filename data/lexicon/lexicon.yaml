@@ -217,8 +217,8 @@ devices:
   fan:
     domain: fan
     items:
-      - {ar: [المروحة, المروحه], lat: [marwa7a], g: f, conf: high}
-      - {ar: [الفانتيلاتير, الفنتيلاتور, الفانتيلو], lat: [ventilateur, ventilo], g: m, conf: high}
+      - {ar: [المروحة, المروحه], lat: [marwa7a], g: f, conf: high}   # confirmed
+      - {ar: [الفانتيلو, الفانتيلاتير, الفنتيلاتور], lat: [ventilo, ventilateur], g: m, conf: high}   # confirmed (all three)
   climate:
     domain: climate
     items:
@@ -234,7 +234,7 @@ devices:
     domain: switch
     items:
       - {ar: [البومبة, البومب, المضخّة], lat: [pompe, bomba], g: f, conf: high}       # water pump
-      - {ar: [الشوفو, الشوفّو, سخّان الما], lat: [chauffe-eau, chofo], g: m, conf: high} # water heater
+      - {ar: [الشوفو, الشوفّو], lat: [chauffe-eau, chofo], g: m, conf: high}   # native speaker: الشوفو (not سخّان الما) # water heater
       - {ar: [البرّاد الكهربائي, بولّوار], lat: [bouilloire], g: m, conf: low}           # kettle
       - {ar: [الفريجيدير, الفريجو, الثلّاجة], lat: [frigo, frigidaire], g: m, conf: med}
       - {ar: [الموتور, الجنراتور], lat: [moteur, groupe], g: m, conf: med}             # generator
@@ -242,7 +242,7 @@ devices:
   cover:
     domain: cover
     items:
-      - {ar: [الريدو, الريدوات, الستارة], lat: [rideau], g: m, conf: high}
+      - {ar: [الريدو, الريدوات, الستارة], lat: [rideau], g: m, conf: high}   # confirmed (all three)
       - {ar: [الطاگة, الشبّاك], lat: [taga, chebbak], g: f, conf: med}                # window
       - {ar: [باب الگاراج, الگاراج], lat: [bab el garage], g: m, conf: high}
       - {ar: [باب الحوش, الباب لكبير], lat: [bab lekbir], g: m, conf: med}
@@ -258,9 +258,9 @@ devices:
 
 # ------------------------------------------------------------- rooms / areas
 areas:
-  - {id: salon,    ar: [الصالون, صالون], lat: [salon], conf: high}
+  - {id: salon,    ar: [الصالون, صالون], lat: [salon], conf: high}   # confirmed
   - {id: bedroom,  ar: [بيت الرگاد, البيت], lat: [beyt er-gad, el-beyt], conf: high}   # confirmed: بيت الرگاد, البيت (not بيت النعاس / الشومبر)
-  - {id: kitchen,  ar: [الكوزينة, الكوزينه, المطبخ], lat: [cuisine, kouzina], conf: high}
+  - {id: kitchen,  ar: [الكوزينة, الكوزينه, المطبخ], lat: [cuisine, kouzina], conf: high}   # confirmed
   - {id: bathroom, ar: [بيت الما, الدوش, التواليت], lat: [beyt el ma, douche], conf: high}
   - {id: kids,     ar: [بيت الدراري, بيت الصغار], lat: [beyt ed-drari], conf: med}
   - {id: guest,    ar: [بيت الضياف, بيت الضيوف], lat: [beyt ed-dyaf], conf: med}

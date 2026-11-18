@@ -1,6 +1,6 @@
 # Lexicon evidence
 
-Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **183/348 lexicon forms (53%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
+Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **183/347 lexicon forms (53%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
 
 | Section | Entry | Form | Hits | Attested look-alikes (same consonants) |
 |---|---|---|---|---|
@@ -59,9 +59,9 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | device | cover:باب الحوش | الباب لكبير | 0 |  |
 | device | cover:باب الگاراج | باب الگاراج | 0 |  |
 | device | cover:باب الگاراج | الگاراج | 0 | لكراج، لكراج |
-| device | fan:الفانتيلاتير | الفانتيلاتير | 0 |  |
-| device | fan:الفانتيلاتير | الفنتيلاتور | 0 |  |
-| device | fan:الفانتيلاتير | الفانتيلو | 0 |  |
+| device | fan:الفانتيلو | الفانتيلو | 0 |  |
+| device | fan:الفانتيلو | الفانتيلاتير | 0 |  |
+| device | fan:الفانتيلو | الفنتيلاتور | 0 |  |
 | device | fan:المروحة | المروحة | 0 |  |
 | device | fan:المروحة | المروحه | 0 |  |
 | device | light:الثريّا | الثريّا | 3 |  |
@@ -90,7 +90,6 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | device | switch:البومبة | المضخّة | 0 |  |
 | device | switch:الشوفو | الشوفو | 0 | الشفا، لايشوفو، لشافو، الشفا |
 | device | switch:الشوفو | الشوفّو | 0 | الشفا، لايشوفو، لشافو، الشفا |
-| device | switch:الشوفو | سخّان الما | 0 |  |
 | device | switch:الفريجيدير | الفريجيدير | 0 |  |
 | device | switch:الفريجيدير | الفريجو | 0 | الفرج، الفرج |
 | device | switch:الفريجيدير | الثلّاجة | 0 |  |
