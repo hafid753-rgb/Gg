@@ -68,8 +68,9 @@ def number_values(lo=0, hi=100):
 
 def build() -> dict:
     R = {  # expansion rules
-        "pre": "[" + alt([f + "" for f in LEX["fillers"]["ar"]]) + "] [" + alt(LEX["wake_words"]["ar"]) + "] [" + alt(LEX["politeness"]["pre"]) + "]",
-        "post": "[" + alt(LEX["now"]["ar"]) + "] [" + alt(LEX["politeness"]["post"]) + "]",
+        "pre": "[" + alt([f + "" for f in LEX["fillers"]["ar"]]) + "] [" + alt(LEX["wake_words"]["ar"]) + "] [" + alt(LEX["politeness"]["pre"]) + "] [<soft>]",
+        "post": "[<soft>] [" + alt(LEX["now"]["ar"]) + "] [" + alt(LEX["politeness"]["post"]) + "] [<soft>]",
+        "soft": alt(LEX["softener"]["ar"]),
         "in": alt(LEX["in"]["ar"]),
         "loc": "<in> {hsn_area:area}",
         "all": alt(LEX["all"]["ar"]),
@@ -145,9 +146,9 @@ def build() -> dict:
     # ---- state queries
     for key in ["light", "fan", "climate", "media_player", "switch"]:
         dom = LEX["devices"][key]["domain"]
-        add("HassGetState", [f"[<is_it>] <d_{key}> [<loc>] (شاعل|شاعلة)",
-                             f"<v_check> <is_it> <d_{key}> [<loc>] (شاعل|شاعلة)",
-                             f"ش من <dc_{key}> (شاعل|شاعلة) [<loc>]"], {"domain": dom, "state": "on"})
+        add("HassGetState", [f"[<is_it>] <d_{key}> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة)",
+                             f"<v_check> <is_it> <d_{key}> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة)",
+                             f"ش من <dc_{key}> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>]"], {"domain": dom, "state": "on"})
     for st, words in (("open", "(مفتوح|مفتوحة|محلول|محلولة)"), ("closed", "(مگفول|مگفولة|مسدود|مسدودة)")):
         add("HassGetState", [f"[<is_it>] <d_cover> [<loc>] {words}", f"<v_check> <is_it> <d_cover> [<loc>] {words}"],
             {"domain": "cover", "state": st})
@@ -195,7 +196,7 @@ def build() -> dict:
     add_obj = alt([w + "ه" for w in LEX["verbs"]["add"]["imp_m"] + LEX["verbs"]["add"]["imp_f"] if " " not in w])
     add("HassShoppingListAddItem", ["<v_add> {hsn_item:item} (ل|ف) <list_word>",
                                     f"[ما ننساو] {{hsn_item:item}} {add_obj} ف <list_word>"], response="hsn_item")
-    add("HassGetState", ["[<is_it>] <d_vacuum> (شاعل|شاعلة|يخدم)"], {"domain": "vacuum", "state": "on"})
+    add("HassGetState", ["[<is_it>] <d_vacuum> (گادي|گادية|كادي|شاعل|شاعلة|يخدم)"], {"domain": "vacuum", "state": "on"})
     add("HassVacuumStart", ["<v_clean> (الدار|{hsn_area:area})", "خلّي الروبو (ينظّف|يشطّب)", "(حلّ|شعّل) الروبو"])
     add("HassVacuumReturnToBase", ["<v_return> الروبو (لبلاصتو|لامكانو|للشارجور)", "<v_return> المكنسة للشارجور",
                                    "خلّي الروبو يرجع لبلاصتو"])

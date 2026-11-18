@@ -28,7 +28,7 @@ light,turn_off,طفّي <device_name> حگل,2
 light,turn_off,نبغيك تطفي لي <device_name>,2
 light,toggle,بدّل <device_name>,1
 light,toggle,ردّ <device_name> للحالة الاخرى,1
-light,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+light,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 switch,turn_on,اگدي <device_name>,1
 switch,turn_on,حگل اگدي <device_name>,1
 switch,turn_on,شعّل <device_name>,1
@@ -58,7 +58,7 @@ switch,turn_off,طفّي <device_name> حگل,1
 switch,turn_off,نبغيك تطفي لي <device_name>,1
 switch,toggle,بدّل <device_name>,1
 switch,toggle,ردّ <device_name> للحالة الاخرى,1
-switch,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+switch,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 fan,turn_on,اگدي <device_name>,1
 fan,turn_on,حگل اگدي <device_name>,1
 fan,turn_on,شعّل <device_name>,1
@@ -88,7 +88,7 @@ fan,turn_off,طفّي <device_name> حگل,1
 fan,turn_off,نبغيك تطفي لي <device_name>,1
 fan,toggle,بدّل <device_name>,1
 fan,toggle,ردّ <device_name> للحالة الاخرى,1
-fan,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+fan,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 media_player,turn_on,اگدي <device_name>,1
 media_player,turn_on,حگل اگدي <device_name>,1
 media_player,turn_on,شعّل <device_name>,1
@@ -118,7 +118,7 @@ media_player,turn_off,طفّي <device_name> حگل,1
 media_player,turn_off,نبغيك تطفي لي <device_name>,1
 media_player,toggle,بدّل <device_name>,1
 media_player,toggle,ردّ <device_name> للحالة الاخرى,1
-media_player,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+media_player,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان گادي,1
 light,turn_on,دير <device_name> ف <brightness>%,2
 light,turn_on,ردّ <device_name> ف <brightness>%,2
 light,turn_on,اعدل <device_name> ف <brightness>%,2

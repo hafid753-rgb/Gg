@@ -163,8 +163,8 @@ want_subj:  # subjunctive 2sg after "I want you to ..." -> uses `req` forms
   conf: high
 
 politeness:
-  pre: [حگل, الله يخليك, بالله, اعليك الله]
-  post: [حگل, الله يخليك, الله يجازيك بالخير, الله يحفظك]
+  pre: [الله يخليك, بالله, اعليك الله]   # حگل handled separately (softener)
+  post: [الله يخليك, الله يجازيك بالخير, الله يحفظك]
   conf: high   # corpus: حگل 73, يحفظك 365, يجازيك 32, يخليك 16; اعفاك 0 (Moroccan) removed
 fillers:     # disfluencies real speakers produce before a command
   ar: [ايوه, اسمع, هيه, يا اخي, اشوف, اعگب, آآ]
@@ -219,8 +219,8 @@ devices:
   climate:
     domain: climate
     items:
-      - {ar: [الكليم, الكليماتيزور, الكليماتيزير], lat: [klim, climatiseur], g: m, conf: high}
-      - {ar: [المكيّف], lat: [mukayyif], g: m, conf: med}
+      - {ar: [الكليم, الكليماتيزور], lat: [klim, climatiseur], g: m, conf: high}   # confirmed by native speaker
+      - {ar: [المكيّف], lat: [mukayyif], g: m, conf: high}   # confirmed by native speaker
   media_player:
     domain: media_player
     items:
@@ -256,7 +256,7 @@ devices:
 # ------------------------------------------------------------- rooms / areas
 areas:
   - {id: salon,    ar: [الصالون, صالون], lat: [salon], conf: high}
-  - {id: bedroom,  ar: [بيت الرگاد, بيت النعاس, الشومبر], lat: [beyt er-gad, chambre], conf: med}
+  - {id: bedroom,  ar: [بيت الرگاد, البيت], lat: [beyt er-gad, el-beyt], conf: high}   # confirmed: بيت الرگاد, البيت (not بيت النعاس / الشومبر)
   - {id: kitchen,  ar: [الكوزينة, الكوزينه, المطبخ], lat: [cuisine, kouzina], conf: high}
   - {id: bathroom, ar: [بيت الما, الدوش, التواليت], lat: [beyt el ma, douche], conf: high}
   - {id: kids,     ar: [بيت الدراري, بيت الصغار], lat: [beyt ed-drari], conf: med}

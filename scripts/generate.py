@@ -71,7 +71,12 @@ def wrap(core: str, rng: random.Random, question: bool = False) -> str:
         parts.append(pick(LEX["wake_words"]["ar"], rng) + "،")
     if rng.random() < 0.08:
         parts.append(pick(LEX["politeness"]["pre"], rng))
+    soft = rng.random() < 0.15 and not question  # حگل: confirmed very natural, before or after the command
+    if soft and rng.random() < 0.5:
+        parts.append("حگل")
     parts.append(core)
+    if soft and "حگل" not in parts:
+        parts.append("حگل")
     if rng.random() < 0.10 and not question:
         parts.append(pick(LEX["now"]["ar"], rng))
     if rng.random() < 0.10:
@@ -260,6 +265,8 @@ def utt_get_state(dev: Dev, area, rng) -> Utt:
     d = pick(dev.item["ar"], rng)
     loc = f" {in_area(area, rng)}" if area else ""
     p = pp(st, dev.g)
+    if st == "on" and rng.random() < 0.25:  # شاعل is also understood; گادي is the preferred form
+        p = "شاعلة" if dev.g == "f" else "شاعل"
     if rng.random() < 0.25 and dev.key in ("light", "fan", "switch"):
         core = f"ش من {strip_al(d)} {p}{loc}"
         tid = "which"
@@ -812,7 +819,7 @@ def sft_light_set(home, rng):
         u = utt_relative_light(dev, area, rng, up)
         cur = e["attrs"].get("brightness", 0) if e["state"] == "on" else 0
         if not up and cur == 0:
-            return conv(home, u.text, [], f"{e['name']} طافي من گبيل، ما نگدر ننگّصو."), u
+            return conv(home, u.text, [], f"{e['name']} مطفي من گبيل، ما نگدر ننگّصو."), u
         new = max(5, min(100, cur + u.meta["step"]))
         if new == cur:
             return conv(home, u.text, [], f"{e['name']} ف {cur}% ذ هو الحدّ."), u
@@ -848,7 +855,7 @@ def sft_climate(home, rng):
         res = json.dumps({"response_type": "query_answer", "data": {"success": [{"name": e["name"], "id": e["entity_id"]}],
                           "current_temperature": cur, "target_temperature": e["attrs"]["temperature"], "state": e["state"]}},
                          ensure_ascii=False)
-        extra = " الكليم طافي، تبغي نشعلو؟" if e["state"] == "off" and cur >= 30 else ""
+        extra = " الكليم مطفي، تبغي نگديه؟" if e["state"] == "off" and cur >= 30 else ""
         return conv(home, u.text, [("HassClimateGetTemperature", {"area": area["ar"][0]} if use_area else {"name": e["name"]}, res)],
                     f"السخانة {('ف ' + area['ar'][0]) if use_area else 'ف الدار'} ظرك {cur} درجة.{extra}"), u
     if mode == "hot":
@@ -857,14 +864,14 @@ def sft_climate(home, rng):
             e["state"] = "cool"
             return conv(home, u.text, [("HassTurnOn", {"name": e["name"]}, tool_result([e]))],
                         pick([f"شعّلت {e['name']} على {e['attrs']['temperature']} درجة، شوي وتبرد الدار.",
-                              f"اهيه، {e['name']} شاعل ظرك. السخانة ف {area['ar'][0]} {e['attrs']['current_temperature']} درجة."], rng)), u
+                              f"اهيه، {e['name']} گادي ظرك. السخانة ف {area['ar'][0]} {e['attrs']['current_temperature']} درجة."], rng)), u
         new = max(16, e["attrs"]["temperature"] - 2)
         old, e["attrs"]["temperature"] = e["attrs"]["temperature"], new
         return conv(home, u.text, [("HassClimateSetTemperature", {"name": e["name"], "temperature": new}, tool_result([e]))],
-                    f"{e['name']} شاعل من گبيل، نگّصتو من {old} ل {new} درجة."), u
+                    f"{e['name']} گادي من گبيل، نگّصتو من {old} ل {new} درجة."), u
     u = utt_implicit("cold", area if rng.random() < 0.5 else None, rng)
     if e["state"] == "off":
-        return conv(home, u.text, [], f"{e['name']} طافي من گبيل. السخانة ظرك {e['attrs']['current_temperature']} درجة. تبغي نسكّر الطاگة؟"), u
+        return conv(home, u.text, [], f"{e['name']} مطفي من گبيل. السخانة ظرك {e['attrs']['current_temperature']} درجة. تبغي نسكّر الطاگة؟"), u
     e["state"] = "off"
     return conv(home, u.text, [("HassTurnOff", {"name": e["name"]}, tool_result([e]))], f"طفّيت {e['name']}، باش تسخن الدار شوي."), u
 
@@ -888,7 +895,7 @@ def sft_state(home, rng):
         rep = pick([f"ايّه، {e['name']} {pp(st, e['g'])}.", f"ايّه، راهو {pp(st, e['g'])}."], rng)
     else:
         opp = {"on": "off", "open": "closed", "closed": "open", "locked": "unlocked", "unlocked": "locked"}[st]
-        offer = {"on": "تبغي نشعلو؟", "open": "تبغي نحلّو؟", "closed": "تبغي نسدّو؟", "locked": "تبغي نغلگو؟", "unlocked": "تبغي نحلّو؟"}[st]
+        offer = {"on": "تبغي نگديه؟", "open": "تبغي نحلّو؟", "closed": "تبغي نسدّو؟", "locked": "تبغي نغلگو؟", "unlocked": "تبغي نحلّو؟"}[st]
         rep = f"لا، {e['name']} {pp(opp, e['g'])}. {offer}"
     return conv(home, u.text, [("HassGetState", {"name": e["name"], "state": st}, res)], rep), u
 
@@ -1025,7 +1032,7 @@ def sft_routine(home, rng):
             calls.append(("HassTurnOn", {"name": locks[0]["name"]}, tool_result(locks)))
             done.append(f"غلگت {locks[0]['name']}")
         if not calls:
-            return conv(home, u.text, [], "كلّ شي طافي ومغلوگ من گبيل. " + ("تصبح على خير." if kind == "sleep" else "طريق السلامة.")), u
+            return conv(home, u.text, [], "كلّ شي مطفي ومگفول من گبيل. " + ("تصبح على خير." if kind == "sleep" else "طريق السلامة.")), u
         bye = "تصبح على خير." if kind == "sleep" else "طريق السلامة، الله يحفظك."
         return conv(home, u.text, calls, "، و".join(done) + ". " + bye), u
     if kind in ("arrive", "dark"):
@@ -1053,7 +1060,7 @@ def sft_routine(home, rng):
     if not pump:
         return conv(home, u.text, [], "ما عندك بومبة مربوطة ب الدار. شوف روبيني الشارع."), u
     if pump[0]["state"] == "on":
-        return conv(home, u.text, [], f"{pump[0]['name']} شاعلة من گبيل. يمكن الما مگطوع من البرّا."), u
+        return conv(home, u.text, [], f"{pump[0]['name']} گادية من گبيل. يمكن الما مگطوع من البرّا."), u
     apply_state(pump, "on")
     return conv(home, u.text, [("HassTurnOn", {"name": pump[0]["name"]}, tool_result(pump))], f"شعّلت {pump[0]['name']}، الما لاهي يطلع."), u
 

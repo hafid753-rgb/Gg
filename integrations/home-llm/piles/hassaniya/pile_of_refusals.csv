@@ -5,7 +5,7 @@ not_available,fan.turn_on,marwaha_el_khayma,مروحة الخيمة,,اگدي <d
 not_available,climate.set_temperature,klim_el_hawch,كليم الحوش,,طفّي <device_name>,ما لگيت حتى كليم الحوش ف الدار.
 not_available,switch.turn_on,pompe_es_stah,بومبة السطح,,اگدي <device_name>,ما لگيت حتى بومبة السطح ف الدار.
 not_available,blinds.open_cover,rideau_el_bureau,ريدو البيرو,,افتح <device_name>,ما لگيت حتى ريدو البيرو ف الدار.
-already_state,light.turn_on,dhaw_es_salon,ظو الصالون,on,اگدي <device_name>,ظو الصالون شاعل من گبيل.
-already_state,light.turn_off,dhaw_el_kouzina,ظو الكوزينة,off,طفّي <device_name>,ظو الكوزينة طافي من گبيل.
+already_state,light.turn_on,dhaw_es_salon,ظو الصالون,on,اگدي <device_name>,ظو الصالون گادي من گبيل.
+already_state,light.turn_off,dhaw_el_kouzina,ظو الكوزينة,off,طفّي <device_name>,ظو الكوزينة مطفي من گبيل.
 already_state,lock.lock,bab_ed_dar,باب الدار,locked,اگفل <device_name>,باب الدار مگفول من گبيل.
-already_state,switch.turn_off,chauffe_eau,شوفو بيت الما,off,طفّي <device_name>,شوفو بيت الما طافي من گبيل.
+already_state,switch.turn_off,chauffe_eau,شوفو بيت الما,off,طفّي <device_name>,شوفو بيت الما مطفي من گبيل.

@@ -2,8 +2,8 @@
  "corpus": "data/external/hassaniya_text_all.jsonl",
  "sentences": 16271,
  "tokens": 143526,
- "forms": 374,
- "attested": 193,
+ "forms": 370,
+ "attested": 192,
  "items": [
   {
    "section": "verb",
@@ -1623,13 +1623,6 @@
   {
    "section": "politeness",
    "key": "pre",
-   "form": "حگل",
-   "hits": 73,
-   "suggest": []
-  },
-  {
-   "section": "politeness",
-   "key": "pre",
    "form": "الله يخليك",
    "hits": 1,
    "suggest": []
@@ -1646,13 +1639,6 @@
    "key": "pre",
    "form": "اعليك الله",
    "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "politeness",
-   "key": "post",
-   "form": "حگل",
-   "hits": 73,
    "suggest": []
   },
   {
@@ -1783,13 +1769,6 @@
    "section": "device",
    "key": "climate:الكليم",
    "form": "الكليماتيزور",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "device",
-   "key": "climate:الكليم",
-   "form": "الكليماتيزير",
    "hits": 0,
    "suggest": []
   },
@@ -2152,15 +2131,8 @@
   {
    "section": "area",
    "key": "bedroom",
-   "form": "بيت النعاس",
-   "hits": 0,
-   "suggest": []
-  },
-  {
-   "section": "area",
-   "key": "bedroom",
-   "form": "الشومبر",
-   "hits": 0,
+   "form": "البيت",
+   "hits": 40,
    "suggest": []
   },
   {

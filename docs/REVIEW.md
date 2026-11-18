@@ -45,4 +45,6 @@ Sample 100 NLU rows. For each, judge whether a real person would say it, and whe
 ## Review log
 | Date | Reviewer (id) | Region | Pass | Changes |
 |---|---|---|---|---|
+| 2026-11-18 | repo owner | – | 1 | "on" state: گادي / گادية preferred over شاعل (both correct). Replies now use گادي; شاعل kept as an understood user variant. |
+| 2026-11-18 | repo owner | – | 1 | "off" state: مطفي / مطفية preferred, طافي understood. AC: الكليم, الكليماتيزور, المكيّف confirmed. Bedroom: بيت الرگاد, البيت (removed بيت النعاس, الشومبر). حگل confirmed very natural before or after a command (now in ~14% of commands). |
 | | | | | |

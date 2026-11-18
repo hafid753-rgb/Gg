@@ -152,37 +152,37 @@ intents:
   HassGetState:
     data:
     - sentences:
-      - <pre> [<is_it>] <d_light> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> <v_check> <is_it> <d_light> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> ش من <dc_light> (شاعل|شاعلة) [<loc>] <post>
+      - <pre> [<is_it>] <d_light> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> <v_check> <is_it> <d_light> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> ش من <dc_light> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>] <post>
       slots:
         domain: light
         state: 'on'
     - sentences:
-      - <pre> [<is_it>] <d_fan> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> <v_check> <is_it> <d_fan> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> ش من <dc_fan> (شاعل|شاعلة) [<loc>] <post>
+      - <pre> [<is_it>] <d_fan> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> <v_check> <is_it> <d_fan> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> ش من <dc_fan> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>] <post>
       slots:
         domain: fan
         state: 'on'
     - sentences:
-      - <pre> [<is_it>] <d_climate> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> <v_check> <is_it> <d_climate> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> ش من <dc_climate> (شاعل|شاعلة) [<loc>] <post>
+      - <pre> [<is_it>] <d_climate> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> <v_check> <is_it> <d_climate> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> ش من <dc_climate> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>] <post>
       slots:
         domain: climate
         state: 'on'
     - sentences:
-      - <pre> [<is_it>] <d_media_player> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> <v_check> <is_it> <d_media_player> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> ش من <dc_media_player> (شاعل|شاعلة) [<loc>] <post>
+      - <pre> [<is_it>] <d_media_player> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> <v_check> <is_it> <d_media_player> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> ش من <dc_media_player> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>] <post>
       slots:
         domain: media_player
         state: 'on'
     - sentences:
-      - <pre> [<is_it>] <d_switch> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> <v_check> <is_it> <d_switch> [<loc>] (شاعل|شاعلة) <post>
-      - <pre> ش من <dc_switch> (شاعل|شاعلة) [<loc>] <post>
+      - <pre> [<is_it>] <d_switch> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> <v_check> <is_it> <d_switch> [<loc>] (گادي|گادية|كادي|شاعل|شاعلة) <post>
+      - <pre> ش من <dc_switch> (گادي|گادية|كادي|شاعل|شاعلة) [<loc>] <post>
       slots:
         domain: switch
         state: 'on'
@@ -211,7 +211,7 @@ intents:
         domain: lock
         state: unlocked
     - sentences:
-      - <pre> [<is_it>] <d_vacuum> (شاعل|شاعلة|يخدم) <post>
+      - <pre> [<is_it>] <d_vacuum> (گادي|گادية|كادي|شاعل|شاعلة|يخدم) <post>
       slots:
         domain: vacuum
         state: 'on'
@@ -439,9 +439,7 @@ lists:
       out: الصالون
     - in: بيت الرگاد
       out: بيت الرگاد
-    - in: بيت النعاس
-      out: بيت الرگاد
-    - in: الشومبر
+    - in: البيت
       out: بيت الرگاد
     - in: الكوزينة
       out: الكوزينة
@@ -531,9 +529,9 @@ lists:
       out: 1
     - in: اثنين
       out: 2
-    - in: زوز
-      out: 2
     - in: ثنين
+      out: 2
+    - in: زوز
       out: 2
     - in: ثلاثة
       out: 3
@@ -543,15 +541,15 @@ lists:
       out: 4
     - in: خمسة
       out: 5
-    - in: ستة
-      out: 6
     - in: ستّة
+      out: 6
+    - in: ستة
       out: 6
     - in: سبعة
       out: 7
-    - in: اثمانية
-      out: 8
     - in: ثمانية
+      out: 8
+    - in: اثمانية
       out: 8
     - in: تسعة
       out: 9
@@ -567,23 +565,23 @@ lists:
       out: 14
     - in: خمسطاعش
       out: 15
+    - in: seize
+      out: 16
     - in: سطاعش
       out: 16
     - in: سطّاعش
       out: 16
-    - in: seize
-      out: 16
     - in: سبعطاعش
       out: 17
-    - in: اثمنطاعش
-      out: 18
     - in: dix-huit
+      out: 18
+    - in: اثمنطاعش
       out: 18
     - in: تسعطاعش
       out: 19
-    - in: عشرين
-      out: 20
     - in: vingt
+      out: 20
+    - in: عشرين
       out: 20
     - in: واحد وعشرين
       out: 21
@@ -593,17 +591,17 @@ lists:
       out: 22
     - in: اثلاثة وعشرين
       out: 23
-    - in: اربعة وعشرين
-      out: 24
     - in: vingt-quatre
       out: 24
-    - in: خمسة وعشرين
-      out: 25
+    - in: اربعة وعشرين
+      out: 24
     - in: vingt-cinq
       out: 25
-    - in: ستة وعشرين
-      out: 26
+    - in: خمسة وعشرين
+      out: 25
     - in: ستّة وعشرين
+      out: 26
+    - in: ستة وعشرين
       out: 26
     - in: vingt-six
       out: 26
@@ -621,21 +619,21 @@ lists:
       out: 31
     - in: اثنين واثلاثين
       out: 32
-    - in: زوز واثلاثين
-      out: 32
     - in: ثنين واثلاثين
       out: 32
-    - in: ثلاثة واثلاثين
-      out: 33
+    - in: زوز واثلاثين
+      out: 32
     - in: اثلاثة واثلاثين
+      out: 33
+    - in: ثلاثة واثلاثين
       out: 33
     - in: اربعة واثلاثين
       out: 34
     - in: خمسة واثلاثين
       out: 35
-    - in: ستة واثلاثين
-      out: 36
     - in: ستّة واثلاثين
+      out: 36
+    - in: ستة واثلاثين
       out: 36
     - in: سبعة واثلاثين
       out: 37
@@ -669,27 +667,27 @@ lists:
       out: 46
     - in: سبعة واربعين
       out: 47
-    - in: اثمانية واربعين
-      out: 48
     - in: ثمانية واربعين
+      out: 48
+    - in: اثمانية واربعين
       out: 48
     - in: تسعة واربعين
       out: 49
-    - in: cinquante
-      out: 50
     - in: خمسين
+      out: 50
+    - in: cinquante
       out: 50
     - in: واحد وخمسين
       out: 51
-    - in: اثنين وخمسين
+    - in: زوز وخمسين
       out: 52
     - in: ثنين وخمسين
       out: 52
-    - in: زوز وخمسين
+    - in: اثنين وخمسين
       out: 52
-    - in: اثلاثة وخمسين
-      out: 53
     - in: ثلاثة وخمسين
+      out: 53
+    - in: اثلاثة وخمسين
       out: 53
     - in: اربعة وخمسين
       out: 54
@@ -707,61 +705,61 @@ lists:
       out: 58
     - in: تسعة وخمسين
       out: 59
-    - in: ستين
-      out: 60
     - in: ستّين
+      out: 60
+    - in: ستين
       out: 60
     - in: واحد وستّين
       out: 61
     - in: واحد وستين
       out: 61
-    - in: اثنين وستّين
-      out: 62
-    - in: اثنين وستين
-      out: 62
-    - in: ثنين وستّين
-      out: 62
-    - in: ثنين وستين
+    - in: زوز وستّين
       out: 62
     - in: زوز وستين
       out: 62
-    - in: زوز وستّين
+    - in: ثنين وستين
       out: 62
-    - in: ثلاثة وستّين
-      out: 63
-    - in: ثلاثة وستين
-      out: 63
+    - in: ثنين وستّين
+      out: 62
+    - in: اثنين وستين
+      out: 62
+    - in: اثنين وستّين
+      out: 62
     - in: اثلاثة وستين
       out: 63
     - in: اثلاثة وستّين
       out: 63
-    - in: اربعة وستين
-      out: 64
+    - in: ثلاثة وستّين
+      out: 63
+    - in: ثلاثة وستين
+      out: 63
     - in: اربعة وستّين
       out: 64
-    - in: خمسة وستّين
-      out: 65
+    - in: اربعة وستين
+      out: 64
     - in: خمسة وستين
       out: 65
-    - in: ستّة وستّين
-      out: 66
+    - in: خمسة وستّين
+      out: 65
     - in: ستة وستين
       out: 66
-    - in: سبعة وستّين
-      out: 67
+    - in: ستّة وستّين
+      out: 66
     - in: سبعة وستين
       out: 67
-    - in: ثمانية وستّين
-      out: 68
-    - in: ثمانية وستين
+    - in: سبعة وستّين
+      out: 67
+    - in: اثمانية وستّين
       out: 68
     - in: اثمانية وستين
       out: 68
-    - in: اثمانية وستّين
+    - in: ثمانية وستين
       out: 68
-    - in: تسعة وستّين
-      out: 69
+    - in: ثمانية وستّين
+      out: 68
     - in: تسعة وستين
+      out: 69
+    - in: تسعة وستّين
       out: 69
     - in: سبعين
       out: 70
@@ -817,9 +815,9 @@ lists:
       out: 86
     - in: سبعة واثمانين
       out: 87
-    - in: ثمانية واثمانين
-      out: 88
     - in: اثمانية واثمانين
+      out: 88
+    - in: ثمانية واثمانين
       out: 88
     - in: تسعة واثمانين
       out: 89
@@ -833,33 +831,33 @@ lists:
       out: 92
     - in: ثنين وتسعين
       out: 92
-    - in: ثلاثة وتسعين
-      out: 93
     - in: اثلاثة وتسعين
+      out: 93
+    - in: ثلاثة وتسعين
       out: 93
     - in: اربعة وتسعين
       out: 94
     - in: خمسة وتسعين
       out: 95
-    - in: ستّة وتسعين
-      out: 96
     - in: ستة وتسعين
+      out: 96
+    - in: ستّة وتسعين
       out: 96
     - in: سبعة وتسعين
       out: 97
-    - in: اثمانية وتسعين
-      out: 98
     - in: ثمانية وتسعين
+      out: 98
+    - in: اثمانية وتسعين
       out: 98
     - in: تسعة وتسعين
       out: 99
+    - in: cent
+      out: 100
     - in: مية
       out: 100
     - in: مية
       out: 100
     - in: ميّة
-      out: 100
-    - in: cent
       out: 100
   hsn_digits:
     range:
@@ -904,8 +902,9 @@ lists:
   hsn_item:
     wildcard: true
 expansion_rules:
-  pre: '[(ايوه|اسمع|هيه|يا اخي|اشوف|اعگب|آآ)] [(يا دار|يا داري|يا مساعد)] [(حگل|الله يخليك|بالله|اعليك الله)]'
-  post: '[(ظرك|ذرك|دُرك|درك)] [(حگل|الله يخليك|الله يجازيك بالخير|الله يحفظك)]'
+  pre: '[(ايوه|اسمع|هيه|يا اخي|اشوف|اعگب|آآ)] [(يا دار|يا داري|يا مساعد)] [(الله يخليك|بالله|اعليك الله)] [<soft>]'
+  post: '[<soft>] [(ظرك|ذرك|دُرك|درك)] [(الله يخليك|الله يجازيك بالخير|الله يحفظك)] [<soft>]'
+  soft: (حگل)
   in: (ف|في|اف)
   loc: <in> {hsn_area:area}
   all: (گاع|كامل|ذو گاع)
@@ -941,8 +940,8 @@ expansion_rules:
   dc_light: (ظو|ضو|ضوّ|لامبة|لامبه|نور|ثريّا|ثريا)
   d_fan: (المروحة|المروحه|الفانتيلاتير|الفنتيلاتور|الفانتيلو)
   dc_fan: (مروحة|مروحه|فانتيلاتير|فنتيلاتور|فانتيلو)
-  d_climate: (الكليم|الكليماتيزور|الكليماتيزير|المكيّف|المكيف)
-  dc_climate: (كليم|كليماتيزور|كليماتيزير|مكيّف|مكيف)
+  d_climate: (الكليم|الكليماتيزور|المكيّف|المكيف)
+  dc_climate: (كليم|كليماتيزور|مكيّف|مكيف)
   d_media_player: (التلفزة|التلفزيون|التيلي|الراديو|السبيكر|لوباف|البافل)
   dc_media_player: (تلفزة|تلفزيون|تيلي|راديو|سبيكر|بافل)
   d_switch: (البومبة|البومب|المضخّة|المضخة|الشوفو|الشوفّو|سخّان الما|سخان الما|البرّاد الكهربائي|البراد الكهربائي|بولّوار|بولوار|الفريجيدير|الفريجو|الثلّاجة|الثلاجة|الموتور|الجنراتور|الپريز|البريز)
@@ -956,11 +955,11 @@ expansion_rules:
 responses:
   intents:
     HassTurnOn:
-      hsn_on: اهيه، گدّيتو.
       hsn_lock: اهيه، گفلت الباب.
+      hsn_on: اهيه، گدّيتو.
     HassTurnOff:
-      hsn_off: اهيه، طفّيتو.
       hsn_unlock: اهيه، فتحت الباب.
+      hsn_off: اهيه، طفّيتو.
     HassLightSet:
       hsn_set: اهيه، عدلتو.
     HassClimateSetTemperature:

@@ -89,7 +89,7 @@ def templated():
         add(dt, "turn_off", [f"{s}{v} <device_name>" for v in off for s in ("", "حگل ")] +
             [f"{v} <device_name> حگل" for v in off[:1]] + [f"نبغيك {V['turn_off']['req'][0]} <device_name>"],
             2 if dt == "light" else 1)
-        add(dt, "toggle", ["بدّل <device_name>", "ردّ <device_name> للحالة الاخرى", "<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل"])
+        add(dt, "toggle", ["بدّل <device_name>", "ردّ <device_name> للحالة الاخرى", "<device_name>، اگديه الا كان طافي واطفيه الا كان گادي"])
     add("light", "turn_on", [f"{v} <device_name> ف <brightness>%" for v in ["دير", "ردّ", "اعدل"]] +
         ["<device_name> <brightness> فالمية", "حگل دير <device_name> على <brightness> فالمية"], 2)
     add("light", "turn_on", [f"{v} <device_name> <color>" for v in ["دير", "ردّ", "اعدل"]] +
@@ -135,9 +135,9 @@ def templated():
 
 # --------------------------------------------------------------- responses
 RESP = {  # service: (starting, confirmed) variants; <vars> must match the template's vars
-    "light.turn_on": [("اهيه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("زين، نگدي <device_name> ظرك.", "<device_name> شاعل ظرك."),
+    "light.turn_on": [("اهيه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("زين، نگدي <device_name> ظرك.", "<device_name> گادي ظرك."),
                       ("ايوه، هاني نگدي <device_name>.", "گدّيت <device_name>.")],
-    "light.turn_off": [("اهيه، لاهي نطفّي <device_name>.", "طفّيت <device_name>."), ("زين، نطفّي <device_name> ظرك.", "<device_name> طافي ظرك.")],
+    "light.turn_off": [("اهيه، لاهي نطفّي <device_name>.", "طفّيت <device_name>."), ("زين، نطفّي <device_name> ظرك.", "<device_name> مطفي ظرك.")],
     "light.toggle": [("اهيه، نبدّل <device_name>.", "بدّلت <device_name>.")],
     "switch.turn_on": [("اهيه، لاهي نگدي <device_name>.", "گدّيت <device_name>."), ("زين، نشعّل <device_name>.", "شعّلت <device_name>.")],
     "switch.turn_off": [("اهيه، لاهي نطفّي <device_name>.", "طفّيت <device_name>.")],
@@ -202,13 +202,13 @@ def status():
     S = []
     for dt in ("light", "fan", "switch", "media_player"):
         S += [{"device_type": dt, "state": "on", "phrase": p, "assistant_response": r} for p, r in [
-            ("ياك <device_name> شاعل؟", "اهيه، <device_name> شاعل ظرك."), ("<device_name> شاعل ولّا طافي؟", "<device_name> شاعل."),
-            ("شوف لي <device_name>", "<device_name> شاعل ظرك."), ("<device_name> كيف حالو؟", "<device_name> شاعل.")]]
+            ("ياك <device_name> گادي؟", "اهيه، <device_name> گادي ظرك."), ("<device_name> گادي ولّا طافي؟", "<device_name> گادي."), ("<device_name> گادي ولّا مطفي؟", "<device_name> گادي."),
+            ("شوف لي <device_name>", "<device_name> گادي ظرك."), ("<device_name> كيف حالو؟", "<device_name> گادي.")]]
         S += [{"device_type": dt, "state": "off", "phrase": p, "assistant_response": r} for p, r in [
-            ("ياك <device_name> شاعل؟", "لا، <device_name> طافي."), ("<device_name> شاعل ولّا طافي؟", "<device_name> طافي."),
-            ("شوف لي <device_name>", "<device_name> طافي ظرك.")]]
+            ("ياك <device_name> گادي؟", "لا، <device_name> مطفي."), ("<device_name> گادي ولّا طافي؟", "<device_name> مطفي."),
+            ("شوف لي <device_name>", "<device_name> مطفي ظرك.")]]
     S += [{"device_type": "light", "state": "on;<color>;<brightness>", "phrase": "<device_name> كيف حالو؟",
-           "assistant_response": "<device_name> شاعل، لونو <color> وف <brightness>%."}]
+           "assistant_response": "<device_name> گادي، لونو <color> وف <brightness>%."}]
     for dt in ("blinds", "garage_door"):
         S += [{"device_type": dt, "state": "open", "phrase": p, "assistant_response": r} for p, r in [
             ("<device_name> مفتوح؟", "اهيه، <device_name> مفتوح."), ("شوف لي <device_name>", "<device_name> مفتوح ظرك.")]]
@@ -236,10 +236,10 @@ def refusals():
                                  ("blinds.open_cover", "rideau_el_bureau", "ريدو البيرو", "افتح <device_name>")]:
         rows.append({"reason_type": "not_available", "service_name": svc, "device_name": dev, "friendly_name": fn, "desired_state": "",
                      "phrase": phrase, "response": f"ما لگيت حتى {fn} ف الدار."})
-    for svc, dev, fn, st, phrase, resp in [("light.turn_on", "dhaw_es_salon", "ظو الصالون", "on", "اگدي <device_name>", "ظو الصالون شاعل من گبيل."),
-                                           ("light.turn_off", "dhaw_el_kouzina", "ظو الكوزينة", "off", "طفّي <device_name>", "ظو الكوزينة طافي من گبيل."),
+    for svc, dev, fn, st, phrase, resp in [("light.turn_on", "dhaw_es_salon", "ظو الصالون", "on", "اگدي <device_name>", "ظو الصالون گادي من گبيل."),
+                                           ("light.turn_off", "dhaw_el_kouzina", "ظو الكوزينة", "off", "طفّي <device_name>", "ظو الكوزينة مطفي من گبيل."),
                                            ("lock.lock", "bab_ed_dar", "باب الدار", "locked", "اگفل <device_name>", "باب الدار مگفول من گبيل."),
-                                           ("switch.turn_off", "chauffe_eau", "شوفو بيت الما", "off", "طفّي <device_name>", "شوفو بيت الما طافي من گبيل.")]:
+                                           ("switch.turn_off", "chauffe_eau", "شوفو بيت الما", "off", "طفّي <device_name>", "شوفو بيت الما مطفي من گبيل.")]:
         rows.append({"reason_type": "already_state", "service_name": svc, "device_name": dev, "friendly_name": fn, "desired_state": st,
                      "phrase": phrase, "response": resp})
     return rows

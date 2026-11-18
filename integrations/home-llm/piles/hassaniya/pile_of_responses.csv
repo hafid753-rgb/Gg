@@ -1,14 +1,14 @@
 service,response_starting,response_confirmed,persona,short
 light.turn_on,اهيه، لاهي نگدي <device_name>.,گدّيت <device_name>.,assistant,0
 light.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,1
-light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> شاعل ظرك.,assistant,0
-light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> شاعل ظرك.,assistant,1
+light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> گادي ظرك.,assistant,0
+light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> گادي ظرك.,assistant,1
 light.turn_on,ايوه، هاني نگدي <device_name>.,گدّيت <device_name>.,assistant,0
 light.turn_on,ايوه، هاني نگدي <device_name>.,گدّيت <device_name>.,assistant,1
 light.turn_off,اهيه، لاهي نطفّي <device_name>.,طفّيت <device_name>.,assistant,0
 light.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,1
-light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> طافي ظرك.,assistant,0
-light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> طافي ظرك.,assistant,1
+light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> مطفي ظرك.,assistant,0
+light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> مطفي ظرك.,assistant,1
 light.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
 light.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
 switch.turn_on,اهيه، لاهي نگدي <device_name>.,گدّيت <device_name>.,assistant,0

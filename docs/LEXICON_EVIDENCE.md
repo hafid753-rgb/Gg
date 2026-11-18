@@ -1,15 +1,14 @@
 # Lexicon evidence
 
-Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **193/374 lexicon forms (52%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
+Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `data/corpus/SOURCES.md`. **192/370 lexicon forms (52%) are attested.** A zero count is not proof that a form is wrong: the corpus has little smart-home language. It marks the form for native-speaker review.
 
 | Section | Entry | Form | Hits | Attested look-alikes (same consonants) |
 |---|---|---|---|---|
 | area | bathroom | الدوش | 17 |  |
 | area | bathroom | بيت الما | 0 |  |
 | area | bathroom | التواليت | 0 | ولاتلات، لاتليت، ولاتليتي، ولاتلات |
+| area | bedroom | البيت | 40 |  |
 | area | bedroom | بيت الرگاد | 0 |  |
-| area | bedroom | بيت النعاس | 0 |  |
-| area | bedroom | الشومبر | 0 |  |
 | area | entrance | المدخل | 1 |  |
 | area | entrance | گدّام الباب | 1 |  |
 | area | garage | الگاراج | 0 | لكراج، لكراج |
@@ -50,7 +49,6 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | color | yellow | لصفر | 0 | الصفر |
 | device | climate:الكليم | الكليم | 0 | لكلام، الكلام، لكلم، لكلام |
 | device | climate:الكليم | الكليماتيزور | 0 |  |
-| device | climate:الكليم | الكليماتيزير | 0 |  |
 | device | climate:المكيّف | المكيّف | 0 | الموكف، الموكوف، والموكف، الموكف |
 | device | cover:الريدو | الريدو | 0 | الراديو، لاراد، الورود، الراديو |
 | device | cover:الريدو | الريدوات | 0 |  |
@@ -184,11 +182,9 @@ Corpus: 16,271 real Hassaniya sentences (143,526 tokens) from the sources in `da
 | number | 80 | اثمانين | 2 |  |
 | number | 9 | تسعة | 7 |  |
 | number | 90 | تسعين | 4 |  |
-| politeness | post | حگل | 73 |  |
 | politeness | post | الله يجازيك بالخير | 21 |  |
 | politeness | post | الله يحفظك | 5 |  |
 | politeness | post | الله يخليك | 1 |  |
-| politeness | pre | حگل | 73 |  |
 | politeness | pre | بالله | 44 |  |
 | politeness | pre | الله يخليك | 1 |  |
 | politeness | pre | اعليك الله | 0 |  |
