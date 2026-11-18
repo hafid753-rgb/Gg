@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Synthesize Hassaniya smart-home command audio with an existing community TTS model.
 
+STATUS (2026-11): the default voice is NOT intelligible enough. It gets 0% end-to-end through the three
+best ASR models (data/benchmarks/asr/results_commands.md). Do not train on its output. Keep this
+script for evaluating future, better Hassaniya TTS voices.
+
 Default voice: mlemineb/mms-tts-hassaniya-b0681eeb (VITS, MMS-TTS fine-tuned on Hassaniya).
 Uses data/generated/asr/recording_prompts.csv, so every clip has an exact transcript and intent.
 
