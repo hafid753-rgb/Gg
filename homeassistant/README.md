@@ -12,7 +12,7 @@ The fast path only knows what is in the lexicon. Anything it doesn't match goes 
 ## 2. Speech to text
 - Run `wyoming-faster-whisper` with `--model /data/whisper-hsn-ct2 --language ar`. This is the converted fine-tuned model (see `training/finetune_whisper.py`).
 - Add it with the Wyoming integration and select it as the pipeline's STT.
-- Before you have a fine-tuned model, use `--model large-v3-turbo` or `small` with `--language ar`. Hassaniya will be transcribed in MSA-ish spelling, and the ASR-noise augmentation in the dataset is designed to tolerate that.
+- Before you have your own fine-tuned model, convert the best open Hassaniya model, `HamidAmeer/hassaniya-whisper-medium` (see `data/benchmarks/asr/results.md`), with `ct2-transformers-converter --model HamidAmeer/hassaniya-whisper-medium --output_dir whisper-hsn-ct2 --quantization int8`. Stock `large-v3` scores about 99% WER on Hassaniya. Hassaniya will be transcribed in MSA-ish spelling, and the ASR-noise augmentation in the dataset is designed to tolerate that.
 
 ## 3. Local LLM (dynamic understanding and replies)
 1. Install Ollama on a machine with a GPU or a fast CPU, then run `ollama create dar -f training/Modelfile`.

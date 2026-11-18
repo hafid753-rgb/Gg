@@ -22,7 +22,7 @@ The assistant runs in five stages:
 ## Model choices (all local)
 | Stage | Recommended | Small hardware | Notes |
 |---|---|---|---|
-| STT | `whisper-large-v3-turbo` fine-tuned | `whisper-small` fine-tuned | Stock Whisper Arabic is MSA/Gulf-biased. Fine-tune on MauriAI read speech plus your recordings, and evaluate WER on MauriAI broadcast test. |
+| STT | `HamidAmeer/hassaniya-whisper-medium` (best open Hassaniya model: 52.9% WER on broadcast, see `data/benchmarks/asr/`), further fine-tuned | same model, CTranslate2 int8 (RTF ≈ 0.9 on 4 CPUs in PyTorch, faster in CT2) | Stock Whisper Arabic is MSA/Gulf-biased. Fine-tune on MauriAI read speech plus your recordings, and evaluate WER on MauriAI broadcast test. |
 | LLM | Qwen2.5‑7B‑Instruct + LoRA, Q4_K_M (~5 GB) | Qwen2.5‑3B‑Instruct + LoRA, Q4_K_M (~2 GB) | Both have native tool-calling templates and decent Arabic. 3B works well with an 8 GB GPU or a fast CPU. |
 | TTS | Piper fine-tuned on Hassaniya speaker recordings | Piper `ar_JO-kareem` | An MSA-accent voice is intelligible but not dialectal. |
 
