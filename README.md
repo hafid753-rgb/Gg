@@ -39,7 +39,7 @@ This repository doesn't start from scratch. [`docs/RESEARCH.md`](docs/RESEARCH.m
 
 The model learns more than a fixed mapping from phrase to action. It learns to:
 
-- **Use state.** It answers *"الضو شاعل من گبيل"* when a light is already on instead of calling a tool. For *"زيد الضو شوي"* it reads the current brightness (40%), raises it to 60%, and says so.
+- **Use state.** It answers *"الظو گادي من گبيل"* when a light is already on instead of calling a tool. For *"زيد الظو شوي"* it reads the current brightness (40%), raises it to 60%, and says so.
 - **Disambiguate.** It asks *"أي كليم؟ الّي ف الصالون ولّا بيت الرگاد؟"* and then acts on the answer across two turns.
 - **Refuse honestly.** It says *"ما لگيت حتى كليم ف الكوزينة"* when a device doesn't exist, and suggests ones that do.
 - **Act on indirect requests.**
@@ -47,7 +47,7 @@ The model learns more than a fixed mapping from phrase to action. It learns to:
   - *"لاهي نرگد"* turns off all lights and the TV, then locks the door.
   - *"انا خارج"* turns off the lights and AC and locks the door.
   - *"نبغي نغتسل"* turns on the chauffe-eau, and *"الما ما ينزل"* turns on the pump.
-- **Handle several commands at once,** such as *"اطفي الضو ف الصالون وحلّ الكليم ف بيت الرگاد"*.
+- **Handle several commands at once,** such as *"طفّي الظو ف الصالون واگدي الكليم ف بيت الرگاد"*.
 - **Answer questions** about temperature, state, time, date and weather from tool results, in Hassaniya. Times use the local clock style (*"اربعة الّا ربع متاع لعشيّة"*), and weather answers add local advice (sandstorm *عجاج* → close the windows).
 - **Handle social turns and out-of-scope requests** naturally (*اشطاري*, *شكرا*, *"اعدل لي أتاي"*).
 

@@ -5,14 +5,14 @@
 2. **Areas:** name your HA areas with the canonical Hassaniya names, which are the `out` values of `lists.hsn_area`: الصالون, بيت الرگاد, الكوزينة, بيت الما, الحوش, الخيمة… Alternatively, edit the `out` values to match your existing area names.
 3. Restart HA.
 4. Go to Settings → Voice assistants → add an assistant with **Language: Arabic**.
-5. Test by typing into Assist: `اشعل الضو ف الصالون`, `اعدل الكليم على 22 درجة`, `ش الساعة؟`.
+5. Test by typing into Assist: `اگدي الظو ف الصالون`, `اعدل الكليم على 22 درجة`, `شنه الساعة؟`, `اگفل الباب حگل`.
 
 The fast path only knows what is in the lexicon. Anything it doesn't match goes to the conversation agent below.
 
 ## 2. Speech to text
 - Run `wyoming-faster-whisper` with `--model /data/whisper-hsn-ct2 --language ar`. This is the converted fine-tuned model (see `training/finetune_whisper.py`).
 - Add it with the Wyoming integration and select it as the pipeline's STT.
-- Before you have your own fine-tuned model, convert the best open Hassaniya model, `HamidAmeer/hassaniya-whisper-medium` (see `data/benchmarks/asr/results.md`), with `ct2-transformers-converter --model HamidAmeer/hassaniya-whisper-medium --output_dir whisper-hsn-ct2 --quantization int8`. Stock `large-v3` scores about 99% WER on Hassaniya. Hassaniya will be transcribed in MSA-ish spelling, and the ASR-noise augmentation in the dataset is designed to tolerate that.
+- Before you have your own fine-tuned model, convert the best open Hassaniya model, `HamidAmeer/hassaniya-whisper-medium` (see `data/benchmarks/asr/results.md`), with `ct2-transformers-converter --model HamidAmeer/hassaniya-whisper-medium --output_dir whisper-hsn-ct2 --quantization int8`. Stock `large-v3` scores about 99% WER on Hassaniya. The ASR-noise augmentation in the dataset tolerates the remaining spelling variation.
 
 ## 3. Local LLM (dynamic understanding and replies)
 1. Install Ollama on a machine with a GPU or a fast CPU, then run `ollama create dar -f training/Modelfile`.

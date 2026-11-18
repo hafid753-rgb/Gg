@@ -14,7 +14,7 @@ The assistant runs in five stages:
 - Most commands are short and formulaic, so hassil handles them instantly and deterministically. It is about 99% accurate on held-out clean generated commands, and it can run on a Pi.
 - Indirect, relative, stateful, multi-command and conversational requests need the LLM:
   - indirect: *"الدار سخونة"*
-  - relative: *"زيد الضو شوي"*
+  - relative: *"زيد الظو شوي"*
   - stateful: already on, ambiguous room
   - multi-command and conversational turns
 - HA's *"Prefer handling commands locally"* setting gives exactly this cascade.
