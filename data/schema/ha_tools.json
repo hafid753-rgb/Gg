@@ -497,5 +497,64 @@
     "required": []
    }
   }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPlayerMute",
+   "description": "Mutes a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPlayerUnmute",
+   "description": "Unmutes a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassCancelAllTimers",
+   "description": "Cancels all timers.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
  }
 ]

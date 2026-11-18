@@ -1,0 +1,5 @@
+service_name,correct_device_name,correct_friendly_name,bad_device_name,phrase,error_result,retry_prompt
+light.turn_on,light.salon_dhaw,ظو الصالون,light.salon_daw,اگدي <device_name>,Error: entity light.salon_daw not found,نعاود ب ظو الصالون.
+fan.turn_off,fan.bedroom_marwaha,مروحة بيت الرگاد,fan.bedrom_marwaha,طفّي <device_name>,Error: entity fan.bedrom_marwaha not found,نعاود ب مروحة بيت الرگاد.
+lock.lock,lock.bab_ed_dar,باب الدار,lock.bab_dar,اگفل <device_name>,Error: entity lock.bab_dar not found,نعاود ب باب الدار.
+switch.turn_on,switch.yard_pompe,بومبة الحوش,switch.yard_pomp,اگدي <device_name> حگل,Error: entity switch.yard_pomp not found,نعاود ب بومبة الحوش.

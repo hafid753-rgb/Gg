@@ -148,10 +148,10 @@ def build() -> dict:
         add("HassGetState", [f"[<is_it>] <d_{key}> [<loc>] (شاعل|شاعلة)",
                              f"<v_check> <is_it> <d_{key}> [<loc>] (شاعل|شاعلة)",
                              f"ش من <dc_{key}> (شاعل|شاعلة) [<loc>]"], {"domain": dom, "state": "on"})
-    for st, words in (("open", "(محلول|محلولة)"), ("closed", "(مسدود|مسدودة)")):
+    for st, words in (("open", "(مفتوح|مفتوحة|محلول|محلولة)"), ("closed", "(مگفول|مگفولة|مسدود|مسدودة)")):
         add("HassGetState", [f"[<is_it>] <d_cover> [<loc>] {words}", f"<v_check> <is_it> <d_cover> [<loc>] {words}"],
             {"domain": "cover", "state": st})
-    for st, words in (("locked", "(مغلوگ|مغلوگة)"), ("unlocked", "(محلول|محلولة)")):
+    for st, words in (("locked", "(مگفول|مگفولة|مغلوگ)"), ("unlocked", "(مفتوح|مفتوحة|محلول)")):
         add("HassGetState", [f"[<is_it>] <d_lock> {words}", f"<v_check> <is_it> <d_lock> {words}"],
             {"domain": "lock", "state": st})
     # ---- cover position
@@ -166,7 +166,10 @@ def build() -> dict:
     add("HassMediaPrevious", ["ردّ للّي گبل", "الأغنية الّي فاتت", "رجّع الّي گبلها", "ردّ اللّي فات"])
     add("HassSetVolume", [f"<v_set> الصوت (ف|على) {num('volume_level')}",
                           f"الصوت {num('volume_level')} " + alt(LEX["units"]["percent"][:2]),
-                          f"<v_set> الصوت امتاع <media> ف {num('volume_level')}"])
+                          f"<v_set> صوت <dc_media_player> ف {num('volume_level')}"])
+    add("HassMediaPlayerMute", ["سكّت (<media>|الصوت)", "(گطع|اگطع) صوت <dc_media_player>", "<media> سكّتها"])
+    add("HassMediaPlayerUnmute", ["ردّ صوت <dc_media_player>", "ردّ الصوت", "خلّي <media> يتكلم"])
+    add("HassCancelAllTimers", ["<v_cancel> (المنبّهات|التايمرات) <all>", "<v_cancel> <all> (المنبّهات|التايمرات)"])
     add("HassFanSetSpeed", [f"<v_set> <d_fan> [<loc>] (ف|على) {num('percentage')} <pct_unit>",
                             f"<d_fan> [<loc>] {num('percentage')} <pct_unit>"], response="hsn_set")
     # ---- timers
@@ -178,7 +181,7 @@ def build() -> dict:
         ("{hsn_count:seconds} ثواني", {}), ("{hsn_digits:seconds} ثانية", {}),
     ]
     for dur, fixed in durations:
-        add("HassStartTimer", [f"<v_start_timer> <timer_word> [امتاع] {dur} [<purpose>]",
+        add("HassStartTimer", [f"<v_start_timer> <timer_word> [ل] {dur} [<purpose>]",
                                f"(نبّهني|نبهني|گول لي) بعد {dur} [<purpose>]",
                                f"{dur} [<purpose>] <v_start_timer> <timer_word>"], fixed or None, response="hsn_timer")
     add("HassCancelTimer", ["<v_cancel> <timer_word_def>"])
@@ -210,8 +213,8 @@ def build() -> dict:
     }
     responses = {"intents": {}}
     resp = {
-        "hsn_on": "حاضر، شعّلتو.", "hsn_off": "حاضر، طفّيتو.", "hsn_lock": "حاضر، غلگت الباب.",
-        "hsn_unlock": "حاضر، حلّيت الباب.", "hsn_set": "حاضر، اعدلتو.", "hsn_timer": "حاضر، المنبّه بدا.",
+        "hsn_on": "اهيه، گدّيتو.", "hsn_off": "اهيه، طفّيتو.", "hsn_lock": "اهيه، گفلت الباب.",
+        "hsn_unlock": "اهيه، فتحت الباب.", "hsn_set": "اهيه، عدلتو.", "hsn_timer": "اهيه، المنبّه بدا.",
         "hsn_item": "زدت {{ slots.item }} ل ليستة الشرا.",
     }
     for intent, body in intents.items():

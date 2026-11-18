@@ -20,23 +20,23 @@ verbs:
   turn_on:
     en: turn on / light
     conf: high
-    imp_m: [اشعل, شعّل, حلّ]
-    imp_f: [اشعلي, شعّلي, حلّي]
-    imp_pl: [اشعلو, شعّلو]
-    req: [تشعل لي, اتشعّل لي, تحلّ لي]
-    lat: [ach3el, cha33el, 7ell, tech3el li]
+    imp_m: [اگدي, اشعل, شعّل, حلّ]     # corpus: "حگل اگدي الظو", "اگدي الراديو"
+    imp_f: [اگدي, اشعلي, شعّلي]
+    imp_pl: [اگدو, اشعلو, شعّلو]
+    req: [تگدي لي, تشعل لي, اتشعّل لي]
+    lat: [egdi, ach3el, cha33el, tegdi li]
   turn_on_device:   # for appliances: "open/start" the AC, the TV, the pump
     en: switch on (appliance)
     conf: high
-    imp_m: [حلّ, شعّل, اشعل, دوّر]
-    imp_f: [حلّي, شعّلي, دوّري]
-    imp_pl: [حلّو, شعّلو]
-    req: [تحلّ لي, اتشعّل لي, ادوّر لي]
-    lat: [7ell, cha33el, dawwer]
+    imp_m: [اگدي, شعّل, حلّ, دوّر]     # corpus: "حگل اگدي تلفزة"
+    imp_f: [اگدي, شعّلي, دوّري]
+    imp_pl: [اگدو, شعّلو]
+    req: [تگدي لي, اتشعّل لي, ادوّر لي]
+    lat: [egdi, cha33el, dawwer]
   turn_off:
     en: turn off / extinguish
     conf: high
-    imp_m: [اطفي, طفّي, سكّر]
+    imp_m: [طفّي, اطفي, سكّر]          # corpus: "طفي الظو حگل"
     imp_f: [اطفاي, طفّاي, سكّري]
     imp_pl: [اطفاو, طفّاو]
     req: [تطفي لي, اتطفّي لي, تسكّر لي]
@@ -44,19 +44,19 @@ verbs:
   open:
     en: open
     conf: high
-    imp_m: [حلّ, افتح]
-    imp_f: [حلّي, افتحي]
-    imp_pl: [حلّو]
-    req: [تحلّ لي, اتحلّ لي]
+    imp_m: [افتح, حلّ]
+    imp_f: [افتحي, حلّي]
+    imp_pl: [افتحو, حلّو]
+    req: [تفتح لي, تحلّ لي]
     lat: [7ell, eftah]
   close:
-    en: close
-    conf: med
-    imp_m: [سدّ, اغلگ, بلّع]
-    imp_f: [سدّي, اغلگي]
-    imp_pl: [سدّو]
-    req: [تسدّ لي, اتسدّ لي]
-    lat: [sedd, eghleg, balla3]
+    en: close / lock
+    conf: high   # corpus: "اگفل الباب حگل", "الباب ... مگفول"
+    imp_m: [اگفل, سكّر, سدّ]
+    imp_f: [اگفلي, سكّري]
+    imp_pl: [اگفلو, سدّو]
+    req: [تگفل لي, تسكّر لي]
+    lat: [egfel, sakker, sedd]
   increase:
     en: increase / raise
     conf: high
@@ -163,9 +163,9 @@ want_subj:  # subjunctive 2sg after "I want you to ..." -> uses `req` forms
   conf: high
 
 politeness:
-  pre: [الله يخليك, اعليك الله, اعفاك, يا عيني]
-  post: [الله يخليك, اعفاك, الله يجازيك بالخير, بارك الله فيك]
-  conf: med
+  pre: [حگل, الله يخليك, بالله, اعليك الله]
+  post: [حگل, الله يخليك, الله يجازيك بالخير, الله يحفظك]
+  conf: high   # corpus: حگل 73, يحفظك 365, يجازيك 32, يخليك 16; اعفاك 0 (Moroccan) removed
 fillers:     # disfluencies real speakers produce before a command
   ar: [ايوه, اسمع, هيه, يا اخي, اشوف, اعگب, آآ]
   conf: med
@@ -173,7 +173,7 @@ wake_words:
   ar: [يا دار, يا داري, يا مساعد]
   lat: [ya dar, ya dari]
   conf: low   # choose your own; must be trained in openWakeWord
-now:      {ar: [دُرك, ذرك, ذو الساعة], lat: [durk, dhork], conf: high}
+now:      {ar: [ظرك, ذرك, دُرك], lat: [dhork, durk], conf: high}   # corpus: ظرك 291, ذرك 3, دُرك 3
 all:      {ar: [گاع, كامل, ذو گاع], lat: [ga3, kamel], conf: high}
 very:     {ar: [ياسر, بالزّاف, شي واعر], lat: [yaser], conf: high}
 a_little: {ar: [شوي, اشوي, شي اشوي], lat: [chwey], conf: high}
@@ -181,20 +181,23 @@ this_m:   {ar: [ذ, ذا, هذا], conf: high}
 this_f:   {ar: [ذي, هذي], conf: high}
 that_m:   {ar: [ذاك, ذاك], conf: high}
 in:       {ar: [ف, في, اف], conf: high}   # "f-ṣ-ṣālūn"
-of:       {ar: [متاع, امتاع, ال], conf: med}  # genitive particle
+of:       {ar: [], conf: low}   # no genitive particle attested (متاع/امتاع: 0 hits); use construct state: صوت التلفزة
+tag_q:    {ar: [حگ], conf: high}  # "... حگ؟" = "..., right?" (corpus 200)
+there_is: {ar: [فم], conf: high}  # "ما فم حل", "فم فيه اي خطر؟"
+softener: {ar: [حگل], conf: high} # "حگل اگدي الظو", "اگفل الباب حگل" (73 hits)
 and:      {ar: [و, ؤ], conf: high}
-yes:      {ar: [ايّه, ايوه, صحّ, حاضر], lat: [eyyeh, ewah], conf: high}
-no:       {ar: [لا, ابدا, ماهو], conf: high}
-ok:       {ar: [حاضر, ما عندي مانع, هاني, زين], conf: high}
+"yes": {ar: [اهيه, ايوه, ايّه], lat: [ehih, ewah], conf: high}   # corpus: اهيه 188, ايوه 99, حاضر 0
+"no": {ar: [لا, ماه, ماهو, ابدا], conf: high}
+ok:       {ar: [اهيه, زين, ايوه, ماشي مشكل], conf: high}
 
 # question words
 q:
-  what:      {ar: [ش, اشنهو, شنهي, اشنو], conf: high}
-  how_much:  {ar: [اگدّاش, گدّاش, اشحال], conf: high}
+  what:      {ar: [شنه, ش, شنهي, اشنهو], conf: high}   # corpus: شنه 198, شنهي 111
+  how_much:  {ar: [كم, اشحال, گدّاش], conf: med}   # corpus: كم 94; اشحال is mostly the greeting; گدّاش 0
   how:       {ar: [كيف, اكيف], conf: high}
-  where:     {ar: [فين, اين, امنين], conf: med}
-  when:      {ar: [وكتاش, امتين], conf: med}
-  is_it:     {ar: [واش, ياك, هل], conf: med}   # yes/no question marker
+  where:     {ar: [امنين, فين], conf: high}   # corpus: "امنين الدوش؟", امنين 119
+  when:      {ar: [امتين, وكتاش], conf: med}
+  is_it:     {ar: [ياك, واش, هل], conf: med}   # mostly intonation; ياك 140, واش 3
   why:       {ar: [اعلاش, لاش], conf: high}
 
 # ------------------------------------------------------------- devices
@@ -204,7 +207,7 @@ devices:
   light:
     domain: light
     items:
-      - {ar: [الضو, الضوّ, الضوء], lat: [ed-daw, dhaw], g: m, conf: high}
+      - {ar: [الظو, الضو, الضوّ], lat: [edh-dhaw, ed-daw], g: m, conf: high}   # corpus: "طفي الظو", الظو 15, الضو 1
       - {ar: [اللامبة, اللامبه, لامبة], lat: [lamba], g: f, conf: high}
       - {ar: [النور], lat: [nour], g: m, conf: med}
       - {ar: [الثريّا], lat: [thurayya], g: f, conf: low}
@@ -221,7 +224,7 @@ devices:
   media_player:
     domain: media_player
     items:
-      - {ar: [التلفزيون, التلفاز, التيلي], lat: [tilivizion, tele], g: m, conf: high}
+      - {ar: [التلفزة, التلفزيون, التيلي], lat: [tilfza, tele], g: f, conf: high}   # corpus: "حگل اگدي تلفزة", التلفزة 17
       - {ar: [الراديو], lat: [radio], g: m, conf: high}
       - {ar: [السبيكر, لوباف, البافل], lat: [speaker, baffle], g: m, conf: med}
   switch:
@@ -239,7 +242,7 @@ devices:
       - {ar: [الريدو, الريدوات, الستارة], lat: [rideau], g: m, conf: high}
       - {ar: [الطاگة, الشبّاك], lat: [taga, chebbak], g: f, conf: med}                # window
       - {ar: [باب الگاراج, الگاراج], lat: [bab el garage], g: m, conf: high}
-      - {ar: [الباب لكبير, الباب امتاع الحوش], lat: [bab lekbir], g: m, conf: med}
+      - {ar: [باب الحوش, الباب لكبير], lat: [bab lekbir], g: m, conf: med}
   lock:
     domain: lock
     items:

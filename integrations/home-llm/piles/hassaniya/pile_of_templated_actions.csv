@@ -1,0 +1,248 @@
+device_type,service,phrase,multiplier
+light,turn_on,اگدي <device_name>,2
+light,turn_on,حگل اگدي <device_name>,2
+light,turn_on,اشعل <device_name>,2
+light,turn_on,حگل اشعل <device_name>,2
+light,turn_on,شعّل <device_name>,2
+light,turn_on,حگل شعّل <device_name>,2
+light,turn_on,حلّ <device_name>,2
+light,turn_on,حگل حلّ <device_name>,2
+light,turn_on,تگدي لي <device_name>,2
+light,turn_on,حگل تگدي لي <device_name>,2
+light,turn_on,اگدي <device_name> حگل,2
+light,turn_on,اگدي <device_name> الله يخليك,2
+light,turn_on,اشعل <device_name> حگل,2
+light,turn_on,اشعل <device_name> الله يخليك,2
+light,turn_on,نبغيك تگدي لي <device_name>,2
+light,turn_off,طفّي <device_name>,2
+light,turn_off,حگل طفّي <device_name>,2
+light,turn_off,اطفي <device_name>,2
+light,turn_off,حگل اطفي <device_name>,2
+light,turn_off,سكّر <device_name>,2
+light,turn_off,حگل سكّر <device_name>,2
+light,turn_off,اطفاي <device_name>,2
+light,turn_off,حگل اطفاي <device_name>,2
+light,turn_off,تطفي لي <device_name>,2
+light,turn_off,حگل تطفي لي <device_name>,2
+light,turn_off,طفّي <device_name> حگل,2
+light,turn_off,نبغيك تطفي لي <device_name>,2
+light,toggle,بدّل <device_name>,1
+light,toggle,ردّ <device_name> للحالة الاخرى,1
+light,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+switch,turn_on,اگدي <device_name>,1
+switch,turn_on,حگل اگدي <device_name>,1
+switch,turn_on,شعّل <device_name>,1
+switch,turn_on,حگل شعّل <device_name>,1
+switch,turn_on,حلّ <device_name>,1
+switch,turn_on,حگل حلّ <device_name>,1
+switch,turn_on,دوّر <device_name>,1
+switch,turn_on,حگل دوّر <device_name>,1
+switch,turn_on,تگدي لي <device_name>,1
+switch,turn_on,حگل تگدي لي <device_name>,1
+switch,turn_on,اگدي <device_name> حگل,1
+switch,turn_on,اگدي <device_name> الله يخليك,1
+switch,turn_on,شعّل <device_name> حگل,1
+switch,turn_on,شعّل <device_name> الله يخليك,1
+switch,turn_on,نبغيك تگدي لي <device_name>,1
+switch,turn_off,طفّي <device_name>,1
+switch,turn_off,حگل طفّي <device_name>,1
+switch,turn_off,اطفي <device_name>,1
+switch,turn_off,حگل اطفي <device_name>,1
+switch,turn_off,سكّر <device_name>,1
+switch,turn_off,حگل سكّر <device_name>,1
+switch,turn_off,اطفاي <device_name>,1
+switch,turn_off,حگل اطفاي <device_name>,1
+switch,turn_off,تطفي لي <device_name>,1
+switch,turn_off,حگل تطفي لي <device_name>,1
+switch,turn_off,طفّي <device_name> حگل,1
+switch,turn_off,نبغيك تطفي لي <device_name>,1
+switch,toggle,بدّل <device_name>,1
+switch,toggle,ردّ <device_name> للحالة الاخرى,1
+switch,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+fan,turn_on,اگدي <device_name>,1
+fan,turn_on,حگل اگدي <device_name>,1
+fan,turn_on,شعّل <device_name>,1
+fan,turn_on,حگل شعّل <device_name>,1
+fan,turn_on,حلّ <device_name>,1
+fan,turn_on,حگل حلّ <device_name>,1
+fan,turn_on,دوّر <device_name>,1
+fan,turn_on,حگل دوّر <device_name>,1
+fan,turn_on,تگدي لي <device_name>,1
+fan,turn_on,حگل تگدي لي <device_name>,1
+fan,turn_on,اگدي <device_name> حگل,1
+fan,turn_on,اگدي <device_name> الله يخليك,1
+fan,turn_on,شعّل <device_name> حگل,1
+fan,turn_on,شعّل <device_name> الله يخليك,1
+fan,turn_on,نبغيك تگدي لي <device_name>,1
+fan,turn_off,طفّي <device_name>,1
+fan,turn_off,حگل طفّي <device_name>,1
+fan,turn_off,اطفي <device_name>,1
+fan,turn_off,حگل اطفي <device_name>,1
+fan,turn_off,سكّر <device_name>,1
+fan,turn_off,حگل سكّر <device_name>,1
+fan,turn_off,اطفاي <device_name>,1
+fan,turn_off,حگل اطفاي <device_name>,1
+fan,turn_off,تطفي لي <device_name>,1
+fan,turn_off,حگل تطفي لي <device_name>,1
+fan,turn_off,طفّي <device_name> حگل,1
+fan,turn_off,نبغيك تطفي لي <device_name>,1
+fan,toggle,بدّل <device_name>,1
+fan,toggle,ردّ <device_name> للحالة الاخرى,1
+fan,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+media_player,turn_on,اگدي <device_name>,1
+media_player,turn_on,حگل اگدي <device_name>,1
+media_player,turn_on,شعّل <device_name>,1
+media_player,turn_on,حگل شعّل <device_name>,1
+media_player,turn_on,حلّ <device_name>,1
+media_player,turn_on,حگل حلّ <device_name>,1
+media_player,turn_on,دوّر <device_name>,1
+media_player,turn_on,حگل دوّر <device_name>,1
+media_player,turn_on,تگدي لي <device_name>,1
+media_player,turn_on,حگل تگدي لي <device_name>,1
+media_player,turn_on,اگدي <device_name> حگل,1
+media_player,turn_on,اگدي <device_name> الله يخليك,1
+media_player,turn_on,شعّل <device_name> حگل,1
+media_player,turn_on,شعّل <device_name> الله يخليك,1
+media_player,turn_on,نبغيك تگدي لي <device_name>,1
+media_player,turn_off,طفّي <device_name>,1
+media_player,turn_off,حگل طفّي <device_name>,1
+media_player,turn_off,اطفي <device_name>,1
+media_player,turn_off,حگل اطفي <device_name>,1
+media_player,turn_off,سكّر <device_name>,1
+media_player,turn_off,حگل سكّر <device_name>,1
+media_player,turn_off,اطفاي <device_name>,1
+media_player,turn_off,حگل اطفاي <device_name>,1
+media_player,turn_off,تطفي لي <device_name>,1
+media_player,turn_off,حگل تطفي لي <device_name>,1
+media_player,turn_off,طفّي <device_name> حگل,1
+media_player,turn_off,نبغيك تطفي لي <device_name>,1
+media_player,toggle,بدّل <device_name>,1
+media_player,toggle,ردّ <device_name> للحالة الاخرى,1
+media_player,toggle,<device_name>، اگديه الا كان طافي واطفيه الا كان شاعل,1
+light,turn_on,دير <device_name> ف <brightness>%,2
+light,turn_on,ردّ <device_name> ف <brightness>%,2
+light,turn_on,اعدل <device_name> ف <brightness>%,2
+light,turn_on,<device_name> <brightness> فالمية,2
+light,turn_on,حگل دير <device_name> على <brightness> فالمية,2
+light,turn_on,دير <device_name> <color>,2
+light,turn_on,ردّ <device_name> <color>,2
+light,turn_on,اعدل <device_name> <color>,2
+light,turn_on,حگل ردّ <device_name> بلون <color>,2
+fan,increase_speed,زيد <device_name>,1
+fan,increase_speed,زيد سرعة <device_name>,1
+fan,increase_speed,<device_name> زيدها شوي,1
+fan,increase_speed,حگل زيد <device_name>,1
+fan,decrease_speed,نگّص <device_name>,1
+fan,decrease_speed,نگّص سرعة <device_name>,1
+fan,decrease_speed,<device_name> نگّصها شوي,1
+fan,decrease_speed,حگل نگّص <device_name>,1
+blinds,open_cover,افتح <device_name>,1
+blinds,open_cover,حگل افتح <device_name>,1
+blinds,open_cover,حلّ <device_name>,1
+blinds,open_cover,حگل حلّ <device_name>,1
+blinds,open_cover,افتحي <device_name>,1
+blinds,open_cover,حگل افتحي <device_name>,1
+blinds,open_cover,تفتح لي <device_name>,1
+blinds,open_cover,حگل تفتح لي <device_name>,1
+blinds,open_cover,نبغيك تفتح لي <device_name>,1
+blinds,close_cover,اگفل <device_name>,1
+blinds,close_cover,حگل اگفل <device_name>,1
+blinds,close_cover,سكّر <device_name>,1
+blinds,close_cover,حگل سكّر <device_name>,1
+blinds,close_cover,سدّ <device_name>,1
+blinds,close_cover,حگل سدّ <device_name>,1
+blinds,close_cover,اگفلي <device_name>,1
+blinds,close_cover,حگل اگفلي <device_name>,1
+blinds,close_cover,تگفل لي <device_name>,1
+blinds,close_cover,حگل تگفل لي <device_name>,1
+blinds,close_cover,اگفل <device_name> حگل,1
+blinds,stop_cover,وگّف <device_name>,1
+blinds,stop_cover,وگّف <device_name> ف بلاصتو,1
+blinds,stop_cover,حگل وگّف <device_name>,1
+blinds,toggle,بدّل <device_name>,1
+blinds,toggle,الا كان <device_name> مفتوح اگفلو والا افتحو,1
+garage_door,open_cover,افتح <device_name>,1
+garage_door,open_cover,حگل افتح <device_name>,1
+garage_door,open_cover,حلّ <device_name>,1
+garage_door,open_cover,حگل حلّ <device_name>,1
+garage_door,open_cover,افتحي <device_name>,1
+garage_door,open_cover,حگل افتحي <device_name>,1
+garage_door,open_cover,تفتح لي <device_name>,1
+garage_door,open_cover,حگل تفتح لي <device_name>,1
+garage_door,open_cover,نبغيك تفتح لي <device_name>,1
+garage_door,close_cover,اگفل <device_name>,1
+garage_door,close_cover,حگل اگفل <device_name>,1
+garage_door,close_cover,سكّر <device_name>,1
+garage_door,close_cover,حگل سكّر <device_name>,1
+garage_door,close_cover,سدّ <device_name>,1
+garage_door,close_cover,حگل سدّ <device_name>,1
+garage_door,close_cover,اگفلي <device_name>,1
+garage_door,close_cover,حگل اگفلي <device_name>,1
+garage_door,close_cover,تگفل لي <device_name>,1
+garage_door,close_cover,حگل تگفل لي <device_name>,1
+garage_door,close_cover,اگفل <device_name> حگل,1
+garage_door,stop_cover,وگّف <device_name>,1
+garage_door,stop_cover,وگّف <device_name> ف بلاصتو,1
+garage_door,stop_cover,حگل وگّف <device_name>,1
+garage_door,toggle,بدّل <device_name>,1
+garage_door,toggle,الا كان <device_name> مفتوح اگفلو والا افتحو,1
+lock,lock,اگفل <device_name>,1
+lock,lock,اگفل <device_name> حگل,1
+lock,lock,اگفل <device_name> بالمفتاح,1
+lock,lock,سكّر <device_name>,1
+lock,lock,نبغيك تگفل لي <device_name>,1
+lock,unlock,افتح <device_name>,1
+lock,unlock,افتح <device_name> حگل,1
+lock,unlock,حلّ <device_name>,1
+lock,unlock,نبغيك تفتح لي <device_name>,1
+media_player,media_play,كمّل <device_name>,1
+media_player,media_play,ردّ <device_name> يخدم,1
+media_player,media_play,حگل كمّل <device_name>,1
+media_player,media_pause,حبّس <device_name> شوي,1
+media_player,media_pause,حبّس <device_name>,1
+media_player,media_pause,وگّف <device_name> شوي,1
+media_player,media_stop,وگّف <device_name>,1
+media_player,media_stop,وگّف <device_name> گاع,1
+media_player,media_next_track,الّي بعدو ف <device_name>,1
+media_player,media_next_track,دوّر للّي بعدو ف <device_name>,1
+media_player,media_previous_track,ردّ للّي گبل ف <device_name>,1
+media_player,media_previous_track,رجّع الّي فات ف <device_name>,1
+media_player,volume_up,زيد صوت <device_name>,1
+media_player,volume_up,طلّع صوت <device_name> شوي,1
+media_player,volume_up,ما نسمع شي، زيد صوت <device_name>,1
+media_player,volume_down,نگّص صوت <device_name>,1
+media_player,volume_down,صوت <device_name> عالي ياسر، نگّصو,1
+media_player,volume_down,هبّط صوت <device_name>,1
+media_player,volume_mute,سكّت <device_name>,1
+media_player,volume_mute,گطع صوت <device_name>,1
+media_player,volume_mute,حگل سكّت <device_name>,1
+climate,set_temperature,دير <device_name> على <temp_c> درجة,2
+climate,set_temperature,اعدل <device_name> ف <temp_c> درجة,2
+climate,set_temperature,نبغي <device_name> <temp_c> درجة,2
+climate,set_temperature,حگل ردّ <device_name> <temp_c>,2
+climate,set_temperature,<device_name> على <temp_c> الله يخليك,2
+vacuum,start,خلّي <device_name> ينظّف,1
+vacuum,start,اگدي <device_name>,1
+vacuum,start,حگل خلّي <device_name> يشطّب الدار,1
+vacuum,stop,وگّف <device_name>,1
+vacuum,stop,حبّس <device_name>,1
+vacuum,pause,حبّس <device_name> شوي,1
+vacuum,pause,خلّي <device_name> يصبر شوي,1
+vacuum,return_to_base,ردّ <device_name> لبلاصتو,1
+vacuum,return_to_base,رجّع <device_name> للشارجور,1
+timer,start,دير <device_name> ل <duration>,2
+timer,start,حطّ <device_name> <duration>,2
+timer,start,نبّهني بعد <duration> ب <device_name>,2
+timer,start,اعدل <device_name> ل <duration> حگل,2
+timer,cancel,الغي <device_name>,1
+timer,cancel,وگّف <device_name>,1
+timer,cancel,اگطع <device_name>,1
+todo,add_item,زيد <todo> ل <device_name>,2
+todo,add_item,اكتب <todo> ف <device_name>,2
+todo,add_item,حگل زيد <todo> ف <device_name>,2
+todo,add_item,ما ننساو <todo>، زيدو ف <device_name>,2
+light|fan,turn_off|turn_off,طفّي <device_name1> و<device_name2>,1
+light|blinds,turn_on|close_cover,اگدي <device_name1> واگفل <device_name2>,1
+media_player|light,turn_off|turn_off,طفّي <device_name1> و<device_name2> حگل,1
+lock|light,lock|turn_off,اگفل <device_name1> وطفّي <device_name2>,1
+blinds|light,open_cover|turn_off,افتح <device_name1> وطفّي <device_name2>,1

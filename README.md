@@ -11,6 +11,16 @@ This repository holds a dataset and a full local toolchain. The goal is a smart 
 
 See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full pipeline and hardware notes.
 
+## Built on existing work
+This repository doesn't start from scratch. [`docs/RESEARCH.md`](docs/RESEARCH.md) surveys everything public for Hassaniya: 11 datasets, more than 20 models, and the related GitHub projects. Here is what we reuse:
+
+- **Real Hassaniya text → lexicon evidence.** `scripts/ingest_external.py` collects 16k sentences from 11 community sources. `scripts/lexicon_evidence.py` counts every lexicon form in them, which corrected the vocabulary to forms Mauritanians actually write: **ظرك** (now), **الظو** (light), **اگدي** (switch on), **اگفل** (close/lock), the **حگل** softener, and **اهيه** (yes). The 5.7k permissively licensed sentences are committed in `data/corpus/` with attribution.
+- **MauriAI's Hassaniya Speech Test** is the ASR benchmark. `scripts/hsn_score.py` reimplements their scorer and reproduces their published table exactly. `scripts/bench_asr.py` scores the community Hassaniya ASR models, which have no published accuracy; results are in [`data/benchmarks/asr/results.md`](data/benchmarks/asr/results.md).
+- **The community Hassaniya TTS** (`mlemineb/mms-tts-hassaniya`) synthesizes command audio. It gives a command-specific ASR test, scored end to end through HA's hassil matcher, and synthetic ASR training audio (`scripts/synth_tts.py`).
+- **acon96/home-llm:** a Hassaniya language pack for their generator and integration, in `integrations/home-llm/`.
+- **home-assistant/intents:** our Hassaniya sentences extend HA's official Arabic (MSA) set and follow its intent names.
+- **hassan-IA/dah and amthal (CC-BY):** an auxiliary SFT set from real Hassaniya (translation, Arabizi→Arabic script, proverbs) keeps the LLM's replies authentic. See `scripts/build_aux_sft.py`.
+
 ## What's inside
 
 | Path | What | Size (seed 7) |
@@ -57,7 +67,7 @@ Then:
 2. **LLM:** `python3 training/finetune_llm_lora.py`, then merge, convert to GGUF, and `ollama create dar`. Finally run `python3 training/eval_llm.py --model dar` and compare against the base model.
 3. **Speech:** record prompts with `tools/recorder.html` and run `scripts/download_external.py` to fetch the public Hassaniya speech data. Then run `training/finetune_whisper.py` and convert the result to CTranslate2 for `wyoming-faster-whisper`.
 
-## External Hassaniya resources found (not redistributed here)
+## External Hassaniya resources (the main ones; full list in docs/RESEARCH.md)
 
 | Resource | Type | Notes |
 |---|---|---|
@@ -68,11 +78,11 @@ Then:
 | *Spoken Hassaniya Arabic* (Dunwoody Press, 2008) | Lexicon | Transcribed audio with a glossary |
 | C. Taine‑Cheikh, "Ḥassāniyya Arabic" (Language Science Press) | Grammar | Reference description of the dialect |
 
-`scripts/download_external.py` pulls the three Hugging Face sets. The build machine had no network access to them, so they were not fetched or inspected here.
+`scripts/ingest_external.py` pulls the text from all of them. `scripts/bench_asr.py` pulls the MauriAI test audio, and `scripts/download_external.py` pulls the speech sets for training. Non-commercial data is cached in the git-ignored `data/external/` and is never committed.
 
 ## ⚠️ Honest status and what's needed next
 
-- **The lexicon must be reviewed by native speakers.** It was compiled without access to the dictionaries above. Entries tagged `med`/`low` (and any spelling) may be Moroccan- or MSA-leaning. Because every sentence is generated from `lexicon.yaml`, fixing a word there fixes all 45k+ samples on the next `make data`. The review protocol is in [`docs/REVIEW.md`](docs/REVIEW.md).
+- **The lexicon still needs native-speaker review.** It is now checked against 16k real sentences: 193 of 374 forms are attested, and [`docs/LEXICON_EVIDENCE.md`](docs/LEXICON_EVIDENCE.md) lists every form with its hit count and suggested look-alike spellings. The unattested forms are mostly smart-home words that the corpus never mentions. They may be fine, but someone has to confirm them. Because every sentence is generated from `lexicon.yaml`, fixing a word there fixes all 45k+ samples on the next `make data`. The review protocol is in [`docs/REVIEW.md`](docs/REVIEW.md).
 - **The data is synthetic.** It is template-generated, so it has the coverage of a grammar, not the messiness of real speech. The fix is to record the 2,000 prompts with several speakers from different regions and add real transcribed commands to `data/`.
-- **The training scripts are untested.** They were written and syntax-checked but not run, because there was no GPU or Hugging Face access during the build. Expect small adjustments to library versions.
+- **Training hasn't been run (no GPU here).** The LoRA data pipeline was checked with the real Qwen2.5 tokenizer: label masking is correct, prefix tokenization is consistent, and the max length was raised to 4096 because the 23 tool schemas take about 2.5k tokens. The Whisper fine-tune script has not been run.
 - **Licenses:** this repository's generated data is yours. Several external sets are non-commercial.

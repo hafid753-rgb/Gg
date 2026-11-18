@@ -24,11 +24,19 @@ SFT = ROOT / "data" / "generated" / "sft"
 TOOLS = json.loads((ROOT / "data" / "schema" / "ha_tools.json").read_text(encoding="utf-8"))
 
 
-def load_split(name: str, tok, max_len: int):
+def load_split(name: str, tok, max_len: int, aux_ratio: float = 0.0):
     from datasets import Dataset
 
     rows = []
-    for line in open(SFT / f"{name}.jsonl", encoding="utf-8"):
+    lines = list(open(SFT / f"{name}.jsonl", encoding="utf-8"))
+    aux = SFT.parent / "sft_aux" / f"{name}.jsonl"
+    if aux_ratio > 0 and aux.exists():  # real-Hassaniya auxiliary tasks (scripts/build_aux_sft.py)
+        import random
+        extra = list(open(aux, encoding="utf-8"))
+        k = min(len(extra), int(len(lines) * aux_ratio / (1 - aux_ratio)))
+        lines += random.Random(0).sample(extra, k)
+        print(f"{name}: + {k} auxiliary real-Hassaniya examples")
+    for line in lines:
         r = json.loads(line)
         msgs = r["messages"]
         # Qwen/HF chat templates expect tool-call arguments as dicts (they are) and tool results as strings.
@@ -37,7 +45,7 @@ def load_split(name: str, tok, max_len: int):
         prev = []
         for i, m in enumerate(msgs):
             prev.append(m)
-            text = tok.apply_chat_template(prev, tools=TOOLS, tokenize=False,
+            text = tok.apply_chat_template(prev, tools=TOOLS if "intent" in r else None, tokenize=False,
                                            add_generation_prompt=False)
             full = tok(text, add_special_tokens=False)["input_ids"]
             new = full[len(ids):]
@@ -68,7 +76,7 @@ def train(a):
     model = get_peft_model(model, LoraConfig(r=a.rank, lora_alpha=a.rank * 2, lora_dropout=0.05,
                                              target_modules=a.target_modules.split(","), task_type="CAUSAL_LM"))
     model.print_trainable_parameters()
-    train_ds = load_split("train", tok, a.max_len)
+    train_ds = load_split("train", tok, a.max_len, a.aux_ratio)
     dev_ds = load_split("dev", tok, a.max_len)
     print(f"train={len(train_ds)} dev={len(dev_ds)}")
     args = TrainingArguments(
@@ -105,9 +113,10 @@ if __name__ == "__main__":
     ap.add_argument("--bs", type=int, default=4)
     ap.add_argument("--accum", type=int, default=4)
     ap.add_argument("--rank", type=int, default=16)
-    ap.add_argument("--max-len", type=int, default=3072)
+    ap.add_argument("--max-len", type=int, default=4096)  # 23 tool schemas ~2.5k tokens; median example ~3.1k
     ap.add_argument("--target-modules", default="q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj")
     ap.add_argument("--load-4bit", action="store_true", help="QLoRA (needs bitsandbytes + CUDA)")
+    ap.add_argument("--aux-ratio", type=float, default=0.15, help="share of real-Hassaniya auxiliary examples")
     ap.add_argument("--merge", metavar="RUN_DIR")
     a = ap.parse_args()
     merge(a.merge, a.base) if a.merge else train(a)

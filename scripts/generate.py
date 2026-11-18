@@ -296,7 +296,13 @@ def utt_cover_position(area, rng) -> Utt:
 def utt_media(rng, dev=None) -> Utt:
     dev = dev or Dev("media_player", "media_player", pick(dev_items("media_player"), rng))
     d = pick(dev.item["ar"], rng)
-    which = pick(["pause", "unpause", "next", "previous", "volume"], rng)
+    which = pick(["pause", "unpause", "next", "previous", "volume", "mute", "unmute"], rng)
+    if which == "mute":
+        core = pick([f"سكّت {d}", f"گطع صوت {strip_al(d)}", "سكّت الصوت", f"{d} سكّتها"], rng)
+        return Utt(wrap(core, rng), "HassMediaPlayerMute", {}, template="media.mute", meta={"dev": dev})
+    if which == "unmute":
+        core = pick([f"ردّ صوت {strip_al(d)}", "ردّ الصوت", f"خلّي {d} يتكلم"], rng)
+        return Utt(wrap(core, rng), "HassMediaPlayerUnmute", {}, template="media.unmute", meta={"dev": dev})
     if which == "pause":
         core = pick([f"{pick(['حبّس', 'وگّف'], rng)} {d} {pick(LEX['a_little']['ar'], rng)}",
                      f"حبّس {pick([d, 'الموسيقى', 'الغنا', 'المديح'], rng)}", "اعدل pause"], rng)
@@ -315,7 +321,7 @@ def utt_media(rng, dev=None) -> Utt:
     vs, _ = verb("set", rng)
     core = pick([f"{vs} الصوت {pick(['ف', 'على'], rng)} {say_number(n, LEX, rng)}",
                  f"الصوت {say_number(n, LEX, rng)} {pick(LEX['units']['percent'][:2], rng)}",
-                 f"{vs} الصوت امتاع {d} ف {say_number(n, LEX, rng)}"], rng)
+                 f"{vs} صوت {strip_al(d)} ف {say_number(n, LEX, rng)}"], rng)
     return Utt(wrap(core, rng), "HassSetVolume", {"volume_level": n}, template="media.volume",
                meta={"dev": dev})
 
@@ -356,7 +362,7 @@ def utt_timer(rng) -> Utt:
     vs, _ = verb("start_timer", rng)
     tw = pick(["منبّه", "تايمر", "عدّاد", "مينوتري"], rng)
     purpose = pick(["", "", " ل أتاي", " ل الروز", " ل الفرن", " ل الصلاة"], rng)
-    core = pick([f"{vs} {tw} امتاع {amount}{purpose}", f"{vs} {tw} {amount}{purpose}",
+    core = pick([f"{vs} {tw} ل {amount}{purpose}", f"{vs} {tw} {amount}{purpose}",
                  f"نبّهني بعد {amount}{purpose}", f"گول لي بعد {amount}{purpose}",
                  f"{amount}{purpose}، {vs} {tw}"], rng)
     slots = {f"{unit}s": n}
@@ -365,6 +371,10 @@ def utt_timer(rng) -> Utt:
 
 def utt_timer_other(rng) -> Utt:
     tw = pick(["المنبّه", "التايمر", "العدّاد"], rng)
+    if rng.random() < 0.15:
+        vs, _ = verb("cancel", rng)
+        core = pick([f"{vs} {pick(['المنبّهات', 'التايمرات'], rng)} {pick(LEX['all']['ar'], rng)}", f"{vs} {pick(LEX['all']['ar'], rng)} المنبّهات"], rng)
+        return Utt(wrap(core, rng), "HassCancelAllTimers", {}, template="timer.cancel_all")
     if rng.random() < 0.55:
         vs, _ = verb("cancel", rng)
         return Utt(wrap(f"{vs} {tw}", rng), "HassCancelTimer", {}, template="timer.cancel")
@@ -373,9 +383,9 @@ def utt_timer_other(rng) -> Utt:
     return Utt(wrap(core, rng, question=True), "HassTimerStatus", {}, kind="query", template="timer.status")
 
 
-TIME_Q = ["ش الساعة", "الساعة اگدّاش", "گدّاش الساعة دُرك", "گول لي الساعة", "اگدّاش الوگت", "الساعة كم", "شوف لي الساعة"]
-DATE_Q = ["ش اليوم من نهار", "اليوم ش من يوم", "ش التاريخ اليوم", "اليوم گدّاش ف الشهر", "گول لي التاريخ", "ذ اليوم ش هو"]
-WEATHER_Q = ["كيف الجو اليوم", "ش حالة الجو", "واش لاهي تصبّ اليوم", "واش ثمّ عجاج اليوم", "السخانة اگدّاش برّا", "كيف الجو دُرك", "كيف الطقس", "واش الدنيا سخونة برّا", "واش لاهي تجي الريح", "شوف لي الجو امتاع اليوم"]
+TIME_Q = ["شنه الساعة", "ش الساعة", "الساعة كم", "كم الساعة ظرك", "گول لي الساعة", "شوف لي الساعة", "الوكت كم"]
+DATE_Q = ["ش اليوم من نهار", "اليوم ش من يوم", "ش التاريخ اليوم", "اليوم كم ف الشهر", "گول لي التاريخ", "ذ اليوم ش هو"]
+WEATHER_Q = ["كيف الجو اليوم", "ش حالة الجو", "لاهي تصبّ اليوم", "فم عجاج اليوم", "السخانة كم برّا", "كيف الجو ظرك", "كيف الطقس", "واش الدنيا سخونة برّا", "ياك ما لاهي تجي الريح", "شوف لي الجو اليوم"]
 NEVERMIND_Q = ["خلّيه", "ماشي شي", "انساه", "لا لا ماهو ذاك", "سامحني ماني باغي شي", "خلاص", "ما عندي شي", "لا خلّي عنّك"]
 
 
@@ -420,18 +430,18 @@ def utt_nevermind(rng) -> Utt:
 SOCIAL = {
     "greet": (["السلام عليكم", "اشطاري", "كيف اصبحت", "لاباس؟", "ش اخبارك", "صباح الخير", "مساء الخير", "كيف حالك"],
               ["وعليكم السلام، لاباس الحمد لله. ش نعدل لك؟", "لاباس، الحمد لله. ش تبغي نعدل لك؟",
-               "الحمد لله، ما ثمّ باس. انا هون، ش نعدل لك؟", "صباح النور، لاباس. ش اخبارك انت؟"]),
+               "الحمد لله، ما فم باس. انا هون، شنه نعدل لك؟", "صباح النور، لباس. شطاري عندك؟"]),
     "thanks": (["شكرا", "الله يجازيك بالخير", "بارك الله فيك", "يعطيك العافية", "مرسي"],
                ["العفو، ذاك واجب.", "مرحبا بيك ف أي وكت.", "ما عدلت شي، ذاك خدمتي.", "وفيك بارك الله."]),
     "who": (["شكون انت", "انت ش", "ش اسمك", "ش تعرف تعدل"],
-            ["انا دار، المساعد امتاع الدار. نگدر نشعل ونطفي الضو، نعدل الكليم، نگول لك الساعة والجو، ونحطّ لك منبّه.",
+            ["انا دار، مساعد الدار. نگدر نشعل ونطفي الضو، نعدل الكليم، نگول لك الساعة والجو، ونحطّ لك منبّه.",
              "اسمي دار. نتحكّم ف الضو والكليم والتلفزيون والريدوات وغيرهم، كلّو هون ف الدار بلا انترنت."]),
 }
 
 OOS = [
     ("اعدل لي أتاي", "ما نگدر نعدل أتاي بيدي، ولاكن نگدر نحطّ لك منبّه ل أتاي ولّا نشعل البولّوار إلا كان عندك."),
     ("جيب لي الما", "ما نگدر نجيب شي، انا ما عندي يدين. نگدر نشعل لك البومبة إلا كانت مربوطة."),
-    ("اتصل بأمّي", "التليفون ما هو مربوط بيّ دُرك، ما نگدر نعيّط."),
+    ("اتصل بأمّي", "التليفون ماه مربوط بيّ ظرك، ما نگدر نعيّط."),
     ("گول لي نكتة", "واحد گال لصاحبو: ش تعدل؟ گال لو: نشرب أتاي. گال: وغدوه؟ گال: نكمّل الكاس الثالث."),
     ("ش الخبار ف البلاد", "ما عندي انترنت، نخدم هون ف الدار وبس. نگدر نعاونك ف الضو والكليم والجو."),
     ("ابغيت نشري سيارة", "ذاك ماهو من خدمتي، ولاكن نگدر نزيد شي ل ليستة الشرا إلا تبغي."),
@@ -454,14 +464,14 @@ def utt_oos(rng) -> Utt:
 
 # ---------------------------------------------- implicit / indirect requests (LLM path)
 IMPLICIT = {
-    "dark":   ["{area} ظلمة", "ما نشوف شي {in_area}", "الدار ظلمة", "ثمّ ظلام {in_area}"],
-    "hot":    ["الدار سخونة ياسر", "السخانة ياسر {in_area}", "سخنت", "الحرّ ياسر اليوم", "انا نتعرّگ {in_area}"],
+    "dark":   ["{area} ظلمة", "ما نشوف شي {in_area}", "الدار ظلمة", "فم ظلام {in_area}"],
+    "hot":    ["الدار حامية ياسر", "حامي ياسر اليوم", "الدار سخونة ياسر", "السخانة ياسر {in_area}", "سخنت", "الحرّ ياسر اليوم", "انا نتعرّگ {in_area}"],
     "cold":   ["عندي البرد", "البرد ياسر {in_area}", "الدار باردة ياسر", "بردت"],
     "sleep":  ["لاهي نرگد", "تصبح على خير", "انا ماشي نرگد", "ساعة الرگاد"],
     "leave":  ["انا خارج", "ماشي للخدمة", "انا ماشي، ردّ بالك على الدار", "خارجين گاع"],
     "arrive": ["جيت للدار", "ها انا وصلت", "انا جيت", "رجعت للدار"],
     "shower": ["نبغي نغتسل", "نبغي نتوضّأ بالما السخون", "الما بارد ف الدوش"],
-    "water":  ["الما ما ينزل", "البيدونات فارغين", "ما ثمّ ما ف الروبيني"],
+    "water":  ["الما ما ينزل", "البيدونات فارغين", "ما فم ما ف الروبيني"],
 }
 
 
@@ -651,8 +661,8 @@ def tool_result(ents):
                                 "failed": []}}, ensure_ascii=False)
 
 
-DONE = {"on": ["شعّلت", "حلّيت"], "off": ["طفّيت", "سكّرت"], "open": ["حلّيت"], "close": ["سدّيت"],
-        "lock": ["غلگت", "سكّرت"], "unlock": ["حلّيت"]}
+DONE = {"on": ["گدّيت", "شعّلت"], "off": ["طفّيت", "سكّرت"], "open": ["فتحت", "حلّيت"], "close": ["گفلت", "سكّرت"],
+        "lock": ["گفلت"], "unlock": ["فتحت"]}  # corpus: گديت 14, گفلت 2
 STATE_OF = {"on": "on", "off": "off", "open": "open", "close": "closed", "lock": "locked", "unlock": "unlocked"}
 HA_ON = {"on", "playing", "paused", "idle", "cool", "heat", "cleaning", "open", "unlocked"}
 
@@ -681,13 +691,23 @@ def reply_onoff(action, ents, rng):
     st = STATE_OF[action]
     if len(ents) == 1:
         e = ents[0]
-        return pick([f"حاضر، {e['name']} {pp(st, e['g'])} دُرك.", f"{pick(DONE[action], rng)} {e['name']}.",
+        return pick([f"اهيه، {e['name']} {pp(st, e['g'])} ظرك.", f"{pick(DONE[action], rng)} {e['name']}.",
                      f"تمّ، {e['name']} {pp(st, e['g'])}.", f"هاني {pick(DONE[action], rng)} {e['name']}."], rng)
-    return pick([f"حاضر، {pick(DONE[action], rng)} {len(ents)} {('اضواو' if ents[0]['key'] == 'light' else 'آلات')}: {names_join(ents)}.",
+    return pick([f"اهيه، {pick(DONE[action], rng)} {len(ents)} {('اضواو' if ents[0]['key'] == 'light' else 'آلات')}: {names_join(ents)}.",
                  f"تمّ، {names_join(ents)} گاع {pp(st, 'f') if len(ents) > 1 else ''}.".replace("  ", " ")], rng)
 
 
 # =============================================================== SFT scenario builder
+_OK_RNG = random.Random(11)
+
+
+def vary_ok(text: str) -> str:
+    """Corpus-attested acknowledgements instead of one fixed word (اهيه 188, ايوه 99, زين 238)."""
+    if text.startswith("اهيه"):
+        return _OK_RNG.choice(["اهيه", "اهيه", "ايوه", "زين"]) + text[4:]
+    return text
+
+
 def conv(home, user, calls_and_results, final, extra_turns=None):
     msgs = [{"role": "system", "content": home.get("_ctx") or home_context(home)}, {"role": "user", "content": user}]
     if calls_and_results:
@@ -696,7 +716,7 @@ def conv(home, user, calls_and_results, final, extra_turns=None):
                                     for n, a, _ in calls_and_results]})
         for n, _, res in calls_and_results:
             msgs.append({"role": "tool", "name": n, "content": res})
-    msgs.append({"role": "assistant", "content": final})
+    msgs.append({"role": "assistant", "content": vary_ok(final)})
     for t in extra_turns or []:
         msgs.append(t)
     return msgs
@@ -781,12 +801,12 @@ def sft_light_set(home, rng):
         u = utt_brightness(dev, area, rng)
         args = {"name": e["name"], "brightness": u.slots["brightness"]}
         e["state"], e["attrs"]["brightness"] = "on", u.slots["brightness"]
-        rep = pick([f"حاضر، {e['name']} دُرك ف {u.slots['brightness']} فالمية.", f"اعدلت {e['name']} ف {u.slots['brightness']}%."], rng)
+        rep = pick([f"اهيه، {e['name']} ظرك ف {u.slots['brightness']} فالمية.", f"اعدلت {e['name']} ف {u.slots['brightness']}%."], rng)
     elif mode == "color":
         u = utt_color(dev, area, rng)
         args = {"name": e["name"], "color": u.slots["color"]}
         e["state"] = "on"
-        rep = pick([f"حاضر، {e['name']} ردّيتو {u.meta['color_ar']}.", f"تمّ، {e['name']} دُرك {u.meta['color_ar']}."], rng)
+        rep = pick([f"اهيه، {e['name']} ردّيتو {u.meta['color_ar']}.", f"تمّ، {e['name']} ظرك {u.meta['color_ar']}."], rng)
     else:
         up = rng.random() < 0.5
         u = utt_relative_light(dev, area, rng, up)
@@ -821,7 +841,7 @@ def sft_climate(home, rng):
         t = u.slots["temperature"]
         e["state"], e["attrs"]["temperature"] = "cool", t
         return conv(home, u.text, [("HassClimateSetTemperature", {"name": e["name"], "temperature": t}, tool_result([e]))],
-                    pick([f"حاضر، {e['name']} دُرك على {t} درجة.", f"اعدلت {e['name']} ف {t} درجة."], rng)), u
+                    pick([f"اهيه، {e['name']} ظرك على {t} درجة.", f"اعدلت {e['name']} ف {t} درجة."], rng)), u
     if mode == "get":
         u = utt_climate_get(area if use_area else None, rng)
         cur = e["attrs"]["current_temperature"]
@@ -830,21 +850,21 @@ def sft_climate(home, rng):
                          ensure_ascii=False)
         extra = " الكليم طافي، تبغي نشعلو؟" if e["state"] == "off" and cur >= 30 else ""
         return conv(home, u.text, [("HassClimateGetTemperature", {"area": area["ar"][0]} if use_area else {"name": e["name"]}, res)],
-                    f"السخانة {('ف ' + area['ar'][0]) if use_area else 'ف الدار'} دُرك {cur} درجة.{extra}"), u
+                    f"السخانة {('ف ' + area['ar'][0]) if use_area else 'ف الدار'} ظرك {cur} درجة.{extra}"), u
     if mode == "hot":
         u = utt_implicit("hot", area if rng.random() < 0.5 else None, rng)
         if e["state"] == "off":
             e["state"] = "cool"
             return conv(home, u.text, [("HassTurnOn", {"name": e["name"]}, tool_result([e]))],
                         pick([f"شعّلت {e['name']} على {e['attrs']['temperature']} درجة، شوي وتبرد الدار.",
-                              f"حاضر، {e['name']} شاعل دُرك. السخانة ف {area['ar'][0]} {e['attrs']['current_temperature']} درجة."], rng)), u
+                              f"اهيه، {e['name']} شاعل ظرك. السخانة ف {area['ar'][0]} {e['attrs']['current_temperature']} درجة."], rng)), u
         new = max(16, e["attrs"]["temperature"] - 2)
         old, e["attrs"]["temperature"] = e["attrs"]["temperature"], new
         return conv(home, u.text, [("HassClimateSetTemperature", {"name": e["name"], "temperature": new}, tool_result([e]))],
                     f"{e['name']} شاعل من گبيل، نگّصتو من {old} ل {new} درجة."), u
     u = utt_implicit("cold", area if rng.random() < 0.5 else None, rng)
     if e["state"] == "off":
-        return conv(home, u.text, [], f"{e['name']} طافي من گبيل. السخانة دُرك {e['attrs']['current_temperature']} درجة. تبغي نسكّر الطاگة؟"), u
+        return conv(home, u.text, [], f"{e['name']} طافي من گبيل. السخانة ظرك {e['attrs']['current_temperature']} درجة. تبغي نسكّر الطاگة؟"), u
     e["state"] = "off"
     return conv(home, u.text, [("HassTurnOff", {"name": e["name"]}, tool_result([e]))], f"طفّيت {e['name']}، باش تسخن الدار شوي."), u
 
@@ -859,7 +879,7 @@ def sft_state(home, rng):
     if u.template == "state.which":
         on = [x for x in find(home, key=e["key"]) if is_state(x, "on")]
         res = json.dumps({"response_type": "query_answer", "data": {"success": [{"name": x["name"]} for x in on]}}, ensure_ascii=False)
-        rep = (f"الّي {pp('on', e['g'])} دُرك: {names_join(on)}." if on else f"حتى {strip_al(e['item']['ar'][0])} ما {pp('on', e['g'])} دُرك.")
+        rep = (f"الّي {pp('on', e['g'])} ظرك: {names_join(on)}." if on else f"حتى {strip_al(e['item']['ar'][0])} ما {pp('on', e['g'])} ظرك.")
         return conv(home, u.text, [("HassGetState", {"domain": e["domain"], "state": "on"}, res)], rep), u
     yes = is_state(e, st)
     res = json.dumps({"response_type": "query_answer", "data": {"success": [{"name": e["name"], "state": e["state"]}] if yes else [],
@@ -881,7 +901,7 @@ def sft_info(home, rng):
     u = utt_time_date_weather(rng)
     if u.intent == "HassGetCurrentTime":
         h, m = home["time"]
-        return conv(home, u.text, [], pick([f"الساعة دُرك {say_time(h, m)}.", f"{say_time(h, m)}."], rng)), u
+        return conv(home, u.text, [], pick([f"الساعة ظرك {say_time(h, m)}.", f"{say_time(h, m)}."], rng)), u
     if u.intent == "HassGetCurrentDate":
         d, mo, wd = home["date"]
         return conv(home, u.text, [], f"اليوم {WEEKDAYS[wd]}، {d} {MONTHS[mo - 1]}."), u
@@ -894,9 +914,9 @@ def sft_info(home, rng):
     if t >= 40:
         advice = " السخانة ياسر، اشرب الما وگابل الظلّ."
     elif cond == "exceptional" or wind > 40:
-        advice = " ثمّ ريح وعجاج، سدّ الطاگات."
+        advice = " فم ريح وعجاج، اگفل الطاگات."
     elif cond == "rainy":
-        advice = " ثمّ مطر، الله يجعلو خير."
+        advice = " فم الشتا، الله يجعلها خير."
     return conv(home, u.text, [("HassGetWeather", {}, res)], f"الجو {COND[cond]}، والسخانة {t} درجة.{advice}"), u
 
 
@@ -908,10 +928,12 @@ def sft_timer(home, rng):
         label = count_with_unit(n, unit[:-1], random.Random(0))
         res = json.dumps({"response_type": "action_done", "data": {"success": [], "failed": []}}, ensure_ascii=False)
         return conv(home, u.text, [("HassStartTimer", dict(u.slots), res)],
-                    pick([f"حاضر، المنبّه امتاع {label} بدا.", f"تمّ، لاهي نگول لك بعد {label}.", f"بدا العدّاد: {label}."], rng)), u
+                    pick([f"اهيه، منبّه {label} بدا.", f"تمّ، لاهي نگول لك بعد {label}.", f"بدا العدّاد: {label}."], rng)), u
     u = utt_timer_other(rng)
+    if u.intent == "HassCancelAllTimers":
+        return conv(home, u.text, [("HassCancelAllTimers", {}, json.dumps({"response_type": "action_done"}))], "اهيه، الغيت المنبّهات گاع."), u
     if u.intent == "HassCancelTimer":
-        return conv(home, u.text, [("HassCancelTimer", {}, json.dumps({"response_type": "action_done"}))], "حاضر، الغيت المنبّه."), u
+        return conv(home, u.text, [("HassCancelTimer", {}, json.dumps({"response_type": "action_done"}))], "اهيه، الغيت المنبّه."), u
     rem = rng.randint(1, 25)
     res = json.dumps({"timers": [{"minutes_left": rem, "seconds_left": rng.randint(0, 59)}]})
     return conv(home, u.text, [("HassTimerStatus", {}, res)], f"باگي {count_with_unit(rem, 'minute', rng)} تقريبا."), u
@@ -933,11 +955,11 @@ def sft_media(home, rng):
                     f"{'زدت' if up else 'نگّصت'} الصوت من {cur} ل {new}."), u
     u = utt_media(rng, dev)
     if u.intent == "HassMediaPause" and e["state"] != "playing":
-        return conv(home, u.text, [], f"{e['name']} ما يخدم شي دُرك، ما ثمّ ش نحبّس."), u
+        return conv(home, u.text, [], f"{e['name']} ما يخدم شي ظرك، ما فم شي نحبّس."), u
     args = {"name": e["name"]}
     args.update(u.slots)
-    rep = {"HassMediaPause": "حاضر، حبّستو.", "HassMediaUnpause": "حاضر، رجع يخدم.", "HassMediaNext": "هاك الّي بعدو.",
-           "HassMediaPrevious": "رجّعت للّي گبل.", "HassSetVolume": f"الصوت دُرك ف {u.slots.get('volume_level')}."}[u.intent]
+    rep = {"HassMediaPlayerMute": "اهيه، سكّتّو.", "HassMediaPlayerUnmute": "اهيه، ردّيت الصوت.", "HassMediaPause": "اهيه، حبّستو.", "HassMediaUnpause": "اهيه، رجع يخدم.", "HassMediaNext": "هاك الّي بعدو.",
+           "HassMediaPrevious": "رجّعت للّي گبل.", "HassSetVolume": f"الصوت ظرك ف {u.slots.get('volume_level')}."}[u.intent]
     return conv(home, u.text, [(u.intent, args, tool_result([e]))], rep), u
 
 
@@ -951,9 +973,9 @@ def sft_misc(home, rng):
         vac = find(home, domain="vacuum")
         u = utt_vacuum(rng)
         if not vac:
-            return conv(home, u.text, [], "ما عندك حتى روبو امتاع تنظيف مربوط ب الدار."), u
+            return conv(home, u.text, [], "ما عندك حتى روبو تنظيف مربوط ب الدار."), u
         return conv(home, u.text, [(u.intent, {"name": vac[0]["name"]}, tool_result(vac))],
-                    "حاضر، الروبو بدا ينظّف." if u.intent == "HassVacuumStart" else "حاضر، الروبو راجع لبلاصتو."), u
+                    "اهيه، الروبو بدا ينظّف." if u.intent == "HassVacuumStart" else "اهيه، الروبو راجع لبلاصتو."), u
     if r < 0.6:
         u = utt_social(rng)
         return conv(home, u.text, [], u.meta["reply"]), u
@@ -962,7 +984,7 @@ def sft_misc(home, rng):
         return conv(home, u.text, [], u.meta["reply"]), u
     if r < 0.82:
         u = utt_nevermind(rng)
-        return conv(home, u.text, [], pick(["ما عليه.", "حاضر.", "خلاص، انا هون إلا احتجت شي."], rng)), u
+        return conv(home, u.text, [], pick(["ما عليه.", "اهيه.", "خلاص، انا هون إلا احتجت شي."], rng)), u
     if r < 0.9:
         txt = pick(UNCLEAR, rng)
         u = Utt(txt, "Clarify", {}, kind="clarify", fast_path=False, template="clarify")
@@ -973,7 +995,7 @@ def sft_misc(home, rng):
     e = pick(covers, rng)
     u = utt_cover_position(e["area"], rng)
     return conv(home, u.text, [("HassSetPosition", {"name": e["name"], "position": u.slots["position"]}, tool_result([e]))],
-                f"حاضر، {e['name']} دُرك محلول {u.slots['position']} فالمية."), u
+                f"اهيه، {e['name']} ظرك مفتوح {u.slots['position']} فالمية."), u
 
 
 def sft_routine(home, rng):
@@ -1029,7 +1051,7 @@ def sft_routine(home, rng):
     pump = [e for e in find(home, key="switch") if "البومبة" in e["item"]["ar"]]
     u = utt_implicit(kind, None, rng)
     if not pump:
-        return conv(home, u.text, [], "ما عندك بومبة مربوطة ب الدار. شوف الروبيني امتاع الشارع."), u
+        return conv(home, u.text, [], "ما عندك بومبة مربوطة ب الدار. شوف روبيني الشارع."), u
     if pump[0]["state"] == "on":
         return conv(home, u.text, [], f"{pump[0]['name']} شاعلة من گبيل. يمكن الما مگطوع من البرّا."), u
     apply_state(pump, "on")
@@ -1053,7 +1075,7 @@ def sft_multi(home, rng):
     apply_state([a], act_a)
     apply_state([b], act_b)
     calls = [(na, {"name": a["name"]}, tool_result([a])), (nb, {"name": b["name"]}, tool_result([b]))]
-    rep = f"حاضر: {a['name']} {pp(STATE_OF[act_a], a['g'])}، و{b['name']} {pp(STATE_OF[act_b], b['g'])}."
+    rep = f"اهيه: {a['name']} {pp(STATE_OF[act_a], a['g'])}، و{b['name']} {pp(STATE_OF[act_b], b['g'])}."
     return conv(home, text, calls, rep), Utt(text, "Multi", {}, kind="multi", fast_path=False, template="multi")
 
 

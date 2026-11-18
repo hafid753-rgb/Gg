@@ -1,0 +1,93 @@
+service,response_starting,response_confirmed,persona,short
+light.turn_on,اهيه، لاهي نگدي <device_name>.,گدّيت <device_name>.,assistant,0
+light.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,1
+light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> شاعل ظرك.,assistant,0
+light.turn_on,زين، نگدي <device_name> ظرك.,<device_name> شاعل ظرك.,assistant,1
+light.turn_on,ايوه، هاني نگدي <device_name>.,گدّيت <device_name>.,assistant,0
+light.turn_on,ايوه، هاني نگدي <device_name>.,گدّيت <device_name>.,assistant,1
+light.turn_off,اهيه، لاهي نطفّي <device_name>.,طفّيت <device_name>.,assistant,0
+light.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,1
+light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> طافي ظرك.,assistant,0
+light.turn_off,زين، نطفّي <device_name> ظرك.,<device_name> طافي ظرك.,assistant,1
+light.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+light.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+switch.turn_on,اهيه، لاهي نگدي <device_name>.,گدّيت <device_name>.,assistant,0
+switch.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,1
+switch.turn_on,زين، نشعّل <device_name>.,شعّلت <device_name>.,assistant,0
+switch.turn_on,زين، نشعّل <device_name>.,شعّلت <device_name>.,assistant,1
+switch.turn_off,اهيه، لاهي نطفّي <device_name>.,طفّيت <device_name>.,assistant,0
+switch.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,1
+switch.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+switch.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+fan.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,0
+fan.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,1
+fan.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,0
+fan.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,1
+fan.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+fan.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+fan.increase_speed,اهيه، نزيد <device_name>.,زدت سرعة <device_name>.,assistant,0
+fan.increase_speed,اهيه، نزيد <device_name>.,زدت سرعة <device_name>.,assistant,1
+fan.decrease_speed,اهيه، ننگّص <device_name>.,نگّصت سرعة <device_name>.,assistant,0
+fan.decrease_speed,اهيه، ننگّص <device_name>.,نگّصت سرعة <device_name>.,assistant,1
+media_player.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,0
+media_player.turn_on,اهيه، نگدي <device_name>.,گدّيت <device_name>.,assistant,1
+media_player.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,0
+media_player.turn_off,اهيه، نطفّي <device_name>.,طفّيت <device_name>.,assistant,1
+media_player.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+media_player.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+media_player.media_play,اهيه، نكمّل <device_name>.,<device_name> رجع يخدم.,assistant,0
+media_player.media_play,اهيه، نكمّل <device_name>.,<device_name> رجع يخدم.,assistant,1
+media_player.media_pause,اهيه، نحبّس <device_name>.,حبّست <device_name>.,assistant,0
+media_player.media_pause,اهيه، نحبّس <device_name>.,حبّست <device_name>.,assistant,1
+media_player.media_stop,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,0
+media_player.media_stop,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,1
+media_player.media_next_track,اهيه، الّي بعدو ف <device_name>.,هاك الّي بعدو ف <device_name>.,assistant,0
+media_player.media_next_track,اهيه، الّي بعدو ف <device_name>.,هاك الّي بعدو ف <device_name>.,assistant,1
+media_player.media_previous_track,اهيه، نردّ للّي گبل ف <device_name>.,رجّعت للّي گبل ف <device_name>.,assistant,0
+media_player.media_previous_track,اهيه، نردّ للّي گبل ف <device_name>.,رجّعت للّي گبل ف <device_name>.,assistant,1
+media_player.volume_up,اهيه، نزيد صوت <device_name>.,زدت صوت <device_name>.,assistant,0
+media_player.volume_up,اهيه، نزيد صوت <device_name>.,زدت صوت <device_name>.,assistant,1
+media_player.volume_down,اهيه، ننگّص صوت <device_name>.,نگّصت صوت <device_name>.,assistant,0
+media_player.volume_down,اهيه، ننگّص صوت <device_name>.,نگّصت صوت <device_name>.,assistant,1
+media_player.volume_mute,اهيه، نسكّت <device_name>.,سكّتت <device_name>.,assistant,0
+media_player.volume_mute,اهيه، نسكّت <device_name>.,سكّتت <device_name>.,assistant,1
+blinds.open_cover,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,0
+blinds.open_cover,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,1
+blinds.close_cover,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,0
+blinds.close_cover,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,1
+blinds.stop_cover,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,0
+blinds.stop_cover,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,1
+blinds.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+blinds.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+garage_door.open_cover,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,0
+garage_door.open_cover,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,1
+garage_door.close_cover,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,0
+garage_door.close_cover,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,1
+garage_door.stop_cover,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,0
+garage_door.stop_cover,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,1
+garage_door.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,0
+garage_door.toggle,اهيه، نبدّل <device_name>.,بدّلت <device_name>.,assistant,1
+lock.lock,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,0
+lock.lock,اهيه، نگفل <device_name>.,گفلت <device_name>.,assistant,1
+lock.lock,زين، لاهي نگفل <device_name>.,<device_name> مگفول ظرك.,assistant,0
+lock.lock,زين، نگفل <device_name>.,<device_name> مگفول ظرك.,assistant,1
+lock.unlock,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,0
+lock.unlock,اهيه، نفتح <device_name>.,فتحت <device_name>.,assistant,1
+climate.set_temperature,اهيه، ندير <device_name> على <temp_c> درجة.,<device_name> ظرك على <temp_c> درجة.,assistant,0
+climate.set_temperature,اهيه، ندير <device_name> على <temp_c> درجة.,<device_name> ظرك على <temp_c> درجة.,assistant,1
+vacuum.start,اهيه، <device_name> لاهي يبدا ينظّف.,<device_name> بدا ينظّف.,assistant,0
+vacuum.start,اهيه، <device_name> يبدا ينظّف.,<device_name> بدا ينظّف.,assistant,1
+vacuum.stop,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,0
+vacuum.stop,اهيه، نوگّف <device_name>.,وگّفت <device_name>.,assistant,1
+vacuum.pause,اهيه، نحبّس <device_name>.,حبّست <device_name>.,assistant,0
+vacuum.pause,اهيه، نحبّس <device_name>.,حبّست <device_name>.,assistant,1
+vacuum.return_to_base,اهيه، نردّ <device_name> لبلاصتو.,<device_name> راجع لبلاصتو.,assistant,0
+vacuum.return_to_base,اهيه، نردّ <device_name> لبلاصتو.,<device_name> راجع لبلاصتو.,assistant,1
+timer.start,اهيه، ندير <device_name> ل <duration>.,<device_name> بدا: <duration>.,assistant,0
+timer.start,اهيه، ندير <device_name> ل <duration>.,<device_name> بدا: <duration>.,assistant,1
+timer.cancel,اهيه، نلغي <device_name>.,الغيت <device_name>.,assistant,0
+timer.cancel,اهيه، نلغي <device_name>.,الغيت <device_name>.,assistant,1
+todo.add_item,اهيه، نزيد <todo> ل <device_name>.,زدت <todo> ل <device_name>.,assistant,0
+todo.add_item,اهيه، نزيد <todo> ل <device_name>.,زدت <todo> ل <device_name>.,assistant,1
+light.turn_on,اهيه، ندير <device_name> ف <brightness>%.,<device_name> ظرك ف <brightness>%.,assistant,0
+light.turn_on,اهيه، نردّ <device_name> <color>.,<device_name> ظرك <color>.,assistant,0

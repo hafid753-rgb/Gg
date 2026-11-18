@@ -7,3 +7,5 @@ data/recordings/**/*.wav
 data/recordings/**/*.ogg
 data/recordings/**/*.flac
 *.gguf
+# benchmark predictions are derived from non-commercial audio; only the summary tables are committed
+data/benchmarks/asr/*.jsonl
