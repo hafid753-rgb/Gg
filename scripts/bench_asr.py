@@ -97,7 +97,8 @@ def main():
     ap.add_argument("--n", type=int, default=100)
     ap.add_argument("--models", nargs="*", default=["all"])
     ap.add_argument("--device", default="cpu")
-    ap.add_argument("--tts", action="store_true", help="command-domain test on data/external/tts_commands (scripts/synth_tts.py)")
+    ap.add_argument("--tts", action="store_true", help="command-domain test on data/external/<--tts-dir> (scripts/synth_tts.py)")
+    ap.add_argument("--tts-dir", default="tts_commands")
     a = ap.parse_args()
     import torch
     torch.set_num_threads(max(1, torch.get_num_threads()))
@@ -139,7 +140,7 @@ def run_tts(a):
     end-to-end intent accuracy = would Home Assistant's fast path have done the right thing?"""
     import yaml
     from hassil import Intents, recognize
-    tdir = ROOT / "data" / "external" / "tts_commands"
+    tdir = ROOT / "data" / "external" / a.tts_dir
     rows = [json.loads(l) for l in open(tdir / "manifest.jsonl", encoding="utf-8")]
     for r in rows:
         r["file"] = str(tdir / r["file"])
@@ -156,7 +157,7 @@ def run_tts(a):
         return 100 * ok / max(n, 1), n
 
     gold_acc, n_cmd = e2e([r["text"] for r in rows])
-    lines = [f"# Command-domain ASR test: {len(rows)} synthetic Hassaniya commands\n",
+    lines = [f"# Command-domain ASR test: {len(rows)} synthetic Hassaniya commands (`{a.tts_dir}`)\n",
              "Audio comes from `scripts/synth_tts.py`, which uses one synthetic speaker (the community VITS voice "
              "mlemineb/mms-tts-hassaniya), so these numbers are optimistic compared with real voices. "
              "**E2E** is the share of Hass* commands where Home Assistant's hassil matcher, run with our Hassaniya sentences "
@@ -176,7 +177,7 @@ def run_tts(a):
             "".join(json.dumps(p, ensure_ascii=False) + "\n" for p in preds), encoding="utf-8")
         lines.append(f"| {repo} | {s['step3'][0]:.1f} | {s['step3'][1]:.1f} | {acc:.0f} | {rtf:.2f} |")
         print("  ", s, f"e2e={acc:.0f}%", flush=True)
-        (OUT / "results_commands.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (OUT / f"results_commands{'' if a.tts_dir == 'tts_commands' else '__' + a.tts_dir}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def write_md(results, n, device):
