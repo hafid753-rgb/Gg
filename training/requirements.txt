@@ -1,0 +1,16 @@
+# LLM LoRA
+torch>=2.3
+transformers>=4.45
+peft>=0.12
+datasets>=2.20
+accelerate>=0.33
+bitsandbytes>=0.43 ; platform_system == "Linux"
+# Whisper
+evaluate>=0.4
+jiwer>=3.0
+soundfile
+librosa
+ctranslate2>=4.3
+# dataset tooling
+pyyaml
+hassil>=2.0

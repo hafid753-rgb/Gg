@@ -1,0 +1,2705 @@
+{
+ "corpus": "data/external/hassaniya_text_all.jsonl",
+ "sentences": 16271,
+ "tokens": 143526,
+ "forms": 347,
+ "attested": 183,
+ "items": [
+  {
+   "section": "verb",
+   "key": "turn_on.imp_m",
+   "form": "اگدي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_on.imp_f",
+   "form": "اگدي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_on.imp_pl",
+   "form": "اگدو",
+   "hits": 0,
+   "suggest": [
+    "يكد",
+    "كد",
+    "ايكد"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_on.req",
+   "form": "تگدي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_on_device.imp_m",
+   "form": "اگدي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_on_device.imp_f",
+   "form": "اگدي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_on_device.imp_pl",
+   "form": "اگدو",
+   "hits": 0,
+   "suggest": [
+    "يكد",
+    "كد",
+    "ايكد"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_on_device.req",
+   "form": "تگدي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_m",
+   "form": "طفّي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_m",
+   "form": "اطفي",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_m",
+   "form": "سكّر",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_f",
+   "form": "اطفاي",
+   "hits": 0,
+   "suggest": [
+    "اطفي",
+    "طفي",
+    "اطيافو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_f",
+   "form": "طفّاي",
+   "hits": 0,
+   "suggest": [
+    "اطفي",
+    "طفي",
+    "اطيافو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_f",
+   "form": "سكّري",
+   "hits": 0,
+   "suggest": [
+    "اسكير",
+    "سكور",
+    "سكوار"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_pl",
+   "form": "اطفاو",
+   "hits": 0,
+   "suggest": [
+    "اطفي",
+    "طفي",
+    "اطيافو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.imp_pl",
+   "form": "طفّاو",
+   "hits": 0,
+   "suggest": [
+    "اطفي",
+    "طفي",
+    "اطيافو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.req",
+   "form": "تطفي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.req",
+   "form": "اتطفّي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "turn_off.req",
+   "form": "تسكّر لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_m",
+   "form": "افتح",
+   "hits": 13,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_m",
+   "form": "حلّ",
+   "hits": 14,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_f",
+   "form": "افتحي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_f",
+   "form": "حلّي",
+   "hits": 0,
+   "suggest": [
+    "حالا",
+    "حلو",
+    "واحل"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_pl",
+   "form": "افتحو",
+   "hits": 0,
+   "suggest": [
+    "افتح",
+    "فاتح",
+    "يفتح"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "open.imp_pl",
+   "form": "حلّو",
+   "hits": 63,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.req",
+   "form": "تفتح لي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "open.req",
+   "form": "تحلّ لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "close.imp_m",
+   "form": "اگفل",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "close.imp_f",
+   "form": "اگفلي",
+   "hits": 0,
+   "suggest": [
+    "اكفل",
+    "كفل",
+    "يكفل"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "close.imp_pl",
+   "form": "اگفلو",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "close.req",
+   "form": "تگفل لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_m",
+   "form": "زيد",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_m",
+   "form": "طلّع",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_m",
+   "form": "رفّد",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_f",
+   "form": "زيدي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_f",
+   "form": "طلّعي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.imp_pl",
+   "form": "زيدو",
+   "hits": 0,
+   "suggest": [
+    "زاد",
+    "زايد",
+    "زيد"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "increase.req",
+   "form": "تزيد",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "increase.req",
+   "form": "اتزيد لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_m",
+   "form": "نگّص",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_m",
+   "form": "نقّص",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_m",
+   "form": "هبّط",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_m",
+   "form": "اطيّح",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_f",
+   "form": "نگّصي",
+   "hits": 0,
+   "suggest": [
+    "نكص",
+    "انكص",
+    "ينكص"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_f",
+   "form": "هبّطي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.imp_pl",
+   "form": "نگّصو",
+   "hits": 0,
+   "suggest": [
+    "نكص",
+    "انكص",
+    "ينكص"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "decrease.req",
+   "form": "تنگّص",
+   "hits": 11,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "decrease.req",
+   "form": "اتنگّص لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_m",
+   "form": "اعدل",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_m",
+   "form": "دير",
+   "hits": 31,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_m",
+   "form": "حطّ",
+   "hits": 0,
+   "suggest": [
+    "حيط"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_m",
+   "form": "ردّ",
+   "hits": 14,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_f",
+   "form": "اعدلي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_f",
+   "form": "ديري",
+   "hits": 0,
+   "suggest": [
+    "دور",
+    "دار",
+    "ادور"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_f",
+   "form": "حطّي",
+   "hits": 0,
+   "suggest": [
+    "حيط"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_f",
+   "form": "ردّي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_pl",
+   "form": "اعدلو",
+   "hits": 0,
+   "suggest": [
+    "يعدل",
+    "عدل",
+    "يعدلو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "set.imp_pl",
+   "form": "ديرو",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.req",
+   "form": "تعدل لي",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.req",
+   "form": "اتدير لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "set.req",
+   "form": "تردّ",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_m",
+   "form": "وگّف",
+   "hits": 19,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_m",
+   "form": "وقّف",
+   "hits": 19,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_m",
+   "form": "حبّس",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_f",
+   "form": "وگّفي",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_f",
+   "form": "حبّسي",
+   "hits": 0,
+   "suggest": [
+    "حبس",
+    "احبس",
+    "يحبسو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "stop.imp_pl",
+   "form": "وگّفو",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.req",
+   "form": "توگّف لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "stop.req",
+   "form": "اتحبّس لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_m",
+   "form": "كمّل",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_m",
+   "form": "زيد",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_m",
+   "form": "خلّيه يكمّل",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_m",
+   "form": "ردّو يخدم",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_f",
+   "form": "كمّلي",
+   "hits": 0,
+   "suggest": [
+    "كامل",
+    "كمال",
+    "كاامل"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "resume.imp_pl",
+   "form": "كمّلو",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "resume.req",
+   "form": "تكمّل لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.imp_m",
+   "form": "گول لي",
+   "hits": 8,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.imp_m",
+   "form": "گلّي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.imp_m",
+   "form": "اخبرني",
+   "hits": 0,
+   "suggest": [
+    "اخبارنا"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "tell.imp_f",
+   "form": "گولي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.imp_pl",
+   "form": "گولو لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.req",
+   "form": "تگول لي",
+   "hits": 10,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "tell.req",
+   "form": "اتگول لي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "check.imp_m",
+   "form": "شوف لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "check.imp_m",
+   "form": "اشوف",
+   "hits": 7,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "check.imp_m",
+   "form": "ارّاع",
+   "hits": 0,
+   "suggest": [
+    "اراعي",
+    "راعي",
+    "يراعي"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "check.imp_f",
+   "form": "شوفي لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "check.imp_pl",
+   "form": "شوفو لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "check.req",
+   "form": "تشوف لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_m",
+   "form": "زيد",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_m",
+   "form": "اكتب",
+   "hits": 11,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_m",
+   "form": "گيّد",
+   "hits": 0,
+   "suggest": [
+    "يكد",
+    "كد",
+    "ايكد"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_m",
+   "form": "حطّ",
+   "hits": 0,
+   "suggest": [
+    "حيط"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_f",
+   "form": "زيدي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_f",
+   "form": "اكتبي",
+   "hits": 0,
+   "suggest": [
+    "اكتب",
+    "كتاب",
+    "يكتب"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "add.imp_pl",
+   "form": "زيدو",
+   "hits": 0,
+   "suggest": [
+    "زاد",
+    "زايد",
+    "زيد"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "add.req",
+   "form": "تزيد",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "add.req",
+   "form": "اتكتب لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_m",
+   "form": "اعدل",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_m",
+   "form": "دير",
+   "hits": 31,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_m",
+   "form": "حطّ",
+   "hits": 0,
+   "suggest": [
+    "حيط"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_m",
+   "form": "ابدا",
+   "hits": 65,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_f",
+   "form": "اعدلي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_f",
+   "form": "ديري",
+   "hits": 0,
+   "suggest": [
+    "دور",
+    "دار",
+    "ادور"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.imp_pl",
+   "form": "اعدلو",
+   "hits": 0,
+   "suggest": [
+    "يعدل",
+    "عدل",
+    "يعدلو"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.req",
+   "form": "تعدل لي",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "start_timer.req",
+   "form": "اتحطّ لي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_m",
+   "form": "الغي",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_m",
+   "form": "اگطع",
+   "hits": 16,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_m",
+   "form": "وگّف",
+   "hits": 19,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_m",
+   "form": "نحّ",
+   "hits": 0,
+   "suggest": [
+    "انح",
+    "نحياو",
+    "نحي"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_f",
+   "form": "الغاي",
+   "hits": 0,
+   "suggest": [
+    "ولواغ",
+    "الغي",
+    "ولواغ",
+    "الغي"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_f",
+   "form": "وگّفي",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.imp_pl",
+   "form": "الغاو",
+   "hits": 0,
+   "suggest": [
+    "ولواغ",
+    "الغي",
+    "ولواغ",
+    "الغي"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "cancel.req",
+   "form": "تلغي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "cancel.req",
+   "form": "اتنحّ",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_m",
+   "form": "نظّف",
+   "hits": 0,
+   "suggest": [
+    "ينظف"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_m",
+   "form": "شطّب",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_m",
+   "form": "اسيگ",
+   "hits": 0,
+   "suggest": [
+    "سكي",
+    "سوك",
+    "اسكي"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_f",
+   "form": "نظّفي",
+   "hits": 0,
+   "suggest": [
+    "ينظف"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_f",
+   "form": "شطّبي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "clean.imp_pl",
+   "form": "نظّفو",
+   "hits": 0,
+   "suggest": [
+    "ينظف"
+   ]
+  },
+  {
+   "section": "verb",
+   "key": "clean.req",
+   "form": "تنظّف",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.imp_m",
+   "form": "ردّ",
+   "hits": 14,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.imp_m",
+   "form": "رجّع",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.imp_f",
+   "form": "ردّي",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.imp_f",
+   "form": "رجّعي",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.imp_pl",
+   "form": "ردّو",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "verb",
+   "key": "return.req",
+   "form": "تردّ",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "want",
+   "form": "نبغي",
+   "hits": 44,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "want",
+   "form": "ابغيت",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "want",
+   "form": "نبغيك",
+   "hits": 19,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "want",
+   "form": "راني نبغي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "want",
+   "form": "نبغي منك",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "now",
+   "form": "ظرك",
+   "hits": 299,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "now",
+   "form": "ذرك",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "now",
+   "form": "دُرك",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "all",
+   "form": "گاع",
+   "hits": 561,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "all",
+   "form": "كامل",
+   "hits": 191,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "all",
+   "form": "ذو گاع",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "very",
+   "form": "ياسر",
+   "hits": 186,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "very",
+   "form": "بالزّاف",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "very",
+   "form": "شي واعر",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "a_little",
+   "form": "شوي",
+   "hits": 227,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "a_little",
+   "form": "اشوي",
+   "hits": 61,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "a_little",
+   "form": "شي اشوي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "this_m",
+   "form": "ذ",
+   "hits": 591,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "this_m",
+   "form": "ذا",
+   "hits": 954,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "this_m",
+   "form": "هذا",
+   "hits": 521,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "this_f",
+   "form": "ذي",
+   "hits": 371,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "this_f",
+   "form": "هذي",
+   "hits": 101,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "that_m",
+   "form": "ذاك",
+   "hits": 688,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "that_m",
+   "form": "ذاك",
+   "hits": 688,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "in",
+   "form": "ف",
+   "hits": 305,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "in",
+   "form": "في",
+   "hits": 900,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "in",
+   "form": "اف",
+   "hits": 50,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "yes",
+   "form": "اهيه",
+   "hits": 188,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "yes",
+   "form": "ايوه",
+   "hits": 99,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "yes",
+   "form": "ايّه",
+   "hits": 22,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "no",
+   "form": "لا",
+   "hits": 547,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "no",
+   "form": "ماه",
+   "hits": 219,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "no",
+   "form": "ماهو",
+   "hits": 389,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "no",
+   "form": "ابدا",
+   "hits": 65,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "ok",
+   "form": "اهيه",
+   "hits": 188,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "ok",
+   "form": "زين",
+   "hits": 246,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "ok",
+   "form": "ايوه",
+   "hits": 99,
+   "suggest": []
+  },
+  {
+   "section": "function",
+   "key": "ok",
+   "form": "ماشي مشكل",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "what",
+   "form": "شنه",
+   "hits": 200,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "what",
+   "form": "ش",
+   "hits": 66,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "what",
+   "form": "شنهي",
+   "hits": 111,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "what",
+   "form": "اشنهو",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "how_much",
+   "form": "كم",
+   "hits": 94,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "how_much",
+   "form": "اشحال",
+   "hits": 255,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "how_much",
+   "form": "گدّاش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "how",
+   "form": "كيف",
+   "hits": 216,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "how",
+   "form": "اكيف",
+   "hits": 0,
+   "suggest": [
+    "كيف",
+    "واكف",
+    "يوكف"
+   ]
+  },
+  {
+   "section": "question",
+   "key": "where",
+   "form": "امنين",
+   "hits": 120,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "where",
+   "form": "فين",
+   "hits": 23,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "when",
+   "form": "امتين",
+   "hits": 8,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "when",
+   "form": "وكتاش",
+   "hits": 0,
+   "suggest": [
+    "كاوتش",
+    "كوتش",
+    "كتشا"
+   ]
+  },
+  {
+   "section": "question",
+   "key": "is_it",
+   "form": "ياك",
+   "hits": 140,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "is_it",
+   "form": "واش",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "is_it",
+   "form": "هل",
+   "hits": 10,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "why",
+   "form": "اعلاش",
+   "hits": 30,
+   "suggest": []
+  },
+  {
+   "section": "question",
+   "key": "why",
+   "form": "لاش",
+   "hits": 57,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "pre",
+   "form": "الله يخليك",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "pre",
+   "form": "بالله",
+   "hits": 44,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "pre",
+   "form": "اعليك الله",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "post",
+   "form": "الله يخليك",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "post",
+   "form": "الله يجازيك بالخير",
+   "hits": 21,
+   "suggest": []
+  },
+  {
+   "section": "politeness",
+   "key": "post",
+   "form": "الله يحفظك",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:الظو",
+   "form": "الظو",
+   "hits": 15,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:الظو",
+   "form": "الضو",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:الظو",
+   "form": "الضوّ",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:اللامبة",
+   "form": "اللامبة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:اللامبة",
+   "form": "اللامبه",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:اللامبة",
+   "form": "لامبة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:النور",
+   "form": "النور",
+   "hits": 27,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "light:الثريّا",
+   "form": "الثريّا",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:المروحة",
+   "form": "المروحة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:المروحة",
+   "form": "المروحه",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:الفانتيلو",
+   "form": "الفانتيلو",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:الفانتيلو",
+   "form": "الفانتيلاتير",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "fan:الفانتيلو",
+   "form": "الفنتيلاتور",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "climate:الكليم",
+   "form": "الكليم",
+   "hits": 0,
+   "suggest": [
+    "لكلام",
+    "الكلام",
+    "لكلم",
+    "لكلام"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "climate:الكليم",
+   "form": "الكليماتيزور",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "climate:المكيّف",
+   "form": "المكيّف",
+   "hits": 0,
+   "suggest": [
+    "الموكف",
+    "الموكوف",
+    "والموكف",
+    "الموكف"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "media_player:التلفزة",
+   "form": "التلفزة",
+   "hits": 18,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "media_player:التلفزة",
+   "form": "التلفزيون",
+   "hits": 0,
+   "suggest": [
+    "التلفزيوني",
+    "التلفزيوني"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "media_player:التلفزة",
+   "form": "التيلي",
+   "hits": 0,
+   "suggest": [
+    "ولاتل",
+    "التالي",
+    "لوتيل",
+    "ولاتل"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "media_player:الراديو",
+   "form": "الراديو",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "media_player:السبيكر",
+   "form": "السبيكر",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "media_player:السبيكر",
+   "form": "لوباف",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "media_player:السبيكر",
+   "form": "البافل",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:البومبة",
+   "form": "البومبة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:البومبة",
+   "form": "البومب",
+   "hits": 0,
+   "suggest": [
+    "لبومبيي",
+    "لبومبيي"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:البومبة",
+   "form": "المضخّة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:الشوفو",
+   "form": "الشوفو",
+   "hits": 0,
+   "suggest": [
+    "الشفا",
+    "لايشوفو",
+    "لشافو",
+    "الشفا"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:الشوفو",
+   "form": "الشوفّو",
+   "hits": 0,
+   "suggest": [
+    "الشفا",
+    "لايشوفو",
+    "لشافو",
+    "الشفا"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:البرّاد الكهربائي",
+   "form": "البرّاد الكهربائي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:البرّاد الكهربائي",
+   "form": "بولّوار",
+   "hits": 0,
+   "suggest": [
+    "ابولار"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:الفريجيدير",
+   "form": "الفريجيدير",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:الفريجيدير",
+   "form": "الفريجو",
+   "hits": 0,
+   "suggest": [
+    "الفرج",
+    "الفرج"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:الفريجيدير",
+   "form": "الثلّاجة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:الموتور",
+   "form": "الموتور",
+   "hits": 0,
+   "suggest": [
+    "الميترو",
+    "الميترو"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "switch:الموتور",
+   "form": "الجنراتور",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:الپريز",
+   "form": "الپريز",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "switch:الپريز",
+   "form": "البريز",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:الريدو",
+   "form": "الريدو",
+   "hits": 0,
+   "suggest": [
+    "الراديو",
+    "لاراد",
+    "الورود",
+    "الراديو"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "cover:الريدو",
+   "form": "الريدوات",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:الريدو",
+   "form": "الستارة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:الطاگة",
+   "form": "الطاگة",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:الطاگة",
+   "form": "الشبّاك",
+   "hits": 0,
+   "suggest": [
+    "الشبك",
+    "الشبك"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "cover:باب الگاراج",
+   "form": "باب الگاراج",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:باب الگاراج",
+   "form": "الگاراج",
+   "hits": 0,
+   "suggest": [
+    "لكراج",
+    "لكراج"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "cover:باب الحوش",
+   "form": "باب الحوش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "cover:باب الحوش",
+   "form": "الباب لكبير",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "lock:الباب",
+   "form": "الباب",
+   "hits": 57,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "lock:الباب",
+   "form": "باب الدار",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "lock:الكادنة",
+   "form": "الكادنة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "lock:الكادنة",
+   "form": "الكادنا",
+   "hits": 0,
+   "suggest": [
+    "الكياديين",
+    "الكياديين"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "vacuum:الروبو",
+   "form": "الروبو",
+   "hits": 0,
+   "suggest": [
+    "الاوروبي",
+    "الاربي",
+    "الاوروبي",
+    "الاربي"
+   ]
+  },
+  {
+   "section": "device",
+   "key": "vacuum:الروبو",
+   "form": "المكنسة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "device",
+   "key": "vacuum:الروبو",
+   "form": "الآسپيراتور",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "salon",
+   "form": "الصالون",
+   "hits": 0,
+   "suggest": [
+    "لصليين",
+    "الاصليين",
+    "لصليين",
+    "الاصليين"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "salon",
+   "form": "صالون",
+   "hits": 0,
+   "suggest": [
+    "وصلنا",
+    "وصلني",
+    "اوصلن"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "bedroom",
+   "form": "بيت الرگاد",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "bedroom",
+   "form": "البيت",
+   "hits": 40,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "kitchen",
+   "form": "الكوزينة",
+   "hits": 0,
+   "suggest": [
+    "الكزانه",
+    "الكزانه"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "kitchen",
+   "form": "الكوزينه",
+   "hits": 0,
+   "suggest": [
+    "الكزانه",
+    "الكزانه"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "kitchen",
+   "form": "المطبخ",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "bathroom",
+   "form": "بيت الما",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "bathroom",
+   "form": "الدوش",
+   "hits": 17,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "bathroom",
+   "form": "التواليت",
+   "hits": 0,
+   "suggest": [
+    "ولاتلات",
+    "لاتليت",
+    "ولاتليتي",
+    "ولاتلات"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "kids",
+   "form": "بيت الدراري",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "kids",
+   "form": "بيت الصغار",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "guest",
+   "form": "بيت الضياف",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "guest",
+   "form": "بيت الضيوف",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "yard",
+   "form": "الحوش",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "yard",
+   "form": "الفناء",
+   "hits": 0,
+   "suggest": [
+    "الفين",
+    "الفن",
+    "الوفيان",
+    "الفين"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "yard",
+   "form": "لاكور",
+   "hits": 0,
+   "suggest": [
+    "لكراي",
+    "لكوار",
+    "الكراي"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "garage",
+   "form": "الگاراج",
+   "hits": 0,
+   "suggest": [
+    "لكراج",
+    "لكراج"
+   ]
+  },
+  {
+   "section": "area",
+   "key": "roof",
+   "form": "السطح",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "roof",
+   "form": "الصطح",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "tent",
+   "form": "الخيمة",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "tent",
+   "form": "الخيمه",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "office",
+   "form": "البيرو",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "office",
+   "form": "المكتب",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "entrance",
+   "form": "المدخل",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "area",
+   "key": "entrance",
+   "form": "گدّام الباب",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "red",
+   "form": "احمر",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "red",
+   "form": "لحمر",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "green",
+   "form": "اخضر",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "green",
+   "form": "لخضر",
+   "hits": 0,
+   "suggest": [
+    "الخضر"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "blue",
+   "form": "ازرگ",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "blue",
+   "form": "لزرگ",
+   "hits": 0,
+   "suggest": [
+    "الزرك",
+    "والزريك",
+    "الزريك"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "blue",
+   "form": "ازرق",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "yellow",
+   "form": "اصفر",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "yellow",
+   "form": "لصفر",
+   "hits": 0,
+   "suggest": [
+    "الصفر"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "white",
+   "form": "ابيظ",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "white",
+   "form": "لبيظ",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "white",
+   "form": "ابيض",
+   "hits": 0,
+   "suggest": [
+    "بضا",
+    "بيض"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "purple",
+   "form": "بنفسجي",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "purple",
+   "form": "موڤ",
+   "hits": 35,
+   "suggest": []
+  },
+  {
+   "section": "color",
+   "key": "purple",
+   "form": "موف",
+   "hits": 0,
+   "suggest": [
+    "مافي"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "orange",
+   "form": "ليموني",
+   "hits": 0,
+   "suggest": [
+    "المانيا",
+    "الامن",
+    "لمن"
+   ]
+  },
+  {
+   "section": "color",
+   "key": "orange",
+   "form": "اورونج",
+   "hits": 0,
+   "suggest": [
+    "اورانج"
+   ]
+  },
+  {
+   "section": "number",
+   "key": "1",
+   "form": "واحد",
+   "hits": 233,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "2",
+   "form": "اثنين",
+   "hits": 24,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "2",
+   "form": "ثنين",
+   "hits": 24,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "2",
+   "form": "زوز",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "3",
+   "form": "اثلاثة",
+   "hits": 16,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "3",
+   "form": "ثلاثة",
+   "hits": 17,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "4",
+   "form": "اربعة",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "5",
+   "form": "خمسة",
+   "hits": 47,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "6",
+   "form": "ستّة",
+   "hits": 12,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "7",
+   "form": "سبعة",
+   "hits": 8,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "8",
+   "form": "اثمانية",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "8",
+   "form": "ثمانية",
+   "hits": 3,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "9",
+   "form": "تسعة",
+   "hits": 7,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "10",
+   "form": "عشرة",
+   "hits": 15,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "11",
+   "form": "احداعش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "12",
+   "form": "اطناعش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "13",
+   "form": "اثلطاعش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "14",
+   "form": "اربعطاعش",
+   "hits": 0,
+   "suggest": [
+    "واربعطعش"
+   ]
+  },
+  {
+   "section": "number",
+   "key": "15",
+   "form": "خمسطاعش",
+   "hits": 0,
+   "suggest": [
+    "وخمسطعش"
+   ]
+  },
+  {
+   "section": "number",
+   "key": "16",
+   "form": "سطّاعش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "17",
+   "form": "سبعطاعش",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "18",
+   "form": "اثمنطاعش",
+   "hits": 0,
+   "suggest": [
+    "اثمنطعش"
+   ]
+  },
+  {
+   "section": "number",
+   "key": "19",
+   "form": "تسعطاعش",
+   "hits": 0,
+   "suggest": [
+    "وتسعطعش",
+    "واتسعطعش",
+    "اتسعطعش"
+   ]
+  },
+  {
+   "section": "number",
+   "key": "20",
+   "form": "عشرين",
+   "hits": 42,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "21",
+   "form": "واحد وعشرين",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "22",
+   "form": "اثنين وعشرين",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "23",
+   "form": "اثلاثة وعشرين",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "24",
+   "form": "اربعة وعشرين",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "25",
+   "form": "خمسة وعشرين",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "26",
+   "form": "ستّة وعشرين",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "27",
+   "form": "سبعة وعشرين",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "28",
+   "form": "اثمانية وعشرين",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "30",
+   "form": "اثلاثين",
+   "hits": 7,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "40",
+   "form": "اربعين",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "45",
+   "form": "خمسة واربعين",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "50",
+   "form": "خمسين",
+   "hits": 244,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "60",
+   "form": "ستّين",
+   "hits": 13,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "70",
+   "form": "سبعين",
+   "hits": 6,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "75",
+   "form": "خمسة وسبعين",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "80",
+   "form": "اثمانين",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "90",
+   "form": "تسعين",
+   "hits": 4,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "100",
+   "form": "مية",
+   "hits": 277,
+   "suggest": []
+  },
+  {
+   "section": "number",
+   "key": "100",
+   "form": "ميّة",
+   "hits": 277,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "degree",
+   "form": "درجة",
+   "hits": 9,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "degree",
+   "form": "دراجات",
+   "hits": 0,
+   "suggest": [
+    "درجتو"
+   ]
+  },
+  {
+   "section": "unit",
+   "key": "degree",
+   "form": "دوگري",
+   "hits": 0,
+   "suggest": [
+    "داكار",
+    "دكري",
+    "دكور"
+   ]
+  },
+  {
+   "section": "unit",
+   "key": "percent",
+   "form": "فالمية",
+   "hits": 2,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "percent",
+   "form": "بالمية",
+   "hits": 1,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "percent",
+   "form": "پورسون",
+   "hits": 0,
+   "suggest": [
+    "رييسنا",
+    "يراسني",
+    "روسنا"
+   ]
+  },
+  {
+   "section": "unit",
+   "key": "percent",
+   "form": "%",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "minute",
+   "form": "دقيقة",
+   "hits": 26,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "minute",
+   "form": "دگايگ",
+   "hits": 18,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "minute",
+   "form": "دگيگة",
+   "hits": 26,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "hour",
+   "form": "ساعة",
+   "hits": 78,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "hour",
+   "form": "ساعات",
+   "hits": 7,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "second",
+   "form": "ثانية",
+   "hits": 20,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "second",
+   "form": "ثواني",
+   "hits": 0,
+   "suggest": [
+    "ثاني",
+    "ثانيا",
+    "اثنا"
+   ]
+  },
+  {
+   "section": "unit",
+   "key": "half_hour",
+   "form": "نص ساعة",
+   "hits": 5,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "half_hour",
+   "form": "انصّ ساعة",
+   "hits": 0,
+   "suggest": []
+  },
+  {
+   "section": "unit",
+   "key": "quarter_hour",
+   "form": "ربع ساعة",
+   "hits": 2,
+   "suggest": []
+  }
+ ]
+}

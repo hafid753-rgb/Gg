@@ -1,0 +1,560 @@
+[
+ {
+  "type": "function",
+  "function": {
+   "name": "HassTurnOn",
+   "description": "Turns on/opens/locks a device or entity (lock domain: turn on = lock).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "domain": {
+      "type": "string",
+      "enum": [
+       "light",
+       "fan",
+       "climate",
+       "media_player",
+       "switch",
+       "cover",
+       "lock",
+       "vacuum"
+      ]
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassTurnOff",
+   "description": "Turns off/closes/unlocks a device or entity (lock domain: turn off = unlock).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "domain": {
+      "type": "string",
+      "enum": [
+       "light",
+       "fan",
+       "climate",
+       "media_player",
+       "switch",
+       "cover",
+       "lock",
+       "vacuum"
+      ]
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassLightSet",
+   "description": "Sets the brightness percentage or color of a light.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "brightness": {
+      "type": "integer",
+      "description": "Brightness percentage",
+      "minimum": 0,
+      "maximum": 100
+     },
+     "color": {
+      "type": "string",
+      "description": "Color name in English"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassClimateSetTemperature",
+   "description": "Sets the target temperature of a climate device.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "temperature": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "temperature"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassClimateGetTemperature",
+   "description": "Gets the current temperature of a climate device or area.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassGetState",
+   "description": "Gets or checks the state of an entity or entities.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "domain": {
+      "type": "string",
+      "enum": [
+       "light",
+       "fan",
+       "climate",
+       "media_player",
+       "switch",
+       "cover",
+       "lock",
+       "vacuum"
+      ]
+     },
+     "state": {
+      "type": "string",
+      "description": "on, off, open, closed, locked, unlocked"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassSetPosition",
+   "description": "Sets the position of a cover (0=closed,100=open).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "position": {
+      "type": "integer",
+      "description": "Position",
+      "minimum": 0,
+      "maximum": 100
+     }
+    },
+    "required": [
+     "position"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassFanSetSpeed",
+   "description": "Sets a fan's speed percentage.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "percentage": {
+      "type": "integer",
+      "description": "Speed",
+      "minimum": 0,
+      "maximum": 100
+     }
+    },
+    "required": [
+     "percentage"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPause",
+   "description": "Pauses a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaUnpause",
+   "description": "Resumes a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaNext",
+   "description": "Skips to the next item.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPrevious",
+   "description": "Goes back to the previous item.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassSetVolume",
+   "description": "Sets the volume percentage of a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     },
+     "volume_level": {
+      "type": "integer",
+      "description": "Volume",
+      "minimum": 0,
+      "maximum": 100
+     }
+    },
+    "required": [
+     "volume_level"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassStartTimer",
+   "description": "Starts a new timer.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "hours": {
+      "type": "integer",
+      "description": "Hours",
+      "minimum": 0
+     },
+     "minutes": {
+      "type": "integer",
+      "description": "Minutes",
+      "minimum": 0
+     },
+     "seconds": {
+      "type": "integer",
+      "description": "Seconds",
+      "minimum": 0
+     },
+     "name": {
+      "type": "string",
+      "description": "Optional timer name"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassCancelTimer",
+   "description": "Cancels a timer.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Optional timer name"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassTimerStatus",
+   "description": "Reports the remaining time of timers.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Optional timer name"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassGetWeather",
+   "description": "Gets the current weather.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Weather entity name"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassShoppingListAddItem",
+   "description": "Adds an item to the shopping list.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "item": {
+      "type": "string",
+      "description": "Item text"
+     }
+    },
+    "required": [
+     "item"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassVacuumStart",
+   "description": "Starts a vacuum.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassVacuumReturnToBase",
+   "description": "Returns a vacuum to base.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPlayerMute",
+   "description": "Mutes a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassMediaPlayerUnmute",
+   "description": "Unmutes a media player.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string",
+      "description": "Entity name exactly as listed in the context"
+     },
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "HassCancelAllTimers",
+   "description": "Cancels all timers.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "area": {
+      "type": "string",
+      "description": "Area name as listed in the context"
+     }
+    },
+    "required": []
+   }
+  }
+ }
+]

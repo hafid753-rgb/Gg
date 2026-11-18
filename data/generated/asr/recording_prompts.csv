@@ -1,0 +1,2001 @@
+prompt_id,text,intent
+hsn-00000,ابغيت تگدي لي المروحة ظرك,HassTurnOn
+hsn-00001,آآ، يا مساعد، حگل سكت الصوت الله يحفظك,HassMediaPlayerMute
+hsn-00002,الضو اف الكوزينه رفده ياسر,HassLightSet
+hsn-00003,بالله اگفل الطاگة في البيرو,HassTurnOff
+hsn-00004,اگدي الضو ف المطبخ,HassTurnOn
+hsn-00005,اگدو النور ف بيت الرگاد,HassTurnOn
+hsn-00006,راني نبغي تزيد اللامبة اف الخيمة حگل,HassLightSet
+hsn-00007,بالله زيد النور ف الگاراج ياسر,HassLightSet
+hsn-00008,يا داري، رد المروحة ف 80 بالمية,HassFanSetSpeed
+hsn-00009,النور اطيحه شي اشوي,HassLightSet
+hsn-00010,الباب لكبير افتحه,HassTurnOn
+hsn-00011,انا ماشي، رد بالك على الدار,Implicit.leave
+hsn-00012,اگدي الثريا في السطح,HassTurnOn
+hsn-00013,الله يخليك النور اگديه ظرك,HassTurnOn
+hsn-00014,باب الدار حله,HassTurnOff
+hsn-00015,آآ، اگدي الظو,HassTurnOn
+hsn-00016,المروحه ف الخيمه trente بالمية,HassFanSetSpeed
+hsn-00017,الدار باردة ياسر,Implicit.cold
+hsn-00018,اليوم كم ف الشهر؟,HassGetCurrentDate
+hsn-00019,اعدل الضو اف الگاراج على اربعين بالمية,HassLightSet
+hsn-00020,نبغيك اتكتب لي السكر,HassShoppingListAddItem
+hsn-00021,اگفلي الباب بالمفتاح,HassTurnOn
+hsn-00022,اطفي البريز في بيت الدراري,HassTurnOff
+hsn-00023,اعدل اللامبة اف لاكور اورونج الله يجازيك بالخير,HassLightSet
+hsn-00024,يا دار، ما نسمع شي، طلع الصوت,HassSetVolume
+hsn-00025,اتطفي لي اللامبة,HassTurnOff
+hsn-00026,السخانة اشحال الله يحفظك؟,HassClimateGetTemperature
+hsn-00027,باب الحوش افتحو,HassTurnOn
+hsn-00028,اتطفي لي الراديو,HassTurnOff
+hsn-00029,طفاي الشوفو,HassTurnOff
+hsn-00030,ردي الضو 60 پورسون,HassLightSet
+hsn-00031,اگدي الكليماتيزور,HassTurnOn
+hsn-00032,البيدونات فارغين,Implicit.water
+hsn-00033,اخبرني السخانة اف السطح؟,HassClimateGetTemperature
+hsn-00034,المكيف گادي؟,HassGetState
+hsn-00035,حگل زيدو الصوت ياسر,HassSetVolume
+hsn-00036,تعدل لي الكليماتيزور ف اثلاثة وعشرين دوگري,HassClimateSetTemperature
+hsn-00037,الريدو ف بيت الضياف اگفليه,HassTurnOff
+hsn-00038,دير المكيف على 21,HassClimateSetTemperature
+hsn-00039,رد الثريا في بيت الرگاد ل 70 پورسون حگل,HassLightSet
+hsn-00040,اعدل لي أتاي,OutOfScope
+hsn-00041,نبغيك اتزيد لي الصوت,HassSetVolume
+hsn-00042,نبغي منك اتدير لي الضو ف بيت الصغار ل خمسين پورسون,HassLightSet
+hsn-00043,واش اللامبه اف گدام الباب گادية؟,HassGetState
+hsn-00044,اعليك الله العداد كم باگي لو؟,HassTimerStatus
+hsn-00045,لاهي نرگد,Implicit.sleep
+hsn-00046,الأغنية الجاية,HassMediaNext
+hsn-00047,يا مساعد، گول لي بعد 10 دگايگ ل الفرن,HassStartTimer
+hsn-00048,نبغي منك السخانة ف بيت الضيوف 19,HassClimateSetTemperature
+hsn-00049,رد الستارة ف بيت الما ف اربعين پورسون,HassSetPosition
+hsn-00050,اطفاو الضو الله يجازيك بالخير,HassTurnOff
+hsn-00051,يا دار، حطي النور اف الدوش بلون ابيظ,HassLightSet
+hsn-00052,تگدي لي گاع المكيف,HassTurnOn
+hsn-00053,الي بعدو,HassMediaNext
+hsn-00054,اگدي الكليم ف الگاراج,HassTurnOn
+hsn-00055,السخانة كم برا؟,HassGetWeather
+hsn-00056,كم درجة الحرارة؟,HassClimateGetTemperature
+hsn-00057,يا دار، الگاراج اگفله,HassTurnOff
+hsn-00058,راني نبغي اتكتب لي الزريگ ف لاليست الله يحفظك,HassShoppingListAddItem
+hsn-00059,اللامبة اطفيها الله يجازيك بالخير,HassTurnOff
+hsn-00060,اگدي الفانتيلاتير في الخيمه ذرك الله يجازيك بالخير,HassTurnOn
+hsn-00061,تگدي لي الراديو ف الخيمه,HassTurnOn
+hsn-00062,دير الضو بلون احمر,HassLightSet
+hsn-00063,اگدي براد الكهربائي الفناء,HassTurnOn
+hsn-00064,تگفل لي الباب بالمفتاح,HassTurnOn
+hsn-00065,حل الگاراج,HassTurnOn
+hsn-00066,الله يخليك حگل الظو اف البيرو هبطه اشوي,HassLightSet
+hsn-00067,طفي الضو,HassTurnOff
+hsn-00068,الما ما ينزل,Implicit.water
+hsn-00069,يا مساعد، المكيف اف البيت اثمانية وعشرين دراجات,HassClimateSetTemperature
+hsn-00070,حگل حلو الريدوات النص ذرك,HassSetPosition
+hsn-00071,اتطفي لي الكليماتيزور,HassTurnOff
+hsn-00072,الصوت عالي,HassSetVolume
+hsn-00073,حط المكيف اف بيت الصغار اثلاثة وعشرين الله يحفظك,HassClimateSetTemperature
+hsn-00074,اگدي گاع البراد الكهربائي في السطح,HassTurnOn
+hsn-00075,باب الگاراج اگفليه,HassTurnOff
+hsn-00076,سكر الپريز,HassTurnOff
+hsn-00077,اگفل الريدوات ف صالون,HassTurnOff
+hsn-00078,اگدي الفانتيلاتير,HassTurnOn
+hsn-00079,5 دگايگ ل الصلاة، حط عداد الله يخليك,HassStartTimer
+hsn-00080,اعدلو صوت بافل ف عشرة حگل,HassSetVolume
+hsn-00081,نبغي تسكر لي الفانتيلاتير,HassTurnOff
+hsn-00082,اگدي التلفزة ف گدام الباب,HassTurnOn
+hsn-00083,تعدل لي لامبة اف الحوش vingt-cinq بالمية ذرك,HassLightSet
+hsn-00084,اعگب، حگل دير النور على vingt پورسون,HassLightSet
+hsn-00085,اشوف، دقيقة، اعدلو منبه,HassStartTimer
+hsn-00086,اعگب، سكر الضو في الدوش,HassTurnOff
+hsn-00087,سكر الثريا,HassTurnOff
+hsn-00088,لا لا ماهو ذاك,HassNevermind
+hsn-00089,حگل النور اگديه الله يخليك,HassTurnOn
+hsn-00090,نبغي منك تگفل لي الكادنة,HassTurnOn
+hsn-00091,يا دار، ابغيت تگدي لي تلفزة بيت الضيوف,HassTurnOn
+hsn-00092,حگل المروحة ف الصالون اثلاثين فالمية,HassFanSetSpeed
+hsn-00093,اعليك الله طلعي النور ف الصطح شوي الله يجازيك بالخير,HassLightSet
+hsn-00094,حط منبه ل دقيقتين ل الفرن,HassStartTimer
+hsn-00095,حگل نبغي ترد الثريا في الخيمة على ستين بالمية,HassLightSet
+hsn-00096,آآ، گول لي الساعة؟,HassGetCurrentTime
+hsn-00097,حگل اطفي الظو اف الحوش,HassTurnOff
+hsn-00098,اعليك الله طفي البراد الكهربائي اف الگاراج,HassTurnOff
+hsn-00099,اللامبه هبطها بالزاف,HassLightSet
+hsn-00100,اگدي گاع الثلاجة,HassTurnOn
+hsn-00101,بالله حگل حطي النور في بيت الصغار ف اثمانين فالمية,HassLightSet
+hsn-00102,الضو في المطبخ خمسة وعشرين فالمية,HassLightSet
+hsn-00103,بالله رد الريدو اف الخيمه على اربعين بالمية,HassSetPosition
+hsn-00104,ابغيت اتزيد لي الصوت اشوي,HassSetVolume
+hsn-00105,بالله دور للي بعدو,HassMediaNext
+hsn-00106,آآ، الظو ف لاكور اثلاثين پورسون,HassLightSet
+hsn-00107,اگدي الثريا,HassTurnOn
+hsn-00108,حط المكيف في بيت الدراري على سطاعش دراجات,HassClimateSetTemperature
+hsn-00109,تگفل لي باب الگاراج حگل,HassTurnOff
+hsn-00110,اطفاي بولوار ذو گاع في المطبخ,HassTurnOff
+hsn-00111,يا دار، زيد الصوت ظرك,HassSetVolume
+hsn-00112,اگدي اللامبة في بيت الصغار,HassTurnOn
+hsn-00113,تعدل لي الثريا اورونج,HassLightSet
+hsn-00114,يا دار، تسكر لي الضو كامل ف بيت الصغار,HassTurnOff
+hsn-00115,يا داري، تگدي لي المكيف,HassTurnOn
+hsn-00116,بالله رد للي گبل,HassMediaPrevious
+hsn-00117,هيه، رد الثريا اف بيت الضياف على تسعين فالمية,HassLightSet
+hsn-00118,تطفي لي الكليماتيزور اف السطح,HassTurnOff
+hsn-00119,اعليك الله ش السخانة ظرك؟,HassClimateGetTemperature
+hsn-00120,الساعة كم؟,HassGetCurrentTime
+hsn-00121,كم درجة الحرارة في بيت الصغار؟,HassClimateGetTemperature
+hsn-00122,طفي الشوفو اف المكتب,HassTurnOff
+hsn-00123,دير الكليم خمسة وعشرين,HassClimateSetTemperature
+hsn-00124,دير النور بلون احمر الله يخليك,HassLightSet
+hsn-00125,راني نبغي تسكر لي الراديو ف بيت الضيوف,HassTurnOff
+hsn-00126,يا دار، اگفل الطاگة ذرك,HassTurnOff
+hsn-00127,حگل تسكر لي الضو,HassTurnOff
+hsn-00128,تنگص الثريا شي اشوي,HassLightSet
+hsn-00129,طفي الثريا ف بيت الدراري,HassTurnOff
+hsn-00130,يا دار، الله يخليك الصوت عالي,HassSetVolume
+hsn-00131,نبهني بعد 20 دقيقة ل الروز ذرك,HassStartTimer
+hsn-00132,اگدي كامل التيلي اف بيت الضيوف,HassTurnOn
+hsn-00133,افتح الباب,HassTurnOff
+hsn-00134,ش من ثلاجة گادي اف الكوزينه؟,HassGetState
+hsn-00135,حگل گول لي بعد عشر ثواني,HassStartTimer
+hsn-00136,آآ، باب الگاراج حليه,HassTurnOn
+hsn-00137,سكر الضو الله يجازيك بالخير,HassTurnOff
+hsn-00138,اتحط لي عداد 4 دگايگ,HassStartTimer
+hsn-00139,اعدل pause,HassMediaPause
+hsn-00140,يا مساعد، اگفلو الشباك ف الصالون,HassTurnOff
+hsn-00141,الفنتيلاتور اگدو,HassTurnOn
+hsn-00142,اسمع، اگدو البافل,HassTurnOn
+hsn-00143,دير الضو موڤ الله يخليك,HassLightSet
+hsn-00144,يا داري، اعليك الله نبغي تگفل لي الكادنة,HassTurnOn
+hsn-00145,نبغيك تگدي لي الظو اف بيت الصغار حگل,HassTurnOn
+hsn-00146,لا خلي عنك,HassNevermind
+hsn-00147,رد الكليم ف اثنين وعشرين درجة حگل,HassClimateSetTemperature
+hsn-00148,الدار سخونة ياسر,Implicit.hot
+hsn-00149,الله يخليك كم درجة الحرارة الله يخليك؟,HassClimateGetTemperature
+hsn-00150,اكتبي أتاي ف ليستة الشرا درك,HassShoppingListAddItem
+hsn-00151,باب الحوش مگفول؟,HassGetState
+hsn-00152,الما بارد ف الدوش,Implicit.shower
+hsn-00153,آآ، النور اگديه,HassTurnOn
+hsn-00154,الستارة في المكتب اگفله,HassTurnOff
+hsn-00155,الصوت عالي ذرك,HassSetVolume
+hsn-00156,گول لي السخانة؟,HassClimateGetTemperature
+hsn-00157,الله يخليك تگدي لي الضو اف البيرو,HassTurnOn
+hsn-00158,يا داري، حگل ابغيت تسكر لي النور ف التواليت ظرك,HassTurnOff
+hsn-00159,الكليم ف بيت الضياف dix-huit دوگري,HassClimateSetTemperature
+hsn-00160,بالله ابغيت السخانة ف بيت الرگاد تسعطاعش دوگري,HassClimateSetTemperature
+hsn-00161,الدار ظلمة,Implicit.dark
+hsn-00162,يا دار، بالله ابغيت السخانة اثمانية وعشرين دراجات,HassClimateSetTemperature
+hsn-00163,اعليك الله راني نبغي ترد الكليماتيزور اف الفناء اثمنطاعش درجة,HassClimateSetTemperature
+hsn-00164,رد النور في صالون ل 50 بالمية,HassLightSet
+hsn-00165,اسمع، نقص اللامبة بالزاف الله يحفظك,HassLightSet
+hsn-00166,ايوه، اعليك الله تطفي لي الثريا في الحوش,HassTurnOff
+hsn-00167,حطي المروحه ف الصالون على خمسين فالمية حگل,HassFanSetSpeed
+hsn-00168,اسمع، نگص الصوت اشوي,HassSetVolume
+hsn-00169,يا دار، next الله يخليك,HassMediaNext
+hsn-00170,اعگب، نبغيك تگدي لي لامبة المطبخ ظرك,HassTurnOn
+hsn-00171,خلي الروبو ينظف,HassVacuumStart
+hsn-00172,شكون انت,Social.who
+hsn-00173,هل المكنسة گادي؟,HassGetState
+hsn-00174,ها انا وصلت,Implicit.arrive
+hsn-00175,اشطاري,Social.greet
+hsn-00176,آآ، يا دار، الصوت عالي ظرك,HassSetVolume
+hsn-00177,اعگب، اطفاي النور ف الگاراج,HassTurnOff
+hsn-00178,نبغي تعدل لي المكيف اف بيت الما ف سبعطاعش,HassClimateSetTemperature
+hsn-00179,حگل ديري النور لخضر,HassLightSet
+hsn-00180,ش حالة الجو؟,HassGetWeather
+hsn-00181,اگطع العداد,HassCancelTimer
+hsn-00182,طفي الكليماتيزور في الفناء,HassTurnOff
+hsn-00183,حط الستارة اف بيت الدراري ف سبعين بالمية حگل,HassSetPosition
+hsn-00184,اسمع، اگدي المروحه حگل,HassTurnOn
+hsn-00185,السلام عليكم,Social.greet
+hsn-00186,اگفلي باب الگاراج,HassTurnOff
+hsn-00187,اعليك الله ما نسمع شي، اتزيد لي الصوت,HassSetVolume
+hsn-00188,هيه، سكر الثريا درك,HassTurnOff
+hsn-00189,يا مساعد، رفد الصوت ياسر,HassSetVolume
+hsn-00190,المروحه اگديها,HassTurnOn
+hsn-00191,آآ، باب الدار حله,HassTurnOff
+hsn-00192,اسمع، تگفل لي الستارة اف الصطح,HassTurnOff
+hsn-00193,رد الصوت,HassMediaPlayerUnmute
+hsn-00194,يا اخي، اطفي المروحة,HassTurnOff
+hsn-00195,حگل اعدلو الثريا ف بيت الضياف ل 60 فالمية,HassLightSet
+hsn-00196,اعگب، حل الستارة اف بيت الما نص,HassSetPosition
+hsn-00197,ديري النور 80 بالمية ظرك,HassLightSet
+hsn-00198,الما گيده ف ليستة الشرا,HassShoppingListAddItem
+hsn-00199,يا دار، المروحة اگديها حگل درك,HassTurnOn
+hsn-00200,الضو اثلاثين فالمية,HassLightSet
+hsn-00201,النور خمسين فالمية حگل,HassLightSet
+hsn-00202,ش من مروحه گادية في بيت الرگاد؟,HassGetState
+hsn-00203,طفي البافل ف بيت الضياف,HassTurnOff
+hsn-00204,اعدل المروحه ف البيت على خمسة وعشرين فالمية الله يخليك,HassFanSetSpeed
+hsn-00205,الثريا اگديها حگل,HassTurnOn
+hsn-00206,آآ، زيد الثريا اف گدام الباب بالزاف,HassLightSet
+hsn-00207,اطفي المكيف في الكوزينة,HassTurnOff
+hsn-00208,يا مساعد، اثلاث دگايگ، حط مينوتري حگل ذرك,HassStartTimer
+hsn-00209,آآ، نبغيك تگدي لي بولوار ف البيرو,HassTurnOn
+hsn-00210,ياك اللامبه گادية الله يخليك؟,HassGetState
+hsn-00211,طفاي كامل المكيف,HassTurnOff
+hsn-00212,اعگب، نبغي ترد الفانتيلو اف الگاراج على 60 فالمية حگل,HassFanSetSpeed
+hsn-00213,زيدو الضو اف الكوزينه شي اشوي,HassLightSet
+hsn-00214,اگدي الروبو,HassVacuumStart
+hsn-00215,افتح الريدوات اف بيت الضيوف النص,HassSetPosition
+hsn-00216,نقص الظو في الخيمه شي واعر ذرك,HassLightSet
+hsn-00217,اشوف، حگل اعدلو تايمر ل 20 دقيقة ل الروز الله يحفظك,HassStartTimer
+hsn-00218,الوكت كم الله يحفظك؟,HassGetCurrentTime
+hsn-00219,افتح الشباك اف الخيمه,HassTurnOn
+hsn-00220,next الله يخليك,HassMediaNext
+hsn-00221,اطفي الشوفو اف الخيمة,HassTurnOff
+hsn-00222,آآ، حگل راني نبغي تنظف الخيمة,HassVacuumStart
+hsn-00223,حگل تگفل لي الكادنا,HassTurnOn
+hsn-00224,اگفل الشباك اف التواليت,HassTurnOff
+hsn-00225,آآ، طفاي لوباف حگل,HassTurnOff
+hsn-00226,آآ، اعدل الثريا في البيرو بلون بنفسجي,HassLightSet
+hsn-00227,حگل سكر اللامبه في المدخل,HassTurnOff
+hsn-00228,السخانة ياسر,Implicit.hot
+hsn-00229,نبغي تگدي لي المكيف,HassTurnOn
+hsn-00230,دير الريدو ف تسعين پورسون,HassSetPosition
+hsn-00231,اگفلو الكادنة,HassTurnOn
+hsn-00232,الله يجازيك بالخير,Social.thanks
+hsn-00233,المكيف اف الصالون گادي؟,HassGetState
+hsn-00234,الوكت كم الله يجازيك بالخير؟,HassGetCurrentTime
+hsn-00235,خلاص,HassNevermind
+hsn-00236,يا داري، حلي الستارة في لاكور انصو,HassSetPosition
+hsn-00237,تگدي لي المكيف اف الگاراج,HassTurnOn
+hsn-00238,اشوف ياك الثريا شاعلة؟,HassGetState
+hsn-00239,الله يخليك الضو في البيت اگديه,HassTurnOn
+hsn-00240,اعليك الله اطفاي النور اف بيت الضيوف,HassTurnOff
+hsn-00241,تگدي لي المروحة كامل حگل,HassTurnOn
+hsn-00242,اگفلي باب الدار بالساروت الله يجازيك بالخير,HassTurnOn
+hsn-00243,دور للي بعدو,HassMediaNext
+hsn-00244,اشوف، نظفو الكوزينة,HassVacuumStart
+hsn-00245,انا جيت,Implicit.arrive
+hsn-00246,المروحة في البيت طفيها,HassTurnOff
+hsn-00247,اعگب، اعليك الله ش السخانة اف صالون ذرك؟,HassClimateGetTemperature
+hsn-00248,رد الريدو ف سبعين بالمية,HassSetPosition
+hsn-00249,اتطفي لي الجنراتور ف الصطح,HassTurnOff
+hsn-00250,تصبح على خير,Implicit.sleep
+hsn-00251,رد الثريا ل تسعين فالمية,HassLightSet
+hsn-00252,الثريا ف لاكور نقصها اشوي,HassLightSet
+hsn-00253,اخبرني السخانة في بيت الضيوف؟,HassClimateGetTemperature
+hsn-00254,المكيف في بيت الرگاد گادي؟,HassGetState
+hsn-00255,دير الضو اف التواليت على ستين پورسون الله يجازيك بالخير,HassLightSet
+hsn-00256,بالله گول لي الساعة؟,HassGetCurrentTime
+hsn-00257,اعگب، گول لي الساعة؟,HassGetCurrentTime
+hsn-00258,دير عداد ل 45 دقيقة,HassStartTimer
+hsn-00259,تگدي لي اللامبة ظرك,HassTurnOn
+hsn-00260,نگص لامبة بالزاف حگل,HassLightSet
+hsn-00261,البريز گادية؟,HassGetState
+hsn-00262,اگدي النور اف بيت الدراري,HassTurnOn
+hsn-00263,الله يخليك اگدي نور الخيمه,HassTurnOn
+hsn-00264,اگطع المنبه,HassCancelTimer
+hsn-00265,ماشي شي,HassNevermind
+hsn-00266,سكر الموتور,HassTurnOff
+hsn-00267,حل الريدو انصو الله يخليك,HassSetPosition
+hsn-00268,نبغيك السخانة تسعطاعش دراجات,HassClimateSetTemperature
+hsn-00269,يا دار، اراع هل الباب مفتوح؟,HassGetState
+hsn-00270,رد المكيف في بيت الدراري 21 الله يخليك,HassClimateSetTemperature
+hsn-00271,يا داري، حلي الطاگة,HassTurnOn
+hsn-00272,سكر الكليم الله يخليك,HassTurnOff
+hsn-00273,شوف لي الساعة؟,HassGetCurrentTime
+hsn-00274,الله يخليك اگفل باب الگاراج,HassTurnOff
+hsn-00275,رد الضو ف الخيمة ف تسعين پورسون,HassLightSet
+hsn-00276,تگدي لي التلفزيون ف صالون,HassTurnOn
+hsn-00277,اكتبي الزريگ ف ليستة الشرا الله يجازيك بالخير,HassShoppingListAddItem
+hsn-00278,نگص الضو في التواليت شي اشوي,HassLightSet
+hsn-00279,اتطفي لي الثريا درك,HassTurnOff
+hsn-00280,راني نبغي السخانة اف بيت الرگاد عشرين دوگري,HassClimateSetTemperature
+hsn-00281,25 دقيقة، ابدا مينوتري,HassStartTimer
+hsn-00282,دور مكيف الكوزينة حگل ظرك,HassTurnOn
+hsn-00283,سكت الراديو,HassMediaPlayerMute
+hsn-00284,نبغي السخانة في البيرو 20 درجة,HassClimateSetTemperature
+hsn-00285,اشحال السخانة؟,HassClimateGetTemperature
+hsn-00286,نقص الثريا ف بيت الضيوف شوي,HassLightSet
+hsn-00287,رد اللي فات ظرك,HassMediaPrevious
+hsn-00288,يا دار، شوف لي ياك الراديو ف الگاراج گادي؟,HassGetState
+hsn-00289,ديرو الثريا trente فالمية,HassLightSet
+hsn-00290,اتكتب لي لكريدي ف الليستة,HassShoppingListAddItem
+hsn-00291,اگفل الكادنة بالمفتاح ظرك,HassTurnOn
+hsn-00292,صباح الخير,Social.greet
+hsn-00293,اطفي لامبة اف الخيمة,HassTurnOff
+hsn-00294,الراديو اگديه ذرك,HassTurnOn
+hsn-00295,يا دار، نبغي منك اتزيد لي لامبة بالزاف,HassLightSet
+hsn-00296,گول لي السخانة في الكوزينة؟,HassClimateGetTemperature
+hsn-00297,اگدي المروحه في بيت الصغار الله يخليك,HassTurnOn
+hsn-00298,اطفي الجنراتور ف الفناء,HassTurnOff
+hsn-00299,رد للي گبل,HassMediaPrevious
+hsn-00300,تگدي لي لامبة ف البيت حگل,HassTurnOn
+hsn-00301,تگدي لي المروحة اف بيت الدراري,HassTurnOn
+hsn-00302,راني نبغي السخانة في الحوش عشرين درجة الله يخليك,HassClimateSetTemperature
+hsn-00303,الله يخليك اطفي الفنتيلاتور في المدخل,HassTurnOff
+hsn-00304,ش من فنتيلاتور شاعل ف بيت الدراري؟,HassGetState
+hsn-00305,حبس السبيكر شي اشوي,HassMediaPause
+hsn-00306,يا دار، تگدي لي التيلي كامل ف الگاراج,HassTurnOn
+hsn-00307,هيه، اتنح التايمر,HassCancelTimer
+hsn-00308,يا مساعد، المروحة اگديها,HassTurnOn
+hsn-00309,يا مساعد، المروحة خمسة وسبعين بالمية,HassFanSetSpeed
+hsn-00310,حگل اعدل الثريا اف الخيمه على 80 بالمية,HassLightSet
+hsn-00311,يا اخي، النور 30 پورسون,HassLightSet
+hsn-00312,يا دار، اطفي المكيف,HassTurnOff
+hsn-00313,يا دار، گول لي بعد خمس دگايگ ل الصلاة,HassStartTimer
+hsn-00314,اگدي الضو اف التواليت,HassTurnOn
+hsn-00315,اعدل الريدوات ف عشرين بالمية,HassSetPosition
+hsn-00316,حگل نبغي ترد المروحه على ستين پورسون,HassFanSetSpeed
+hsn-00317,تنگص الثريا في بيت الضياف شي اشوي الله يخليك,HassLightSet
+hsn-00318,يا اخي، اعدل الضو ف گدام الباب اصفر,HassLightSet
+hsn-00319,سكر الكادنا,HassTurnOn
+hsn-00320,ما فم ما ف الروبيني,Implicit.water
+hsn-00321,يا دار، اگدي لامبة الصطح الله يجازيك بالخير,HassTurnOn
+hsn-00322,نبغيك تگدي لي الراديو ذو گاع في الخيمة,HassTurnOn
+hsn-00323,اراع واش الثريا في الدوش گادية؟,HassGetState
+hsn-00324,آآ، ديري الثريا اف الخيمة ف 40 فالمية,HassLightSet
+hsn-00325,گداش السخانة ف البيرو؟,HassClimateGetTemperature
+hsn-00326,افتح الريدو,HassTurnOn
+hsn-00327,حط المروحه ف ستين بالمية,HassFanSetSpeed
+hsn-00328,الستارة حله,HassTurnOn
+hsn-00329,اعدل الثريا في بيت الضياف بلون ازرگ درك,HassLightSet
+hsn-00330,طفاو نور المطبخ ظرك,HassTurnOff
+hsn-00331,سكري البريز في البيت,HassTurnOff
+hsn-00332,حط المكيف ف اثمانية وعشرين درجة,HassClimateSetTemperature
+hsn-00333,سكر الضو اف بيت الرگاد,HassTurnOff
+hsn-00334,حگل وگف المنبه,HassCancelTimer
+hsn-00335,البريز اطفيها ذرك الله يجازيك بالخير,HassTurnOff
+hsn-00336,طفي النور,HassTurnOff
+hsn-00337,گول لي بعد دقيقتين ل الفرن الله يخليك,HassStartTimer
+hsn-00338,اطفي الثريا كامل اف لاكور درك,HassTurnOff
+hsn-00339,بالله اگدي مكيف بيت الصغار,HassTurnOn
+hsn-00340,اطفاي الفريجيدير,HassTurnOff
+hsn-00341,اتنح العداد ظرك,HassCancelTimer
+hsn-00342,هيه، الله يخليك تسكر لي التيلي ف الگاراج,HassTurnOff
+hsn-00343,اگدي التيلي اف الخيمه,HassTurnOn
+hsn-00344,تگدي لي الراديو,HassTurnOn
+hsn-00345,يا دار، اگدي اللامبه اف الصالون,HassTurnOn
+hsn-00346,اتكتب لي الروز,HassShoppingListAddItem
+hsn-00347,تگدي لي المضخة حگل,HassTurnOn
+hsn-00348,اعدل اللامبه ف اثمانين پورسون,HassLightSet
+hsn-00349,اگفل الباب,HassTurnOn
+hsn-00350,طفي اللامبة ف المكتب حگل,HassTurnOff
+hsn-00351,اراع هل الروبو گادي؟,HassGetState
+hsn-00352,تطفي لي الثريا في الگاراج,HassTurnOff
+hsn-00353,هيه، افتح الكادنا ذرك,HassTurnOff
+hsn-00354,نبغيك تگدي لي النور ف الصالون ذرك,HassTurnOn
+hsn-00355,كم الساعة ظرك الله يحفظك؟,HassGetCurrentTime
+hsn-00356,الراديو ف الگاراج اگديه,HassTurnOn
+hsn-00357,اگدي الظو گاع ف بيت الضياف الله يجازيك بالخير,HassTurnOn
+hsn-00358,آآ، الله يخليك سكر الشوفو الله يجازيك بالخير,HassTurnOff
+hsn-00359,ش الساعة؟,HassGetCurrentTime
+hsn-00360,يا دار، وگف لوباف اشوي,HassMediaPause
+hsn-00361,اگدي الشوفو ف گدام الباب,HassTurnOn
+hsn-00362,سكت الراديو درك,HassMediaPlayerMute
+hsn-00363,يا دار، خلي الروبو يشطب,HassVacuumStart
+hsn-00364,نبغي نتوضأ بالما السخون,Implicit.shower
+hsn-00365,حگل طفي الراديو في البيرو,HassTurnOff
+hsn-00366,اليوم ش من يوم؟,HassGetCurrentDate
+hsn-00367,تطفي لي النور,HassTurnOff
+hsn-00368,يا مساعد، النور طفيه,HassTurnOff
+hsn-00369,اگفل الشباك اف بيت الصغار,HassTurnOff
+hsn-00370,حگل الثريا اگديها,HassTurnOn
+hsn-00371,حبس الغنا,HassMediaPause
+hsn-00372,الله يخليك ش حالة الجو؟,HassGetWeather
+hsn-00373,الله يخليك اگدي التلفزة حگل,HassTurnOn
+hsn-00374,ما نسمع شي، طلعي الصوت,HassSetVolume
+hsn-00375,المكيف 23 دوگري,HassClimateSetTemperature
+hsn-00376,اگدي الضو ف بيت الدراري,HassTurnOn
+hsn-00377,اشعلي الثريا,HassTurnOn
+hsn-00378,اشوف هل الكادنة مفتوحة؟,HassGetState
+hsn-00379,الوكت كم؟,HassGetCurrentTime
+hsn-00380,انا خارج,Implicit.leave
+hsn-00381,بردت,Implicit.cold
+hsn-00382,افتحي الباب لكبير,HassTurnOn
+hsn-00383,يا اخي، يا داري، الفنتيلاتور سكره,HassTurnOff
+hsn-00384,الله يخليك حگل دير الريدوات في الصالون ف vingt بالمية,HassSetPosition
+hsn-00385,اگدي اللامبه في لاكور,HassTurnOn
+hsn-00386,يا داري، طفاي الجنراتور ظرك,HassTurnOff
+hsn-00387,سكر الثلاجة اف گدام الباب,HassTurnOff
+hsn-00388,ايوه، حبس الموسيقى,HassMediaPause
+hsn-00389,اطفي النور كامل ف الخيمة,HassTurnOff
+hsn-00390,راني نبغي تگفل لي الباب لكبير,HassTurnOff
+hsn-00391,اگدي لامبة البيرو,HassTurnOn
+hsn-00392,حگل شعل النور في التواليت,HassTurnOn
+hsn-00393,سد باب الحوش,HassTurnOff
+hsn-00394,ما عندي شي,HassNevermind
+hsn-00395,تگدي لي بولوار في الحوش حگل ذرك,HassTurnOn
+hsn-00396,كيف الجو اليوم؟,HassGetWeather
+hsn-00397,الثريا ف الخيمة زيدها ياسر,HassLightSet
+hsn-00398,نبغي منك تفتح لي باب الدار الله يجازيك بالخير,HassTurnOff
+hsn-00399,هيه، حط الثريا في الصالون عشرة بالمية,HassLightSet
+hsn-00400,حگل النور ف صالون اثلاثين بالمية,HassLightSet
+hsn-00401,بالله رد المروحه ف الگاراج ف اثمانين پورسون الله يجازيك بالخير,HassFanSetSpeed
+hsn-00402,طفي المكيف,HassTurnOff
+hsn-00403,خلي البافل يتكلم,HassMediaPlayerUnmute
+hsn-00404,نبغيك السخانة اف السطح 18,HassClimateSetTemperature
+hsn-00405,رد الثريا اف السطح بلون لحمر,HassLightSet
+hsn-00406,السخانة في لاكور گداش؟,HassClimateGetTemperature
+hsn-00407,گول لي بعد 7 دگايگ ل الصلاة,HassStartTimer
+hsn-00408,كم باگي من الوگت؟,HassTimerStatus
+hsn-00409,حگل گول لي بعد 30 ثانية ل الفرن,HassStartTimer
+hsn-00410,ما نسمع شي، طلع الصوت,HassSetVolume
+hsn-00411,گول لي نكتة,OutOfScope
+hsn-00412,يا مساعد، اگطع العداد,HassCancelTimer
+hsn-00413,هيه، الراديو سكره,HassTurnOff
+hsn-00414,اگفل باب الدار بالساروت درك,HassTurnOn
+hsn-00415,آآ، حطي الفانتيلاتير في البيرو على اربعين پورسون,HassFanSetSpeed
+hsn-00416,اگدي الثريا اف لاكور,HassTurnOn
+hsn-00417,يا اخي، جيب الي بعدها,HassMediaNext
+hsn-00418,يا مساعد، هل الآسپيراتور گادي الله يجازيك بالخير؟,HassGetState
+hsn-00419,ترد الظو في الگاراج ف 60 بالمية,HassLightSet
+hsn-00420,ش الخبار ف البلاد,OutOfScope
+hsn-00421,مرسي,Social.thanks
+hsn-00422,الله يخليك ردي النور ف vingt بالمية الله يجازيك بالخير,HassLightSet
+hsn-00423,النور اگديه,HassTurnOn
+hsn-00424,اشوف، يا داري، الثريا في الدوش تنگصها شي اشوي,HassLightSet
+hsn-00425,حط الصوت على vingt,HassSetVolume
+hsn-00426,اخبرني السخانة؟,HassClimateGetTemperature
+hsn-00427,الله يخليك حط تايمر ل ساعتين,HassStartTimer
+hsn-00428,اگدي الفانتيلو في گدام الباب حگل,HassTurnOn
+hsn-00429,المكيف اثمنطاعش دراجات,HassClimateSetTemperature
+hsn-00430,النور اطفيه الله يخليك,HassTurnOff
+hsn-00431,الضو اف الكوزينة رفده اشوي,HassLightSet
+hsn-00432,اعدلو عداد ل عشر ثواني ل الروز,HassStartTimer
+hsn-00433,زيد الصوت شي واعر,HassSetVolume
+hsn-00434,حگل ترد اللامبه لخضر,HassLightSet
+hsn-00435,اعگب، ش من نور گادي؟,HassGetState
+hsn-00436,يا مساعد، اعدل مينوتري ل عشر دگايگ ل أتاي,HassStartTimer
+hsn-00437,المكيف ف گدام الباب گادي؟,HassGetState
+hsn-00438,يا داري، تعدل لي النور ف الحوش ف 10 پورسون حگل الله يجازيك بالخير,HassLightSet
+hsn-00439,اطفي ثريا الفناء,HassTurnOff
+hsn-00440,الله يخليك حطي لامبة على سبعين بالمية,HassLightSet
+hsn-00441,دير المكيف اثمانية وعشرين درك,HassClimateSetTemperature
+hsn-00442,زيد الماڭرو ف الليستة,HassShoppingListAddItem
+hsn-00443,يا داري، سكر ذو گاع المروحة,HassTurnOff
+hsn-00444,الفنتيلاتور ف البيرو مية بالمية حگل,HassFanSetSpeed
+hsn-00445,ابغيت تگدي لي الفانتيلو,HassTurnOn
+hsn-00446,گيد السكر ف ليستة الشرا,HassShoppingListAddItem
+hsn-00447,ابغيت تسكر لي الموتور,HassTurnOff
+hsn-00448,اگدي البومب ف الگاراج,HassTurnOn
+hsn-00449,شعلي الثريا,HassTurnOn
+hsn-00450,حگل رد التلفزة يخدم,HassMediaUnpause
+hsn-00451,اگدي اللامبه اف الدوش حگل,HassTurnOn
+hsn-00452,رد اللي فات,HassMediaPrevious
+hsn-00453,بالله اگفلي الطاگة,HassTurnOff
+hsn-00454,اگدو الفانتيلاتير ف الصالون,HassTurnOn
+hsn-00455,اعدلي النور في المطبخ 25 پورسون,HassLightSet
+hsn-00456,حبس التلفزيون اشوي الله يخليك,HassMediaPause
+hsn-00457,اتطفي لي الفنتيلاتور,HassTurnOff
+hsn-00458,رد التلفزيون يخدم,HassMediaUnpause
+hsn-00459,گول لي بعد انص ساعة ل الروز ظرك,HassStartTimer
+hsn-00460,اعليك الله الأغنية الجاية,HassMediaNext
+hsn-00461,تفتح لي الباب,HassTurnOff
+hsn-00462,اگدي الكليماتيزور ف بيت الضياف,HassTurnOn
+hsn-00463,اگدي الثريا في الصالون,HassTurnOn
+hsn-00464,ياك الراديو گادي؟,HassGetState
+hsn-00465,لاهي تصب اليوم؟,HassGetWeather
+hsn-00466,گداش السخانة في الخيمه؟,HassClimateGetTemperature
+hsn-00467,الثريا اف لاكور اگدو,HassTurnOn
+hsn-00468,سكري باب الحوش,HassTurnOff
+hsn-00469,الشباك اف المدخل مگفولة الله يجازيك بالخير؟,HassGetState
+hsn-00470,حگل الكليماتيزور اثنين وعشرين دراجات,HassClimateSetTemperature
+hsn-00471,اعليك الله الضو طفيه,HassTurnOff
+hsn-00472,يا دار، حگل اطفاي النور في المطبخ درك,HassTurnOff
+hsn-00473,دير الضو اخضر,HassLightSet
+hsn-00474,اعليك الله افتح باب الحوش,HassTurnOn
+hsn-00475,واش الدنيا سخونة برا؟,HassGetWeather
+hsn-00476,المروحة سبعين بالمية,HassFanSetSpeed
+hsn-00477,بالله نح العداد,HassCancelTimer
+hsn-00478,يا داري، اگدي النور,HassTurnOn
+hsn-00479,اگدي الراديو ف الخيمه,HassTurnOn
+hsn-00480,اگدي النور,HassTurnOn
+hsn-00481,اللامبة اف بيت الصغار سكرها الله يخليك,HassTurnOff
+hsn-00482,ش السخانة اف بيت الرگاد ذرك؟,HassClimateGetTemperature
+hsn-00483,حگل دير منبه 25 دقيقة ل الفرن,HassStartTimer
+hsn-00484,ش السخانة ظرك؟,HassClimateGetTemperature
+hsn-00485,اطيح الصوت ياسر,HassSetVolume
+hsn-00486,حگل اگفل الستارة,HassTurnOff
+hsn-00487,يا مساعد، حلي الشباك اف الخيمه,HassTurnOn
+hsn-00488,يا دار، اشحال درجة الحرارة اف گدام الباب؟,HassClimateGetTemperature
+hsn-00489,نبغي تگدي لي المروحه,HassTurnOn
+hsn-00490,اگدي الراديو ف گدام الباب,HassTurnOn
+hsn-00491,بالله اشوف واش الراديو اف البيت گادي؟,HassGetState
+hsn-00492,اگدي المكيف,HassTurnOn
+hsn-00493,سكر الشوفو اف الخيمه,HassTurnOff
+hsn-00494,آآ، اگطع ذو گاع المنبهات,HassCancelAllTimers
+hsn-00495,نبغي تزيد الماڭرو ف ليستة لكورس,HassShoppingListAddItem
+hsn-00496,نبغي ترد المكيف اف الخيمه على واحد وعشرين دوگري,HassClimateSetTemperature
+hsn-00497,البرد ياسر ف بيت الصغار,Implicit.cold
+hsn-00498,اعگب، رد صوت راديو ف اربعين ذرك,HassSetVolume
+hsn-00499,جيت للدار,Implicit.arrive
+hsn-00500,اطفاو الثريا اف المطبخ,HassTurnOff
+hsn-00501,يا مساعد، المكيف vingt-six درجة حگل,HassClimateSetTemperature
+hsn-00502,هيه، حگل اگدي المروحه اف المكتب,HassTurnOn
+hsn-00503,اطفي اللامبه,HassTurnOff
+hsn-00504,اتطفي لي اللامبه اف بيت الدراري الله يجازيك بالخير,HassTurnOff
+hsn-00505,ايوه، ش الساعة؟,HassGetCurrentTime
+hsn-00506,ايوه، اگدي الظو في لاكور,HassTurnOn
+hsn-00507,افتحي باب الگاراج ذرك,HassTurnOn
+hsn-00508,السخانة اف الصطح كم؟,HassClimateGetTemperature
+hsn-00509,اگفل الباب لكبير,HassTurnOff
+hsn-00510,اعگب، راني نبغي تفتح لي باب الگاراج,HassTurnOn
+hsn-00511,الثريا 10 فالمية,HassLightSet
+hsn-00512,تطفي لي التلفزة في البيت,HassTurnOff
+hsn-00513,يا اخي، الله يخليك شوف لي واش الشباك مگفولة؟,HassGetState
+hsn-00514,تحل لي الشباك,HassTurnOn
+hsn-00515,اگدي الجنراتور كامل في التواليت,HassTurnOn
+hsn-00516,اعدل الثريا لبيظ الله يخليك ظرك,HassLightSet
+hsn-00517,اشحال السخانة في الگاراج؟,HassClimateGetTemperature
+hsn-00518,اعليك الله حگل اگفلي باب الدار,HassTurnOn
+hsn-00519,اعگب، الشوفو اگدو,HassTurnOn
+hsn-00520,تنگص الصوت شوي,HassSetVolume
+hsn-00521,رد الكليم عشرين دوگري,HassClimateSetTemperature
+hsn-00522,اللامبة في صالون اطفيها,HassTurnOff
+hsn-00523,بالله ش من ثريا گادية الله يجازيك بالخير؟,HassGetState
+hsn-00524,هيه، هبط الصوت ياسر,HassSetVolume
+hsn-00525,اتطفي لي المروحه الله يحفظك,HassTurnOff
+hsn-00526,حل الكادنة,HassTurnOff
+hsn-00527,حگل راني نبغي السخانة في بيت الرگاد 22 درجة,HassClimateSetTemperature
+hsn-00528,المروحة اف الصالون cent فالمية,HassFanSetSpeed
+hsn-00529,حگل اگدي ذو گاع التلفزيون في الصطح,HassTurnOn
+hsn-00530,حگل تطفي لي مروحه الصالون,HassTurnOff
+hsn-00531,تعدل لي لامبة على خمسة وسبعين فالمية,HassLightSet
+hsn-00532,يا دار، شنه الساعة؟,HassGetCurrentTime
+hsn-00533,ابدا مينوتري 30 دقيقة ل أتاي درك,HassStartTimer
+hsn-00534,اشوف، الفنتيلاتور خمسة وسبعين فالمية,HassFanSetSpeed
+hsn-00535,اعدل منبه ل سبع دگايگ,HassStartTimer
+hsn-00536,اشحال درجة الحرارة اف الخيمة؟,HassClimateGetTemperature
+hsn-00537,النور اطفيه,HassTurnOff
+hsn-00538,اگدي المروحة,HassTurnOn
+hsn-00539,يا مساعد، تطفي لي الشوفو اف لاكور الله يجازيك بالخير,HassTurnOff
+hsn-00540,اگدي الثريا اف گدام الباب,HassTurnOn
+hsn-00541,گول لي الساعة؟,HassGetCurrentTime
+hsn-00542,اعگب، كيف الطقس؟,HassGetWeather
+hsn-00543,يا داري، ردي الستارة على اثمانين پورسون,HassSetPosition
+hsn-00544,اعگب، اعدلي منبه ل اثلاث ساعات,HassStartTimer
+hsn-00545,رد المكنسة للشارجور,HassVacuumReturnToBase
+hsn-00546,يا دار، نبغي تسكر لي الظو,HassTurnOff
+hsn-00547,تطفي لي الثريا اف الخيمه,HassTurnOff
+hsn-00548,اگدي الثريا في الدوش,HassTurnOn
+hsn-00549,رد التلفزة يخدم,HassMediaUnpause
+hsn-00550,هيه، طفي الراديو ف الخيمة,HassTurnOff
+hsn-00551,اگدي مكيف گدام الباب,HassTurnOn
+hsn-00552,گلي السخانة؟,HassClimateGetTemperature
+hsn-00553,التلفزيون گادية؟,HassGetState
+hsn-00554,طفاو الظو ف الحوش الله يخليك,HassTurnOff
+hsn-00555,اطفاو الموتور في گدام الباب الله يخليك,HassTurnOff
+hsn-00556,نبغيك تطفي لي الثريا اف بيت الصغار,HassTurnOff
+hsn-00557,اشوف، نبغي اتنگص لي الضو,HassLightSet
+hsn-00558,الظو ف الخيمة نگصيه بالزاف,HassLightSet
+hsn-00559,آآ، سكري البريز,HassTurnOff
+hsn-00560,اعگب، يا داري، رد لامبة اف البيت 70 پورسون حگل,HassLightSet
+hsn-00561,آآ، أتاي تزيده ف ليستة لكورس,HassShoppingListAddItem
+hsn-00562,كيف اصبحت,Social.greet
+hsn-00563,نبغي تنظف المدخل,HassVacuumStart
+hsn-00564,اگدي كامل المكيف في البيرو حگل,HassTurnOn
+hsn-00565,تگدي لي الجنراتور في الگاراج ظرك,HassTurnOn
+hsn-00566,حگل نبغي منك تگدي لي بولوار ف الدوش ظرك,HassTurnOn
+hsn-00567,نبغيك اتزيد لي الصوت شي اشوي,HassSetVolume
+hsn-00568,الله يخليك الظو اف بيت الضيوف مية فالمية,HassLightSet
+hsn-00569,حگل رد المكيف اف المكتب خمسة وعشرين دوگري,HassClimateSetTemperature
+hsn-00570,تگفل لي الكادنة بالمفتاح حگل,HassTurnOn
+hsn-00571,تحل لي باب الدار,HassTurnOff
+hsn-00572,حگل نبغي منك تعدل لي عداد اثلاث دگايگ ل الروز,HassStartTimer
+hsn-00573,ديري المكيف اف التواليت اثلاثة وعشرين دراجات,HassClimateSetTemperature
+hsn-00574,الضو عشرة پورسون,HassLightSet
+hsn-00575,كيف الطقس؟,HassGetWeather
+hsn-00576,حگل رد الصوت الله يحفظك,HassMediaPlayerUnmute
+hsn-00577,اتدير لي النور في بيت الدراري بلون ازرق,HassLightSet
+hsn-00578,نقص الصوت شوي ظرك,HassSetVolume
+hsn-00579,نبغي منك اتنگص لي الصوت شوي,HassSetVolume
+hsn-00580,الكادنا حلها,HassTurnOff
+hsn-00581,ابغيت تگدي لي الفانتيلاتير الله يخليك,HassTurnOn
+hsn-00582,السخانة اشحال الله يخليك؟,HassClimateGetTemperature
+hsn-00583,سكر الثريا في بيت الما,HassTurnOff
+hsn-00584,اراع واش الكليم اف المطبخ گادي؟,HassGetState
+hsn-00585,هيه، بالله افتحو باب الدار حگل,HassTurnOff
+hsn-00586,نح التايمرات كامل ذرك,HassCancelAllTimers
+hsn-00587,السخانة كم؟,HassClimateGetTemperature
+hsn-00588,التيلي في الحوش حلها,HassTurnOn
+hsn-00589,سكر لامبة الصطح,HassTurnOff
+hsn-00590,ش تعرف تعدل,Social.who
+hsn-00591,افتحي الشباك في البيرو ظرك,HassTurnOn
+hsn-00592,اگفل باب الگاراج الله يحفظك,HassTurnOff
+hsn-00593,نبغي منك تگدي لي الكليم في بيت الما,HassTurnOn
+hsn-00594,حل باب الحوش,HassTurnOn
+hsn-00595,اسيگ البيرو حگل,HassVacuumStart
+hsn-00596,دير الثريا ف صالون لخضر,HassLightSet
+hsn-00597,راني نبغي تگدي لي الثريا ذو گاع اف المدخل,HassTurnOn
+hsn-00598,طفاي الثريا ف لاكور,HassTurnOff
+hsn-00599,اعليك الله التلفزة اطفيها حگل,HassTurnOff
+hsn-00600,كمل الموسيقى,HassMediaUnpause
+hsn-00601,اعدلو الريدو على خمسة وعشرين فالمية,HassSetPosition
+hsn-00602,حگل رد الروبو للشارجور,HassVacuumReturnToBase
+hsn-00603,زيد الظو اف بيت الضيوف اشوي حگل,HassLightSet
+hsn-00604,طفي التلفزة ف الفناء,HassTurnOff
+hsn-00605,الكليماتيزور في بيت الصغار seize دراجات,HassClimateSetTemperature
+hsn-00606,يا دار، سكري كليماتيزور الگاراج,HassTurnOff
+hsn-00607,كم السخانة اف بيت الرگاد؟,HassClimateGetTemperature
+hsn-00608,يا مساعد، وگفي العداد الله يخليك,HassCancelTimer
+hsn-00609,شطبي الدار,HassVacuumStart
+hsn-00610,گيد اللحم ف ليستة التسوگ ظرك الله يجازيك بالخير,HassShoppingListAddItem
+hsn-00611,باب الحوش حله,HassTurnOn
+hsn-00612,سكر النور ف الخيمة درك الله يحفظك,HassTurnOff
+hsn-00613,يا داري، اشوف ياك المضخة گادية؟,HassGetState
+hsn-00614,طفي گاع اللامبه في الدوش,HassTurnOff
+hsn-00615,گول لي بعد ربع ساعة ل الروز الله يخليك,HassStartTimer
+hsn-00616,اشعلي نور بيت الصغار,HassTurnOn
+hsn-00617,اعليك الله حگل تزيد الزريگ ف لاليست,HassShoppingListAddItem
+hsn-00618,رد اللامبه بلون لحمر,HassLightSet
+hsn-00619,اگفل الطاگة ف الصالون,HassTurnOff
+hsn-00620,الباب افتحه الله يخليك,HassTurnOff
+hsn-00621,يا دار، ابغيت السخانة اف البيت اثنين وعشرين دراجات,HassClimateSetTemperature
+hsn-00622,اسمع، طفي النور ف الدوش,HassTurnOff
+hsn-00623,ايوه، حط الروز ف ليستة التسوگ,HassShoppingListAddItem
+hsn-00624,حگل ابغيت تگفل لي الباب لكبير,HassTurnOff
+hsn-00625,الحر ياسر اليوم,Implicit.hot
+hsn-00626,بالله ابغيت تگدي لي اللامبه ف صالون,HassTurnOn
+hsn-00627,يا دار، اعليك الله اگدي الضو ف الفناء,HassTurnOn
+hsn-00628,نظف بيت الدراري,HassVacuumStart
+hsn-00629,اشوف، اگدي الضو ف صالون الله يحفظك,HassTurnOn
+hsn-00630,تگدي لي الكليماتيزور اف بيت الرگاد,HassTurnOn
+hsn-00631,دير الريدو ف اربعين پورسون,HassSetPosition
+hsn-00632,ترد الظو اف گدام الباب ابيظ,HassLightSet
+hsn-00633,گطع صوت تيلي,HassMediaPlayerMute
+hsn-00634,آآ، اگدي المكيف,HassTurnOn
+hsn-00635,ديرو اللامبة ف صالون ليموني,HassLightSet
+hsn-00636,اسمع، حط البطاطة ل ليستة التسوگ,HassShoppingListAddItem
+hsn-00637,الكليم ف الخيمة اگديه,HassTurnOn
+hsn-00638,اعليك الله اخبرني السخانة؟,HassClimateGetTemperature
+hsn-00639,اشعل الضو,HassTurnOn
+hsn-00640,اعليك الله نبغيك تگدي لي المروحة ف الصطح,HassTurnOn
+hsn-00641,يا داري، وگف البافل اشوي الله يجازيك بالخير,HassMediaPause
+hsn-00642,يا مساعد، رد الضو ف گدام الباب على 70 پورسون,HassLightSet
+hsn-00643,دير الثريا بلون لزرگ,HassLightSet
+hsn-00644,آآ، طفاو فنتيلاتور الگاراج,HassTurnOff
+hsn-00645,حگل گول لي بعد دقيقة ل الروز ظرك,HassStartTimer
+hsn-00646,يا مساعد، اگدي الروبو حگل,HassVacuumStart
+hsn-00647,اعگب، خلي الروبو ينظف,HassVacuumStart
+hsn-00648,اگفلي الكادنة,HassTurnOn
+hsn-00649,اگدي الراديو,HassTurnOn
+hsn-00650,الكليماتيزور سبعة وعشرين دوگري,HassClimateSetTemperature
+hsn-00651,هيه، يا مساعد، النور نگصه اشوي,HassLightSet
+hsn-00652,رد المكيف ف المكتب ف اثلاثة وعشرين دراجات,HassClimateSetTemperature
+hsn-00653,اسمع، حگل اگدو اللامبة,HassTurnOn
+hsn-00654,باب الگاراج حليه,HassTurnOn
+hsn-00655,رد الضو اف الصطح سبعين بالمية,HassLightSet
+hsn-00656,اگفل الريدو ظرك الله يحفظك,HassTurnOff
+hsn-00657,بولوار ف بيت الصغار گادي؟,HassGetState
+hsn-00658,يا مساعد، هل البافل ف الكوزينة گادي الله يخليك؟,HassGetState
+hsn-00659,هيه، گيد الكسكس ل ليستة التسوگ الله يحفظك,HassShoppingListAddItem
+hsn-00660,يا اخي، يا داري، طفي النور الله يخليك,HassTurnOff
+hsn-00661,گداش درجة الحرارة؟,HassClimateGetTemperature
+hsn-00662,دير النور ف الكوزينه ابيض,HassLightSet
+hsn-00663,دير الضو ل تسعين فالمية الله يخليك,HassLightSet
+hsn-00664,اگفل الريدوات اف الخيمه الله يجازيك بالخير,HassTurnOff
+hsn-00665,يا داري، اگدي المكيف اف البيت حگل,HassTurnOn
+hsn-00666,حلي باب الگاراج ظرك,HassTurnOn
+hsn-00667,طفي ثريا المطبخ حگل,HassTurnOff
+hsn-00668,يا مساعد، دير الثريا اف الگاراج على مية فالمية حگل,HassLightSet
+hsn-00669,نبغي السخانة واحد وعشرين دراجات ظرك,HassClimateSetTemperature
+hsn-00670,حگل رجع الي گبلها,HassMediaPrevious
+hsn-00671,رد صوت تلفزة الله يجازيك بالخير,HassMediaPlayerUnmute
+hsn-00672,دير اللامبه في بيت الرگاد بلون ابيض,HassLightSet
+hsn-00673,الكليماتيزور گادي؟,HassGetState
+hsn-00674,گول لي بعد عشر دگايگ حگل,HassStartTimer
+hsn-00675,تطفي لي لامبة ف المكتب,HassTurnOff
+hsn-00676,خارجين گاع,Implicit.leave
+hsn-00677,الراديو ف الگاراج طفيه,HassTurnOff
+hsn-00678,اشوف هل الفانتيلاتير ف الگاراج گادي؟,HassGetState
+hsn-00679,اگدي النور گاع في البيرو,HassTurnOn
+hsn-00680,اگدي الكليم في المكتب حگل,HassTurnOn
+hsn-00681,اتدير لي النور في صالون على 90 پورسون,HassLightSet
+hsn-00682,انت ش,Social.who
+hsn-00683,گطع صوت راديو,HassMediaPlayerMute
+hsn-00684,اشوف واش الفانتيلاتير ف الصالون گادي؟,HassGetState
+hsn-00685,يا مساعد، الضو اف الكوزينة هبطه شي واعر,HassLightSet
+hsn-00686,تگدي لي الشوفو اف بيت الضيوف,HassTurnOn
+hsn-00687,ابغيت تگفل لي الريدوات اف الكوزينة,HassTurnOff
+hsn-00688,يا دار، حگل حطي النور في بيت الضياف على عشرة فالمية,HassLightSet
+hsn-00689,البرد ياسر,Implicit.cold
+hsn-00690,الله يخليك التلفزيون ف بيت الدراري اگديها,HassTurnOn
+hsn-00691,اعليك الله شوف لي الجو اليوم؟,HassGetWeather
+hsn-00692,طفي سبيكر بيت الرگاد الله يخليك,HassTurnOff
+hsn-00693,جيب لي الما,OutOfScope
+hsn-00694,اعگب، شطب الدار,HassVacuumStart
+hsn-00695,تگدي لي مروحة گدام الباب,HassTurnOn
+hsn-00696,يا داري، تعدل لي عداد انص ساعة ل أتاي حگل درك,HassStartTimer
+hsn-00697,نح المنبهات كامل,HassCancelAllTimers
+hsn-00698,تنگص النور في الگاراج اشوي,HassLightSet
+hsn-00699,نبغي اتطفي لي بريز السطح,HassTurnOff
+hsn-00700,اشوف، اگدي الثريا ف صالون,HassTurnOn
+hsn-00701,حگل خلي الروبو ينظف,HassVacuumStart
+hsn-00702,تگدي لي المروحة في المدخل,HassTurnOn
+hsn-00703,اگدي الكليم في البيت,HassTurnOn
+hsn-00704,شوف لي الجو اليوم؟,HassGetWeather
+hsn-00705,طفي المكيف في الصطح,HassTurnOff
+hsn-00706,رد الكليماتيزور في الصطح على 20 حگل,HassClimateSetTemperature
+hsn-00707,اطفي الفانتيلاتير ف لاكور,HassTurnOff
+hsn-00708,آآ، جيب الي بعدها حگل,HassMediaNext
+hsn-00709,هيه، زيدي الخبز ل ليستة التسوگ,HassShoppingListAddItem
+hsn-00710,واش الشوفو اف بيت الصغار گادي؟,HassGetState
+hsn-00711,لاباس؟,Social.greet
+hsn-00712,ابغيت تزيد الغاز ف ليستة التسوگ,HassShoppingListAddItem
+hsn-00713,سكر الفانتيلو ف الگاراج,HassTurnOff
+hsn-00714,اشوف، سكر ذو گاع السبيكر اف الصطح ذرك,HassTurnOff
+hsn-00715,يا مساعد، الفنتيلاتور اف بيت الضيوف حله,HassTurnOn
+hsn-00716,اگدي اللامبة في الحوش,HassTurnOn
+hsn-00717,تگدي لي الثريا اف البيرو الله يخليك,HassTurnOn
+hsn-00718,ش السخانة ذرك؟,HassClimateGetTemperature
+hsn-00719,شوف لي واش السبيكر في بيت الدراري شاعل؟,HassGetState
+hsn-00720,هيه، حل الريدو,HassTurnOn
+hsn-00721,اعگب، الفانتيلو في الخيمه طفايه,HassTurnOff
+hsn-00722,يا داري، اگدي اللامبة,HassTurnOn
+hsn-00723,حگل نگص الصوت بالزاف,HassSetVolume
+hsn-00724,باب الگاراج اگفله,HassTurnOff
+hsn-00725,نقص الضو اف الگاراج شوي,HassLightSet
+hsn-00726,ردي الضو 70 پورسون,HassLightSet
+hsn-00727,ش من ثريا گادية اف بيت الضيوف؟,HassGetState
+hsn-00728,ش السخانة اف لاكور ذرك؟,HassClimateGetTemperature
+hsn-00729,يا داري، حبس الغنا درك,HassMediaPause
+hsn-00730,يا دار، الضو في بيت الدراري رفده شي اشوي درك,HassLightSet
+hsn-00731,اشوف، ش السخانة ف الگاراج ظرك؟,HassClimateGetTemperature
+hsn-00732,انساه,HassNevermind
+hsn-00733,رد اللامبة في البيت ف 80 بالمية,HassLightSet
+hsn-00734,اگفل باب الگاراج,HassTurnOff
+hsn-00735,نگصي لامبة شي واعر حگل,HassLightSet
+hsn-00736,يا مساعد، طفي الثريا,HassTurnOff
+hsn-00737,اعليك الله حط لامبة اف الصالون ستين فالمية الله يخليك,HassLightSet
+hsn-00738,اسمع، نبغي منك تگفل لي الستارة ف بيت الصغار,HassTurnOff
+hsn-00739,حل باب الگاراج,HassTurnOn
+hsn-00740,بالله دقيقتين ل الصلاة، اعدل تايمر درك,HassStartTimer
+hsn-00741,شعل اللامبه گاع,HassTurnOn
+hsn-00742,اگدي الضو ذو گاع اف بيت الضياف,HassTurnOn
+hsn-00743,الثريا اف الگاراج سبعين بالمية,HassLightSet
+hsn-00744,تگفل لي باب الدار بالمفتاح,HassTurnOn
+hsn-00745,اشوف، اشوف هل باب الدار مگفول؟,HassGetState
+hsn-00746,اتنح التايمر,HassCancelTimer
+hsn-00747,اتدير لي اللامبه اف الصالون اصفر الله يخليك,HassLightSet
+hsn-00748,اگفل الكادنا حگل,HassTurnOn
+hsn-00749,اعليك الله سكر شوفو الخيمة,HassTurnOff
+hsn-00750,يا مساعد، اگدي الضو,HassTurnOn
+hsn-00751,سكر البراد الكهربائي ف بيت الضياف ذرك,HassTurnOff
+hsn-00752,تفتح لي الگاراج,HassTurnOn
+hsn-00753,ماشي للخدمة,Implicit.leave
+hsn-00754,آآ، سكر النور ف البيرو,HassTurnOff
+hsn-00755,الأغنية الي فاتت,HassMediaPrevious
+hsn-00756,تسكر لي الفانتيلاتير,HassTurnOff
+hsn-00757,اگفلي الستارة,HassTurnOff
+hsn-00758,حگل الكليماتيزور في لاكور اثلاثة وعشرين الله يخليك,HassClimateSetTemperature
+hsn-00759,يا دار، نبهني بعد 10 دگايگ ل الصلاة,HassStartTimer
+hsn-00760,الثريا في البيرو طفاو حگل,HassTurnOff
+hsn-00761,شعل الضو حگل,HassTurnOn
+hsn-00762,يا دار، اگدي النور,HassTurnOn
+hsn-00763,اشوف، حگل تگدي لي الكليماتيزور,HassTurnOn
+hsn-00764,نبغي منك السخانة اف التواليت سطاعش دراجات,HassClimateSetTemperature
+hsn-00765,طفي النور في التواليت,HassTurnOff
+hsn-00766,ش السخانة ف بيت الضياف ظرك الله يخليك؟,HassClimateGetTemperature
+hsn-00767,نبغي تگفل لي الطاگة ذرك,HassTurnOff
+hsn-00768,هيه، اگدي المكيف,HassTurnOn
+hsn-00769,اعدل النور في بيت الدراري بلون ازرگ,HassLightSet
+hsn-00770,جيب الي بعدها الله يخليك,HassMediaNext
+hsn-00771,طفاي الضو ذو گاع ف گدام الباب,HassTurnOff
+hsn-00772,يا مساعد، سكر الفريجو ف الصالون,HassTurnOff
+hsn-00773,يا مساعد، بالله النور اگديه,HassTurnOn
+hsn-00774,اگدي النور ف الگاراج,HassTurnOn
+hsn-00775,العداد اشحال باگي لو؟,HassTimerStatus
+hsn-00776,الروز زيده ف الليستة درك,HassShoppingListAddItem
+hsn-00777,اعدل الفانتيلاتير اف الصطح ف 100 پورسون,HassFanSetSpeed
+hsn-00778,ايوه، اگدي الثريا ف بيت الضياف,HassTurnOn
+hsn-00779,اگطع التايمر,HassCancelTimer
+hsn-00780,هبط الصوت اشوي,HassSetVolume
+hsn-00781,يا مساعد، ش السخانة ف بيت الصغار درك؟,HassClimateGetTemperature
+hsn-00782,اگدي المكيف ف السطح,HassTurnOn
+hsn-00783,ايوه، طفاو موتور الگاراج,HassTurnOff
+hsn-00784,المكيف اف الصطح واحد وعشرين دوگري,HassClimateSetTemperature
+hsn-00785,اشوف واش المكنسة شاعل؟,HassGetState
+hsn-00786,ياك الكليماتيزور في بيت الدراري گادي؟,HassGetState
+hsn-00787,اشعلي الظو,HassTurnOn
+hsn-00788,نبغي نغتسل,Implicit.shower
+hsn-00789,بالله الساعة كم؟,HassGetCurrentTime
+hsn-00790,ايوه، وگف العداد,HassCancelTimer
+hsn-00791,حل الستارة في الصطح انصو,HassSetPosition
+hsn-00792,اتكتب لي الماڭرو درك الله يخليك,HassShoppingListAddItem
+hsn-00793,حگل الضو ف لاكور خمسة وعشرين فالمية,HassLightSet
+hsn-00794,تطفي لي الراديو اف الخيمة,HassTurnOff
+hsn-00795,ديري النور في المكتب على خمسة وسبعين پورسون,HassLightSet
+hsn-00796,الله يخليك اتطفي لي ثريا صالون الله يحفظك,HassTurnOff
+hsn-00797,البيرو ظلمة,Implicit.dark
+hsn-00798,الثريا طفايها,HassTurnOff
+hsn-00799,عندي البرد,Implicit.cold
+hsn-00800,اگدي الضو اف صالون,HassTurnOn
+hsn-00801,الظو شعله,HassTurnOn
+hsn-00802,اتنگص لي اللامبة اف بيت الما,HassLightSet
+hsn-00803,يا مساعد، طفي الكليماتيزور اف البيت,HassTurnOff
+hsn-00804,طفي التلفزة,HassTurnOff
+hsn-00805,كمل الراديو ظرك,HassMediaUnpause
+hsn-00806,راني نبغي تفتح لي الگاراج,HassTurnOn
+hsn-00807,نبهني بعد 25 دقيقة,HassStartTimer
+hsn-00808,هل الآسپيراتور گادي؟,HassGetState
+hsn-00809,اكتب الصابون ل ليستة التسوگ الله يحفظك,HassShoppingListAddItem
+hsn-00810,بالله حل باب الدار,HassTurnOff
+hsn-00811,تفتح لي الريدوات في بيت الرگاد,HassTurnOn
+hsn-00812,تگدي لي النور,HassTurnOn
+hsn-00813,حگل الثريا اف الخيمه اطفيها,HassTurnOff
+hsn-00814,الصوت 40 بالمية,HassSetVolume
+hsn-00815,اگدي الفريجيدير في بيت الدراري,HassTurnOn
+hsn-00816,حگل اطفي اللامبه,HassTurnOff
+hsn-00817,الفانتيلاتير ستين فالمية,HassFanSetSpeed
+hsn-00818,نبغي تلغي المنبه,HassCancelTimer
+hsn-00819,حل باب الگاراج حگل ذرك,HassTurnOn
+hsn-00820,الظو عشرين فالمية ظرك,HassLightSet
+hsn-00821,يا داري، الضو زيده الله يجازيك بالخير,HassLightSet
+hsn-00822,اعدل النور اف الصطح على اربعين بالمية الله يخليك,HassLightSet
+hsn-00823,ساعة الرگاد,Implicit.sleep
+hsn-00824,آآ، ابغيت تسكر لي التلفزة ف الكوزينة,HassTurnOff
+hsn-00825,بالله ش حالة الجو؟,HassGetWeather
+hsn-00826,يا داري، حبس المديح,HassMediaPause
+hsn-00827,الثريا اف لاكور اگديها,HassTurnOn
+hsn-00828,يا داري، اگفل باب الدار,HassTurnOn
+hsn-00829,اتنگص لي الثريا شوي,HassLightSet
+hsn-00830,45 دقيقة، اعدلو تايمر الله يجازيك بالخير,HassStartTimer
+hsn-00831,هل المكيف گادي؟,HassGetState
+hsn-00832,يا دار، افتح باب الحوش,HassTurnOn
+hsn-00833,اعدلو منبه دقيقة ل الصلاة,HassStartTimer
+hsn-00834,حگل نبغي تطفي لي الكليماتيزور ف الخيمه,HassTurnOff
+hsn-00835,ش اخبارك,Social.greet
+hsn-00836,تگدي لي اللامبه ف السطح,HassTurnOn
+hsn-00837,حل الفنتيلاتور في گدام الباب,HassTurnOn
+hsn-00838,سكت الصوت,HassMediaPlayerMute
+hsn-00839,تنظف الحوش,HassVacuumStart
+hsn-00840,هيه، نبهني بعد 30 دقيقة ل الروز,HassStartTimer
+hsn-00841,الشوفو اگديه,HassTurnOn
+hsn-00842,سكر الكليماتيزور,HassTurnOff
+hsn-00843,ايوه، اطفي الضو في البيرو,HassTurnOff
+hsn-00844,الفانتيلو اف بيت الضيوف vingt-cinq بالمية,HassFanSetSpeed
+hsn-00845,يا مساعد، بالله اطفي الثريا,HassTurnOff
+hsn-00846,يا دار، الثريا 75 پورسون,HassLightSet
+hsn-00847,اعدل المروحة ف اثلاثين پورسون,HassFanSetSpeed
+hsn-00848,ياك التلفزيون اف الكوزينة گادية؟,HassGetState
+hsn-00849,دير المروحة ف بيت الضيوف على 80 فالمية,HassFanSetSpeed
+hsn-00850,اگدي الراديو اف بيت الرگاد,HassTurnOn
+hsn-00851,اگدي النور ذو گاع في الگاراج,HassTurnOn
+hsn-00852,اطفاي التلفزيون ف بيت الدراري,HassTurnOff
+hsn-00853,راني نبغي اتطفي لي كامل الفنتيلاتور في البيت الله يخليك,HassTurnOff
+hsn-00854,اگطع گاع المنبهات درك,HassCancelAllTimers
+hsn-00855,البومب ف المطبخ اگديها درك,HassTurnOn
+hsn-00856,ترد اللامبه ف بيت الدراري ازرق حگل,HassLightSet
+hsn-00857,اعدل الثريا ف 25 بالمية الله يخليك,HassLightSet
+hsn-00858,كيف الجو ظرك؟,HassGetWeather
+hsn-00859,ما ننساو الحوت، زيده ف ليستة الشرا,HassShoppingListAddItem
+hsn-00860,اگدي لوباف,HassTurnOn
+hsn-00861,اگدي الجنراتور,HassTurnOn
+hsn-00862,اشعل التيلي اف صالون,HassTurnOn
+hsn-00863,السبيكر سكتها,HassMediaPlayerMute
+hsn-00864,اعليك الله لامبة اگدو,HassTurnOn
+hsn-00865,يا دار، رجع الروبو لبلاصتو,HassVacuumReturnToBase
+hsn-00866,ايوه، اگفل الكادنا,HassTurnOn
+hsn-00867,اعليك الله الريدوات في بيت الضياف مگفول؟,HassGetState
+hsn-00868,جيب الي بعدها,HassMediaNext
+hsn-00869,تزيد الثريا في الصالون شي واعر الله يحفظك,HassLightSet
+hsn-00870,حلي الشباك اف بيت الرگاد,HassTurnOn
+hsn-00871,رد التيلي يخدم,HassMediaUnpause
+hsn-00872,راني نبغي تطفي لي الراديو الله يحفظك,HassTurnOff
+hsn-00873,اتنگص لي الصوت ياسر,HassSetVolume
+hsn-00874,نبغي السخانة 27 دوگري حگل,HassClimateSetTemperature
+hsn-00875,حگل خلي الروبو يشطب,HassVacuumStart
+hsn-00876,الباب لكبير اگفله درك,HassTurnOff
+hsn-00877,ابغيت نشري سيارة,OutOfScope
+hsn-00878,اللامبة اف الگاراج طلعها شي اشوي,HassLightSet
+hsn-00879,رد المروحه على cinquante فالمية حگل ذرك,HassFanSetSpeed
+hsn-00880,نبغيك اتطفي لي الكليماتيزور,HassTurnOff
+hsn-00881,ساعة ل الروز، ابدا منبه حگل,HassStartTimer
+hsn-00882,شعل البراد الكهربائي حگل,HassTurnOn
+hsn-00883,دير النور في بيت الرگاد ازرگ ظرك,HassLightSet
+hsn-00884,خلي الروبو يشطب,HassVacuumStart
+hsn-00885,الغي العداد,HassCancelTimer
+hsn-00886,كم السخانة؟,HassClimateGetTemperature
+hsn-00887,اگدي مروحة بيت الصغار,HassTurnOn
+hsn-00888,سدو الشباك ف بيت الضياف,HassTurnOff
+hsn-00889,نبغي منك تگدي لي الضو حگل,HassTurnOn
+hsn-00890,ابغيت ترد الثريا اف الگاراج لخضر الله يخليك الله يجازيك بالخير,HassLightSet
+hsn-00891,گول لي بعد دقيقتين ل الصلاة حگل,HassStartTimer
+hsn-00892,يا دار، تعدل لي الثريا في المدخل اربعين فالمية,HassLightSet
+hsn-00893,گداش درجة الحرارة اف الصطح؟,HassClimateGetTemperature
+hsn-00894,طفي كامل الظو,HassTurnOff
+hsn-00895,اطفي النور في الگاراج,HassTurnOff
+hsn-00896,التيلي سكتها,HassMediaPlayerMute
+hsn-00897,گول لي التاريخ؟,HassGetCurrentDate
+hsn-00898,ذ اليوم ش هو؟,HassGetCurrentDate
+hsn-00899,اطفي ضو بيت الضياف حگل,HassTurnOff
+hsn-00900,تطفي لي گاع اللامبه في الصطح,HassTurnOff
+hsn-00901,ابغيت اتطفي لي المروحه اف الحوش,HassTurnOff
+hsn-00902,اگدي الپريز في البيرو,HassTurnOn
+hsn-00903,نبغي منك تطفي لي البافل ف گدام الباب,HassTurnOff
+hsn-00904,حگل 45 دقيقة ل الفرن، دير تايمر,HassStartTimer
+hsn-00905,حط الصوت على خمسين,HassSetVolume
+hsn-00906,نگص النور شوي,HassLightSet
+hsn-00907,حل الگاراج الله يجازيك بالخير,HassTurnOn
+hsn-00908,يا مساعد، تطفي لي النور في بيت الدراري ظرك,HassTurnOff
+hsn-00909,يا مساعد، سكر الشوفو في البيرو حگل,HassTurnOff
+hsn-00910,اگدي النور ذو گاع في بيت الضيوف,HassTurnOn
+hsn-00911,وگفي التايمر,HassCancelTimer
+hsn-00912,اگدي بولوار في الخيمة,HassTurnOn
+hsn-00913,نبغيك السخانة ستة وعشرين,HassClimateSetTemperature
+hsn-00914,رد الضو في الخيمة على عشرة پورسون الله يجازيك بالخير,HassLightSet
+hsn-00915,اعليك الله اگدي المكيف,HassTurnOn
+hsn-00916,حگل تسكر لي الظو,HassTurnOff
+hsn-00917,خلي الراديو يتكلم ظرك,HassMediaPlayerUnmute
+hsn-00918,يا مساعد، الله يخليك اطفي الكليم في الخيمه حگل,HassTurnOff
+hsn-00919,يا داري، next الله يخليك,HassMediaNext
+hsn-00920,يا داري، اراع ياك المكيف اف بيت الضياف گادي؟,HassGetState
+hsn-00921,ياك ما لاهي تجي الريح؟,HassGetWeather
+hsn-00922,الله يخليك دور الجنراتور في گدام الباب حگل,HassTurnOn
+hsn-00923,اعدل المكيف على dix-huit دوگري,HassClimateSetTemperature
+hsn-00924,طفي اللامبه,HassTurnOff
+hsn-00925,حلي الريدو اف الخيمه نص,HassSetPosition
+hsn-00926,سكر الشوفو ف المدخل,HassTurnOff
+hsn-00927,گداش باگي ف المنبه؟,HassTimerStatus
+hsn-00928,نبغيك تگدي لي المكيف الله يخليك,HassTurnOn
+hsn-00929,اگدي بولوار اف الفناء,HassTurnOn
+hsn-00930,افتحي الكادنة,HassTurnOff
+hsn-00931,الثريا اف الكوزينة تسعين بالمية ذرك,HassLightSet
+hsn-00932,اشحال درجة الحرارة؟,HassClimateGetTemperature
+hsn-00933,الريدو حلو ذرك,HassTurnOn
+hsn-00934,سكر الراديو,HassTurnOff
+hsn-00935,ايوه، تگدي لي الظو اف التواليت,HassTurnOn
+hsn-00936,الثريا اف بيت الرگاد اثلاثين بالمية الله يحفظك,HassLightSet
+hsn-00937,طفي الثريا في بيت الرگاد,HassTurnOff
+hsn-00938,رد النور على ستين پورسون درك,HassLightSet
+hsn-00939,نبغي منك تگفل لي باب الگاراج,HassTurnOff
+hsn-00940,آآ، سكر الراديو,HassTurnOff
+hsn-00941,حل الباب لكبير,HassTurnOn
+hsn-00942,افتح الستارة النص,HassSetPosition
+hsn-00943,بالله دير النور اف السطح لحمر الله يخليك درك,HassLightSet
+hsn-00944,اشحال درجة الحرارة ف بيت الضيوف؟,HassClimateGetTemperature
+hsn-00945,الراديو ف بيت الصغار سكره درك,HassTurnOff
+hsn-00946,كم درجة الحرارة ف التواليت؟,HassClimateGetTemperature
+hsn-00947,حبس المديح,HassMediaPause
+hsn-00948,يا داري، سكر الثريا ف بيت الصغار ظرك,HassTurnOff
+hsn-00949,اعدل النور ف البيرو خمسين فالمية,HassLightSet
+hsn-00950,بولوار شاعل؟,HassGetState
+hsn-00951,يا مساعد، النور في الگاراج اثلاثين بالمية,HassLightSet
+hsn-00952,الضو في الگاراج 40 بالمية,HassLightSet
+hsn-00953,حگل رد النور اف صالون ف 10 پورسون,HassLightSet
+hsn-00954,بالله نبغي منك تسكر لي النور اف بيت الضياف,HassTurnOff
+hsn-00955,اگدي الپريز ف الخيمه,HassTurnOn
+hsn-00956,راني نبغي اتزيد لي الثريا ف البيرو,HassLightSet
+hsn-00957,الثريا ف الدوش زيدها شوي,HassLightSet
+hsn-00958,حل الباب لكبير الله يجازيك بالخير,HassTurnOn
+hsn-00959,المروحه ف المطبخ 50 بالمية,HassFanSetSpeed
+hsn-00960,ديري النور اثلاثين پورسون,HassLightSet
+hsn-00961,يا داري، ش التاريخ اليوم الله يحفظك؟,HassGetCurrentDate
+hsn-00962,ايوه، سكت الصوت,HassMediaPlayerMute
+hsn-00963,گول لي بعد دقيقة,HassStartTimer
+hsn-00964,أتاي زيده ف الليستة ذرك,HassShoppingListAddItem
+hsn-00965,نبغي منك تگدي لي اللامبة,HassTurnOn
+hsn-00966,رجعت للدار,Implicit.arrive
+hsn-00967,حگل اتطفي لي النور,HassTurnOff
+hsn-00968,الله يخليك ش السخانة في الصطح درك؟,HassClimateGetTemperature
+hsn-00969,ترد الكليم اف الخيمة على عشرين دوگري,HassClimateSetTemperature
+hsn-00970,اعگب، اتدير لي النور بلون لصفر,HassLightSet
+hsn-00971,العداد گداش باگي لو؟,HassTimerStatus
+hsn-00972,ايوه، اعليك الله طفاي المروحه ف المطبخ ذرك,HassTurnOff
+hsn-00973,نبغي منك تنگص اللامبه ف الصطح ذرك,HassLightSet
+hsn-00974,انا ماشي نرگد,Implicit.sleep
+hsn-00975,ايوه، حط الكليم عشرين درجة,HassClimateSetTemperature
+hsn-00976,البراد الكهربائي سكريه,HassTurnOff
+hsn-00977,اعگب، تطفي لي الظو,HassTurnOff
+hsn-00978,تفتح لي الطاگة في بيت الضيوف,HassTurnOn
+hsn-00979,السخانة اف صالون گداش؟,HassClimateGetTemperature
+hsn-00980,اعگب، يا داري، الغاي التايمر,HassCancelTimer
+hsn-00981,الكليم ف الگاراج تسعطاعش درجة,HassClimateSetTemperature
+hsn-00982,فم عجاج اليوم؟,HassGetWeather
+hsn-00983,اگدي المكيف اف الخيمه حگل,HassTurnOn
+hsn-00984,الثريا اطفيها,HassTurnOff
+hsn-00985,اگفل الطاگة اف المدخل,HassTurnOff
+hsn-00986,ايوه، اگفل باب الگاراج,HassTurnOff
+hsn-00987,اعليك الله تگدي لي الظو في بيت الدراري الله يحفظك,HassTurnOn
+hsn-00988,اعدل الكليم في البيرو ف سبعة وعشرين دراجات,HassClimateSetTemperature
+hsn-00989,اگدي الشوفو حگل,HassTurnOn
+hsn-00990,نبغي منك تگدي لي المكيف,HassTurnOn
+hsn-00991,الضو عشرة بالمية,HassLightSet
+hsn-00992,ما نسمع شي، اتزيد لي الصوت ذرك,HassSetVolume
+hsn-00993,يا داري، رد اللي فات,HassMediaPrevious
+hsn-00994,حگل تگدي لي الفانتيلاتير اف الحوش,HassTurnOn
+hsn-00995,ما ننساو الطماطم، زيديه ف لاليست,HassShoppingListAddItem
+hsn-00996,اگدي الموسيقى من جديد حگل,HassMediaUnpause
+hsn-00997,يا داري، حگل حبس التيلي ذرك,HassMediaPause
+hsn-00998,سكر النور,HassTurnOff
+hsn-00999,گداش درجة الحرارة ف بيت الضياف؟,HassClimateGetTemperature
+hsn-01000,المكيف في الصطح اگديه درك,HassTurnOn
+hsn-01001,بالله الفنتيلاتور 60 بالمية,HassFanSetSpeed
+hsn-01002,اسيگ السطح,HassVacuumStart
+hsn-01003,الله يخليك حلي الريدوات في بيت الما نص,HassSetPosition
+hsn-01004,اتدير لي الكليماتيزور سبعة وعشرين دوگري حگل,HassClimateSetTemperature
+hsn-01005,اطفاي الثريا ف المكتب ذرك,HassTurnOff
+hsn-01006,لامبة في الكوزينة اگديها,HassTurnOn
+hsn-01007,الغي التايمر,HassCancelTimer
+hsn-01008,الظو گادي؟,HassGetState
+hsn-01009,آآ، اگفل باب الگاراج,HassTurnOff
+hsn-01010,طفاي الشوفو گاع ف المدخل,HassTurnOff
+hsn-01011,يا دار، حگل نگصي النور اف الفناء ياسر,HassLightSet
+hsn-01012,باب الگاراج سكريه,HassTurnOff
+hsn-01013,فم ظلام اف المطبخ,Implicit.dark
+hsn-01014,دير مينوتري ل نص ساعة ل أتاي حگل ظرك الله يخليك,HassStartTimer
+hsn-01015,تحل لي الطاگة اف المدخل,HassTurnOn
+hsn-01016,اعدلي الثريا ل اثلاثين بالمية الله يخليك,HassLightSet
+hsn-01017,الله يخليك الأغنية الجاية,HassMediaNext
+hsn-01018,ابدا منبه ل 25 دقيقة ل الفرن,HassStartTimer
+hsn-01019,سكر لوباف في الكوزينه,HassTurnOff
+hsn-01020,حگل اگدي النور,HassTurnOn
+hsn-01021,حگل اگدي الروبو,HassVacuumStart
+hsn-01022,الباب افتحيه الله يجازيك بالخير,HassTurnOff
+hsn-01023,يا داري، اعدل المكيف على 16 دراجات الله يجازيك بالخير,HassClimateSetTemperature
+hsn-01024,ش من فريجو شاعل في المدخل؟,HassGetState
+hsn-01025,اعدلي منبه 30 دقيقة,HassStartTimer
+hsn-01026,رد الريدوات اف الگاراج ف تسعين پورسون,HassSetPosition
+hsn-01027,سكري الثلاجة في الكوزينة,HassTurnOff
+hsn-01028,اطفي راديو بيت الما ذرك,HassTurnOff
+hsn-01029,يا مساعد، المضخة طفاو,HassTurnOff
+hsn-01030,يا داري، تسكر لي المروحه,HassTurnOff
+hsn-01031,نبهني بعد 4 دگايگ ل الفرن,HassStartTimer
+hsn-01032,حگل ردي النور اف المدخل بلون اصفر,HassLightSet
+hsn-01033,راني نبغي السخانة اف بيت الضياف 17 دوگري,HassClimateSetTemperature
+hsn-01034,يا دار، ديري المروحة ف اثلاثين فالمية ذرك,HassFanSetSpeed
+hsn-01035,اراع ياك المروحة اف الدوش شاعلة الله يخليك؟,HassGetState
+hsn-01036,اگدي الضو في بيت الدراري حگل,HassTurnOn
+hsn-01037,انا نتعرگ,Implicit.hot
+hsn-01038,تگدي لي النور ذو گاع ف صالون,HassTurnOn
+hsn-01039,الله يخليك راني نبغي تسكر لي البريز اف الگاراج,HassTurnOff
+hsn-01040,اگدي ذو گاع الظو ف البيت,HassTurnOn
+hsn-01041,سكر المكيف,HassTurnOff
+hsn-01042,يا مساعد، الراديو طفيه,HassTurnOff
+hsn-01043,يا دار، الله يخليك الضو سكريه,HassTurnOff
+hsn-01044,نبغي السخانة ف گدام الباب 21 درجة حگل,HassClimateSetTemperature
+hsn-01045,طفي النور اف التواليت,HassTurnOff
+hsn-01046,يا مساعد، 25 دقيقة ل الصلاة، راني نبغي تعدل لي مينوتري,HassStartTimer
+hsn-01047,رد المكنسة للشارجور حگل الله يحفظك,HassVacuumReturnToBase
+hsn-01048,اعگب، اطفاي الظو اف لاكور حگل,HassTurnOff
+hsn-01049,لامبة في التواليت تنگصها اشوي,HassLightSet
+hsn-01050,اعدل الفنتيلاتور اف لاكور على cinquante پورسون,HassFanSetSpeed
+hsn-01051,سكر الفانتيلاتير في بيت الصغار,HassTurnOff
+hsn-01052,يا مساعد، حل الستارة في گدام الباب,HassTurnOn
+hsn-01053,حامي ياسر اليوم,Implicit.hot
+hsn-01054,الله يخليك اطفي كامل الكليم ف بيت الرگاد,HassTurnOff
+hsn-01055,حطي الستارة اف بيت الضياف ف خمسة وسبعين بالمية,HassSetPosition
+hsn-01056,اراع واش المروحه گادية الله يخليك؟,HassGetState
+hsn-01057,اعدل الستارة ف 80 فالمية,HassSetPosition
+hsn-01058,رد الضو ف بيت الضيوف ليموني الله يخليك,HassLightSet
+hsn-01059,رد النور في الخيمة 30 فالمية,HassLightSet
+hsn-01060,اتطفي لي المكيف ف السطح,HassTurnOff
+hsn-01061,اتدير لي الكليم اثمنطاعش,HassClimateSetTemperature
+hsn-01062,گول لي بعد 4 دگايگ الله يجازيك بالخير,HassStartTimer
+hsn-01063,اعگب، دور الفانتيلو في الصالون,HassTurnOn
+hsn-01064,حگل نبغي منك تگدي لي الضو في بيت الرگاد الله يخليك,HassTurnOn
+hsn-01065,گداش باگي من الوگت؟,HassTimerStatus
+hsn-01066,نبغي منك تگدي لي البراد الكهربائي اف بيت الضيوف,HassTurnOn
+hsn-01067,حگل ما نسمع شي، رفد الصوت,HassSetVolume
+hsn-01068,اعدلو المكيف في بيت الرگاد اثلاثة وعشرين درجة,HassClimateSetTemperature
+hsn-01069,گول لي بعد 3 دگايگ ل أتاي ظرك,HassStartTimer
+hsn-01070,اگدي النور درك,HassTurnOn
+hsn-01071,نبهني بعد 20 دقيقة ل الروز,HassStartTimer
+hsn-01072,سكر البراد الكهربائي,HassTurnOff
+hsn-01073,الكليم اف المكتب گادي؟,HassGetState
+hsn-01074,الظو ف الحوش اگديه,HassTurnOn
+hsn-01075,ابغيت اتدير لي اللامبه ل ستين پورسون,HassLightSet
+hsn-01076,اگفلي الباب بالساروت,HassTurnOn
+hsn-01077,ش اسمك,Social.who
+hsn-01078,حط اللامبة اف بيت الضياف عشرين فالمية,HassLightSet
+hsn-01079,گول لي بعد 10 ثواني,HassStartTimer
+hsn-01080,حط الكليم ف الصالون على اثنين وعشرين,HassClimateSetTemperature
+hsn-01081,تسكر لي البومب,HassTurnOff
+hsn-01082,هبطي الصوت شي اشوي الله يخليك,HassSetVolume
+hsn-01083,اطفي نور گدام الباب الله يخليك,HassTurnOff
+hsn-01084,ايوه، الثريا اف بيت الضيوف 40 پورسون,HassLightSet
+hsn-01085,تعدل لي مينوتري ل 20 دقيقة ل الروز,HassStartTimer
+hsn-01086,يا دار، بالله اطفي ذو گاع السبيكر,HassTurnOff
+hsn-01087,اگدي لوباف في الفناء,HassTurnOn
+hsn-01088,تگدي لي المروحة اف الصالون,HassTurnOn
+hsn-01089,اگدي المروحه ف الخيمة,HassTurnOn
+hsn-01090,راني نبغي السخانة اف الخيمه سبعطاعش دوگري,HassClimateSetTemperature
+hsn-01091,اطفي الفانتيلو اف المطبخ,HassTurnOff
+hsn-01092,دير لامبة ف الفناء بلون اورونج حگل الله يخليك,HassLightSet
+hsn-01093,حط النعناع ل ليستة التسوگ,HassShoppingListAddItem
+hsn-01094,الفانتيلو عشرين فالمية,HassFanSetSpeed
+hsn-01095,تسكر لي الثريا اف الخيمه,HassTurnOff
+hsn-01096,راني نبغي اتنح المنبه,HassCancelTimer
+hsn-01097,اگدي الفانتيلاتير في التواليت,HassTurnOn
+hsn-01098,اگدي التيلي اف الخيمه الله يخليك,HassTurnOn
+hsn-01099,خلي السبيكر يتكلم,HassMediaPlayerUnmute
+hsn-01100,طفي الفنتيلاتور اف بيت الما,HassTurnOff
+hsn-01101,اگدي الثريا حگل,HassTurnOn
+hsn-01102,حبس الموسيقى,HassMediaPause
+hsn-01103,يا اخي، اعليك الله تگفل لي باب الگاراج,HassTurnOff
+hsn-01104,اعليك الله تسكر لي الضو ذرك,HassTurnOff
+hsn-01105,الكليم اف بيت الما 23 دوگري,HassClimateSetTemperature
+hsn-01106,المكيف سبعطاعش درجة,HassClimateSetTemperature
+hsn-01107,اگدي لوباف الحوش حگل,HassTurnOn
+hsn-01108,نبغيك اتطفي لي النور,HassTurnOff
+hsn-01109,اعدلو الصوت على 60,HassSetVolume
+hsn-01110,حگل رجع الي گبلها الله يجازيك بالخير,HassMediaPrevious
+hsn-01111,ابغيت اتطفي لي النور اف الگاراج,HassTurnOff
+hsn-01112,بالله الي بعدو,HassMediaNext
+hsn-01113,بالله ابدا عداد ساعة,HassStartTimer
+hsn-01114,هيه، هل الثريا شاعلة؟,HassGetState
+hsn-01115,آآ، نبغي منك تگدي لي البومبة ف الگاراج,HassTurnOn
+hsn-01116,اعليك الله اراع واش باب الحوش مفتوح؟,HassGetState
+hsn-01117,گول لي بعد عشر ثواني ل الصلاة,HassStartTimer
+hsn-01118,ردي النور في الگاراج بلون ازرگ,HassLightSet
+hsn-01119,اعليك الله هبط الثريا ياسر,HassLightSet
+hsn-01120,يا داري، بالله دير النور اف الخيمه سبعين فالمية,HassLightSet
+hsn-01121,حگل اطفي اللامبة في الحوش,HassTurnOff
+hsn-01122,اللامبه ف الصالون 40 فالمية,HassLightSet
+hsn-01123,تسكر لي الكليماتيزور,HassTurnOff
+hsn-01124,اگدي الكليماتيزور في صالون حگل,HassTurnOn
+hsn-01125,اعگب، حگل اگدي الفنتيلاتور ف الكوزينة,HassTurnOn
+hsn-01126,تعدل لي الريدو اف البيت على تسعين پورسون حگل,HassSetPosition
+hsn-01127,الله يخليك طفي الجنراتور في الصطح,HassTurnOff
+hsn-01128,اعدل الريدو في الحوش ف خمسة وسبعين فالمية,HassSetPosition
+hsn-01129,يا اخي، الكليم ف الكوزينة 22 دوگري,HassClimateSetTemperature
+hsn-01130,اعدل الفانتيلو ف اثلاثين پورسون ذرك,HassFanSetSpeed
+hsn-01131,يا اخي، اعدلي المكيف اربعة وعشرين دوگري ذرك,HassClimateSetTemperature
+hsn-01132,بالله نبغيك تحل لي الباب,HassTurnOff
+hsn-01133,اعدلو المكيف على اثلاثة وعشرين دوگري,HassClimateSetTemperature
+hsn-01134,راني نبغي اتطفي لي بولوار ظرك,HassTurnOff
+hsn-01135,هيه، ابدا مينوتري ل 30 دقيقة ل الصلاة,HassStartTimer
+hsn-01136,اللامبه هبطها,HassLightSet
+hsn-01137,رد لامبة ف بيت الرگاد 30 بالمية,HassLightSet
+hsn-01138,افتح الكادنة,HassTurnOff
+hsn-01139,يا داري، دور الكليماتيزور كامل حگل درك,HassTurnOn
+hsn-01140,طفي السبيكر ف بيت الدراري,HassTurnOff
+hsn-01141,النور اگديه ظرك,HassTurnOn
+hsn-01142,يا دار، ياك المضخة شاعلة؟,HassGetState
+hsn-01143,حگل تعدل لي الظو اف الصالون لخضر الله يخليك,HassLightSet
+hsn-01144,دير الضو تسعين پورسون,HassLightSet
+hsn-01145,آآ، طفي الفانتيلاتير ف بيت الصغار,HassTurnOff
+hsn-01146,دير الضو 40 فالمية ظرك,HassLightSet
+hsn-01147,اعدل الثريا ستين پورسون,HassLightSet
+hsn-01148,اشوف، بالله زيدي النور اف الخيمة ياسر,HassLightSet
+hsn-01149,اگدو النور في لاكور حگل,HassTurnOn
+hsn-01150,يا مساعد، خليه يكمل الله يحفظك,HassMediaUnpause
+hsn-01151,اگدي راديو المدخل,HassTurnOn
+hsn-01152,اسيگ الدار,HassVacuumStart
+hsn-01153,التيلي طفاو حگل,HassTurnOff
+hsn-01154,دير الظو في المدخل سبعين فالمية,HassLightSet
+hsn-01155,اشوف، الكليم گادي؟,HassGetState
+hsn-01156,راني نبغي تگدي لي الضو اف الگاراج,HassTurnOn
+hsn-01157,تگدي لي الپريز,HassTurnOn
+hsn-01158,ما ننساو البصل، گيده ف الليستة ظرك,HassShoppingListAddItem
+hsn-01159,سكر الفنتيلاتور في البيرو,HassTurnOff
+hsn-01160,يا اخي، الي بعدو,HassMediaNext
+hsn-01161,نبغي اتطفي لي الضو كامل اف البيرو,HassTurnOff
+hsn-01162,تفتح لي الباب لكبير,HassTurnOn
+hsn-01163,كم درجة الحرارة في الخيمة؟,HassClimateGetTemperature
+hsn-01164,حلي الستارة في المطبخ نص حگل,HassSetPosition
+hsn-01165,اعدل عداد ل 10 دگايگ,HassStartTimer
+hsn-01166,اعليك الله الكليماتيزور في المكتب 22 درجة الله يخليك,HassClimateSetTemperature
+hsn-01167,الظو اف بيت الضياف طلعه بالزاف,HassLightSet
+hsn-01168,ابغيت اتطفي لي تلفزيون بيت الضيوف,HassTurnOff
+hsn-01169,يا داري، اگدي الظو اف الصالون,HassTurnOn
+hsn-01170,اتنگص لي لامبة ف صالون,HassLightSet
+hsn-01171,اگفل الريدوات اف الفناء حگل,HassTurnOff
+hsn-01172,راني نبغي ترد الضو في گدام الباب ف 90 بالمية,HassLightSet
+hsn-01173,يا مساعد، الله يخليك تسكر لي النور ف لاكور,HassTurnOff
+hsn-01174,راني نبغي تعدل لي الفنتيلاتور ف مية فالمية,HassFanSetSpeed
+hsn-01175,البراد الكهربائي طفيه,HassTurnOff
+hsn-01176,حل الطاگة في صالون,HassTurnOn
+hsn-01177,التيلي شاعلة؟,HassGetState
+hsn-01178,طفي الفانتيلاتير في الگاراج,HassTurnOff
+hsn-01179,نبهني بعد 20 ثانية,HassStartTimer
+hsn-01180,اسمع، يا مساعد، الساعة كم؟,HassGetCurrentTime
+hsn-01181,اگطع كامل المنبهات,HassCancelAllTimers
+hsn-01182,ياك الگاراج مفتوح؟,HassGetState
+hsn-01183,الظو في المدخل 60 فالمية,HassLightSet
+hsn-01184,المكيف خمسة وعشرين درك,HassClimateSetTemperature
+hsn-01185,حگل الكليم اف بيت الرگاد 23 دوگري الله يجازيك بالخير,HassClimateSetTemperature
+hsn-01186,ش من نور گادي الله يجازيك بالخير؟,HassGetState
+hsn-01187,گداش السخانة؟,HassClimateGetTemperature
+hsn-01188,طفي الكليماتيزور ف الصالون,HassTurnOff
+hsn-01189,حط الزيت ف لاليست حگل الله يجازيك بالخير,HassShoppingListAddItem
+hsn-01190,نبغي تگدي لي كليماتيزور الگاراج,HassTurnOn
+hsn-01191,الكليماتيزور ف الفناء اثمنطاعش دوگري,HassClimateSetTemperature
+hsn-01192,اگدي ذو گاع الكليم ف الصالون,HassTurnOn
+hsn-01193,ش حالة الجو الله يخليك؟,HassGetWeather
+hsn-01194,افتح الطاگة في الكوزينه درك,HassTurnOn
+hsn-01195,كم السخانة ف الخيمه؟,HassClimateGetTemperature
+hsn-01196,حطي النور 40 بالمية,HassLightSet
+hsn-01197,حلي الكادنة حگل,HassTurnOff
+hsn-01198,الشباك اگفليها,HassTurnOff
+hsn-01199,النور اطفاو,HassTurnOff
+hsn-01200,يا مساعد، فم عجاج اليوم؟,HassGetWeather
+hsn-01201,شعلي الضو,HassTurnOn
+hsn-01202,طفاي كامل النور في الگاراج حگل ظرك,HassTurnOff
+hsn-01203,نقص الصوت شي واعر الله يخليك,HassSetVolume
+hsn-01204,تسكر لي الپريز كامل اف المكتب,HassTurnOff
+hsn-01205,يا داري، ابغيت تعدل لي المكيف على vingt دراجات,HassClimateSetTemperature
+hsn-01206,اگدي الضو ف التواليت,HassTurnOn
+hsn-01207,نبغي منك ترد الكليم على 25,HassClimateSetTemperature
+hsn-01208,السخانة ياسر ف لاكور,Implicit.hot
+hsn-01209,شعل لامبة ف گدام الباب درك,HassTurnOn
+hsn-01210,حگل الفانتيلو دوره,HassTurnOn
+hsn-01211,اسمع، حط أتاي ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01212,اطفي المروحة,HassTurnOff
+hsn-01213,اعگب، اگدي لامبة ف بيت الضيوف,HassTurnOn
+hsn-01214,يا اخي، بالله تعدل لي مينوتري اربع دگايگ ل الصلاة ظرك,HassStartTimer
+hsn-01215,يا دار، تسكر لي الكليم اف البيت,HassTurnOff
+hsn-01216,راني نبغي تزيد الثريا,HassLightSet
+hsn-01217,اعدل المكيف 27,HassClimateSetTemperature
+hsn-01218,الثريا ف الحوش طفاو,HassTurnOff
+hsn-01219,اشوف، بالله اطفاي الراديو في الحوش,HassTurnOff
+hsn-01220,ياك الثريا شاعلة الله يخليك؟,HassGetState
+hsn-01221,اعليك الله رد الثريا في المكتب على 40 بالمية,HassLightSet
+hsn-01222,سكر الضو گاع في البيت,HassTurnOff
+hsn-01223,اگدي التلفزيون ف بيت الصغار,HassTurnOn
+hsn-01224,النور زيده ياسر,HassLightSet
+hsn-01225,ابدا منبه 25 دقيقة ل الفرن حگل,HassStartTimer
+hsn-01226,تعدل لي الضو ف التواليت اخضر,HassLightSet
+hsn-01227,حط تايمر ل اربع دگايگ ل الصلاة,HassStartTimer
+hsn-01228,راني نبغي تگفل لي الكادنة,HassTurnOn
+hsn-01229,طفاي البافل ف البيت حگل,HassTurnOff
+hsn-01230,راني نبغي اتدير لي صوت تيلي ف 80,HassSetVolume
+hsn-01231,اعدل الصوت ف خمسين,HassSetVolume
+hsn-01232,اگدو الراديو الله يجازيك بالخير,HassTurnOn
+hsn-01233,آآ، البافل سكتها,HassMediaPlayerMute
+hsn-01234,نبغي منك تزيد السكر ف الليستة,HassShoppingListAddItem
+hsn-01235,ياك الآسپيراتور گادي الله يخليك؟,HassGetState
+hsn-01236,دير مينوتري ل 20 ثانية حگل,HassStartTimer
+hsn-01237,يا دار، حل الستارة ظرك الله يحفظك,HassTurnOn
+hsn-01238,بالله اطفاو النور في لاكور,HassTurnOff
+hsn-01239,آآ، يا داري، گلي السخانة اف الگاراج؟,HassClimateGetTemperature
+hsn-01240,اعگب، ابغيت تعدل لي المكيف على 17 دوگري,HassClimateSetTemperature
+hsn-01241,اعليك الله افتح الستارة نص ذرك,HassSetPosition
+hsn-01242,تعدل لي اللامبه ف بيت الدراري لحمر الله يخليك,HassLightSet
+hsn-01243,نبغيك اتطفي لي الثريا حگل,HassTurnOff
+hsn-01244,اگفل باب الحوش,HassTurnOff
+hsn-01245,اسمع، ردي اللامبه اف المطبخ بلون اخضر,HassLightSet
+hsn-01246,نبغيك اتطفي لي الشوفو ف الحوش حگل,HassTurnOff
+hsn-01247,اتدير لي الفانتيلاتير في السطح ف vingt بالمية,HassFanSetSpeed
+hsn-01248,ابغيت تطفي لي التيلي ف الصالون,HassTurnOff
+hsn-01249,يا داري، اگدي اللامبه اف بيت الضيوف,HassTurnOn
+hsn-01250,نبغي اتطفي لي النور ف الصالون,HassTurnOff
+hsn-01251,نبهني بعد ساعتين ل الصلاة ظرك,HassStartTimer
+hsn-01252,اگدي الراديو ف السطح,HassTurnOn
+hsn-01253,يا مساعد، الثريا ف بيت الصغار تسعين فالمية,HassLightSet
+hsn-01254,يا مساعد، اگفلي الكادنا بالساروت,HassTurnOn
+hsn-01255,ايوه، الفانتيلاتير 20 پورسون الله يجازيك بالخير,HassFanSetSpeed
+hsn-01256,هيه، اگدي الفريجو اف الفناء,HassTurnOn
+hsn-01257,المروحة سبعين پورسون,HassFanSetSpeed
+hsn-01258,زيد الما ل لاليست,HassShoppingListAddItem
+hsn-01259,آآ، ش التاريخ اليوم؟,HassGetCurrentDate
+hsn-01260,اعليك الله دير اللامبة ف لاكور مية پورسون حگل,HassLightSet
+hsn-01261,اسمع، خلي الراديو يتكلم الله يخليك,HassMediaPlayerUnmute
+hsn-01262,دير اللامبة عشرين پورسون,HassLightSet
+hsn-01263,باب الدار افتحه,HassTurnOff
+hsn-01264,آآ، لامبة اطفيها الله يخليك,HassTurnOff
+hsn-01265,آآ، وگفي العداد حگل,HassCancelTimer
+hsn-01266,يا دار، السخانة گداش؟,HassClimateGetTemperature
+hsn-01267,تعدل لي اللامبه في بيت الضياف ابيض الله يخليك حگل,HassLightSet
+hsn-01268,سكر اللامبة ف الكوزينة درك,HassTurnOff
+hsn-01269,الله يخليك افتح الگاراج درك الله يجازيك بالخير,HassTurnOn
+hsn-01270,شطب الدار,HassVacuumStart
+hsn-01271,آآ، الكليم ف صالون اگديه,HassTurnOn
+hsn-01272,يا دار، نبغي منك تگدي لي البومبة ف لاكور,HassTurnOn
+hsn-01273,سخنت,Implicit.hot
+hsn-01274,نبغيك تگدي لي الظو,HassTurnOn
+hsn-01275,اعدل اللامبه اف الصطح اثمانين پورسون,HassLightSet
+hsn-01276,تطفي لي لامبة,HassTurnOff
+hsn-01277,اتنگص لي النور في بيت الضياف,HassLightSet
+hsn-01278,المنبه اشحال باگي لو؟,HassTimerStatus
+hsn-01279,طفاي الثريا اف صالون,HassTurnOff
+hsn-01280,حگل افتح الباب لكبير,HassTurnOn
+hsn-01281,رد صوت سبيكر,HassMediaPlayerUnmute
+hsn-01282,راني نبغي اتطفي لي ثريا البيت,HassTurnOff
+hsn-01283,حل الريدو,HassTurnOn
+hsn-01284,حگل الگاراج اگفله,HassTurnOff
+hsn-01285,حل لامبة اف الصالون,HassTurnOn
+hsn-01286,دير الكليماتيزور اف بيت الصغار ف اربعة وعشرين دوگري,HassClimateSetTemperature
+hsn-01287,اگدي راديو الگاراج,HassTurnOn
+hsn-01288,ايوه، راني نبغي ترد الصوت على 25 درك,HassSetVolume
+hsn-01289,اعدل الضو في الكوزينه ف اربعين فالمية,HassLightSet
+hsn-01290,حگل اشعلي اللامبة اف بيت الصغار,HassTurnOn
+hsn-01291,التيلي سكرها,HassTurnOff
+hsn-01292,حل البراد الكهربائي,HassTurnOn
+hsn-01293,حگل ديرو الضو ل 10 بالمية,HassLightSet
+hsn-01294,يا دار، الثريا اف المدخل طلعها شي اشوي,HassLightSet
+hsn-01295,دير الستارة في الصطح على تسعين پورسون,HassSetPosition
+hsn-01296,دير الفانتيلاتير ف الكوزينه ف cinquante پورسون,HassFanSetSpeed
+hsn-01297,يا اخي، اللامبه في الصطح نگصها بالزاف ذرك,HassLightSet
+hsn-01298,الظو ف الكوزينه trente فالمية حگل,HassLightSet
+hsn-01299,الفانتيلاتير اف بيت الضياف 50 بالمية,HassFanSetSpeed
+hsn-01300,يا دار، اگدي المروحه كامل ف بيت الرگاد,HassTurnOn
+hsn-01301,اللامبة ف البيت زيدها شي اشوي,HassLightSet
+hsn-01302,حل الريدوات النص,HassSetPosition
+hsn-01303,المكيف اگديه,HassTurnOn
+hsn-01304,اعگب، حط عداد ل 45 دقيقة,HassStartTimer
+hsn-01305,سكر ثلاجة بيت الرگاد حگل,HassTurnOff
+hsn-01306,اگفلو الباب لكبير الله يجازيك بالخير,HassTurnOff
+hsn-01307,انا نتعرگ ف بيت الضياف,Implicit.hot
+hsn-01308,وگفي كامل المنبهات,HassCancelAllTimers
+hsn-01309,حط الضو على اثمانين فالمية,HassLightSet
+hsn-01310,تطفي لي المروحة اف الخيمه,HassTurnOff
+hsn-01311,راني نبغي تسكر لي الپريز اف بيت الما,HassTurnOff
+hsn-01312,الفانتيلاتير شعله,HassTurnOn
+hsn-01313,يا مساعد، اللامبة 90 فالمية ذرك,HassLightSet
+hsn-01314,اگدي البراد الكهربائي في الخيمه حگل,HassTurnOn
+hsn-01315,اطفي الراديو اف الكوزينه درك,HassTurnOff
+hsn-01316,اگدي گاع المروحة,HassTurnOn
+hsn-01317,السخانة اف السطح گداش؟,HassClimateGetTemperature
+hsn-01318,اگدو النور ف الگاراج,HassTurnOn
+hsn-01319,اگدي المكيف في الخيمه,HassTurnOn
+hsn-01320,اگدي الكليماتيزور في صالون,HassTurnOn
+hsn-01321,تسكر لي الثريا اف بيت الرگاد حگل ذرك,HassTurnOff
+hsn-01322,يا مساعد، لاهي تصب اليوم؟,HassGetWeather
+hsn-01323,الله يخليك اطفي الضو,HassTurnOff
+hsn-01324,ما نشوف شي ف البيت,Implicit.dark
+hsn-01325,گول لي السخانة في الحوش؟,HassClimateGetTemperature
+hsn-01326,ترد الظو على خمسة وسبعين فالمية,HassLightSet
+hsn-01327,اراع هل الكليم گادي؟,HassGetState
+hsn-01328,الله يخليك اعدل الصوت على اربعين الله يجازيك بالخير,HassSetVolume
+hsn-01329,سكري النور,HassTurnOff
+hsn-01330,اعدل عداد ل خمس دگايگ ل الفرن,HassStartTimer
+hsn-01331,الراديو ف الگاراج گادي؟,HassGetState
+hsn-01332,لامبة ف المطبخ تسعين فالمية,HassLightSet
+hsn-01333,اگدي لامبة الفناء الله يجازيك بالخير,HassTurnOn
+hsn-01334,اعدلي الضو في الصطح ف اثمانين پورسون,HassLightSet
+hsn-01335,خلي الروبو يرجع لبلاصتو الله يحفظك,HassVacuumReturnToBase
+hsn-01336,المروحة في الصالون ستين بالمية,HassFanSetSpeed
+hsn-01337,يا داري، الصوت ياسر,HassSetVolume
+hsn-01338,دير النور في المدخل بلون لزرگ,HassLightSet
+hsn-01339,الله يخليك تگدي لي الثريا اف البيرو ذرك,HassTurnOn
+hsn-01340,اطفاو لوباف ف الگاراج,HassTurnOff
+hsn-01341,گلي السخانة الله يحفظك؟,HassClimateGetTemperature
+hsn-01342,طلع الصوت اشوي,HassSetVolume
+hsn-01343,يا داري، ردي الريدوات اف الصطح على خمسة وسبعين پورسون,HassSetPosition
+hsn-01344,دير اللامبة ف بيت الصغار عشرين فالمية,HassLightSet
+hsn-01345,اللامبه ف بيت الرگاد 70 بالمية حگل الله يخليك,HassLightSet
+hsn-01346,نبغي تطفي لي المكيف ف گدام الباب,HassTurnOff
+hsn-01347,دير اللامبة اف الگاراج بلون ابيظ,HassLightSet
+hsn-01348,بالله اشحال السخانة في الحوش؟,HassClimateGetTemperature
+hsn-01349,هيه، حگل الثريا ف الصطح 90 فالمية,HassLightSet
+hsn-01350,اطفي النور في الصالون,HassTurnOff
+hsn-01351,گطع صوت تلفزة,HassMediaPlayerMute
+hsn-01352,اشعل النور في الگاراج درك الله يخليك,HassTurnOn
+hsn-01353,اگدي الروبو الله يحفظك,HassVacuumStart
+hsn-01354,هل باب الدار مگفول؟,HassGetState
+hsn-01355,حطي الضو بلون لصفر,HassLightSet
+hsn-01356,رجعي الروبو لامكانو,HassVacuumReturnToBase
+hsn-01357,حگل لامبة اف الخيمة نگصوها ياسر ذرك,HassLightSet
+hsn-01358,اگفل الباب بالمفتاح,HassTurnOn
+hsn-01359,شطب السطح درك,HassVacuumStart
+hsn-01360,بالله الأغنية الي فاتت,HassMediaPrevious
+hsn-01361,السخانة في الگاراج كم؟,HassClimateGetTemperature
+hsn-01362,حگل اطفاو الثريا اف الخيمة,HassTurnOff
+hsn-01363,رد الثريا في البيت ازرق,HassLightSet
+hsn-01364,نبغي منك تگدي لي الثريا في بيت الرگاد الله يحفظك,HassTurnOn
+hsn-01365,تگفل لي طاگة الحوش,HassTurnOff
+hsn-01366,افتح الباب لكبير,HassTurnOn
+hsn-01367,اللامبه ف السطح رفدها شوي,HassLightSet
+hsn-01368,ياك الكادنة مگفولة؟,HassGetState
+hsn-01369,اشوف، الله يخليك گول لي بعد دقيقتين ل أتاي,HassStartTimer
+hsn-01370,اتكتب لي البطاطة ف ليستة لكورس,HassShoppingListAddItem
+hsn-01371,الكادنا افتحيها,HassTurnOff
+hsn-01372,اكتبي الروز ف ليستة لكورس,HassShoppingListAddItem
+hsn-01373,اطفي اللامبة اف المدخل,HassTurnOff
+hsn-01374,يا اخي، نبغيك اتطفي لي الشوفو,HassTurnOff
+hsn-01375,وگف العداد الله يخليك,HassCancelTimer
+hsn-01376,حل الريدو انصو,HassSetPosition
+hsn-01377,حط تايمر ساعتين ل الروز حگل درك,HassStartTimer
+hsn-01378,بالله اگدي الثريا,HassTurnOn
+hsn-01379,يا اخي، تعدل لي الثريا اخضر الله يخليك,HassLightSet
+hsn-01380,يا اخي، سكري الجنراتور ظرك,HassTurnOff
+hsn-01381,حگل اعدل الريدوات على خمسة وعشرين پورسون,HassSetPosition
+hsn-01382,نبغي منك تسكر لي الثريا,HassTurnOff
+hsn-01383,يا داري، الله يخليك الضو 75 بالمية درك,HassLightSet
+hsn-01384,حگل شعل اللامبة,HassTurnOn
+hsn-01385,التلفزيون سكرها,HassTurnOff
+hsn-01386,سكري السبيكر في الحوش حگل ظرك,HassTurnOff
+hsn-01387,يا مساعد، اگفلو باب الدار,HassTurnOn
+hsn-01388,اگفل باب الدار بالساروت,HassTurnOn
+hsn-01389,اگدي المروحه في بيت الرگاد,HassTurnOn
+hsn-01390,سكر التلفزة في صالون,HassTurnOff
+hsn-01391,آآ، حگل سكر الراديو,HassTurnOff
+hsn-01392,نبغي تگدي لي النور,HassTurnOn
+hsn-01393,السخانة اشحال؟,HassClimateGetTemperature
+hsn-01394,اگدي الظو في البيت حگل,HassTurnOn
+hsn-01395,واش الكليماتيزور في الصالون شاعل؟,HassGetState
+hsn-01396,أتاي زيدوه ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01397,تگدي لي الموتور ف بيت الما,HassTurnOn
+hsn-01398,دير المكيف ف بيت الرگاد سبعة وعشرين درجة درك,HassClimateSetTemperature
+hsn-01399,حگل اعدلو اللامبه على خمسة وسبعين بالمية,HassLightSet
+hsn-01400,اگدي كليم بيت الدراري,HassTurnOn
+hsn-01401,تعدل لي الستارة في البيت على ستين فالمية,HassSetPosition
+hsn-01402,دور للي بعدو درك,HassMediaNext
+hsn-01403,اعگب، جيب الي بعدها,HassMediaNext
+hsn-01404,سكر الباب بالساروت,HassTurnOn
+hsn-01405,اگفل الريدوات,HassTurnOff
+hsn-01406,يا دار، سكر الكليم,HassTurnOff
+hsn-01407,راني نبغي السخانة ف الصالون 23 درجة حگل,HassClimateSetTemperature
+hsn-01408,اعليك الله اتدير لي المروحة اف المكتب ف 30 پورسون,HassFanSetSpeed
+hsn-01409,سكري البافل الله يخليك,HassTurnOff
+hsn-01410,حط النور ف الصطح بلون ابيض,HassLightSet
+hsn-01411,حگل الگاراج حليه,HassTurnOn
+hsn-01412,ش السخانة اف بيت الضيوف ظرك؟,HassClimateGetTemperature
+hsn-01413,اعگب، الله يخليك باب الگاراج حله,HassTurnOn
+hsn-01414,سكر الظو في الدوش,HassTurnOff
+hsn-01415,حگل ما نسمع شي، زيد الصوت,HassSetVolume
+hsn-01416,دير الريدو على 30 فالمية,HassSetPosition
+hsn-01417,ايوه، شطب الدار,HassVacuumStart
+hsn-01418,سكري الظو حگل,HassTurnOff
+hsn-01419,اعدل اللامبة ف گدام الباب لحمر الله يخليك حگل,HassLightSet
+hsn-01420,لامبة في البيرو اگديها ذرك,HassTurnOn
+hsn-01421,الثريا اف الخيمه 70 فالمية,HassLightSet
+hsn-01422,الله يخليك اشعل الفريجيدير في الصطح الله يجازيك بالخير,HassTurnOn
+hsn-01423,الفانتيلو خمسين فالمية,HassFanSetSpeed
+hsn-01424,الفانتيلاتير طفيه,HassTurnOff
+hsn-01425,ش اليوم من نهار؟,HassGetCurrentDate
+hsn-01426,يا مساعد، كيف الجو اليوم؟,HassGetWeather
+hsn-01427,اتدير لي الثريا ف البيرو بلون ازرق,HassLightSet
+hsn-01428,يا دار، اطفي ضو الفناء,HassTurnOff
+hsn-01429,ابغيت اتطفي لي الجنراتور ف بيت الرگاد,HassTurnOff
+hsn-01430,حط النور ليموني الله يخليك,HassLightSet
+hsn-01431,سكر ثريا گدام الباب حگل الله يخليك,HassTurnOff
+hsn-01432,ما ننساو الغاز، حطه ف لاليست,HassShoppingListAddItem
+hsn-01433,يا مساعد، اعليك الله اگفل الباب لكبير,HassTurnOff
+hsn-01434,الطاگة في الگاراج اگفلها,HassTurnOff
+hsn-01435,كم درجة الحرارة ف السطح؟,HassClimateGetTemperature
+hsn-01436,الغي المنبهات كامل,HassCancelAllTimers
+hsn-01437,نگصو النور ف بيت الضياف شوي ظرك,HassLightSet
+hsn-01438,سكر الفانتيلو اف التواليت ذرك,HassTurnOff
+hsn-01439,النور ف المكتب اگديه ذرك,HassTurnOn
+hsn-01440,الفانتيلو في المطبخ اطفيه الله يخليك,HassTurnOff
+hsn-01441,السبيكر ف الحوش اگديه حگل,HassTurnOn
+hsn-01442,اگدي الراديو اف لاكور,HassTurnOn
+hsn-01443,الشباك سدها,HassTurnOff
+hsn-01444,راني نبغي تگدي لي البافل,HassTurnOn
+hsn-01445,وگف التايمر,HassCancelTimer
+hsn-01446,حگل حط النعناع ل ليستة التسوگ,HassShoppingListAddItem
+hsn-01447,الغاي العداد,HassCancelTimer
+hsn-01448,باب الدار مگفول؟,HassGetState
+hsn-01449,يا داري، الغي العداد,HassCancelTimer
+hsn-01450,هيه، ابغيت اتزيد لي لامبة شي واعر,HassLightSet
+hsn-01451,اعليك الله واش الكليم گادي؟,HassGetState
+hsn-01452,سكر ثريا الفناء,HassTurnOff
+hsn-01453,طفي النور اف البيت,HassTurnOff
+hsn-01454,واش الكادنة مگفولة الله يجازيك بالخير؟,HassGetState
+hsn-01455,حطي الثريا 40 بالمية,HassLightSet
+hsn-01456,اگفل الگاراج حگل,HassTurnOff
+hsn-01457,اگدي البراد الكهربائي ظرك,HassTurnOn
+hsn-01458,اگدي لوباف في السطح حگل,HassTurnOn
+hsn-01459,نبغي منك تنظف بيت الما,HassVacuumStart
+hsn-01460,التلفزة سكتها,HassMediaPlayerMute
+hsn-01461,دير الظو في البيت بلون اورونج ظرك الله يحفظك,HassLightSet
+hsn-01462,سكر المروحة اف بيت الدراري الله يحفظك,HassTurnOff
+hsn-01463,اكتبي النعناع ل الليستة,HassShoppingListAddItem
+hsn-01464,الصوت ياسر,HassSetVolume
+hsn-01465,حگل دير الكليماتيزور في الحوش سبعطاعش درجة,HassClimateSetTemperature
+hsn-01466,ايوه، تطفي لي الشوفو,HassTurnOff
+hsn-01467,تعدل لي المكيف ف اثنين وعشرين درجة,HassClimateSetTemperature
+hsn-01468,اعدل المكيف في الگاراج اثمانية وعشرين دراجات,HassClimateSetTemperature
+hsn-01469,اگفلو الباب بالمفتاح,HassTurnOn
+hsn-01470,افتحي الستارة درك,HassTurnOn
+hsn-01471,يا دار، اگدي المروحة اف المكتب الله يحفظك,HassTurnOn
+hsn-01472,بالله حگل نبغيك تگفل لي الباب لكبير,HassTurnOff
+hsn-01473,افتح ريدو بيت الما,HassTurnOn
+hsn-01474,السخانة كم برا الله يحفظك؟,HassGetWeather
+hsn-01475,اتطفي لي الراديو حگل ظرك,HassTurnOff
+hsn-01476,يا داري، شوف لي هل الباب مفتوح؟,HassGetState
+hsn-01477,اطيح الصوت اشوي,HassSetVolume
+hsn-01478,اگدي الپريز ف الگاراج,HassTurnOn
+hsn-01479,نبغيك اتدير لي الفنتيلاتور ف الصالون على مية فالمية,HassFanSetSpeed
+hsn-01480,اگفل الطاگة اف الصالون,HassTurnOff
+hsn-01481,دير الكليماتيزور خمسة وعشرين دوگري,HassClimateSetTemperature
+hsn-01482,حبس لوباف شي اشوي,HassMediaPause
+hsn-01483,الظو 50 بالمية,HassLightSet
+hsn-01484,اعليك الله سدو الريدوات,HassTurnOff
+hsn-01485,طفي شوفو بيت الضياف,HassTurnOff
+hsn-01486,الله يخليك اعدل منبه 20 دقيقة ل الصلاة,HassStartTimer
+hsn-01487,حط النور اف الصطح اصفر الله يخليك,HassLightSet
+hsn-01488,اگدي المكيف درك,HassTurnOn
+hsn-01489,ايوه، رد الريدوات ف عشرة بالمية,HassSetPosition
+hsn-01490,رد المكيف ف السطح سطاعش درجة,HassClimateSetTemperature
+hsn-01491,تگدي لي التلفزة,HassTurnOn
+hsn-01492,حگل اگدي التلفزة اف المدخل,HassTurnOn
+hsn-01493,بالله راني نبغي تگدي لي النور اف الگاراج,HassTurnOn
+hsn-01494,اگفلي الطاگة,HassTurnOff
+hsn-01495,يا دار، اتطفي لي الظو حگل,HassTurnOff
+hsn-01496,ياك المكنسة گادي؟,HassGetState
+hsn-01497,رد الثريا ف الكوزينة ف 30 پورسون,HassLightSet
+hsn-01498,اگدي اللامبه اف المكتب,HassTurnOn
+hsn-01499,الشوفو اگديه ذرك,HassTurnOn
+hsn-01500,النور ف الگاراج تنگصه بالزاف,HassLightSet
+hsn-01501,حگل اتنگص لي اللامبة ف السطح,HassLightSet
+hsn-01502,دير الضو اف بيت الضياف ل عشرين فالمية الله يجازيك بالخير,HassLightSet
+hsn-01503,اشوف، الكليماتيزور شاعل الله يحفظك؟,HassGetState
+hsn-01504,اطفاي المروحة اف الخيمه ذرك,HassTurnOff
+hsn-01505,الله يخليك هل المكنسة گادي؟,HassGetState
+hsn-01506,اگدو الفانتيلو ذو گاع في الخيمه,HassTurnOn
+hsn-01507,ابغيت ترد الريدو ف بيت الرگاد ف 80 پورسون,HassSetPosition
+hsn-01508,اگدي المكيف في الگاراج,HassTurnOn
+hsn-01509,ايوه، افتح باب الدار,HassTurnOff
+hsn-01510,اطفي التيلي ف البيرو حگل,HassTurnOff
+hsn-01511,زيدو الضو اشوي ظرك,HassLightSet
+hsn-01512,ش التاريخ اليوم؟,HassGetCurrentDate
+hsn-01513,حگل گول لي بعد اربع دگايگ,HassStartTimer
+hsn-01514,تفتح لي الشباك ذرك,HassTurnOn
+hsn-01515,شوف لي هل باب الحوش مفتوح؟,HassGetState
+hsn-01516,اعدلي المكيف على vingt-six,HassClimateSetTemperature
+hsn-01517,دير لامبة ف بيت الرگاد على سبعين فالمية,HassLightSet
+hsn-01518,حلي الكادنا,HassTurnOff
+hsn-01519,اگفلي الطاگة اف بيت الضياف,HassTurnOff
+hsn-01520,طفي الثريا,HassTurnOff
+hsn-01521,اگدي ذو گاع التيلي,HassTurnOn
+hsn-01522,يا اخي، اطيح الصوت شي واعر الله يخليك,HassSetVolume
+hsn-01523,گداش السخانة في بيت الما؟,HassClimateGetTemperature
+hsn-01524,تگدي لي كامل المكيف ف بيت الضيوف,HassTurnOn
+hsn-01525,ما نشوف شي,Implicit.dark
+hsn-01526,دير المكيف على اثمنطاعش دراجات,HassClimateSetTemperature
+hsn-01527,ياك الباب مفتوح؟,HassGetState
+hsn-01528,هبطي الصوت اشوي,HassSetVolume
+hsn-01529,الله يخليك اربع دگايگ ل الروز، ابغيت اتحط لي عداد,HassStartTimer
+hsn-01530,رد صوت راديو حگل,HassMediaPlayerUnmute
+hsn-01531,حگل الصوت عالي,HassSetVolume
+hsn-01532,اگدي الكليماتيزور في گدام الباب ذرك,HassTurnOn
+hsn-01533,اگدي الظو ف بيت الدراري,HassTurnOn
+hsn-01534,نبهني بعد 5 دگايگ,HassStartTimer
+hsn-01535,اگدي الشوفو ف بيت الضياف,HassTurnOn
+hsn-01536,طفاي السبيكر في الخيمة,HassTurnOff
+hsn-01537,بالله اگفل طاگة التواليت,HassTurnOff
+hsn-01538,خلي الروبو يشطب حگل,HassVacuumStart
+hsn-01539,تگفل لي الگاراج,HassTurnOff
+hsn-01540,كم الساعة ظرك؟,HassGetCurrentTime
+hsn-01541,سكر الكليماتيزور حگل,HassTurnOff
+hsn-01542,الفنتيلاتور سكره,HassTurnOff
+hsn-01543,تگفل لي الطاگة في الخيمه,HassTurnOff
+hsn-01544,اگدي النور ف الصالون,HassTurnOn
+hsn-01545,يا دار، ش حالة الجو؟,HassGetWeather
+hsn-01546,45 دقيقة ل الروز، ابدا عداد,HassStartTimer
+hsn-01547,يا مساعد، ما ننساو الطماطم، تزيده ف لاليست,HassShoppingListAddItem
+hsn-01548,اعدل الكليم ف واحد وعشرين دوگري,HassClimateSetTemperature
+hsn-01549,كيف حالك,Social.greet
+hsn-01550,الضو ف لاكور نگصوه بالزاف,HassLightSet
+hsn-01551,حگل الكليماتيزور ف الحوش 20 دوگري,HassClimateSetTemperature
+hsn-01552,النور اطفيه درك,HassTurnOff
+hsn-01553,يا داري، طفي الپريز ف لاكور,HassTurnOff
+hsn-01554,نبهني بعد سبع دگايگ ل الروز,HassStartTimer
+hsn-01555,اعدل المكيف اف البيت اثمنطاعش درجة,HassClimateSetTemperature
+hsn-01556,افتحي باب الگاراج,HassTurnOn
+hsn-01557,الطاگة اف الكوزينه حلها,HassTurnOn
+hsn-01558,اطفي الفانتيلاتير,HassTurnOff
+hsn-01559,سكري الكليماتيزور,HassTurnOff
+hsn-01560,السخانة ف بيت الرگاد گداش الله يحفظك؟,HassClimateGetTemperature
+hsn-01561,اگدي الضو اف بيت الدراري,HassTurnOn
+hsn-01562,ياك الثريا في الگاراج شاعلة؟,HassGetState
+hsn-01563,ردي النور اف الگاراج على عشرين فالمية,HassLightSet
+hsn-01564,الضو اگديه درك,HassTurnOn
+hsn-01565,نبهني بعد عشر دگايگ ل أتاي ظرك,HassStartTimer
+hsn-01566,گول لي السخانة اف الكوزينه؟,HassClimateGetTemperature
+hsn-01567,يا دار، اگدي المضخة اف المدخل ذرك,HassTurnOn
+hsn-01568,يا اخي، يا داري، الله يخليك لامبة ف لاكور طفيها,HassTurnOff
+hsn-01569,حگل اگدي راديو بيت الضياف,HassTurnOn
+hsn-01570,خليه يكمل,HassMediaUnpause
+hsn-01571,رد الكليماتيزور اف المكتب ف تسعطاعش دوگري الله يجازيك بالخير,HassClimateSetTemperature
+hsn-01572,نبغي تزيد النور شي اشوي,HassLightSet
+hsn-01573,تحل لي الريدوات في بيت الرگاد النص,HassSetPosition
+hsn-01574,اشحال السخانة اف الصطح؟,HassClimateGetTemperature
+hsn-01575,تعدل لي المكيف في المدخل سطاعش دوگري,HassClimateSetTemperature
+hsn-01576,الكليماتيزور ف صالون اثمنطاعش دوگري,HassClimateSetTemperature
+hsn-01577,حگل اگدي ضو الخيمه,HassTurnOn
+hsn-01578,نبغي منك تگفل لي باب الدار بالساروت,HassTurnOn
+hsn-01579,شنه الساعة؟,HassGetCurrentTime
+hsn-01580,ابغيت تطفي لي الفانتيلاتير,HassTurnOff
+hsn-01581,يا دار، لامبة طفاو درك,HassTurnOff
+hsn-01582,اعدل الضو في الكوزينه عشرين بالمية,HassLightSet
+hsn-01583,حگل دير الضو تسعين فالمية,HassLightSet
+hsn-01584,اشوف، الضو في الصالون سكره حگل,HassTurnOff
+hsn-01585,طفاي الظو,HassTurnOff
+hsn-01586,گول لي بعد 45 ثانية,HassStartTimer
+hsn-01587,آآ، يا دار، طفي التلفزة ف البيرو الله يحفظك,HassTurnOff
+hsn-01588,نبهني بعد 15 دقيقة ل الروز,HassStartTimer
+hsn-01589,الكليماتيزور اف الكوزينة اثلاثة وعشرين دوگري,HassClimateSetTemperature
+hsn-01590,الأغنية الي فاتت الله يخليك,HassMediaPrevious
+hsn-01591,النور طفيه,HassTurnOff
+hsn-01592,حگل حط اللامبه اصفر,HassLightSet
+hsn-01593,اعدلي تايمر ل 15 دقيقة ل الروز,HassStartTimer
+hsn-01594,السخانة گداش؟,HassClimateGetTemperature
+hsn-01595,سكري السبيكر,HassTurnOff
+hsn-01596,بالله رد المكيف في الصالون ف اثنين وعشرين دوگري حگل,HassClimateSetTemperature
+hsn-01597,آآ، حگل المكيف سكره الله يخليك,HassTurnOff
+hsn-01598,سكري الضو ذو گاع في الحوش حگل الله يحفظك,HassTurnOff
+hsn-01599,ابغيت تزيد الزريگ ل الليستة ذرك,HassShoppingListAddItem
+hsn-01600,نبغي تطفي لي اللامبه ف بيت الضياف ذرك,HassTurnOff
+hsn-01601,الصوت اثلاثين بالمية,HassSetVolume
+hsn-01602,حگل سكري بولوار,HassTurnOff
+hsn-01603,لامبة في الصالون 75 فالمية,HassLightSet
+hsn-01604,سكري الشباك اف البيرو,HassTurnOff
+hsn-01605,يا دار، تسكر لي الثريا اف صالون,HassTurnOff
+hsn-01606,اشوف، افتحي الستارة نص,HassSetPosition
+hsn-01607,اعدلي منبه 20 دقيقة ل أتاي,HassStartTimer
+hsn-01608,اگدي الموسيقى من جديد,HassMediaUnpause
+hsn-01609,ابغيت ترد الظو اثلاثين فالمية,HassLightSet
+hsn-01610,الفانتيلو في صالون اشعله ظرك الله يحفظك,HassTurnOn
+hsn-01611,يا اخي، رد الكليماتيزور اثنين وعشرين دراجات,HassClimateSetTemperature
+hsn-01612,هيه، حگل دير الظو سبعين فالمية,HassLightSet
+hsn-01613,اعدل منبه ل سبع دگايگ ل الفرن,HassStartTimer
+hsn-01614,السخانة ف الگاراج گداش؟,HassClimateGetTemperature
+hsn-01615,تگدي لي اللامبه ف المدخل,HassTurnOn
+hsn-01616,حط مينوتري ل اثلاث ساعات ل الروز,HassStartTimer
+hsn-01617,آآ، نبغي منك تگدي لي كليماتيزور السطح,HassTurnOn
+hsn-01618,راني نبغي تگفل لي الشباك في بيت الصغار,HassTurnOff
+hsn-01619,عشر دگايگ، ديري مينوتري,HassStartTimer
+hsn-01620,نبغيك السخانة ف الگاراج 21 دراجات,HassClimateSetTemperature
+hsn-01621,اعليك الله الزيت تزيده ف الليستة,HassShoppingListAddItem
+hsn-01622,نبغي تعدل لي الكليم على اربعة وعشرين دوگري,HassClimateSetTemperature
+hsn-01623,الپريز اگديها,HassTurnOn
+hsn-01624,الضو نقصه ياسر,HassLightSet
+hsn-01625,يا دار، كيف الطقس؟,HassGetWeather
+hsn-01626,الله يخليك اگدي الفانتيلاتير حگل,HassTurnOn
+hsn-01627,الله يخليك المروحة ستين فالمية,HassFanSetSpeed
+hsn-01628,تحل لي الريدو في بيت الضياف,HassTurnOn
+hsn-01629,الفانتيلاتير اف گدام الباب 80 بالمية,HassFanSetSpeed
+hsn-01630,سكري لوباف في الكوزينة,HassTurnOff
+hsn-01631,ش من مضخة گادية اف السطح؟,HassGetState
+hsn-01632,الفانتيلاتير vingt بالمية,HassFanSetSpeed
+hsn-01633,ما ننساو الصابون، تزيده ف الليستة,HassShoppingListAddItem
+hsn-01634,يا داري، تطفي لي الفانتيلو في بيت الضيوف,HassTurnOff
+hsn-01635,اگدو الظو ذرك,HassTurnOn
+hsn-01636,حگل نبهني بعد 30 ثانية,HassStartTimer
+hsn-01637,حگل نح العداد,HassCancelTimer
+hsn-01638,ساعة ل الفرن، اعدل منبه,HassStartTimer
+hsn-01639,خلي الروبو يرجع لبلاصتو,HassVacuumReturnToBase
+hsn-01640,زيد الغاز ف ليستة التسوگ حگل,HassShoppingListAddItem
+hsn-01641,نبغيك تعدل لي اللامبه على اربعين بالمية حگل,HassLightSet
+hsn-01642,سكري الضو في بيت الضياف,HassTurnOff
+hsn-01643,يا دار، السخانة اف بيت الصغار گداش الله يخليك؟,HassClimateGetTemperature
+hsn-01644,حگل نقص اللامبة في الفناء,HassLightSet
+hsn-01645,اگدي كامل المروحه ف لاكور,HassTurnOn
+hsn-01646,واش الضو في البيت گادي؟,HassGetState
+hsn-01647,يا دار، اگدي الفنتيلاتور اف الصطح,HassTurnOn
+hsn-01648,اطفي الثريا ف بيت الصغار,HassTurnOff
+hsn-01649,الثريا ف الحوش خمسة وسبعين بالمية,HassLightSet
+hsn-01650,اتطفي لي البريز,HassTurnOff
+hsn-01651,حط اللامبه في الصطح ل 90 فالمية,HassLightSet
+hsn-01652,يا مساعد، اعليك الله راني نبغي اتدير لي الضو ل cinquante بالمية,HassLightSet
+hsn-01653,رد الثريا ف البيرو بلون ليموني,HassLightSet
+hsn-01654,راني نبغي تگدي لي الكليماتيزور,HassTurnOn
+hsn-01655,حگل ابغيت تعدل لي الظو في الصطح لحمر الله يخليك,HassLightSet
+hsn-01656,اگدي المكيف ف الكوزينة الله يجازيك بالخير,HassTurnOn
+hsn-01657,حگل الموتور اگديه,HassTurnOn
+hsn-01658,ما ننساو الغاز، اكتبه ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01659,راني نبغي تگدي لي الثريا ف الگاراج,HassTurnOn
+hsn-01660,اشوف، ش اليوم من نهار؟,HassGetCurrentDate
+hsn-01661,الآسپيراتور گادي؟,HassGetState
+hsn-01662,اگفل الكادنة بالمفتاح,HassTurnOn
+hsn-01663,اشوف ياك الشباك مگفولة؟,HassGetState
+hsn-01664,تگدي لي بولوار,HassTurnOn
+hsn-01665,تگفل لي الكادنا بالساروت,HassTurnOn
+hsn-01666,دير الظو ف بيت الصغار ازرگ,HassLightSet
+hsn-01667,اطفي اللامبة في الصطح حگل درك,HassTurnOff
+hsn-01668,حبس الراديو شوي,HassMediaPause
+hsn-01669,اعليك الله اشحال باگي ف المنبه؟,HassTimerStatus
+hsn-01670,يا داري، الصوت cent بالمية,HassSetVolume
+hsn-01671,طفي نور المطبخ ذرك,HassTurnOff
+hsn-01672,اطفي الضو كامل في المطبخ حگل,HassTurnOff
+hsn-01673,رد النور ف الفناء عشرين فالمية,HassLightSet
+hsn-01674,يا داري، اتكتب لي النعناع,HassShoppingListAddItem
+hsn-01675,ابغيت اتحط لي منبه 25 دقيقة,HassStartTimer
+hsn-01676,رد صوت لوباف,HassMediaPlayerUnmute
+hsn-01677,اشحال السخانة في لاكور؟,HassClimateGetTemperature
+hsn-01678,بالله وگف المنبه,HassCancelTimer
+hsn-01679,طفاي الفانتيلو,HassTurnOff
+hsn-01680,نبغي منك السخانة اف التواليت اثلاثة وعشرين,HassClimateSetTemperature
+hsn-01681,الله يخليك واش الدنيا سخونة برا؟,HassGetWeather
+hsn-01682,اعگب، ترد صوت تلفزيون ف مية,HassSetVolume
+hsn-01683,نگصو الصوت,HassSetVolume
+hsn-01684,ايوه، سكر الكليماتيزور ف الصطح,HassTurnOff
+hsn-01685,دور ذو گاع الكليم ف بيت الضياف,HassTurnOn
+hsn-01686,نبغي تعدل لي اللامبه على 25 بالمية,HassLightSet
+hsn-01687,ذ اليوم ش هو الله يجازيك بالخير؟,HassGetCurrentDate
+hsn-01688,لامبة اف بيت الضياف نگصوها شوي,HassLightSet
+hsn-01689,افتح الريدو ف الصطح انصو,HassSetPosition
+hsn-01690,تطفي لي البريز ف الكوزينه,HassTurnOff
+hsn-01691,اتدير لي النور اف الخيمة خمسين فالمية,HassLightSet
+hsn-01692,ديري تايمر ل دقيقة ل الروز,HassStartTimer
+hsn-01693,نبغي تسكر لي المروحة كامل اف بيت الدراري,HassTurnOff
+hsn-01694,الكليماتيزور ف گدام الباب تسعطاعش دوگري,HassClimateSetTemperature
+hsn-01695,يا دار، الله يخليك حط المكيف على اثلاثة وعشرين دوگري الله يخليك,HassClimateSetTemperature
+hsn-01696,ابغيت تفتح لي الكادنا الله يحفظك,HassTurnOff
+hsn-01697,حگل راني نبغي تگدي لي گاع الفانتيلاتير ف البيرو,HassTurnOn
+hsn-01698,يا اخي، رد النور في بيت الضيوف مية فالمية الله يجازيك بالخير,HassLightSet
+hsn-01699,راني نبغي تگدي لي النور اف الصالون,HassTurnOn
+hsn-01700,گداش درجة الحرارة ف الخيمة؟,HassClimateGetTemperature
+hsn-01701,اگدي الفنتيلاتور اف گدام الباب,HassTurnOn
+hsn-01702,دير الثريا اف بيت الرگاد ل 60 فالمية,HassLightSet
+hsn-01703,حط الحليب ف ليستة لكورس,HassShoppingListAddItem
+hsn-01704,گداش السخانة في بيت الضياف؟,HassClimateGetTemperature
+hsn-01705,لامبة اگديها,HassTurnOn
+hsn-01706,الكليم في الگاراج اطفيه,HassTurnOff
+hsn-01707,تعدل لي النور 60 پورسون الله يحفظك,HassLightSet
+hsn-01708,ش من براد الكهربائي گادي؟,HassGetState
+hsn-01709,نگص الصوت ياسر ظرك,HassSetVolume
+hsn-01710,ردي المكنسة للشارجور,HassVacuumReturnToBase
+hsn-01711,حط المروحه اف بيت الضياف ف مية پورسون,HassFanSetSpeed
+hsn-01712,دير الظو بلون لبيظ حگل الله يجازيك بالخير,HassLightSet
+hsn-01713,بالله اگدي الضو,HassTurnOn
+hsn-01714,سكر ثريا الخيمة الله يخليك,HassTurnOff
+hsn-01715,رد المكيف ف الخيمه 25 دراجات,HassClimateSetTemperature
+hsn-01716,دير المكيف ف الصطح خمسة وعشرين دراجات,HassClimateSetTemperature
+hsn-01717,حط المكيف ف الصالون ف اثمنطاعش درجة,HassClimateSetTemperature
+hsn-01718,اعگب، اگدي الفنتيلاتور الله يخليك,HassTurnOn
+hsn-01719,اگفل باب الدار,HassTurnOn
+hsn-01720,حط الريدوات في بيت الدراري ف عشرين بالمية,HassSetPosition
+hsn-01721,اشوف واش المروحة گادية؟,HassGetState
+hsn-01722,اشحال السخانة ف گدام الباب؟,HassClimateGetTemperature
+hsn-01723,الپريز اف السطح گادية؟,HassGetState
+hsn-01724,كمل البافل درك,HassMediaUnpause
+hsn-01725,سكر الثريا ظرك,HassTurnOff
+hsn-01726,هيه، ترد الروبو للشارجور,HassVacuumReturnToBase
+hsn-01727,يا داري، طفي النور ف بيت الدراري,HassTurnOff
+hsn-01728,رد الريدوات ف 60 پورسون الله يخليك,HassSetPosition
+hsn-01729,يا دار، اگدي المكيف اف السطح,HassTurnOn
+hsn-01730,نبغي تنگص الثريا في الكوزينة ظرك,HassLightSet
+hsn-01731,يا داري، حگل طفي الكليماتيزور في بيت الضياف درك,HassTurnOff
+hsn-01732,ديري الريدوات على 80 بالمية,HassSetPosition
+hsn-01733,گول لي بعد 45 ثانية ل الفرن,HassStartTimer
+hsn-01734,ما ننساو الماڭرو، اكتبيه ف لاليست حگل,HassShoppingListAddItem
+hsn-01735,يا دار، دور جنراتور الحوش,HassTurnOn
+hsn-01736,هل الشوفو شاعل؟,HassGetState
+hsn-01737,آآ، حلو باب الدار,HassTurnOff
+hsn-01738,حگل اگفل شباك الخيمه,HassTurnOff
+hsn-01739,تگدي لي ضو بيت الضيوف,HassTurnOn
+hsn-01740,حطي النور في الكوزينه ل 30 فالمية ظرك,HassLightSet
+hsn-01741,ما ننساو الخبز، زيده ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01742,يا اخي، الكادنة حلها,HassTurnOff
+hsn-01743,بالله زيد الحوت ل ليستة لكورس ذرك,HassShoppingListAddItem
+hsn-01744,نبهني بعد عشر دگايگ,HassStartTimer
+hsn-01745,وگف ذو گاع المنبهات,HassCancelAllTimers
+hsn-01746,نبهني بعد 15 دقيقة ذرك,HassStartTimer
+hsn-01747,يا داري، تفتح لي باب الدار درك,HassTurnOff
+hsn-01748,طلعي الصوت اشوي حگل,HassSetVolume
+hsn-01749,النور اف الخيمه ستين پورسون,HassLightSet
+hsn-01750,طفي الثريا گاع,HassTurnOff
+hsn-01751,ردي المكيف ف گدام الباب اربعة وعشرين دوگري,HassClimateSetTemperature
+hsn-01752,راني نبغي السخانة اف الخيمه اثنين وعشرين دراجات,HassClimateSetTemperature
+hsn-01753,ترد الريدوات ف 10 فالمية,HassSetPosition
+hsn-01754,تگدي لي الفانتيلو ف البيرو حگل,HassTurnOn
+hsn-01755,طفي شوفو گدام الباب,HassTurnOff
+hsn-01756,تعدل لي الكليماتيزور اف بيت الما على سطاعش دراجات,HassClimateSetTemperature
+hsn-01757,تگدي لي لامبة في البيرو,HassTurnOn
+hsn-01758,سكر المكيف الله يحفظك,HassTurnOff
+hsn-01759,بالله تفتح لي الشباك اف الفناء,HassTurnOn
+hsn-01760,بارك الله فيك,Social.thanks
+hsn-01761,سكر الثريا في الفناء,HassTurnOff
+hsn-01762,اشوف، المنبه اشحال باگي لو؟,HassTimerStatus
+hsn-01763,اشعل اللامبة,HassTurnOn
+hsn-01764,باب الدار حلو,HassTurnOff
+hsn-01765,ياك الشباك ف بيت الضيوف مگفولة الله يحفظك؟,HassGetState
+hsn-01766,ديرو الضو اف الكوزينة 80 بالمية,HassLightSet
+hsn-01767,شكرا,Social.thanks
+hsn-01768,حل لامبة في بيت الدراري,HassTurnOn
+hsn-01769,يا دار، اگدي الظو ذرك,HassTurnOn
+hsn-01770,دير المكيف في الصالون على اثمنطاعش,HassClimateSetTemperature
+hsn-01771,حگل اطفي لامبة بيت الما,HassTurnOff
+hsn-01772,اگدي المكيف ف الكوزينة,HassTurnOn
+hsn-01773,ابغيت تلغي التايمر درك الله يحفظك,HassCancelTimer
+hsn-01774,اگدو الفانتيلاتير گاع,HassTurnOn
+hsn-01775,حگل الكليماتيزور ستة وعشرين دراجات الله يحفظك,HassClimateSetTemperature
+hsn-01776,اسمع، اطفي گاع المروحه,HassTurnOff
+hsn-01777,تسكر لي الثريا في الگاراج,HassTurnOff
+hsn-01778,نبغيك تگدي لي المكيف اف المطبخ حگل الله يحفظك,HassTurnOn
+hsn-01779,اگدي المروحة الله يجازيك بالخير,HassTurnOn
+hsn-01780,اشحال باگي ف المنبه؟,HassTimerStatus
+hsn-01781,حط الظو بنفسجي ظرك,HassLightSet
+hsn-01782,فم ظلام,Implicit.dark
+hsn-01783,دير اللامبه في الخيمة على عشرة فالمية,HassLightSet
+hsn-01784,طفي الثلاجة ذو گاع,HassTurnOff
+hsn-01785,تحل لي الستارة,HassTurnOn
+hsn-01786,تسكر لي اللامبه ذو گاع ظرك الله يجازيك بالخير,HassTurnOff
+hsn-01787,ابغيت تگفل لي الطاگة اف الدوش,HassTurnOff
+hsn-01788,يا دار، اطفي بولوار گاع,HassTurnOff
+hsn-01789,اگدي الجنراتور حگل,HassTurnOn
+hsn-01790,طفي النور في الخيمه,HassTurnOff
+hsn-01791,ابغيت تلغي كامل المنبهات,HassCancelAllTimers
+hsn-01792,طفي التلفزيون گاع في الخيمه,HassTurnOff
+hsn-01793,حگل اگدي الكليم,HassTurnOn
+hsn-01794,گول لي بعد دقيقة ل الصلاة ظرك الله يخليك,HassStartTimer
+hsn-01795,حط الحوت ل الليستة,HassShoppingListAddItem
+hsn-01796,نبغي السخانة في بيت الرگاد سبعطاعش درجة درك,HassClimateSetTemperature
+hsn-01797,اعليك الله تگدي لي لامبة,HassTurnOn
+hsn-01798,بالله اگدي الظو ف الحوش حگل ظرك,HassTurnOn
+hsn-01799,اگدي الظو ف الگاراج,HassTurnOn
+hsn-01800,ش من بومبة گادية في بيت الرگاد؟,HassGetState
+hsn-01801,وگف الراديو شي اشوي,HassMediaPause
+hsn-01802,راني نبغي اتطفي لي التلفزة,HassTurnOff
+hsn-01803,نبغيك السخانة في الگاراج seize دوگري,HassClimateSetTemperature
+hsn-01804,اعليك الله حط النور في بيت الضياف ليموني ظرك الله يحفظك,HassLightSet
+hsn-01805,هيه، يا داري، المكيف في صالون اثلاثة وعشرين دراجات,HassClimateSetTemperature
+hsn-01806,حلي الريدوات نص,HassSetPosition
+hsn-01807,سامحني ماني باغي شي,HassNevermind
+hsn-01808,اتطفي لي الثريا اف الدوش,HassTurnOff
+hsn-01809,نبغي منك تگدي لي الكليم في البيت,HassTurnOn
+hsn-01810,اعدلي النور في گدام الباب موڤ,HassLightSet
+hsn-01811,سكر السبيكر كامل حگل,HassTurnOff
+hsn-01812,رد النور ف الكوزينة على خمسين بالمية,HassLightSet
+hsn-01813,طفي المضخة ف السطح,HassTurnOff
+hsn-01814,ابغيت اتنح العداد حگل الله يجازيك بالخير,HassCancelTimer
+hsn-01815,تعدل لي النور ف تسعين فالمية,HassLightSet
+hsn-01816,جيب الي بعدها حگل,HassMediaNext
+hsn-01817,الفنتيلاتور ف الصالون شاعل؟,HassGetState
+hsn-01818,سكت التلفزة حگل,HassMediaPlayerMute
+hsn-01819,المروحه ف الدوش اطفيها,HassTurnOff
+hsn-01820,اطفي الثريا في الكوزينة,HassTurnOff
+hsn-01821,اعدل الريدوات اف البيت على تسعين فالمية,HassSetPosition
+hsn-01822,طفي النور في المكتب حگل,HassTurnOff
+hsn-01823,راني نبغي تنظف الدار,HassVacuumStart
+hsn-01824,حگل دير تايمر 7 دگايگ ل الصلاة,HassStartTimer
+hsn-01825,يا داري، سكر التلفزة,HassTurnOff
+hsn-01826,آآ، الظو اطيحه اشوي,HassLightSet
+hsn-01827,اگدي اللامبه ف بيت الضيوف,HassTurnOn
+hsn-01828,هبطي الصوت بالزاف,HassSetVolume
+hsn-01829,نبغي تسكر لي الضو الله يخليك,HassTurnOff
+hsn-01830,الثريا زيدها,HassLightSet
+hsn-01831,رد الصوت على vingt,HassSetVolume
+hsn-01832,حگل افتحي الطاگة,HassTurnOn
+hsn-01833,الپريز اف الكوزينه حلها,HassTurnOn
+hsn-01834,تعدل لي تايمر خمس دگايگ ل الفرن الله يجازيك بالخير,HassStartTimer
+hsn-01835,افتح الگاراج,HassTurnOn
+hsn-01836,آآ، زيد الصوت شوي الله يجازيك بالخير,HassSetVolume
+hsn-01837,يا اخي، اعليك الله تگدي لي الموتور اف گدام الباب,HassTurnOn
+hsn-01838,سكري البومب ف بيت الضيوف الله يجازيك بالخير,HassTurnOff
+hsn-01839,نبغي السخانة اف گدام الباب سبعة وعشرين,HassClimateSetTemperature
+hsn-01840,طفاي السبيكر في بيت الرگاد الله يخليك,HassTurnOff
+hsn-01841,ابغيت تسكر لي الثريا في البيرو,HassTurnOff
+hsn-01842,يا اخي، ساعة ل الروز، تعدل لي عداد,HassStartTimer
+hsn-01843,اگدي البومبة ف بيت الرگاد حگل الله يحفظك,HassTurnOn
+hsn-01844,تنگص الصوت بالزاف,HassSetVolume
+hsn-01845,حگل حلو الكادنا,HassTurnOff
+hsn-01846,يا دار، تسكر لي المروحه گاع في المدخل,HassTurnOff
+hsn-01847,اعدلو اللامبه 40 فالمية,HassLightSet
+hsn-01848,اگفل الباب بالمفتاح الله يخليك,HassTurnOn
+hsn-01849,اگدي البومب گاع في بيت الصغار,HassTurnOn
+hsn-01850,نبغي منك تگدي لي الفانتيلو,HassTurnOn
+hsn-01851,بالله اللامبه خمسة وعشرين فالمية,HassLightSet
+hsn-01852,الأغنية الجاية الله يجازيك بالخير,HassMediaNext
+hsn-01853,اگدي المكيف اف البيت,HassTurnOn
+hsn-01854,تگفل لي الشباك اف الدوش,HassTurnOff
+hsn-01855,الله يخليك تگدي لي الثريا اف بيت الصغار,HassTurnOn
+hsn-01856,خليه يكمل الله يخليك,HassMediaUnpause
+hsn-01857,ديري النور ف الدوش مية پورسون,HassLightSet
+hsn-01858,طفي الثريا اف الخيمة,HassTurnOff
+hsn-01859,واش لوباف شاعل؟,HassGetState
+hsn-01860,اراع هل التلفزة اف الكوزينة گادية؟,HassGetState
+hsn-01861,بالله شعل گاع التلفزيون,HassTurnOn
+hsn-01862,اخبرني السخانة اف بيت الضيوف؟,HassClimateGetTemperature
+hsn-01863,سد الطاگة اف بيت الضيوف,HassTurnOff
+hsn-01864,اگدو نور صالون,HassTurnOn
+hsn-01865,هيه، سكر البريز درك,HassTurnOff
+hsn-01866,نبغيك تسكر لي المكيف ف البيرو,HassTurnOff
+hsn-01867,اعگب، ابغيت تزيد النور اف البيت,HassLightSet
+hsn-01868,حطي الضو اف بيت الما على خمسة وسبعين فالمية,HassLightSet
+hsn-01869,اسمع، رد الثريا اف بيت الضيوف لصفر,HassLightSet
+hsn-01870,نبغيك تسكر لي البومبة اف الدوش,HassTurnOff
+hsn-01871,حل الكادنا,HassTurnOff
+hsn-01872,حط اللامبة ف خمسين بالمية,HassLightSet
+hsn-01873,افتح باب الگاراج درك,HassTurnOn
+hsn-01874,اگفلو الريدو ف المطبخ,HassTurnOff
+hsn-01875,يا داري، اتزيد لي اللامبة ف المدخل بالزاف,HassLightSet
+hsn-01876,ديري عداد اربع دگايگ,HassStartTimer
+hsn-01877,اتصل بأمي,OutOfScope
+hsn-01878,اسمع، الكادنة افتحها,HassTurnOff
+hsn-01879,اگفل ريدوات البيرو,HassTurnOff
+hsn-01880,الراديو ف بيت الدراري اطفيه ذرك,HassTurnOff
+hsn-01881,بالله 20 ثانية ل الصلاة، اعدلو عداد حگل ظرك,HassStartTimer
+hsn-01882,اعليك الله گول لي بعد 15 دقيقة,HassStartTimer
+hsn-01883,بالله نبغيك اتطفي لي النور ف بيت الضيوف ظرك,HassTurnOff
+hsn-01884,طفاي المروحة ف الدوش,HassTurnOff
+hsn-01885,اعگب، يا مساعد، اگدو النور,HassTurnOn
+hsn-01886,هل الباب مفتوح؟,HassGetState
+hsn-01887,افتح الريدو اف المكتب درك,HassTurnOn
+hsn-01888,سكر اللامبة ف الگاراج درك,HassTurnOff
+hsn-01889,تطفي لي المروحه ف بيت الضيوف,HassTurnOff
+hsn-01890,يا اخي، حگل رد اللي فات,HassMediaPrevious
+hsn-01891,ربع ساعة ل أتاي، ديري منبه,HassStartTimer
+hsn-01892,گول لي بعد 4 دگايگ ل الصلاة حگل,HassStartTimer
+hsn-01893,اگفلي الباب بالمفتاح درك,HassTurnOn
+hsn-01894,حل لامبة الگاراج,HassTurnOn
+hsn-01895,ابغيت اتطفي لي التلفزة ف المدخل,HassTurnOff
+hsn-01896,يا دار، طفي النور,HassTurnOff
+hsn-01897,الثريا اف الخيمة عشرين فالمية,HassLightSet
+hsn-01898,حطي الضو خمسة وعشرين بالمية,HassLightSet
+hsn-01899,يا مساعد، نگصي الثريا في الخيمه,HassLightSet
+hsn-01900,يا داري، نبغي تگدي لي المكيف,HassTurnOn
+hsn-01901,اگدي السبيكر گاع في السطح درك,HassTurnOn
+hsn-01902,اگدي الفنتيلاتور اف الفناء,HassTurnOn
+hsn-01903,اعليك الله نبغي تعدل لي مينوتري 45 دقيقة ل الصلاة,HassStartTimer
+hsn-01904,سكر الثريا ف الكوزينة,HassTurnOff
+hsn-01905,رجع الي گبلها,HassMediaPrevious
+hsn-01906,الكليماتيزور ف الكوزينة اثلاثة وعشرين دراجات,HassClimateSetTemperature
+hsn-01907,نگص الصوت بالزاف,HassSetVolume
+hsn-01908,تعدل لي مينوتري ل خمس دگايگ ل الروز,HassStartTimer
+hsn-01909,سكت التيلي حگل,HassMediaPlayerMute
+hsn-01910,اگدي الكليماتيزور ف صالون,HassTurnOn
+hsn-01911,اگفل الشباك في الگاراج,HassTurnOff
+hsn-01912,نبغيك تزيد النعناع ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01913,حگل تسكر لي النور ف المدخل,HassTurnOff
+hsn-01914,تعدل لي الظو ف بيت الرگاد ل ستين فالمية,HassLightSet
+hsn-01915,الثريا اف بيت الضيوف زيدها اشوي,HassLightSet
+hsn-01916,حل الگاراج حگل,HassTurnOn
+hsn-01917,راني نبغي تنظف بيت الرگاد درك,HassVacuumStart
+hsn-01918,دير النور اف الصالون اثلاثين پورسون,HassLightSet
+hsn-01919,اعگب، الله يخليك نبغي تگدي لي النور ف الفناء,HassTurnOn
+hsn-01920,ابغيت اتطفي لي الكليم في البيت,HassTurnOff
+hsn-01921,الراديو سكتها,HassMediaPlayerMute
+hsn-01922,اطفي النور اف الدوش,HassTurnOff
+hsn-01923,ايوه، شنه الساعة؟,HassGetCurrentTime
+hsn-01924,اربع دگايگ ل الروز، ديري مينوتري,HassStartTimer
+hsn-01925,تطفي لي لامبة اف صالون حگل,HassTurnOff
+hsn-01926,ش السخانة اف المدخل ظرك؟,HassClimateGetTemperature
+hsn-01927,يا داري، رد لامبة اف الصالون على vingt فالمية,HassLightSet
+hsn-01928,دير المكيف ف بيت الرگاد اثمنطاعش درجة ظرك,HassClimateSetTemperature
+hsn-01929,رد الضو لحمر الله يخليك,HassLightSet
+hsn-01930,ايوه، حگل طفي النور ف المدخل,HassTurnOff
+hsn-01931,اكتب الماڭرو ف لاليست ظرك,HassShoppingListAddItem
+hsn-01932,نبهني بعد ساعة ل أتاي,HassStartTimer
+hsn-01933,تطفي لي المروحه الله يجازيك بالخير,HassTurnOff
+hsn-01934,يا اخي، نبغيك ترد المروحه ف عشرين بالمية,HassFanSetSpeed
+hsn-01935,تطفي لي لامبة البيرو,HassTurnOff
+hsn-01936,حل الريدو في الگاراج النص,HassSetPosition
+hsn-01937,نبغي منك تگدي لي اللامبة اف المطبخ حگل ذرك,HassTurnOn
+hsn-01938,يا مساعد، اتنگص لي النور ياسر حگل,HassLightSet
+hsn-01939,اعگب، ما ننساو البطاطة، زيدوه ف ليستة لكورس,HassShoppingListAddItem
+hsn-01940,حط الصوت ف ستين,HassSetVolume
+hsn-01941,تگدي لي الفانتيلو ف المكتب,HassTurnOn
+hsn-01942,نبغيك السخانة في المدخل اثنين وعشرين درجة,HassClimateSetTemperature
+hsn-01943,حلي باب الگاراج,HassTurnOn
+hsn-01944,طفي مروحه الخيمة,HassTurnOff
+hsn-01945,افتح الريدوات الله يحفظك,HassTurnOn
+hsn-01946,نبغي اتكتب لي الصابون ف ليستة لكورس,HassShoppingListAddItem
+hsn-01947,اطفاي تلفزيون بيت الما,HassTurnOff
+hsn-01948,الروبو گادي؟,HassGetState
+hsn-01949,اعگب، المكيف اف البيت طفيه حگل,HassTurnOff
+hsn-01950,اعگب، ديرو المكيف اف بيت الضيوف 20 دراجات,HassClimateSetTemperature
+hsn-01951,اگدي الراديو ف الفناء,HassTurnOn
+hsn-01952,الماڭرو اكتبه ف ليستة التسوگ,HassShoppingListAddItem
+hsn-01953,تسكر لي الضو,HassTurnOff
+hsn-01954,يا دار، سكر البراد الكهربائي في بيت الصغار,HassTurnOff
+hsn-01955,يا داري، حط اللامبه في السطح على ستين پورسون,HassLightSet
+hsn-01956,اگدي الكليماتيزور ذرك,HassTurnOn
+hsn-01957,اعليك الله اللامبة سكرها,HassTurnOff
+hsn-01958,الكليم سبعطاعش درجة درك,HassClimateSetTemperature
+hsn-01959,رد المروحه ف خمسة وسبعين فالمية,HassFanSetSpeed
+hsn-01960,ياك الآسپيراتور شاعل؟,HassGetState
+hsn-01961,هيه، الباب حله,HassTurnOff
+hsn-01962,اطفاو الفريجو ف المطبخ,HassTurnOff
+hsn-01963,يا مساعد، اللامبة اطفيها,HassTurnOff
+hsn-01964,يا مساعد، حگل نبغي منك تگفل لي الكادنا,HassTurnOn
+hsn-01965,يا دار، تگدي لي الثريا في السطح,HassTurnOn
+hsn-01966,هيه، ما نسمع شي، نبغيك اتزيد لي الصوت,HassSetVolume
+hsn-01967,يا داري، نبغي منك تگفل لي باب الگاراج,HassTurnOff
+hsn-01968,تسكر لي الضو في الفناء,HassTurnOff
+hsn-01969,اگدي المضخة ف بيت الصغار درك,HassTurnOn
+hsn-01970,اراع ياك التلفزيون اف الگاراج گادية؟,HassGetState
+hsn-01971,اراع هل باب الدار مفتوح؟,HassGetState
+hsn-01972,افتح الريدوات في المدخل,HassTurnOn
+hsn-01973,ايوه، گول لي بعد 20 دقيقة ل الروز,HassStartTimer
+hsn-01974,تعدل لي الستارة ف الكوزينة على 80 بالمية,HassSetPosition
+hsn-01975,حگل الفانتيلو في الخيمه 50 بالمية,HassFanSetSpeed
+hsn-01976,اگدي الضو,HassTurnOn
+hsn-01977,الله يخليك اتزيد لي اللامبة في المدخل,HassLightSet
+hsn-01978,حل الثريا,HassTurnOn
+hsn-01979,نگصي النور ياسر,HassLightSet
+hsn-01980,حگل اشعل ذو گاع الضو,HassTurnOn
+hsn-01981,اگدي البومبة ظرك الله يحفظك,HassTurnOn
+hsn-01982,نبغي تطفي لي النور,HassTurnOff
+hsn-01983,تطفي لي النور اف الكوزينه,HassTurnOff
+hsn-01984,راني نبغي تگفل لي شباك بيت الدراري,HassTurnOff
+hsn-01985,حل النور,HassTurnOn
+hsn-01986,حگل نبغي تعدل لي مينوتري ل 20 ثانية ل الفرن,HassStartTimer
+hsn-01987,نبغيك السخانة ف البيرو تسعطاعش ظرك,HassClimateSetTemperature
+hsn-01988,اگدي الفنتيلاتور,HassTurnOn
+hsn-01989,يا دار، سكت الصوت,HassMediaPlayerMute
+hsn-01990,اراع هل الباب مفتوح؟,HassGetState
+hsn-01991,اعليك الله رجع الي گبلها,HassMediaPrevious
+hsn-01992,اگفل الستارة في الخيمه,HassTurnOff
+hsn-01993,اشوف، بالله شوف لي الجو اليوم؟,HassGetWeather
+hsn-01994,خليه,HassNevermind
+hsn-01995,حل الريدو في الفناء,HassTurnOn
+hsn-01996,اعدل لامبة لصفر الله يخليك,HassLightSet
+hsn-01997,يا مساعد، سكر الثريا ذو گاع الله يخليك,HassTurnOff
+hsn-01998,بالله اگفل الگاراج,HassTurnOff
+hsn-01999,اسمع، اكتب البصل ل لاليست,HassShoppingListAddItem

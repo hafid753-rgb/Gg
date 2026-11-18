@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hassaniya Recorder</title>
+<style>
+  :root { --bg:#faf8f4; --fg:#1d1b18; --muted:#6b655c; --card:#fff; --line:#e4ded3; --accent:#0b6e4f; --rec:#c0392b; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#141311; --fg:#eeeae3; --muted:#a39d93; --card:#1e1c19; --line:#34302b; --accent:#3fbf8f; --rec:#ff6b5b; } }
+  :root[data-theme="dark"] { --bg:#141311; --fg:#eeeae3; --muted:#a39d93; --card:#1e1c19; --line:#34302b; --accent:#3fbf8f; --rec:#ff6b5b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, "Noto Naskh Arabic", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  p.sub { color:var(--muted); margin:0 0 20px; font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; margin-bottom:16px; }
+  .prompt { font-size:32px; line-height:1.6; min-height:110px; text-align:center; padding:12px 0; }
+  .meta { color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; direction:ltr; }
+  .row { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+  button, label.btn { font:inherit; padding:12px 18px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--fg); cursor:pointer; min-height:44px; }
+  button.primary { background:var(--accent); color:#fff; border-color:transparent; }
+  button.rec { background:var(--rec); color:#fff; border-color:transparent; }
+  button:disabled { opacity:.45; cursor:default; }
+  input[type=text] { font:inherit; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--fg); width:100%; direction:ltr; }
+  .bar { height:6px; background:var(--line); border-radius:3px; overflow:hidden; margin-top:12px; }
+  .bar > div { height:100%; background:var(--accent); width:0; transition:width .2s; }
+  small { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>مسجّل الحسانية · Hassaniya prompt recorder</h1>
+  <p class="sub">Load <code>data/generated/asr/recording_prompts.csv</code>, read each sentence naturally, the way you'd say it at home. Files download as <code>&lt;prompt_id&gt;__&lt;speaker&gt;.webm</code>. Nothing is uploaded.</p>
+
+  <div class="card">
+    <div class="row" style="justify-content:flex-start">
+      <label class="btn">📄 CSV <input id="csv" type="file" accept=".csv" hidden></label>
+      <div style="flex:1;min-width:180px"><input id="spk" type="text" placeholder="speaker id, e.g. spk01_m_nkc"></div>
+    </div>
+    <small>Speaker id: initials/number + gender + city (e.g. nkc = Nouakchott, ndb = Nouadhibou). No real names.</small>
+  </div>
+
+  <div class="card">
+    <div class="meta"><span id="pid">—</span><span id="intent"></span><span id="pos">0 / 0</span></div>
+    <div class="prompt" id="text">حمّل الملف باش تبدا</div>
+    <div class="row">
+      <button id="prev" disabled>→ السابق</button>
+      <button id="rec" class="rec" disabled>● سجّل</button>
+      <button id="play" disabled>▶ اسمع</button>
+      <button id="save" class="primary" disabled>✓ احفظ وكمّل</button>
+      <button id="skip" disabled>التالي ←</button>
+    </div>
+    <div class="bar"><div id="prog"></div></div>
+    <small>Tip: Space = record/stop, Enter = save &amp; next. Keep 0.5 s of silence before and after.</small>
+  </div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let rows = [], i = 0, rec = null, chunks = [], blob = null, stream = null;
+const key = () => 'hsn_rec_pos_' + ($('spk').value || 'anon');
+function parseCSV(t) {
+  const out = []; let row = [], f = '', q = false;
+  for (let k = 0; k < t.length; k++) {
+    const c = t[k];
+    if (q) { if (c === '"' && t[k+1] === '"') { f += '"'; k++; } else if (c === '"') q = false; else f += c; }
+    else if (c === '"') q = true; else if (c === ',') { row.push(f); f = ''; }
+    else if (c === '\n' || c === '\r') { if (f || row.length) { row.push(f); out.push(row); row = []; f = ''; } }
+    else f += c;
+  }
+  if (f || row.length) { row.push(f); out.push(row); }
+  const h = out.shift(); return out.map(r => Object.fromEntries(h.map((k, j) => [k, r[j]])));
+}
+function show() {
+  const r = rows[i]; if (!r) return;
+  $('text').textContent = r.text; $('pid').textContent = r.prompt_id; $('intent').textContent = r.intent || '';
+  $('pos').textContent = (i + 1) + ' / ' + rows.length; $('prog').style.width = (100 * i / rows.length) + '%';
+  blob = null; $('play').disabled = $('save').disabled = true;
+  $('prev').disabled = i === 0; $('skip').disabled = $('rec').disabled = false;
+  try { localStorage.setItem(key(), i); } catch (e) {}
+}
+$('csv').onchange = async e => {
+  rows = parseCSV(await e.target.files[0].text());
+  try { i = +(localStorage.getItem(key()) || 0); } catch (e) { i = 0; }
+  show();
+};
+async function toggle() {
+  if (rec && rec.state === 'recording') { rec.stop(); return; }
+  stream = stream || await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, sampleRate: 16000, echoCancellation: true } });
+  chunks = []; rec = new MediaRecorder(stream);
+  rec.ondataavailable = e => chunks.push(e.data);
+  rec.onstop = () => { blob = new Blob(chunks, { type: rec.mimeType }); $('rec').textContent = '● عاود'; $('play').disabled = $('save').disabled = false; };
+  rec.start(); $('rec').textContent = '■ وگّف';
+}
+$('rec').onclick = toggle;
+$('play').onclick = () => blob && new Audio(URL.createObjectURL(blob)).play();
+$('save').onclick = () => {
+  if (!blob) return;
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = rows[i].prompt_id + '__' + ($('spk').value || 'anon') + '.webm'; a.click();
+  if (i < rows.length - 1) { i++; show(); }
+};
+$('skip').onclick = () => { if (i < rows.length - 1) { i++; show(); } };
+$('prev').onclick = () => { if (i > 0) { i--; show(); } };
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || !rows.length) return;
+  if (e.code === 'Space') { e.preventDefault(); toggle(); }
+  if (e.code === 'Enter') { e.preventDefault(); $('save').click(); }
+});
+</script>
+</body>
+</html>

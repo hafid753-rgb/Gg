@@ -1,0 +1,204 @@
+device_name,description
+light.salon_dhaw,ظو الصالون
+light.bedroom_dhaw,ظو بيت الرگاد
+light.kitchen_dhaw,ظو الكوزينة
+light.bathroom_dhaw,ظو بيت الما
+light.kids_dhaw,ظو بيت الدراري
+light.guest_dhaw,ظو بيت الضياف
+light.yard_dhaw,ظو الحوش
+light.garage_dhaw,ظو الگاراج
+light.roof_dhaw,ظو السطح
+light.tent_dhaw,ظو الخيمة
+light.office_dhaw,ظو البيرو
+light.entrance_dhaw,ظو المدخل
+light.salon_lamba,لامبة الصالون
+light.bedroom_lamba,لامبة بيت الرگاد
+light.kitchen_lamba,لامبة الكوزينة
+light.bathroom_lamba,لامبة بيت الما
+light.kids_lamba,لامبة بيت الدراري
+light.guest_lamba,لامبة بيت الضياف
+light.yard_lamba,لامبة الحوش
+light.garage_lamba,لامبة الگاراج
+light.roof_lamba,لامبة السطح
+light.tent_lamba,لامبة الخيمة
+light.office_lamba,لامبة البيرو
+light.entrance_lamba,لامبة المدخل
+light.salon_thurayya,ثريّا الصالون
+light.bedroom_thurayya,ثريّا بيت الرگاد
+light.kitchen_thurayya,ثريّا الكوزينة
+light.bathroom_thurayya,ثريّا بيت الما
+light.kids_thurayya,ثريّا بيت الدراري
+light.guest_thurayya,ثريّا بيت الضياف
+light.yard_thurayya,ثريّا الحوش
+light.garage_thurayya,ثريّا الگاراج
+light.roof_thurayya,ثريّا السطح
+light.tent_thurayya,ثريّا الخيمة
+light.office_thurayya,ثريّا البيرو
+light.entrance_thurayya,ثريّا المدخل
+fan.salon_marwaha,مروحة الصالون
+fan.bedroom_marwaha,مروحة بيت الرگاد
+fan.kitchen_marwaha,مروحة الكوزينة
+fan.bathroom_marwaha,مروحة بيت الما
+fan.kids_marwaha,مروحة بيت الدراري
+fan.guest_marwaha,مروحة بيت الضياف
+fan.yard_marwaha,مروحة الحوش
+fan.garage_marwaha,مروحة الگاراج
+fan.roof_marwaha,مروحة السطح
+fan.tent_marwaha,مروحة الخيمة
+fan.office_marwaha,مروحة البيرو
+fan.entrance_marwaha,مروحة المدخل
+fan.salon_ventilo,فانتيلو الصالون
+fan.bedroom_ventilo,فانتيلو بيت الرگاد
+fan.kitchen_ventilo,فانتيلو الكوزينة
+fan.bathroom_ventilo,فانتيلو بيت الما
+fan.kids_ventilo,فانتيلو بيت الدراري
+fan.guest_ventilo,فانتيلو بيت الضياف
+fan.yard_ventilo,فانتيلو الحوش
+fan.garage_ventilo,فانتيلو الگاراج
+fan.roof_ventilo,فانتيلو السطح
+fan.tent_ventilo,فانتيلو الخيمة
+fan.office_ventilo,فانتيلو البيرو
+fan.entrance_ventilo,فانتيلو المدخل
+climate.salon_klim,كليم الصالون
+climate.bedroom_klim,كليم بيت الرگاد
+climate.kitchen_klim,كليم الكوزينة
+climate.bathroom_klim,كليم بيت الما
+climate.kids_klim,كليم بيت الدراري
+climate.guest_klim,كليم بيت الضياف
+climate.yard_klim,كليم الحوش
+climate.garage_klim,كليم الگاراج
+climate.roof_klim,كليم السطح
+climate.tent_klim,كليم الخيمة
+climate.office_klim,كليم البيرو
+climate.entrance_klim,كليم المدخل
+media_player.salon_tilfza,تلفزة الصالون
+media_player.bedroom_tilfza,تلفزة بيت الرگاد
+media_player.kitchen_tilfza,تلفزة الكوزينة
+media_player.bathroom_tilfza,تلفزة بيت الما
+media_player.kids_tilfza,تلفزة بيت الدراري
+media_player.guest_tilfza,تلفزة بيت الضياف
+media_player.yard_tilfza,تلفزة الحوش
+media_player.garage_tilfza,تلفزة الگاراج
+media_player.roof_tilfza,تلفزة السطح
+media_player.tent_tilfza,تلفزة الخيمة
+media_player.office_tilfza,تلفزة البيرو
+media_player.entrance_tilfza,تلفزة المدخل
+media_player.salon_radio,راديو الصالون
+media_player.bedroom_radio,راديو بيت الرگاد
+media_player.kitchen_radio,راديو الكوزينة
+media_player.bathroom_radio,راديو بيت الما
+media_player.kids_radio,راديو بيت الدراري
+media_player.guest_radio,راديو بيت الضياف
+media_player.yard_radio,راديو الحوش
+media_player.garage_radio,راديو الگاراج
+media_player.roof_radio,راديو السطح
+media_player.tent_radio,راديو الخيمة
+media_player.office_radio,راديو البيرو
+media_player.entrance_radio,راديو المدخل
+media_player.salon_speaker,سبيكر الصالون
+media_player.bedroom_speaker,سبيكر بيت الرگاد
+media_player.kitchen_speaker,سبيكر الكوزينة
+media_player.bathroom_speaker,سبيكر بيت الما
+media_player.kids_speaker,سبيكر بيت الدراري
+media_player.guest_speaker,سبيكر بيت الضياف
+media_player.yard_speaker,سبيكر الحوش
+media_player.garage_speaker,سبيكر الگاراج
+media_player.roof_speaker,سبيكر السطح
+media_player.tent_speaker,سبيكر الخيمة
+media_player.office_speaker,سبيكر البيرو
+media_player.entrance_speaker,سبيكر المدخل
+switch.salon_chauffe_eau,شوفو الصالون
+switch.bedroom_chauffe_eau,شوفو بيت الرگاد
+switch.kitchen_chauffe_eau,شوفو الكوزينة
+switch.bathroom_chauffe_eau,شوفو بيت الما
+switch.kids_chauffe_eau,شوفو بيت الدراري
+switch.guest_chauffe_eau,شوفو بيت الضياف
+switch.yard_chauffe_eau,شوفو الحوش
+switch.garage_chauffe_eau,شوفو الگاراج
+switch.roof_chauffe_eau,شوفو السطح
+switch.tent_chauffe_eau,شوفو الخيمة
+switch.office_chauffe_eau,شوفو البيرو
+switch.entrance_chauffe_eau,شوفو المدخل
+switch.salon_pompe,بومبة الصالون
+switch.bedroom_pompe,بومبة بيت الرگاد
+switch.kitchen_pompe,بومبة الكوزينة
+switch.bathroom_pompe,بومبة بيت الما
+switch.kids_pompe,بومبة بيت الدراري
+switch.guest_pompe,بومبة بيت الضياف
+switch.yard_pompe,بومبة الحوش
+switch.garage_pompe,بومبة الگاراج
+switch.roof_pompe,بومبة السطح
+switch.tent_pompe,بومبة الخيمة
+switch.office_pompe,بومبة البيرو
+switch.entrance_pompe,بومبة المدخل
+switch.salon_prise,پريز الصالون
+switch.bedroom_prise,پريز بيت الرگاد
+switch.kitchen_prise,پريز الكوزينة
+switch.bathroom_prise,پريز بيت الما
+switch.kids_prise,پريز بيت الدراري
+switch.guest_prise,پريز بيت الضياف
+switch.yard_prise,پريز الحوش
+switch.garage_prise,پريز الگاراج
+switch.roof_prise,پريز السطح
+switch.tent_prise,پريز الخيمة
+switch.office_prise,پريز البيرو
+switch.entrance_prise,پريز المدخل
+switch.salon_frigo,فريجو الصالون
+switch.bedroom_frigo,فريجو بيت الرگاد
+switch.kitchen_frigo,فريجو الكوزينة
+switch.bathroom_frigo,فريجو بيت الما
+switch.kids_frigo,فريجو بيت الدراري
+switch.guest_frigo,فريجو بيت الضياف
+switch.yard_frigo,فريجو الحوش
+switch.garage_frigo,فريجو الگاراج
+switch.roof_frigo,فريجو السطح
+switch.tent_frigo,فريجو الخيمة
+switch.office_frigo,فريجو البيرو
+switch.entrance_frigo,فريجو المدخل
+blinds.salon_rideau,ريدو الصالون
+blinds.bedroom_rideau,ريدو بيت الرگاد
+blinds.kitchen_rideau,ريدو الكوزينة
+blinds.bathroom_rideau,ريدو بيت الما
+blinds.kids_rideau,ريدو بيت الدراري
+blinds.guest_rideau,ريدو بيت الضياف
+blinds.yard_rideau,ريدو الحوش
+blinds.garage_rideau,ريدو الگاراج
+blinds.roof_rideau,ريدو السطح
+blinds.tent_rideau,ريدو الخيمة
+blinds.office_rideau,ريدو البيرو
+blinds.entrance_rideau,ريدو المدخل
+blinds.salon_taga,طاگة الصالون
+blinds.bedroom_taga,طاگة بيت الرگاد
+blinds.kitchen_taga,طاگة الكوزينة
+blinds.bathroom_taga,طاگة بيت الما
+blinds.kids_taga,طاگة بيت الدراري
+blinds.guest_taga,طاگة بيت الضياف
+blinds.yard_taga,طاگة الحوش
+blinds.garage_taga,طاگة الگاراج
+blinds.roof_taga,طاگة السطح
+blinds.tent_taga,طاگة الخيمة
+blinds.office_taga,طاگة البيرو
+blinds.entrance_taga,طاگة المدخل
+vacuum.salon_robot,روبو الصالون
+vacuum.bedroom_robot,روبو بيت الرگاد
+vacuum.kitchen_robot,روبو الكوزينة
+vacuum.bathroom_robot,روبو بيت الما
+vacuum.kids_robot,روبو بيت الدراري
+vacuum.guest_robot,روبو بيت الضياف
+vacuum.yard_robot,روبو الحوش
+vacuum.garage_robot,روبو الگاراج
+vacuum.roof_robot,روبو السطح
+vacuum.tent_robot,روبو الخيمة
+vacuum.office_robot,روبو البيرو
+vacuum.entrance_robot,روبو المدخل
+garage_door.garage,باب الگاراج
+garage_door.hawch,باب الحوش
+lock.bab_ed_dar,باب الدار
+lock.bab_el_hawch,باب الحوش
+lock.bab_el_madkhal,باب المدخل
+lock.garage,كادنة الگاراج
+timer.atay,منبّه أتاي
+timer.kitchen,منبّه الكوزينة
+timer.salat,منبّه الصلاة
+todo.shopping_list,ليستة الشرا
+todo.tasks,ليستة الخدمة

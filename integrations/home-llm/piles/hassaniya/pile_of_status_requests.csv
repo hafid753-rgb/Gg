@@ -1,0 +1,49 @@
+device_type,state,phrase,assistant_response
+light,on,ياك <device_name> گادي؟,ايوه، <device_name> گادي ظرك.
+light,on,<device_name> گادي ولّا طافي؟,<device_name> گادي.
+light,on,<device_name> گادي ولّا مطفي؟,<device_name> گادي.
+light,on,شوف لي <device_name>,<device_name> گادي ظرك.
+light,on,<device_name> كيف حالو؟,<device_name> گادي.
+light,off,ياك <device_name> گادي؟,لا، <device_name> مطفي.
+light,off,<device_name> گادي ولّا طافي؟,<device_name> مطفي.
+light,off,شوف لي <device_name>,<device_name> مطفي ظرك.
+fan,on,ياك <device_name> گادي؟,ايوه، <device_name> گادي ظرك.
+fan,on,<device_name> گادي ولّا طافي؟,<device_name> گادي.
+fan,on,<device_name> گادي ولّا مطفي؟,<device_name> گادي.
+fan,on,شوف لي <device_name>,<device_name> گادي ظرك.
+fan,on,<device_name> كيف حالو؟,<device_name> گادي.
+fan,off,ياك <device_name> گادي؟,لا، <device_name> مطفي.
+fan,off,<device_name> گادي ولّا طافي؟,<device_name> مطفي.
+fan,off,شوف لي <device_name>,<device_name> مطفي ظرك.
+switch,on,ياك <device_name> گادي؟,ايوه، <device_name> گادي ظرك.
+switch,on,<device_name> گادي ولّا طافي؟,<device_name> گادي.
+switch,on,<device_name> گادي ولّا مطفي؟,<device_name> گادي.
+switch,on,شوف لي <device_name>,<device_name> گادي ظرك.
+switch,on,<device_name> كيف حالو؟,<device_name> گادي.
+switch,off,ياك <device_name> گادي؟,لا، <device_name> مطفي.
+switch,off,<device_name> گادي ولّا طافي؟,<device_name> مطفي.
+switch,off,شوف لي <device_name>,<device_name> مطفي ظرك.
+media_player,on,ياك <device_name> گادي؟,ايوه، <device_name> گادي ظرك.
+media_player,on,<device_name> گادي ولّا طافي؟,<device_name> گادي.
+media_player,on,<device_name> گادي ولّا مطفي؟,<device_name> گادي.
+media_player,on,شوف لي <device_name>,<device_name> گادي ظرك.
+media_player,on,<device_name> كيف حالو؟,<device_name> گادي.
+media_player,off,ياك <device_name> گادي؟,لا، <device_name> مطفي.
+media_player,off,<device_name> گادي ولّا طافي؟,<device_name> مطفي.
+media_player,off,شوف لي <device_name>,<device_name> مطفي ظرك.
+light,on;<color>;<brightness>,<device_name> كيف حالو؟,<device_name> گادي، لونو <color> وف <brightness>%.
+blinds,open,<device_name> مفتوح؟,ايوه، <device_name> مفتوح.
+blinds,open,شوف لي <device_name>,<device_name> مفتوح ظرك.
+blinds,closed,<device_name> مفتوح؟,لا، <device_name> مگفول.
+blinds,closed,ياك <device_name> مگفول؟,ايوه، <device_name> مگفول.
+garage_door,open,<device_name> مفتوح؟,ايوه، <device_name> مفتوح.
+garage_door,open,شوف لي <device_name>,<device_name> مفتوح ظرك.
+garage_door,closed,<device_name> مفتوح؟,لا، <device_name> مگفول.
+garage_door,closed,ياك <device_name> مگفول؟,ايوه، <device_name> مگفول.
+lock,locked,ياك <device_name> مگفول؟,ايوه، <device_name> مگفول.
+lock,locked,<device_name> مگفول ولّا مفتوح؟,<device_name> مگفول.
+lock,unlocked,ياك <device_name> مگفول؟,لا، <device_name> مفتوح. تبغي نگفلو؟
+lock,unlocked,<device_name> مگفول ولّا مفتوح؟,<device_name> مفتوح.
+media_player,playing;<media>;<volume>,شنه يخدم ف <device_name>؟,<device_name> يخدم <media>، والصوت ف <volume>.
+media_player,paused,<device_name> يخدم؟,<device_name> محبوس ظرك.
+timer,active;<duration>;<remaining>,كم باگي ف <device_name>؟,<device_name> امدّتو <duration>، وباگي <remaining>.

@@ -1,0 +1,365 @@
+# Hassaniya (Mauritanian Arabic) smart-home lexicon
+# ---------------------------------------------------
+# Every entry: ar = Arabic-script variants (first = canonical spelling),
+#              lat = Latin/Arabizi variants, en = gloss,
+#              conf = high | med | low  (confidence that this is natural Hassaniya,
+#                     not MSA / Moroccan Darija).  Anything "med"/"low" MUST be
+#                     reviewed by a native speaker (see docs/REVIEW.md).
+# Spelling conventions: ﮔ/گ (g) for Hassaniya reflex of classical qaf,
+#   ڤ not used, French loans written as pronounced in Nouakchott.
+# Edit this file -> rerun `python3 scripts/generate.py` -> everything regenerates.
+
+meta:
+  language: "Hassaniya Arabic (ISO 639-3 mey)"
+  region: "Mauritania, Western Sahara, south Morocco, north Mali and Senegal"
+  version: 0.1.0
+
+# ------------------------------------------------------------------ verbs
+# imperative masculine / feminine / plural + polite 2nd-person "can you" forms
+verbs:
+  turn_on:
+    en: turn on / light
+    conf: high
+    imp_m: [اگدي]     # native speaker: only اگدي is natural; corpus: "حگل اگدي الظو"
+    imp_f: [اگدي]
+    imp_pl: [اگدو]
+    req: [تگدي لي]
+    accept: [اشعل, شعّل, حلّ, اشعلي, شعّلي]   # understood (HA matches them, ~10% of generated commands) but never produced
+    lat: [egdi, tegdi li]
+  turn_on_device:   # for appliances: "open/start" the AC, the TV, the pump
+    en: switch on (appliance)
+    conf: high
+    imp_m: [اگدي]     # native speaker: only اگدي; corpus: "حگل اگدي تلفزة"
+    imp_f: [اگدي]
+    imp_pl: [اگدو]
+    req: [تگدي لي]
+    accept: [شعّل, حلّ, دوّر, اشعل]
+    lat: [egdi]
+  turn_off:
+    en: turn off / extinguish
+    conf: high
+    imp_m: [طفّي, اطفي, سكّر]          # corpus: "طفي الظو حگل"
+    imp_f: [اطفاي, طفّاي, سكّري]
+    imp_pl: [اطفاو, طفّاو]
+    req: [تطفي لي, اتطفّي لي, تسكّر لي]
+    lat: [etfi, taffi, sakker, tetfi li]
+  open:
+    en: open
+    conf: high
+    imp_m: [افتح, حلّ]
+    imp_f: [افتحي, حلّي]
+    imp_pl: [افتحو, حلّو]
+    req: [تفتح لي, تحلّ لي]
+    lat: [7ell, eftah]
+  close:
+    en: close / lock
+    conf: high   # corpus: "اگفل الباب حگل", "الباب ... مگفول"
+    imp_m: [اگفل]     # native speaker: اگفل for doors, curtains and windows
+    imp_f: [اگفلي]
+    imp_pl: [اگفلو]
+    req: [تگفل لي]
+    accept: [سكّر, سدّ, سكّري, سدّو]
+    lat: [egfel]
+  increase:
+    en: increase / raise
+    conf: high
+    imp_m: [زيد, طلّع, رفّد]
+    imp_f: [زيدي, طلّعي]
+    imp_pl: [زيدو]
+    req: [تزيد, اتزيد لي]
+    lat: [zid, talla3, raffed]
+  decrease:
+    en: decrease / lower
+    conf: high
+    imp_m: [نگّص, نقّص, هبّط, اطيّح]
+    imp_f: [نگّصي, هبّطي]
+    imp_pl: [نگّصو]
+    req: [تنگّص, اتنگّص لي]
+    lat: [naggas, habbet, tayya7]
+  set:
+    en: set / put / make
+    conf: high
+    imp_m: [اعدل, دير, حطّ, ردّ]
+    imp_f: [اعدلي, ديري, حطّي, ردّي]
+    imp_pl: [اعدلو, ديرو]
+    req: [تعدل لي, اتدير لي, تردّ]
+    lat: [a3del, dir, 7ott, redd]
+  stop:
+    en: stop
+    conf: high
+    imp_m: [وگّف, وقّف, حبّس]
+    imp_f: [وگّفي, حبّسي]
+    imp_pl: [وگّفو]
+    req: [توگّف لي, اتحبّس لي]
+    lat: [wagguef, 7abbes]
+  resume:
+    en: resume / continue
+    conf: med
+    imp_m: [كمّل, زيد, خلّيه يكمّل, ردّو يخدم]
+    imp_f: [كمّلي]
+    imp_pl: [كمّلو]
+    req: [تكمّل لي]
+    lat: [kammel, khallih ykammel]
+  tell:
+    en: tell
+    conf: high
+    imp_m: [گول لي, گلّي, اخبرني]
+    imp_f: [گولي لي]
+    imp_pl: [گولو لي]
+    req: [تگول لي, اتگول لي]
+    lat: [goul li, golli]
+  check:
+    en: look / check
+    conf: high
+    imp_m: [شوف لي, اشوف, ارّاع]
+    imp_f: [شوفي لي]
+    imp_pl: [شوفو لي]
+    req: [تشوف لي]
+    lat: [chouf li]
+  add:
+    en: add / write down
+    conf: med
+    imp_m: [زيد, اكتب, گيّد, حطّ]
+    imp_f: [زيدي, اكتبي]
+    imp_pl: [زيدو]
+    req: [تزيد, اتكتب لي]
+    lat: [zid, ekteb, gayyed]
+  start_timer:
+    en: start (a timer)
+    conf: med
+    imp_m: [اعدل, دير, حطّ, ابدا]
+    imp_f: [اعدلي, ديري]
+    imp_pl: [اعدلو]
+    req: [تعدل لي, اتحطّ لي]
+    lat: [a3del, dir, ebda]
+  cancel:
+    en: cancel
+    conf: med
+    imp_m: [الغي, اگطع, وگّف, نحّ]
+    imp_f: [الغاي, وگّفي]
+    imp_pl: [الغاو]
+    req: [تلغي, اتنحّ]
+    lat: [elghi, egta3, na77]
+  clean:
+    en: clean / sweep
+    conf: med
+    imp_m: [نظّف, شطّب, اسيگ]
+    imp_f: [نظّفي, شطّبي]
+    imp_pl: [نظّفو]
+    req: [تنظّف]
+    lat: [naddhef, chatteb]
+  return:
+    en: send back / return
+    conf: med
+    imp_m: [ردّ, رجّع]
+    imp_f: [ردّي, رجّعي]
+    imp_pl: [ردّو]
+    req: [تردّ]
+    lat: [redd, rajja3]
+
+# ------------------------------------------------------------- function words
+want:     # "I want ..." prefixes (+ verbal noun or subjunctive)
+  conf: high
+  ar: [نبغي, ابغيت, نبغيك, راني نبغي, نبغي منك]
+  lat: [nebghi, bghit, ena nebghi]
+want_subj:  # subjunctive 2sg after "I want you to ..." -> uses `req` forms
+  conf: high
+
+politeness:
+  pre: [الله يخليك, بالله, اعليك الله]   # حگل handled separately (softener)
+  post: [الله يخليك, الله يجازيك بالخير, الله يحفظك]
+  conf: high   # corpus: حگل 73, يحفظك 365, يجازيك 32, يخليك 16; اعفاك 0 (Moroccan) removed
+fillers:     # disfluencies real speakers produce before a command
+  ar: [ايوه, اسمع, هيه, يا اخي, اشوف, اعگب, آآ]
+  conf: med
+wake_words:
+  ar: [يا دار, يا داري, يا مساعد]
+  lat: [ya dar, ya dari]
+  conf: low   # choose your own; must be trained in openWakeWord
+now:      {ar: [ظرك, ذرك, دُرك], lat: [dhork, durk], conf: high}   # corpus: ظرك 291, ذرك 3, دُرك 3
+all:      {ar: [گاع, كامل, ذو گاع], lat: [ga3, kamel], conf: high}
+very:     {ar: [ياسر, بالزّاف, شي واعر], lat: [yaser], conf: high}
+a_little: {ar: [شوي, اشوي, شي اشوي], lat: [chwey], conf: high}
+this_m:   {ar: [ذ, ذا, هذا], conf: high}
+this_f:   {ar: [ذي, هذي], conf: high}
+that_m:   {ar: [ذاك, ذاك], conf: high}
+in:       {ar: [ف, في, اف], conf: high}   # "f-ṣ-ṣālūn"
+of:       {ar: [], conf: low}   # no genitive particle attested (متاع/امتاع: 0 hits); use construct state: صوت التلفزة
+tag_q:    {ar: [حگ], conf: high}  # "... حگ؟" = "..., right?" (corpus 200)
+there_is: {ar: [فم], conf: high}  # "ما فم حل", "فم فيه اي خطر؟"
+softener: {ar: [حگل], conf: high} # "حگل اگدي الظو", "اگفل الباب حگل" (73 hits)
+and:      {ar: [و, ؤ], conf: high}
+"yes": {ar: [اهيه, ايوه, ايّه], lat: [ehih, ewah], conf: high}   # corpus: اهيه 188, ايوه 99, حاضر 0
+"no": {ar: [لا, ماه, ماهو, ابدا], conf: high}
+ok:       {ar: [اهيه, زين, ايوه, ماشي مشكل], conf: high}
+
+# question words
+q:
+  what:      {ar: [شنه, ش, شنهي, اشنهو], conf: high}   # corpus: شنه 198, شنهي 111
+  how_much:  {ar: [كم, اشحال, گدّاش], conf: med}   # corpus: كم 94; اشحال is mostly the greeting; گدّاش 0
+  how:       {ar: [كيف, اكيف], conf: high}
+  where:     {ar: [امنين, فين], conf: high}   # corpus: "امنين الدوش؟", امنين 119
+  when:      {ar: [امتين, وكتاش], conf: med}
+  is_it:     {ar: [ياك, واش, هل], conf: med}   # mostly intonation; ياك 140, واش 3
+  why:       {ar: [اعلاش, لاش], conf: high}
+
+# ------------------------------------------------------------- devices
+# gender matters for adjective/participle agreement in responses (m/f)
+# domain = Home Assistant domain
+devices:
+  light:
+    domain: light
+    items:
+      - {ar: [الظو, الضو, الضوّ], lat: [edh-dhaw, ed-daw], g: m, conf: high}   # corpus: "طفي الظو", الظو 15, الضو 1
+      - {ar: [اللامبة, اللامبه, لامبة], lat: [lamba], g: f, conf: high}
+      - {ar: [النور], lat: [nour], g: m, conf: med}
+      - {ar: [الثريّا], lat: [thurayya], g: f, conf: low}
+  fan:
+    domain: fan
+    items:
+      - {ar: [المروحة, المروحه], lat: [marwa7a], g: f, conf: high}   # confirmed
+      - {ar: [الفانتيلو, الفانتيلاتير, الفنتيلاتور], lat: [ventilo, ventilateur], g: m, conf: high}   # confirmed (all three)
+  climate:
+    domain: climate
+    items:
+      - {ar: [الكليم, الكليماتيزور], lat: [klim, climatiseur], g: m, conf: high}   # confirmed by native speaker
+      - {ar: [المكيّف], lat: [mukayyif], g: m, conf: high}   # confirmed by native speaker
+  media_player:
+    domain: media_player
+    items:
+      - {ar: [التلفزة, التلفزيون, التيلي], lat: [tilfza, tele], g: f, conf: high}   # corpus: "حگل اگدي تلفزة", التلفزة 17
+      - {ar: [الراديو], lat: [radio], g: m, conf: high}
+      - {ar: [السبيكر, لوباف, البافل], lat: [speaker, baffle], g: m, conf: med}
+  switch:
+    domain: switch
+    items:
+      - {ar: [البومبة, البومب, المضخّة], lat: [pompe, bomba], g: f, conf: high}       # water pump
+      - {ar: [الشوفو, الشوفّو], lat: [chauffe-eau, chofo], g: m, conf: high}   # native speaker: الشوفو (not سخّان الما) # water heater
+      - {ar: [البرّاد الكهربائي, بولّوار], lat: [bouilloire], g: m, conf: low}           # kettle
+      - {ar: [الفريجيدير, الفريجو, الثلّاجة], lat: [frigo, frigidaire], g: m, conf: med}
+      - {ar: [الموتور, الجنراتور], lat: [moteur, groupe], g: m, conf: med}             # generator
+      - {ar: [الپريز, البريز], lat: [prise], g: f, conf: med}                          # smart plug
+  cover:
+    domain: cover
+    items:
+      - {ar: [الريدو, الريدوات, الستارة], lat: [rideau], g: m, conf: high}   # confirmed (all three)
+      - {ar: [الطاگة, الشبّاك], lat: [taga, chebbak], g: f, conf: med}                # window
+      - {ar: [باب الگاراج, الگاراج], lat: [bab el garage], g: m, conf: high}
+      - {ar: [باب الحوش, الباب لكبير], lat: [bab lekbir], g: m, conf: med}
+  lock:
+    domain: lock
+    items:
+      - {ar: [الباب, باب الدار], lat: [bab, bab ed-dar], g: m, conf: high}
+      - {ar: [الكادنة, الكادنا], lat: [cadenas], g: f, conf: med}
+  vacuum:
+    domain: vacuum
+    items:
+      - {ar: [الروبو, المكنسة, الآسپيراتور], lat: [robot, aspirateur], g: m, conf: med}
+
+# ------------------------------------------------------------- rooms / areas
+areas:
+  - {id: salon,    ar: [الصالون, صالون], lat: [salon], conf: high}   # confirmed
+  - {id: bedroom,  ar: [بيت الرگاد, البيت], lat: [beyt er-gad, el-beyt], conf: high}   # confirmed: بيت الرگاد, البيت (not بيت النعاس / الشومبر)
+  - {id: kitchen,  ar: [الكوزينة, الكوزينه, المطبخ], lat: [cuisine, kouzina], conf: high}   # confirmed
+  - {id: bathroom, ar: [بيت الما, الدوش, التواليت], lat: [beyt el ma, douche], conf: high}
+  - {id: kids,     ar: [بيت الدراري, بيت الصغار], lat: [beyt ed-drari], conf: med}
+  - {id: guest,    ar: [بيت الضياف, بيت الضيوف], lat: [beyt ed-dyaf], conf: med}
+  - {id: yard,     ar: [الحوش, الفناء, لاكور], lat: [hawch, la cour], conf: med}
+  - {id: garage,   ar: [الگاراج], lat: [garage], conf: high}
+  - {id: roof,     ar: [السطح, الصطح], lat: [stah], conf: high}
+  - {id: tent,     ar: [الخيمة, الخيمه], lat: [khayma], conf: high}
+  - {id: office,   ar: [البيرو, المكتب], lat: [bureau], conf: med}
+  - {id: entrance, ar: [المدخل, گدّام الباب], lat: [madkhal], conf: med}
+
+# ------------------------------------------------------------- values
+colors:
+  - {id: red,    ar: [احمر, لحمر], en: red}
+  - {id: green,  ar: [اخضر, لخضر], en: green}
+  - {id: blue,   ar: [ازرگ, لزرگ, ازرق], en: blue}
+  - {id: yellow, ar: [اصفر, لصفر], en: yellow}
+  - {id: white,  ar: [ابيظ, لبيظ, ابيض], en: white}
+  - {id: purple, ar: [بنفسجي, موڤ, موف], en: purple}
+  - {id: orange, ar: [ليموني, اورونج], en: orange}
+
+numbers:   # Hassaniya cardinal forms (Maghrebi pattern), plus digits handled by code
+  1: [واحد]
+  2: [اثنين, ثنين, زوز]
+  3: [اثلاثة, ثلاثة]
+  4: [اربعة]
+  5: [خمسة]
+  6: [ستّة]
+  7: [سبعة]
+  8: [اثمانية, ثمانية]
+  9: [تسعة]
+  10: [عشرة]
+  11: [احداعش]
+  12: [اطناعش]
+  13: [اثلطاعش]
+  14: [اربعطاعش]
+  15: [خمسطاعش]
+  16: [سطّاعش]
+  17: [سبعطاعش]
+  18: [اثمنطاعش]
+  19: [تسعطاعش]
+  20: [عشرين]
+  21: [واحد وعشرين]
+  22: [اثنين وعشرين]
+  23: [اثلاثة وعشرين]
+  24: [اربعة وعشرين]
+  25: [خمسة وعشرين]
+  26: [ستّة وعشرين]
+  27: [سبعة وعشرين]
+  28: [اثمانية وعشرين]
+  30: [اثلاثين]
+  40: [اربعين]
+  45: [خمسة واربعين]
+  50: [خمسين]
+  60: [ستّين]
+  70: [سبعين]
+  75: [خمسة وسبعين]
+  80: [اثمانين]
+  90: [تسعين]
+  100: [مية, ميّة]
+# French numerals are heavily used in Nouakchott speech for temperatures/percent
+numbers_fr:
+  16: seize
+  18: dix-huit
+  20: vingt
+  22: vingt-deux
+  24: vingt-quatre
+  25: vingt-cinq
+  26: vingt-six
+  30: trente
+  50: cinquante
+  100: cent
+
+units:
+  degree:  [درجة, دراجات, دوگري]
+  percent: [فالمية, بالمية, پورسون, "%"]
+  minute:  [دقيقة, دگايگ, دگيگة]
+  hour:    [ساعة, ساعات]
+  second:  [ثانية, ثواني]
+  half_hour: [نص ساعة, انصّ ساعة]
+  quarter_hour: [ربع ساعة]
+
+shopping_items:
+  - {ar: أتاي, en: tea}
+  - {ar: السكّر, en: sugar}
+  - {ar: النعناع, en: mint}
+  - {ar: الخبز, en: bread}
+  - {ar: الحليب, en: milk}
+  - {ar: الزريگ, en: "zrig (diluted milk drink)"}
+  - {ar: اللحم, en: meat}
+  - {ar: الروز, en: rice}
+  - {ar: الماڭرو, en: "pasta (macaroni)"}
+  - {ar: الزيت, en: oil}
+  - {ar: البصل, en: onion}
+  - {ar: الطماطم, en: tomato}
+  - {ar: الحوت, en: fish}
+  - {ar: الما, en: water}
+  - {ar: الصابون, en: soap}
+  - {ar: البطاطة, en: potato}
+  - {ar: الكسكس, en: couscous}
+  - {ar: التمر, en: dates}
+  - {ar: لكريدي, en: phone credit}
+  - {ar: الغاز, en: gas bottle}
