@@ -5,6 +5,7 @@ Scored with `scripts/hsn_score.py`, a reimplementation of MauriAI's documented s
 | Model | Step 3 CER % | Step 3 WER % | Light CER % | Light WER % | RTF |
 |---|---|---|---|---|---|
 | mauriai_cohere_ft_37h (published predictions) | 8.5 | 20.3 | 8.9 | 24.5 | – |
+| DesertMindAI/ASR-hassaniya-whisper-medium-v1 | 23.9 | 59.0 | 25.5 | 65.5 | 2.36 |
 | zero_shot_qwen3_asr_1.7b (published predictions) | 29.1 | 66.7 | 31.1 | 72.9 | – |
 | zero_shot_cohere_transcribe_arabic (published predictions) | 44.0 | 68.7 | 46.7 | 76.1 | – |
 | zero_shot_qwen3_asr_0.6b (published predictions) | 34.2 | 74.6 | 35.5 | 77.9 | – |
