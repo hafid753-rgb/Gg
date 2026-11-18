@@ -25,7 +25,7 @@ These are benchmarked in [`data/benchmarks/asr/results.md`](../data/benchmarks/a
 | HamidAmeer/hassaniya-whisper-medium | whisper-medium | 3.1 GB |
 | hadramibegnoug/mms-hassaniya-asr, abdourrahmane/mms-hassaniya-ctc | MMS-1B CTC | 3.9 GB |
 | Hassen80/hassaniya-mms-asr (Apache-2.0) | MMS | 27 GB repo (checkpoints) |
-| **mlemineb/mms-tts-hassaniya-b0681eeb** | MMS-TTS VITS | 145 MB. Used by `scripts/synth_tts.py` |
+| **mlemineb/mms-tts-hassaniya-b0681eeb** | MMS-TTS VITS | 145 MB. Tested with `scripts/synth_tts.py`: **not intelligible enough** (0% end-to-end through 3 good ASR models) |
 | Hassaniya LLM LoRAs: adeltlb/qwen2.5-hassaniya-lora (on Qwen2.5-3B), Chemeni/qwen2.5-1.5b-hassaniya-lora, ABMZD/hassaniya-gpt2-model, ahmed200512/hassaniya-marbert-model | | Possible alternative starting points for the LoRA |
 
 MauriAI's published baselines on the full broadcast test set (Step 3 WER):
@@ -91,7 +91,7 @@ All of it is collected by `scripts/ingest_external.py`: 16,271 sentences in tota
 
 ## 7. Recommendations (what to do next)
 
-1. **ASR:** start from **`HamidAmeer/hassaniya-whisper-medium`**, the best open model in our benchmark (52.9% WER, 21.6% CER on MauriAI broadcast; it was 59.0% for DesertMindAI medium, and 84–92% for the small community models). Then fine-tune it further on MauriAI read speech, your own recordings (`tools/recorder.html`), and up to ~30% synthetic command audio (`scripts/synth_tts.py`). Always score on MauriAI broadcast test, and on real recordings of your household's commands.
+1. **ASR:** start from **`HamidAmeer/hassaniya-whisper-medium`**, the best open model in our benchmark (52.9% WER, 21.6% CER on MauriAI broadcast; it was 59.0% for DesertMindAI medium, and 84–92% for the small community models). Then fine-tune it further on MauriAI read speech, and your own recordings (`tools/recorder.html`). Skip synthetic audio from the current community TTS, which isn't intelligible (see `results_commands.md`). Always score on MauriAI broadcast test, and on real recordings of your household's commands.
 2. **Fast path:** deploy `hassaniya.yaml` now. It works with any STT that writes Arabic script.
 3. **LLM:** run a LoRA on Qwen2.5-3B (or start from `adeltlb/qwen2.5-hassaniya-lora`) using `data/generated/sft` plus 15% `sft_aux` real-Hassaniya tasks. Alternatively, generate home-llm format data with our pile and train their Home model recipe.
 4. **Ask the dataset authors** (MauriAI, hassan-IA, MauriCorpus) about commercial use, if you need it. Most speech data is non-commercial.

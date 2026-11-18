@@ -28,5 +28,5 @@ Scored with `scripts/hsn_score.py`, a reimplementation of MauriAI's documented s
 1. **The best open model today is `HamidAmeer/hassaniya-whisper-medium`: 52.9% WER, 21.6% CER, RTF 0.9 on 4 CPUs.** Use it as the STT starting point. Convert it to CTranslate2 int8 for `wyoming-faster-whisper`, which is typically 2–4× faster than PyTorch on CPU.
 2. Starting from a related dialect helps. DesertMindAI's model is based on a Moroccan Darija Whisper-medium and reaches 59.0% WER, ahead of every zero-shot model.
 3. The small community models (whisper-small, MMS) are fast but sit at 84–92% WER. Medium is the sensible size for Hassaniya, which matches findings on other Arabic dialects.
-4. There is still a large gap to MauriAI's 20% WER (37 hours of training data). More real Hassaniya audio is the lever. Fine-tune the best model further on MauriAI read speech, household recordings from `tools/recorder.html`, and some synthetic command audio.
+4. There is still a large gap to MauriAI's 20% WER (37 hours of training data). More real Hassaniya audio is the lever. Fine-tune the best model further on MauriAI read speech, and household recordings from `tools/recorder.html`. The current community TTS is not usable for synthetic audio (see below).
 5. Broadcast speech is much harder than spoken commands. See `results_commands.md` for the command-domain, end-to-end test.
