@@ -32,6 +32,9 @@ MODELS = [  # (repo, kind) - community fine-tunes first, slow medium models last
     ("openai/whisper-small", "seq2seq"),                       # zero-shot baseline, same size as most community FTs
     ("DesertMindAI/ASR-hassaniya-whisper-medium-v1", "seq2seq"),
     ("HamidAmeer/hassaniya-whisper-medium", "seq2seq"),
+    # closest related dialect (Moroccan Darija), for comparison
+    ("ychafiqui/whisper-medium-darija", "seq2seq"),
+    ("boumehdi/wav2vec2-large-xlsr-moroccan-darija", "ctc"),
 ]
 PUBLISHED = ["mauriai_cohere_ft_37h", "zero_shot_whisper_large_v3", "zero_shot_qwen3_asr_1.7b",
              "zero_shot_qwen3_asr_0.6b", "zero_shot_cohere_transcribe_arabic"]
