@@ -13,3 +13,4 @@ Scored with `scripts/hsn_score.py`, a reimplementation of MauriAI's documented s
 | hadramibegnoug/whisper-hassaniya-asr | 51.0 | 92.0 | 51.9 | 96.3 | 1.49 |
 | zero_shot_whisper_large_v3 (published predictions) | 58.2 | 99.1 | 60.2 | 103.0 | – |
 | abdourrahmane/mms-hassaniya-ctc | 100.0 | 100.0 | 238.1 | 100.0 | 0.26 |
+| openai/whisper-small | 69.1 | 109.5 | 72.6 | 112.9 | 1.16 |
